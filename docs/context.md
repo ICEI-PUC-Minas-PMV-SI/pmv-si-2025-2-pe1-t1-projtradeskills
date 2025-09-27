@@ -1,23 +1,16 @@
 # Introdução
+
 A revolução digital tem transformado profundamente a forma como as pessoas interagem, aprendem e consomem serviços, abrindo espaço para novos modelos de colaboração e troca de conhecimento. Esse movimento se intensificou durante a pandemia de Covid-19, quando redes sociais e plataforma digitais se consolidaram como canais fundamentais para compartilhamento de informações e soluções coletivas. Nesse cenário, cresce a relevância de iniciativas que utilizem a tecnologia como meio de conectar indivíduos e valorizar suas habilidades.
 
 Paralelamente, o Brasil enfrenta desafios estruturais relacionados ao mercado de trabalho. De acordo com o IBGE (2024), a taxa de informalidade atinge 37,8% da população ocupada, enquanto o desemprego permanece mais elevado entre pessoas com menor escolaridade. Essa realidade expõe não apenas a dificuldade de monetização de talentos individuais, mas também a exclusão de uma parcela significativa da população que não consegue acessar serviços essenciais devido a restrições financeiras.
 
 Nesse contexto, a criação de uma plataforma que permita a troca de habilidades por meio de um sistema
 
-
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, **não** é a hora de comentar sobre a solução/aplicação.
+Muitas pessoas possuem habilidades específicas, como consertar computadores, dar aulas de violão, fazer montagem e desmontagem de móveis, mas nem sempre conseguem monetizar ou utilizar esses talentos. Em contrapartida, há pessoas que não têm dinheiro suficiente para custear esses serviços ou não querem pagar o preço de mercado por eles.  
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Nesse contexto, a presente proposta de um sistema web busca preencher essa lacuna: em vez de usar dinheiro, a "moeda" é a habilidade, com isto, a plataforma visa estabelecer um modelo de economia colaborativa, fomentando uma comunidade mais inclusiva e autossustentável. 
 
 ## Objetivos
 
