@@ -1,12 +1,10 @@
 # Introdução
+A revolução digital tem transformado profundamente a forma como as pessoas interagem, aprendem e consomem serviços, abrindo espaço para novos modelos de colaboração e troca de conhecimento. Esse movimento se intensificou durante a pandemia de Covid-19, quando redes sociais e plataforma digitais se consolidaram como canais fundamentais para compartilhamento de informações e soluções coletivas. Nesse cenário, cresce a relevância de iniciativas que utilizem a tecnologia como meio de conectar indivíduos e valorizar suas habilidades.
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
+Paralelamente, o Brasil enfrenta desafios estruturais relacionados ao mercado de trabalho. De acordo com o IBGE (2024), a taxa de informalidade atinge 37,8% da população ocupada, enquanto o desemprego permanece mais elevado entre pessoas com menor escolaridade. Essa realidade expõe não apenas a dificuldade de monetização de talentos individuais, mas também a exclusão de uma parcela significativa da população que não consegue acessar serviços essenciais devido a restrições financeiras.
 
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
+Nesse contexto, a criação de uma plataforma que permita a troca de habilidades por meio de um sistema
 
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
-
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
 
 ## Problema
 
