@@ -26,14 +26,9 @@ Desenvolver um software que possibilite a troca de habilidades entre usuários, 
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+O projeto é relevante porque incentiva novas formas de interação e aprendizado entre pessoas, ao conectar usuários com interesses comuns e promover a troca de experiências de maneira colaborativa. Essa dinêmica estimula o desenvolvimento pessoal, o compartilhamento de conhecimento e o fortalecimento de relações em comunidade.
 
-Lembre-se de pesquisar e utilizar números que justifiquem por que é importante que tal problema seja resolvido ou que mostrem o impacto do problema na vida das pessoas.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Além disso o projeto contribui para a democratização do acesso à educação informal e ao desenvolvimento de habilidades práticas, ao proporcionar um espaço em que todos podem ensinar e aprender, independentemente de sua condição financeira ou nível de escolaridade.
 
 ## Público-Alvo
 
