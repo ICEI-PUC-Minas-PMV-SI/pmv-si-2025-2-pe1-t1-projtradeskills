@@ -4,7 +4,7 @@ A revolução digital tem transformado profundamente a forma como as pessoas int
 
 Paralelamente, o Brasil enfrenta desafios estruturais relacionados ao mercado de trabalho. De acordo com o IBGE (2024), a taxa de informalidade atinge 37,8% da população ocupada, enquanto o desemprego permanece mais elevado entre pessoas com menor escolaridade. Essa realidade expõe não apenas a dificuldade de monetização de talentos individuais, mas também a exclusão de uma parcela significativa da população que não consegue acessar serviços essenciais devido a restrições financeiras.
 
-Nesse contexto, a criação de uma plataforma que permita a troca de habilidades por meio de um sistema
+Nesse contexto, a criação de uma plataforma que permita a troca de habilidades por meio de um sistema de créditos virtuais surge como uma alternativa inovadora. A Trade Skill além de  propor democratizar o acesso a serviços e oportunidades de capacitação, fortalece a economia colaborativa, promove a inclusão social e contribui para a valorização de talentos que por muitas vezes, permanecem invisíveis no mercado tradicional.
 
 ## Problema
 
@@ -14,12 +14,15 @@ Nesse contexto, a presente proposta de um sistema web busca preencher essa lacun
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+## Objetivo geral
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Desenvolver um software que possibilite a troca de habilidades entre usuários, utilizando um sistema de créditos virtuais como alternativa ao pagamento financeiro tradicional, com foco em promover inclusão, colaboração e acesso democrático a serviços e conhecimentos.
+
+## Objetivos específicos
+
+* Criar uma plataforma intuítiva que permita o cadastro e a busca de habilidades de forma eficiente, aumentando as chances de trocas bem sucedidas.
+* Fomentar um ambiente colaborativo e inclusivo que incentive os usuários a acumular créditos, viabilizando o acesso a novas habilidades e fortalecendo o senso de comunidade. 
+
 
 ## Justificativa
 
