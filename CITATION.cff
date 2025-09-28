@@ -2,32 +2,44 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: Web Application Template
+title: Trade Skills
 message: >-
   Repositório padrão para o Eixo 1 - Projeto 1: Aplicações
   Web da PUC Minas.
 type: software
 authors:
-  - given-names: Aluno 1
-    family-names: Nome Completo
-    email: aluno@pucminas.br
+  - given-names: Ana Júlia
+    family-names: Ferino Machado
+    email: 1607321@sga.pucminas.br
     affiliation: PUC Minas
-  - given-names: Hugo
-    name-particle: 'B '
-    family-names: de Paula
-    name-suffix: Prof.
-    email: hugo@pucminas.br
+  - given-names: Camila
+    family-names: Malaman Mafra
+    email: 1611674@sga.pucminas.br
     affiliation: PUC Minas
-    orcid: 'https://orcid.org/0000-0002-6193-3205'
+  - given-names: João Pedro
+    family-names: Teodoro dos Santos
+    email: 1440914@sga.pucminas.br
+    affiliation: PUC Minas
+  - given-names: Maria Eduarda
+    family-names: Soares de Oliveira
+    email: 1377949@sga.pucminas.br
+    affiliation: PUC Minas
+  - given-names: Mariana
+    family-names: de Cassia Rodrigues dos Santos Mendonça
+    email: 1615892@sga.pucminas.br
+    affiliation: PUC Minas
+  - given-names: Raissa
+    family-names: Nepomuceno Epaminondas
+    email: 1217058@sga.pucminas.br
+    affiliation: PUC Minas
 repository-code: >-
-  https://github.com/ICEI-PUC-Minas-PMV-SI/WebApplicationProject-Template
+  https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills
 abstract: >-
-  Descrever resumidamente, em um ou dois parágrafos, o
-  projeto que foi desenvolvido.
+  Trade Skills é uma plataforma web colaborativa que permite a troca de habilidades e conhecimentos entre usuários, sem a necessidade de dinheiro real. Assim, promovendo acesso democrático à educação, à informação e aos serviços.
+  Com uma interface simples e intuitiva, atende diferentes perfis e oferece recursos de cadastro de habilidades, pesquisa por serviços de interesse e gerenciamento de solicitações.
 keywords:
   - Desenvolvimento Web
   - HTML
   - CSS
   - JavaScript
-  - Template
-date-released: '2024-06-23'
+date-released: '2025-12-11'
