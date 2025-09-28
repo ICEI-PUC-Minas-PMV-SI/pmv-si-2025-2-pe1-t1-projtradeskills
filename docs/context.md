@@ -32,12 +32,8 @@ Além disso o projeto contribui para a democratização do acesso à educação 
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+O público-alvo do sistema é formado por jovens e adultos, com renda mensal de até dois salários-mínimos, que frequentemente enfrentam dificuldades financeiras para contratar serviços no mercado formal. Esse grupo inclui estudantes, autônomos, freelancers e profissionais que possuem habilidades específicas e estão interessados em desenvolver novas habilidades e/ou acessar serviços, sem custos financeiros. 
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+Trata-se de pessoas familiarizadas com o uso de redes sociais e plataformas digitais, com conhecimentos tecnológicos em nível básico a intermediário, habituados a aplicativos de troca de mensagens, compra e venda ou prestação de serviços. 
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Dentro desse público, destacam-se dois perfis de usuários: consumidores, interessados em acessar serviços e adquirir novos conhecimentos sem custo monetário, atendendo tanto a necessidades práticas (como consertos e reparos) quanto ao desenvolvimento pessoal (como hobbies e aprendizado de idiomas ou música), e provedores de habilidades, que se interessam em compartilhar seus conhecimentos e talentos em troca de créditos, os quais poderão ser convertidos em serviços de interesse próprio. Ambos compartilham a motivação de integrar-se a uma comunidade colaborativa que promove o acesso democrático ao conhecimento e aos serviços. 
