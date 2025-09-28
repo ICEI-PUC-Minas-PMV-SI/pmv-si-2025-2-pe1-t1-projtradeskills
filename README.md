@@ -1,25 +1,28 @@
-# Título do Projeto
+# Trade Skills
 
 `CURSO: Sistemas de Informação`
 
 `DISCIPLINA: Projeto - Aplicações Web`
 
-`SEMESTRE: 1º`
+`SEMESTRE: 1º | Turma: 1 | Grupo: 1`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Trade Skills é um projeto de plataforma web que permitirá às pessoas utilizarem suas habilidades e conhecimentos em troca de outros, possibilitando que, ao ensinar algo ou oferecer um serviço a alguém, o usuário também possa se tornar aluno ou cliente de outro. Tudo isso será realizado sem a necessidade de envolver dinheiro real nas transações. O objetivo principal é democratizar o acesso à educação, à informação e aos serviços.
+
+Com uma interface simples e intuitiva, a plataforma atenderá pessoas de diferentes idades e áreas de atuação, como estudantes, autônomos, profissionais e freelancers, promovendo praticidade, autonomia e segurança em suas interações. Ela permitirá o cadastro de habilidades em determinadas seções — como bem-estar, tecnologia e serviços domiciliares, por exemplo —, garantindo o respeito e a legalidade nas transações, além de possibilitar o gerenciamento das solicitações realizadas e recebidas.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Ana Júlia Ferino Machado
+* Camila Malaman Mafra
+* João Pedro Teodoro dos Santos
+* Maria Eduarda Soares de Oliveira
+* Mariana de Cassia Rodrigues dos Santos Mendonça
+* Raissa Nepomuceno Epaminondas
 
 
 ## Orientador
 
-* Nome completo do professor 1
+* Marco Rodrigo Costa
 
 # Planejamento
 
@@ -33,8 +36,8 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 # Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+<li><a href="src/"> Código Fonte</a></li>
 
 # Apresentação
 
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+<li><a href="presentation/"> Apresentação da solução</a></li>
