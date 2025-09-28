@@ -8,51 +8,45 @@ Explique as guias de estilo utilizadas no seu projeto.
 
 Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
 
-
 ## Cores
 
 Apresente a paleta de cores que será utilizada. Uma ferramenta interessante para a criação de palestas de cores é o *Adobe Color* ([https://color.adobe.com/pt/create/color-wheel](https://color.adobe.com/pt/create/color-wheel)).
-
 
 ## Tipografia
 
 Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
 
-
 ## Iconografia
-A iconografia do sistema define os ícones utilizados para facilitar a navegação e representar ações de forma clara. A tabela abaixo apresenta cada ícone da aplicação TradeSkill e sua respecitva função:
+A iconografia do sistema define os ícones utilizados para facilitar a navegação e representar ações de forma clara. A tabela abaixo apresenta cada ícone da aplicação TradeSkill e sua respectiva função:
 
-| Imagem                                                                 | Descrição                                                                                                                               |
-| ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| ![ICON HOUSE](https://github.com/roosoars/worko/blob/main/house.svg) | Retorna a tela inicial/dashboard. |
-| ![ICON CURRENCY](https://github.com/roosoars/worko/blob/main/house.svg) | Acessa a área de minhas solicitações. |
-| ![ICON SEARCH](https://github.com/roosoars/worko/blob/main/house.svg) | Consulta meu histórico. |
-| ![ICON SETTINGS](https://github.com/roosoars/worko/blob/main/house.svg) | Abre configurações. |
-| ![ICON EDIT](https://github.com/roosoars/worko/blob/main/house.svg) | Permite editar informações cadastradas. |
-| ![ICON TRASH](https://github.com/roosoars/worko/blob/main/house.svg) | Remove/ exclui informações. |
-| ![ICON EYE](https://github.com/roosoars/worko/blob/main/house.svg) | Alterna entre mostrar ou ocultar informações (ex: senha). |
-| ![ICON MONEY](https://github.com/roosoars/worko/blob/main/house.svg) | Exibe saldo de moedas ou transações concluídas. |
-| ![ICON WARNING](https://github.com/roosoars/worko/blob/main/house.svg) | Indica estado de atenção (ex: nenhuma solicitação). |
-| ![ICON X](https://github.com/roosoars/worko/blob/main/house.svg) | Fecha janelas, modais ou descarta ação. |
-| ![ICON SEARCH](https://github.com/roosoars/worko/blob/main/house.svg) | Busca habilidades dentro da aplicação. |
-| ![ICON ARROW](https://github.com/roosoars/worko/blob/main/house.svg) | Avança para o próximo passo no fluxo. |
-| ![ICON STAR](https://github.com/roosoars/worko/blob/main/house.svg) | Avaliar e classificar serviços. |
-| ![ICON USER](https://github.com/roosoars/worko/blob/main/house.svg) | Representa outros usuários do sistema. |
-| ![ICON THUMB UP](https://github.com/roosoars/worko/blob/main/house.svg) | Marca uma solicitação como aceita. |
-| ![ICON THUMB DOWN](https://github.com/roosoars/worko/blob/main/house.svg) | Marca uma solicitação como recusada. |
-| ![ICON FILTER](https://github.com/roosoars/worko/blob/main/house.svg) | Abre opções de filtragem de solicitações. |
-| ![ICON PLUS](https://github.com/roosoars/worko/blob/main/house.svg) | Cria uma nova solicitação. |
-
-
-
+| Imagem | Descrição |
+| :--- | :--- |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_house.svg" alt="ICON HOUSE" width="20" height="20"> | Retorna a tela inicial/dashboard. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_user.svg" alt="ICON USER" width="20" height="20"> | Mostra o perfil do usuário. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_currency.svg" alt="ICON CURRENCY" width="20" height="20"> | Acessa a área de minhas solicitações. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_search_menu.svg" alt="ICON SEARCH MENU" width="20" height="20"> | Consulta meu histórico. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_settings.svg" alt="ICON SETTINGS" width="20" height="20"> | Abre configurações. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_edit.svg" alt="ICON EDIT" width="20" height="20"> | Permite editar informações cadastradas. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_trash.svg" alt="ICON TRASH" width="20" height="20"> | Remove/ exclui informações. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_eye.svg" alt="ICON EYE" width="20" height="20"> | Alterna entre mostrar ou ocultar informações (ex: senha). |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_money.svg" alt="ICON MONEY" width="20" height="20"> | Exibe saldo de moedas ou transações concluídas. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_exclamation_mark.svg" alt="ICON EXCLAMATION MARK" width="20" height="20">| Indica estado de atenção (ex: nenhuma solicitação). |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_x.svg" alt="ICON X" width="20" height="20"> | Fecha janelas, modais ou descarta ação. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_search.svg" alt="ICON SEARCH" width="20" height="20"> | Busca habilidades dentro da aplicação. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_arrow.svg" alt="ICON ARROW" width="20" height="20"> | Avança para o próximo passo no fluxo. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_star.svg" alt="ICON STAR" width="20" height="20"> | Avaliar e classificar serviços. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_person_circle.svg" alt="ICON PERSON CICLE" width="20" height="20"> | Representa outros usuários do sistema. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_thumb_up.svg" alt="ICON THUMBS UP" width="20" height="20"> | Marca uma solicitação como aceita. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_thumb_down.svg" alt="ICON THUMBS DOWN" width="20" height="20"> | Marca uma solicitação como recusada. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_filter.svg" alt="ICON FILTER" width="20" height="20"> | Abre opções de filtragem de solicitações. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_plus.svg" alt="ICON PLUS" width="20" height="20"> | Cria uma nova solicitação. |
 
 Apresente os estilos CSS criados para cada um dos elementos apresentados.
 Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
 
-
 > **Links Úteis**:
 >
-> -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)
+> -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)
 > - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
 > - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
 > - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
