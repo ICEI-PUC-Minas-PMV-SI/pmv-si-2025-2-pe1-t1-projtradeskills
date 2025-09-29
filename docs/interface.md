@@ -21,18 +21,12 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface e é fundamental sempre relacionar cada wireframe com o(s) requisito(s) que ele atende.
 
-### Exemplo
+### Tela de Login
 
-A tela inicial apresenta um menu lateral com as principais seções do portal, enquanto a navigation bar, ao topo, apresenta informações de envio de imagens ou navegação pela galeria de fotos. A área central apresenta a galeria de fotos na forma de uma grade. Nesta tela, são apresentados os seguintes requisitos
+|![Tela de Login](img/wireframes/Login.png)|
+|:--------------------------------------------------------------------------------------------:|
+| **Figura 2: Tela de Login**   
 
-![Exemplo de Wireframe](img/wireframe-example.png)
-
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+| **Componente**               | **Requisitos Atendidos**                                                                 |
+|------------------------------|------------------------------------------------------------------------------------------|
+| **Tela de Login**              | RF01:	Permitir o login por e-mail e senha. <br> RF02:	Permitir o cadastro com nome, e-mail e senha. <br> RF04: Permitir a recuperação de senha por resposta de segurança.|
