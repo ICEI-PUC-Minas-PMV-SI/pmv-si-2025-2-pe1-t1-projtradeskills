@@ -1,26 +1,29 @@
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+Perfis de Usuários
+<table>
+<tbody>
+<tr align=center>
+<th colspan="2"> Perfil consumidor e provedor de habilidades</th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px"> Usuários que possuem habilidades práticas ou técnicas e desejam trocá-las por créditos dentro da plataforma. </td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>
+1. Ampliar o acesso a serviços e conhecimentos sem depender de recursos financeiros.
+2. Ter uma forma justa e segura de trocar habilidades.
+3. Evoluir profissionalmente e academicamente através da colaboração.
+</td>
+</tr>
+</tbody>
+</table>
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto.
+## Persona
 
-Caso deseje atribuir uma imagem a sua persona, utilize o site https://thispersondoesnotexist.com/
-
-## Personas
-
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
-
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+João Silva tem 25 anos, é estudante universitário e para ajudar a cobrir parte de suas despesas mensais, faz pequenos serviços de manuntenção de computadores para membros de sua igreja. Seu objetivo é conquistar uma vaga de estágio no canadá, mas primeiro ele precisa aprimorar seu inglês.
 
 ## Histórias de Usuários
 
