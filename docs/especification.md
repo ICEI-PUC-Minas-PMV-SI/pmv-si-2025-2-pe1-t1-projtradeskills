@@ -29,19 +29,25 @@ João Silva tem 25 anos, é estudante universitário e para ajudar a cobrir part
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|EU COMO... `QUEM`| QUERO/DESEJO ... `O QUE` |PARA ... `PORQUE`                 |
+|-----------------|--------------------------|----------------------------------|
+|Novo usuário | Me cadastrar e criar o perfil na plataforma, de forma simples, informando nome, email e senha| Ter acesso a comunidade e oferecer ou contratar serviços.|
+|Usuário da plataforma (consumidor e provedor). | Editar meu perfil com foto, dados de contato, local de atendimento e descrição detalhada dos meus serviços (habilidades) oferecidos, incluindo nome, categoria e o valor sugerido em cráditos. | Que outros usuários possam me conhecer melhor e sentir confiança para negociar.|
+|Usuário da plataforma (consumidor e provedor).| Redefinir minha senha, em caso de esquecimento. | Que eu possa recuperar o acesso de minha conta.|
+|Usuário da plataforma (consumidor e provedor).| Remover serviços (habilidades) que cadastrei anteriormente no meu perfil.| Manter minha lista de habilidades sempre atualizada com serviços que posso oferecer.|
+Usuário da plataforma (consumidor e provedor).| Que o sistema me alerte sobre a exclusão de uma habilidade.| Que eu entenda que essa ação impactará a minha capacidade de ganhar novos créditos para transações futuras.|
+| Visualizar meu saldo atual de créditos.| Ter controle sobre minha "moeda virtual" e saber quanto posso gastar no momento.|
+|Usuário da plataforma (consumidor e provedor).|Visualizar meu histórico de transações.|Acompanhar o histórico de entrada e saída de créditos.|
+|Usuário da plataforma (consumidor e provedor).| Buscar por habilidades ou serviços usando palavras-chave e filtros (como categoria ou reputação).|Encontrar rapidamente os serviços que preciso.|
+|Usuário da plataforma (consumidor e provedor).| Visualizar perfis dos outros usuários da plataforma, incluindo suas habilidades, histórico de serviços prestados, com o valor de créditos cobrado e avaliações dos consumidores.|Tomar uma decisão informada e segura antes de consumir ou divulgar um serviço (habilidade).|
+|Usuário da plataforma (consumidor e provedor).| Enviar uma solicitação de serviço a um provedor.| Iniciar uma negociação e verificar a disponibilidade dele para realizar o trabalho.|
+|Usuário da plataforma (consumidor e provedor).|Aceitar ou rejeitar um pedido de serviço.|Gerenciar minha carga de trabalho.|
+|Usuário da plataforma (consumidor e provedor).| Confirmar que o serviço foi concluído com sucesso.| Liberar o pagamento dos créditos ao prestador e finalizar a transação. |
+|Usuário da plataforma (consumidor e provedor).|Adicionar uma avaliação com nota e um comentário sobre o serviço prestado/contratado.| Ajudar a construir um sistema de reputação que traga mais segurança para todos.|
+|Usuário da plataforma (consumidor e provedor).|Receber notificações sobre negociações, avaliações e mensagens.| Acompanhar o status das minhas negociações e responder rapidamente os outros usuários.|
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+
 
 ## Requisitos
 
