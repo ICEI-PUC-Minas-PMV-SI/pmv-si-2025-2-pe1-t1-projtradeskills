@@ -25,10 +25,7 @@ Desenvolver um software que possibilite a troca de habilidades entre usuários, 
 
 
 ## Justificativa
-
-O projeto é relevante porque incentiva novas formas de interação e aprendizado entre pessoas, ao conectar usuários com interesses comuns e promover a troca de experiências de maneira colaborativa. Essa dinêmica estimula o desenvolvimento pessoal, o compartilhamento de conhecimento e o fortalecimento de relações em comunidade.
-
-Além disso o projeto contribui para a democratização do acesso à educação informal e ao desenvolvimento de habilidades práticas, ao proporcionar um espaço em que todos podem ensinar e aprender, independentemente de sua condição financeira ou nível de escolaridade.
+O projeto é relevante por promover interação e aprendizado colaborativo entre pessoas com interesses comuns, estimulando desenvolvimento pessoal, compartilhamento de conhecimento e fortalecimento de relações. Além disso, democratiza o acesso à educação informal e ao desenvolvimento de habilidades práticas, permitindo que todos ensinem e aprendam, independentemente de condição financeira ou escolaridade.
 
 ## Público-Alvo
 
