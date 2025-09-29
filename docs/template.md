@@ -5,7 +5,7 @@ Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com
 Explique as guias de estilo utilizadas no seu projeto.
 
 ## Design
-![tela_inicial](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/main/docs/img/tela_inicial.jpg)
+![tela_inicial](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/7734e90eb2ddc9ece23ab567cbffd1a21ed3c71f/docs/img/tela_iniciall.jpg)
 
 
 ![logo_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/f16d4af099612aa1a91e32662cdf8114dfc58c8d/docs/img/logo_trade.jpg)
