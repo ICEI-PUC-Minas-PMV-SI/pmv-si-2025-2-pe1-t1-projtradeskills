@@ -8,6 +8,9 @@ Explique as guias de estilo utilizadas no seu projeto.
 ![tela_inicial](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/main/docs/img/tela_inicial.jpg)
 
 
+![logo_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/f16d4af099612aa1a91e32662cdf8114dfc58c8d/docs/img/logo_trade.jpg)
+| **Figura 1:** Logo do tradeskills |
+
 ## Cores
  
 Apresente a paleta de cores que será utilizada. Uma ferramenta interessante para a criação de palestas de cores é o *Adobe Color* ([https://color.adobe.com/pt/create/color-wheel](https://color.adobe.com/pt/create/color-wheel)).
