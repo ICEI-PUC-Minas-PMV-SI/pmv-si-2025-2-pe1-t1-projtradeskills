@@ -5,8 +5,7 @@ Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com
 Explique as guias de estilo utilizadas no seu projeto.
 
 ## Design
-
-Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
+https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/commit/f8b25905427fe8e0b66a6f8b1f6098b41739c28f
 
 ## Cores
 
