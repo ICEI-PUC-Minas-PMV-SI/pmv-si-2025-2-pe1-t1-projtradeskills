@@ -13,8 +13,11 @@ Interface baseada em **Menu Lateral + informações pessoais na parte superior**
 
 
 ![logo_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/f16d4af099612aa1a91e32662cdf8114dfc58c8d/docs/img/logo_trade.jpg)
-
+|:------------------------------------------------------------------------------------------------:|
 | **Figura 1:** Logo do tradeskills |
+- **Localização**: Canto superior esquerdo
+- **Nome exibido**: `Tradeskills`
+- **Função**: Redireciona para a tela inicial
 
 ## Cores
  
