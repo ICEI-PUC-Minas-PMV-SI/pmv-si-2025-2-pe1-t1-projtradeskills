@@ -102,25 +102,14 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 | **Componente**               | **Requisitos Atendidos**                                                                 |
 |------------------------------|------------------------------------------------------------------------------------------|
-| **Tela inicial - Dashboard**              | RF09: Permitir que a visualização do saldo atual de créditos no cabeçalho do site.<br> RF14: Permitir a visualização do resumo das atividades do usuário como provedor (pedidos recebidos) e como consumidor (solicitações enviadas), para que ele possa acompanhar facilmente suas interações na plataforma.|
-
-
-### Tela de histórico de transações
-
-|![Tela de histórico de transações](img/wireframes/RF10-Historico.png)|
-|:--------------------------------------------------------------------------------------------:|
-| **Figura 10: Tela de histórico de transações**   
-
-| **Componente**               | **Requisitos Atendidos**                                                                 |
-|------------------------------|------------------------------------------------------------------------------------------|
-| **Tela de histórico de transações**              | RF10: Permitir a visualização do histórico de transações, que contêm os valores de entrada e saída de créditos, incluindo data, horário, nome do serviço prestado e nome do provedor ou consumidor.|
+| **Tela inicial - Dashboard**              | RF09: Permitir que a visualização do saldo atual de créditos no cabeçalho do site.<br> RF14: Permitir a visualização do resumo das atividades do usuário como provedor (pedidos recebidos) e como consumidor (solicitações enviadas).|
 
 
 ### Tela Inicial - Busca por habilidades
 
 |![Tela Inicial - Busca por habilidades](img/wireframes/RF11-Dashboard.png)|
 |:--------------------------------------------------------------------------------------------:|
-| **Figura 11: Tela Inicial - Busca por habilidades**   
+| **Figura 10: Tela Inicial - Busca por habilidades**   
 
 | **Componente**               | **Requisitos Atendidos**                                                                 |
 |------------------------------|------------------------------------------------------------------------------------------|
@@ -131,21 +120,74 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 |![Tela Inicial - Visualização de perfis](img/wireframes/RF12.13-VisualizarPerfil.png)|
 |:--------------------------------------------------------------------------------------------:|
-| **Figura 12: Tela Inicial - Visualização de perfis**   
+| **Figura 11: Tela Inicial - Visualização de perfis**   
 
 | **Componente**               | **Requisitos Atendidos**                                                                 |
 |------------------------------|------------------------------------------------------------------------------------------|
-| **Tela Inicial - Visualização de perfis**              | RF11: Permitir a visualização de perfis dos outros usuários da plataforma, incluindo suas habilidades, histórico de serviços prestados, com o valor de créditos sugerido e avaliações dos consumidores.|
+| **Tela Inicial - Visualização de perfis**      | RF12: Permitir a visualização de perfis dos outros usuários da plataforma, incluindo suas habilidades, histórico de serviços prestados, com o valor de créditos sugerido e avaliações dos consumidores.<br> RF13: Permitir clicar no botão "solicitar serviço" para iniciar a negociação com o provedor.|
 
 
+### Tela de histórico de transações
+
+|![Tela de histórico de transações](img/wireframes/RF10-Historico.png)|
+|:--------------------------------------------------------------------------------------------:|
+| **Figura 12: Tela de histórico de transações**   
+
+| **Componente**               | **Requisitos Atendidos**                                                                 |
+|------------------------------|------------------------------------------------------------------------------------------|
+| **Tela de histórico de transações**              | RF10: Permitir a visualização do histórico de transações, que contêm os valores de entrada e saída de créditos, incluindo data, horário, nome do serviço prestado e nome do provedor ou consumidor.|
 
 
+### Tela Minhas Solicitações - Pedidos recebidos
+
+|![Tela Minhas Solicitações - Pedidos recebidos](img/wireframes/RF16-PedidosRecebidos.png)|
+|:--------------------------------------------------------------------------------------------:|
+| **Figura 13: Tela Minhas Solicitações - Pedidos recebidos**   
+
+| **Componente**               | **Requisitos Atendidos**                                                                 |
+|------------------------------|------------------------------------------------------------------------------------------|
+| **Tela Minhas Solicitações - Pedidos recebidos**  | RF17: Permitir a visualização e o gerenciamento de todos os pedidos recebidos, incluindo nome da habilidade, nome do solicitante e status atual.|
 
 
+### Tela Minhas Solicitações - Pop Up de visualização do pedido recebido
+
+|![Tela Minhas Solicitações - Pop Up de visualização do pedido recebido](img/wireframes/RF17-PopUp_Aceitar_Rejeitar.png)|
+|:--------------------------------------------------------------------------------------------:|
+| **Figura 14: Tela Minhas Solicitações - Pop Up de visualização do pedido recebido**   
+
+| **Componente**               | **Requisitos Atendidos**                                                                 |
+|------------------------------|------------------------------------------------------------------------------------------|
+| **Tela Minhas Solicitações - Pop Up de visualização do pedido recebido**  | RF16: Permitir que o usuário aceite ou rejeite uma solicitação de serviço, a fim de atualizar o status atual do pedido.|
 
 
+### Tela Minhas Solicitações - Solicitações enviadas
+
+|![Tela Minhas Solicitações - Solicitações enviadas](img/wireframes/RF15-SolicitacoesEnviadas.png)|
+|:--------------------------------------------------------------------------------------------:|
+| **Figura 15: Minhas Solicitações - Solicitações enviadas**   
+
+| **Componente**               | **Requisitos Atendidos**                                                                 |
+|------------------------------|------------------------------------------------------------------------------------------|
+| **Minhas Solicitações - Solicitações enviadas**  | RF15: Permitir a visualização e o gerenciamento de todas as solicitações enviadas, incluindo nome da habilidade, nome do provedor e status atual.|
 
 
+### Tela Minhas Solicitações - Pop Up de visualização da solicitação enviada
+
+|![Tela Minhas Solicitações - Pop Up de visualização da solicitação enviada](img/wireframes/RF18.19.20-PopUp_Confirmar_Cancelar.png)|
+|:--------------------------------------------------------------------------------------------:|
+| **Figura 16: Tela Minhas Solicitações - Pop Up de visualização da solicitação enviada**   
+
+| **Componente**               | **Requisitos Atendidos**                                                                 |
+|------------------------------|------------------------------------------------------------------------------------------|
+| **Tela Minhas Solicitações - Pop Up de visualização da solicitação enviada**  | RF18: Após o provedor aceitar a solicitação de serviço, o sistema deve permitir que o consumidor consiga cancelar sua solicitação de serviço, com a opção de adicionar uma justificativa.<br> RF19: Permitir a confirmação da conclusão do serviço. <br> RF20: Após a confirmação da conclusão do serviço, por parte do consumidor, o sistema deve transferir automaticamente os créditos da conta do usuário consumidor para a do usuário provedor e atualizar o histórico de transações de ambas as contas.|
 
 
+### Tela Minhas Solicitações - Avaliação 
 
+|![Tela Minhas Solicitações - Avaliação](img/wireframes/RF21.22-Avaliacao.png)|
+|:--------------------------------------------------------------------------------------------:|
+| **Figura 17: Minhas Solicitações - Avaliação**   
+
+| **Componente**               | **Requisitos Atendidos**                                                                 |
+|------------------------------|------------------------------------------------------------------------------------------|
+| **Minhas Solicitações - Avaliação**  | RF21: Permitir que o consumidor consiga avaliar o serviço prestado pelo provedor.<br> RF22: Permitir que o provedor consiga avaliar a conduta do consumidor, durante a execução do serviço.|
