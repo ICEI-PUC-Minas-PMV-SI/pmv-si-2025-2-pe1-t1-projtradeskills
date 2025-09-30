@@ -20,6 +20,10 @@ Interface baseada em **Menu Lateral + informações pessoais na parte superior**
 - **Função**: Redireciona para a tela inicial
 
   ![Menu_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/main/docs/img/menu_trade.jpg)
+  |:------------------------------------------------------------------------------------------------:|
+| **Figura 3:** Menu lateral do Tradeskills|
+| Elemento                  | Função                            |
+|---------------------------|-----------------------------------|
 
 ## Cores
  
