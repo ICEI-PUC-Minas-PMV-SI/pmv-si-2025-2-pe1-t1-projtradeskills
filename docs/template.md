@@ -40,7 +40,7 @@ Apresente a paleta de cores que será utilizada. Uma ferramenta interessante par
 Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
 
 ## Iconografia
-A iconografia do sistema define os ícones utilizados para facilitar a navegação e representar ações de forma clara. A tabela abaixo apresenta cada ícone da aplicação TradeSkill e sua respectiva função:
+A iconografia do sistema define os ícones utilizados para facilitar a navegação e representar ações de forma clara. A tabela abaixo apresenta cada ícone da aplicação TradeSkills e sua respectiva função:
 
 | Imagem | Descrição |Função |
 | :--- | :---| :--- |
@@ -120,9 +120,9 @@ O objetivo é padronizar tamanho, cor e comportamento visual, garantindo consist
 
       .icon-lg {
     
-          width:32px;
+          width: 40px;
      
-          height:32px;
+          height: 40px;
      
        }
 
@@ -175,7 +175,11 @@ O objetivo é padronizar tamanho, cor e comportamento visual, garantindo consist
           fill: #E5E7EB;
      
        }
-Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
+
+ 
+ ![Imagem CSS](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/main/docs/img/icon/exemplo_icones.png)
+ - Essa imagem foi retirada do código origem para a formatação dos ícones, que encontra-se disponível neste link: 
+
 
 > **Links Úteis**:
 >
