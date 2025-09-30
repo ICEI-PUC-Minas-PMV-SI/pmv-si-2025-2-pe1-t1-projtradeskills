@@ -42,29 +42,139 @@ Apresente as fontes que serão utilizadas e sua função no site. As principais 
 ## Iconografia
 A iconografia do sistema define os ícones utilizados para facilitar a navegação e representar ações de forma clara. A tabela abaixo apresenta cada ícone da aplicação TradeSkill e sua respectiva função:
 
-| Imagem | Descrição |
-| :--- | :--- |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_house.svg" alt="ICON HOUSE" width="20" height="20"> | Retorna a tela inicial/dashboard. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_user.svg" alt="ICON USER" width="20" height="20"> | Mostra o perfil do usuário. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_currency.svg" alt="ICON CURRENCY" width="20" height="20"> | Acessa a área de minhas solicitações. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_search_menu.svg" alt="ICON SEARCH MENU" width="20" height="20"> | Consulta meu histórico. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_settings.svg" alt="ICON SETTINGS" width="20" height="20"> | Abre configurações. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_edit.svg" alt="ICON EDIT" width="20" height="20"> | Permite editar informações cadastradas. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_trash.svg" alt="ICON TRASH" width="20" height="20"> | Remove/ exclui informações. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_eye.svg" alt="ICON EYE" width="20" height="20"> | Alterna entre mostrar ou ocultar informações (ex: senha). |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_money.svg" alt="ICON MONEY" width="20" height="20"> | Exibe saldo de moedas ou transações concluídas. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_exclamation_mark.svg" alt="ICON EXCLAMATION MARK" width="20" height="20">| Indica estado de atenção (ex: nenhuma solicitação). |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_x.svg" alt="ICON X" width="20" height="20"> | Fecha janelas, modais ou descarta ação. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_search.svg" alt="ICON SEARCH" width="20" height="20"> | Busca habilidades dentro da aplicação. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_arrow.svg" alt="ICON ARROW" width="20" height="20"> | Avança para o próximo passo no fluxo. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_star.svg" alt="ICON STAR" width="20" height="20"> | Avaliar e classificar serviços. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_person_circle.svg" alt="ICON PERSON CICLE" width="20" height="20"> | Representa outros usuários do sistema. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_thumb_up.svg" alt="ICON THUMBS UP" width="20" height="20"> | Marca uma solicitação como aceita. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_thumb_down.svg" alt="ICON THUMBS DOWN" width="20" height="20"> | Marca uma solicitação como recusada. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_filter.svg" alt="ICON FILTER" width="20" height="20"> | Abre opções de filtragem de solicitações. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_plus.svg" alt="ICON PLUS" width="20" height="20"> | Cria uma nova solicitação. |
+| Imagem | Descrição |Função |
+| :--- | :---| :--- |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_house.svg" alt="ICON HOUSE" width="20" height="20"> | Casa | Retorna a tela inicial/dashboard. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_user.svg" alt="ICON USER" width="20" height="20"> | Pessoa | Mostra o perfil do usuário. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_currency.svg" alt="ICON CURRENCY" width="20" height="20"> |Transações | Acessa a área de minhas solicitações. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_search_menu.svg" alt="ICON SEARCH MENU" width="20" height="20"> |Menu | Consulta meu histórico. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_settings.svg" alt="ICON SETTINGS" width="20" height="20"> | Configurações | Abre configurações. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_edit.svg" alt="ICON EDIT" width="20" height="20"> | Edição | Permite editar informações cadastradas. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_trash.svg" alt="ICON TRASH" width="20" height="20"> | Lixo | Remove/ exclui informações. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_eye.svg" alt="ICON EYE" width="20" height="20"> | Olho | Alterna entre mostrar ou ocultar informações (ex: senha). |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_money.svg" alt="ICON MONEY" width="20" height="20"> | Moeda | Exibe saldo de moedas ou transações concluídas. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_exclamation_mark.svg" alt="ICON EXCLAMATION MARK" width="20" height="20">| Ponto de Exclamação | Indica estado de atenção (ex: nenhuma solicitação). |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_x.svg" alt="ICON X" width="20" height="20"> | X | Fecha janelas, modais ou descarta ação. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_search.svg" alt="ICON SEARCH" width="20" height="20"> | Lupa | Busca habilidades dentro da aplicação. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_arrow.svg" alt="ICON ARROW" width="20" height="20"> | Seta | Avança para o próximo passo no fluxo. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_star.svg" alt="ICON STAR" width="20" height="20"> | Estrela | Avaliar e classificar serviços. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_person_circle.svg" alt="ICON PERSON CICLE" width="20" height="20"> | Pessoa | Representa outros usuários do sistema. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_thumb_up.svg" alt="ICON THUMBS UP" width="20" height="20"> | Dedo para cima | Marca uma solicitação como aceita. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_thumb_down.svg" alt="ICON THUMBS DOWN" width="20" height="20"> | Dedo para baixo | Marca uma solicitação como recusada. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_filter.svg" alt="ICON FILTER" width="20" height="20"> | Filtro | Abre opções de filtragem de solicitações. |
+| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_plus.svg" alt="ICON PLUS" width="20" height="20"> | Mais | Cria uma nova solicitação. |
 
-Apresente os estilos CSS criados para cada um dos elementos apresentados.
+## Guia de Estilo CSS
+Nesta seção estão descritos os estilos gerais aplicados a todos os ícones da aplicação.
+O objetivo é padronizar tamanho, cor e comportamento visual, garantindo consistência em toda a interface. 
+ 
+ **Classe Base para Ícones**
+ 
+ A classe base .icon define o estilo padrão que pode ser aplicado a todos os ícones. Apesar de ser a configuração base, ela pode ser modificada conforme a necessidade do contexto. Essas modificações, como variação de cor e tamamanho serão mostradas a seguir.
+
+
+  
+     .icon {
+    
+        display: inline-block;
+     
+        width:20px;
+     
+        height:20px;
+
+        fill: currentColor; /* herda a cor do texto do elemento pai */
+
+        vertical-align: middle;
+     
+      }
+
+
+   **Tamanhos Opcionais**
+   
+   **Ícone Pequeno**:
+    
+
+      .icon-sm {
+    
+          width:12px;
+     
+          height:12px;
+     
+       }
+
+
+   **Ícone Médio**:
+    
+
+      .icon-md {
+    
+          width:24px;
+     
+          height:24px;
+     
+       }
+
+
+ **Ícone Grande**:
+    
+
+      .icon-lg {
+    
+          width:32px;
+     
+          height:32px;
+     
+       }
+
+
+ **Cores Opcionais**
+   
+   **Cor Primária**:
+    
+
+      .icon-primary {
+    
+          fill: #161917;
+     
+       }
+
+
+   **Cor Secundária**:
+    
+
+      .icon-secondary {
+    
+          fill: #535353;
+     
+       }
+
+
+ **Cor de Sucesso**:
+    
+
+      .icon-success {
+    
+          fill: #21A134;
+     
+       }
+
+   **Cor de Perigo/Erro**:
+    
+
+      .icon-danger {
+    
+          fill: #D02828;
+     
+       }
+
+   **Cor para Ícones Desativados**:
+    
+
+      .icon-muted {
+    
+          fill: #E5E7EB;
+     
+       }
 Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
 
 > **Links Úteis**:
