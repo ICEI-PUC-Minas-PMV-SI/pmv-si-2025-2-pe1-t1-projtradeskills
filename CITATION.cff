@@ -35,8 +35,9 @@ authors:
 repository-code: >-
   https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills
 abstract: >-
-  Trade Skills é uma plataforma web colaborativa que permite a troca de habilidades e conhecimentos entre usuários, sem a necessidade de dinheiro real. Assim, promovendo acesso democrático à educação, à informação e aos serviços.
-  Com uma interface simples e intuitiva, atende diferentes perfis e oferece recursos de cadastro de habilidades, pesquisa por serviços de interesse e gerenciamento de solicitações.
+  Trade Skills é a plataforma web de economia colaborativa onde suas habilidades se transformam em serviços valiosos. Nosso sistema permite a troca de talentos entre usuários, sem a necessidade de dinheiro real.
+  Dessa forma, a plataforma impulsiona o desenvolvimento profissional e social, promovendo o acesso democrático a novas qualificações e serviços essenciais.
+  Com uma interface simples e intuitiva, a Trade Skills atende a diversos perfis, oferecendo recursos completos para cadastro de habilidades, pesquisa de interesse e gerenciamento de solicitações de troca.
 keywords:
   - Desenvolvimento Web
   - HTML
