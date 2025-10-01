@@ -27,7 +27,8 @@ Desenvolver um software que possibilite a troca de habilidades entre usuários, 
 ## Justificativa
 
 A escolha do tema do projeto se deu pela identificação da lacuna estrutural no mercado de trabalho brasileiro, marcada pelo alto índice de informalidade e pela dificuldade de monetização de talentos individuais (conforme dados do IBGE de 2024), ao mesmo tempo em que uma parcela da população enfrenta restrições financeiras para acessar serviços e capacitações essenciais.
-<br>
+
+
 Observou-se a necessidade de um modelo alternativo que utilizasse a força da revolução digital e da economia colaborativa para promover inclusão e acesso democrático. Nesse sentido, o projeto visa preencher essa lacuna ao propor um sistema de troca de habilidades por meio de créditos virtuais, o que permite aos usuários não apenas acessar serviços sem custo monetário, mas também valorizar e utilizar suas próprias competências de forma prática, transformando o conhecimento em uma "moeda" de troca para o fortalecimento da comunidade e do desenvolvimento pessoal.
 
 ## Público-Alvo
