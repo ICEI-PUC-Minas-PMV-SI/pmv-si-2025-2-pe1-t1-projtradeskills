@@ -14,11 +14,11 @@ Nesse contexto, a presente proposta de um sistema web busca preencher essa lacun
 
 ## Objetivos
 
-## Objetivo geral
+### Objetivo geral
 
 O objetivo geral do projeto é desenvolver um software que possibilite a troca de habilidades entre usuários, utilizando um sistema de créditos virtuais como alternativa ao pagamento financeiro tradicional, com foco em promover inclusão, colaboração e acesso democrático a serviços e conhecimentos.
 
-## Objetivos específicos
+### Objetivos específicos
 Os objetivos específicos do projeto são:
 
 * Criar uma plataforma intuítiva que permita o cadastro e a busca de habilidades de forma eficiente, aumentando as chances de trocas bem sucedidas.
@@ -36,3 +36,5 @@ O projeto tem como função principal o desenvolvimento de um software que estab
 O sistema é projetado para acolher um público-alvo que engloba <strong>jovens, adultos e idosos</strong>, estabelecendo como critério fundamental ser <strong>maior de idade</strong> e possuir o <strong>letramento digital básico</strong> necessário para a navegação e interação eficaz com a plataforma. A ausência de transações monetárias estabelece a troca de habilidades como mecanismo econômico fundamental e a colaboração como o principal motor de engajamento dos usuários.
 
 Dentro desse público, destacam-se dois perfis de usuários: consumidores, interessados em acessar serviços e adquirir novos conhecimentos, sem custo monetário, atendendo tanto a necessidades práticas (como consertos e reparos) quanto ao desenvolvimento pessoal (como hobbies e aprendizado de idiomas ou música), e provedores de habilidades, que se interessam em compartilhar seus conhecimentos e talentos em troca de créditos, os quais poderão ser convertidos em serviços de interesse próprio. Ambos compartilham a motivação de integrar-se a uma comunidade colaborativa que promove o acesso democrático ao conhecimento e aos serviços. 
+
+
