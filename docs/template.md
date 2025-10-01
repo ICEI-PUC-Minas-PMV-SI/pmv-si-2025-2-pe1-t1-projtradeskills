@@ -40,7 +40,16 @@ Interface baseada em Menu Lateral + Menu Superior, com conteúdo central organiz
 | Saldo Atual        | Exibe a quantidade de Créditos disponivéis para o usuário                                                |
 | Foto do usuário| Exibe informações do usuário logado e permite acesso ao perfil                                 |
      
+## Área de Conteúdo Principal
 
+### Habilidades
+| ![Habilidades_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/7b337d1c300580bfbfe03e3af64f6cfa47454a65/docs/Habilidades_trade.jpg) |
+|:----------------------------------------------------------------------------------------------------------:|
+| **Figura 4:** Seção de habilidades |
+ - Cards com foto do prestador, nome e país de origem  
+- Título e breve descrição da habilidade/serviço  
+- Avaliação em estrelas visível abaixo da descrição  
+- Exibição do custo em créditos no canto inferior direito  
 
 
 ## Cores
