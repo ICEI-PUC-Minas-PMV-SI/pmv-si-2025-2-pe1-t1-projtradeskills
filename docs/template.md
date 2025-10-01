@@ -5,7 +5,7 @@ Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com
 Explique as guias de estilo utilizadas no seu projeto.
 
 ## Design
-![tela_inicial](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/7734e90eb2ddc9ece23ab567cbffd1a21ed3c71f/docs/img/tela_iniciall.jpg)
+![trade_backup](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/d71fd00bb95fb95cb6eec6405509cf1399a556b3/docs/img/trade_backup.jpg)
 |:---------------------------------------------------------------------------------------------------:|
 | **Figura 1:** Página inicial do TradeSkills |
 
