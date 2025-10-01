@@ -31,7 +31,7 @@ Interface baseada em <b>Menu Lateral + Rodapé</b>, com conteúdo central organi
 
 ### Menu Superior
 
-| ![menu_superior](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/3810689a5b1a31145d5b29096eac4b39a766e6c5/docs/menu_superior.jpg) |
+ ![menu_superior](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/3810689a5b1a31145d5b29096eac4b39a766e6c5/docs/menu_superior.jpg) 
 | Elemento         | Função                                                                 |
 |------------------|------------------------------------------------------------------------|
 | Campo de busca     |  Permite pesquisar habilidades/serviços                               |
