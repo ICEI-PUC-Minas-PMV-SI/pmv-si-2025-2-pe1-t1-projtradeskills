@@ -7,7 +7,7 @@ O projeto utiliza um layout base em HTML e CSS padronizado para todas as página
 |:---------------------------------------------------------------------------------------------------:|
 | **Figura 1:** Página inicial da TradeSkills |
 
-Interface baseada em Menu Lateral + Menu Superior, com conteúdo central organizado em cards de habilidades+ Barra de busca central, exibição de saldo do usuário e foto de perfil no menu superior.
+Interface baseada em <b>Menu Lateral + Rodapé</b>, com conteúdo central organizado em <b>campo de busca e cards de habilidades</b>, com a exibição do <b>saldo atual de créditos e foto de perfil no menu superior</b>.
 
 ## Logo da Aplicação
 ![Logo da Tradeskills](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/9e2f298d321018e69ba86a4beb15b41b6575939b/docs/logo_trade.jpg)
