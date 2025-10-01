@@ -8,10 +8,10 @@ Os perfis de usuários na plataforma Trade Skills são definidos por sua <b>aç�
 
 | **Dados**                    | **Descrição**                                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| **Demográficos**             | Jovens, adultos e idosos, sendo maiores de idade e com letramento digital básico.     |
-| **Uso do Produto**           | Cadastrar habilidades, negociar e avaliar as trocas, a fim de fomentar a economia colaborativa e democratizar o acesso a serviços de capacitação.|
-| **Psicográficos**            | Buscam a valorização de suas habilidades, inclusão social e acessibilidade aos serviços de capacitação .                              |
-| **Sentimento do Cliente**    | Precisam de uma alternativa ao pagamento financeiro tradicional, para acessar serviços e conhecimentos, e buscam uma comunidade colaborativa. .                                |
+| **Demográficos**             | Jovens, adultos e idosos, sendo maiores de idade e possuindo o letramento digital básico.     |
+| **Uso do Produto**           | Cadastram e encontram habilidades, negociam e avaliam os serviços, a fim de fomentar a economia colaborativa e democratizar o acesso a serviços.|
+| **Psicográficos**            | Buscam a valorização de suas habilidades, inclusão social e desejam integrar uma comunidade que promove o acesso democrático ao conhecimento e aos serviços.  |
+| **Sentimento do Cliente**    | Precisam de uma alternativa ao pagamento financeiro tradicional para acessar serviços e conhecimentos, além disso buscam uma comunidade colaborativa.                                |
 | **Tecnográficos**            | Usam dispositivos (celular, tablet, desktop) compatíveis com os principais navegadores.               |
 | **Nível de conhecimento tecnológico** | Precisam de letramento digital básico, necessário para a navegação e interação eficaz com a plataforma.                                      |
 | **Necessidades**             | Ferramentas intuitivas para cadastrar e encontrar habilidades de forma eficiente, visualizar o saldo de créditos e fazer avaliações que incentivem a qualidade e segurança.    |
