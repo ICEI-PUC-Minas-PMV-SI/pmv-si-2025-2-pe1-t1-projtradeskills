@@ -22,7 +22,6 @@ Interface baseada em <b>Menu Lateral + Rodapé</b>, com conteúdo central organi
 |:------------------------------------------------------------------------------------------------:|
 | **Figura 3:** Menu lateral do Tradeskills |
 | Elemento                  | Função                            |
-|-----------------------------------|
 | Botão Dashboard             | Direciona o usuário para a página inicial/painel principal      |
 | Botão Minhas solicitações                   | Exibe as solicitações realizadas pelo usuário |
 | Botão Meu histórico                   |  Mostra o histórico de atividades/ações do usuário. |
