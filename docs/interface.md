@@ -8,7 +8,7 @@ Os wireframes apresentados a seguir demonstram como as funcionalidades foram dis
 
 ## User Flow
 
-| ![User Flow](img/wireframes/UserFlow.png) |
+| ![User Flow](https://github.com/user-attachments/assets/6e5d1856-ccc1-468c-812a-3271a5ec7beb)|
 |:--------------------------------------------------------------------------------------------:|
 | **Figura 1: Fluxo do Usuário (User Flow)**                                                  |
 
@@ -85,7 +85,7 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 ### Tela de configuração de segurança
 
-|![Tela de configuração de segurança](img/wireframes/RF8-ConfiguracaoSeguranca.png)|
+|![Tela de configuração de segurança](img/wireframes/RF8-ConfiguracaoSeg.png)|
 |:--------------------------------------------------------------------------------------------:|
 | **Figura 8: Tela de configuração de segurança**   
 
