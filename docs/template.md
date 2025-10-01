@@ -5,16 +5,16 @@ Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com
 Explique as guias de estilo utilizadas no seu projeto.
 
 ## Design
-![trade_backup](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/d71fd00bb95fb95cb6eec6405509cf1399a556b3/docs/img/trade_backup.jpg)
+![trade_backup](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/6fa44571422e54def8320bb927ae23f55390eeab/docs/trade_backup.jpg)
 |:---------------------------------------------------------------------------------------------------:|
 | **Figura 1:** Página inicial do TradeSkills |
 
-Interface baseada em **Menu Lateral + informações pessoais na parte superior**, com conteúdo **Habilidadess**.
+Interface baseada em Menu Lateral + Menu Superior, com conteúdo central organizado em cards de habilidades+ Barra de busca central, exibição de saldo do usuário e foto de perfil no menu superior.
 
 
-![logo_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/f16d4af099612aa1a91e32662cdf8114dfc58c8d/docs/img/logo_trade.jpg)
+![logo_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/bfc6da2106e55c9590b3bb3fde9fa3bf3283aa56/docs/logo_trade.jpg)
 |:------------------------------------------------------------------------------------------------:|
-| **Figura 1:** Logo do TradeSkills |
+| **Figura 2:** Logo do TradeSkills |
 - **Localização**: Canto superior esquerdo
 - **Nome exibido**: `Tradeskills`
 - **Função**: Redireciona para a tela inicial
