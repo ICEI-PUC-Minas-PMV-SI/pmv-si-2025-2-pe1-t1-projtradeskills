@@ -23,7 +23,7 @@
 
 ## Persona
 
-João Silva tem 25 anos, é estudante universitário e para ajudar a cobrir parte de suas despesas mensais, faz pequenos serviços de manuntenção de computadores para membros de sua igreja. Seu objetivo é conquistar uma vaga de estágio no canadá, mas primeiro ele precisa aprimorar seu inglês.
+João Silva tem 25 anos e é estudante universitário de Sistemas de Informação. Sem emprego formal, sua renda é proveniente de serviços esporádicos de manutenção de computadores que ele realiza para membros de sua igreja. Ele sonha com um estágio no Canadá, mas para isso precisa dominar o inglês, um custo que não consegue arcar. João está buscando uma plataforma onde ele possa oferecer sua habilidade em manutenção em troca de aulas de inglês.
 
 ## Histórias de Usuários
 
