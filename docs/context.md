@@ -4,7 +4,7 @@ A revolução digital tem transformado profundamente a forma como as pessoas int
 
 Paralelamente, o Brasil enfrenta desafios estruturais relacionados ao mercado de trabalho. De acordo com o IBGE (2024), a taxa de informalidade atinge 37,8% da população ocupada, enquanto o desemprego permanece mais elevado entre pessoas com menor escolaridade. Essa realidade expõe não apenas a dificuldade de monetização de talentos individuais, mas também a exclusão de uma parcela significativa da população que não consegue acessar serviços essenciais devido a restrições financeiras.
 
-Nesse contexto, a criação de uma plataforma que permita a troca de habilidades por meio de um sistema de créditos virtuais surge como uma alternativa inovadora. A Trade Skill além de  propor democratizar o acesso a serviços e oportunidades de capacitação, fortalece a economia colaborativa, promove a inclusão social e contribui para a valorização de talentos que por muitas vezes, permanecem invisíveis no mercado tradicional.
+Nesse contexto, a criação de uma plataforma que permita a troca de habilidades por meio de um sistema de créditos virtuais surge como uma alternativa inovadora. A Trade Skills além de  propor democratizar o acesso a serviços e oportunidades de capacitação, fortalece a economia colaborativa, promove a inclusão social e contribui para a valorização de talentos que por muitas vezes, permanecem invisíveis no mercado tradicional.
 
 ## Problema
 
@@ -16,18 +16,18 @@ Nesse contexto, a presente proposta de um sistema web busca preencher essa lacun
 
 ## Objetivo geral
 
-Desenvolver um software que possibilite a troca de habilidades entre usuários, utilizando um sistema de créditos virtuais como alternativa ao pagamento financeiro tradicional, com foco em promover inclusão, colaboração e acesso democrático a serviços e conhecimentos.
+O objetivo geral do projeto é desenvolver um software que possibilite a troca de habilidades entre usuários, utilizando um sistema de créditos virtuais como alternativa ao pagamento financeiro tradicional, com foco em promover inclusão, colaboração e acesso democrático a serviços e conhecimentos.
 
 ## Objetivos específicos
+Os objetivos específicos do projeto são:
 
 * Criar uma plataforma intuítiva que permita o cadastro e a busca de habilidades de forma eficiente, aumentando as chances de trocas bem sucedidas.
 * Fomentar um ambiente colaborativo e inclusivo que incentive os usuários a acumular créditos, viabilizando o acesso a novas habilidades e fortalecendo o senso de comunidade. 
-
+* Implementar um sistema de avaliações que possibilite aos usuários avaliarem uns aos outros após as trocas, incentivando a qualidade dos serviços e o bom comportamento na plataforma. 
 
 ## Justificativa
 
 A escolha do tema do projeto se deu pela identificação da lacuna estrutural no mercado de trabalho brasileiro, marcada pelo alto índice de informalidade e pela dificuldade de monetização de talentos individuais (conforme dados do IBGE de 2024), ao mesmo tempo em que uma parcela da população enfrenta restrições financeiras para acessar serviços e capacitações essenciais.
-
 
 Observou-se a necessidade de um modelo alternativo que utilizasse a força da revolução digital e da economia colaborativa para promover inclusão e acesso democrático. Nesse sentido, o projeto visa preencher essa lacuna ao propor um sistema de troca de habilidades por meio de créditos virtuais, o que permite aos usuários não apenas acessar serviços sem custo monetário, mas também valorizar e utilizar suas próprias competências de forma prática, transformando o conhecimento em uma "moeda" de troca para o fortalecimento da comunidade e do desenvolvimento pessoal.
 
