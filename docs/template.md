@@ -1,23 +1,22 @@
 # Template padrão do site
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
-
-Explique as guias de estilo utilizadas no seu projeto.
+O projeto utiliza um layout base em HTML e CSS padronizado para todas as páginas da aplicação. Esse template define a **identidade visual**, contempla princípios de **responsividade** para diferentes dispositivos e incorpora **iconografia funcional** com base em bibliotecas modernas.
 
 ## Design
-![trade_backup](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/c74cb49ee2b614322cbf58fb526e6123c5ec98dd/docs/trade_backup.jpg)
+![Pagina inicial da Trade Skills](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/c74cb49ee2b614322cbf58fb526e6123c5ec98dd/docs/trade_backup.jpg)
 |:---------------------------------------------------------------------------------------------------:|
-| **Figura 1:** Página inicial do TradeSkills |
+| **Figura 1:** Página inicial da TradeSkills |
 
 Interface baseada em Menu Lateral + Menu Superior, com conteúdo central organizado em cards de habilidades+ Barra de busca central, exibição de saldo do usuário e foto de perfil no menu superior.
 
-
-![logo_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/9e2f298d321018e69ba86a4beb15b41b6575939b/docs/logo_trade.jpg)
+## Logo da Aplicação
+![Logo da Tradeskills](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/9e2f298d321018e69ba86a4beb15b41b6575939b/docs/logo_trade.jpg)
 |:------------------------------------------------------------------------------------------------:|
-| **Figura 2:** Logo do TradeSkills |
-- **Localização**: Canto superior esquerdo
+| **Figura 2:** Logo da TradeSkills |
+- **Localização**: Canto superior esquerdo, dentro do menu lateral
 - **Nome exibido**: `Tradeskills`
 - **Função**: Redireciona para a tela inicial
+-  **Acessibilidade**: `alt="Logo Tradeskills - Início"`
 
   ![Menu_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/469ab5d857d216d54f9422a926c362b2e2b04f61/docs/menu_trade.jpg)
   |:------------------------------------------------------------------------------------------------:|
