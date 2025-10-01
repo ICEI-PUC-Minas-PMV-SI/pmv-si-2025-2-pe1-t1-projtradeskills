@@ -17,6 +17,9 @@ Interface baseada em <b>Menu Lateral + Rodapé</b>, com conteúdo central organi
 - **Nome exibido**: `Tradeskills`
 - **Função**: Redireciona para a tela inicial
 -  **Acessibilidade**: `alt="Logo Tradeskills - Início"`
+  
+## Menus Padrões
+
 ### Menu Lateral
 |![Menu_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/469ab5d857d216d54f9422a926c362b2e2b04f61/docs/menu_trade.jpg)|
 |:------------------------------------------------------------------------------------------------:|
