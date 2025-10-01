@@ -8,7 +8,7 @@ Os wireframes apresentados a seguir demonstram como as funcionalidades foram dis
 
 ## User Flow
 
-| ![User Flow](https://github.com/user-attachments/assets/6e5d1856-ccc1-468c-812a-3271a5ec7beb)|
+| ![User Flow](https://github.com/user-attachments/assets/922bedb4-df72-4e81-aaad-67dedd5f28a2)|
 |:--------------------------------------------------------------------------------------------:|
 | **Figura 1: Fluxo do Usuário (User Flow)**                                                  |
 
