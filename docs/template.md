@@ -30,6 +30,19 @@ Interface baseada em Menu Lateral + Menu Superior, com conteúdo central organiz
 | Botão Perfil`                    | Acessa as informações e opções de edição do perfil do usuário. |
 | Botão Configurações                    | Abre as opções de configuração do sistema. |
 
+### Menu Superior
+
+| ![menu_superior](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/3810689a5b1a31145d5b29096eac4b39a766e6c5/docs/menu_superior.jpg) |
+|:------------------------------------------------------------------------------------------------:|
+| **Figura 4:** Menu superior do Tradeskills |
+
+| Elemento          | Função                                                                  |
+|-----------------  |----------------------------------------------------------------------- -|
+| Campo de busca    | Permite pesquisar habilidades/serviços dentro da aplicação              |
+|  Botão "Buscar    | executa a pesquisa digitada no campo de busca                           |
+|  Saldo atual      | Exibe a quantidade de créditos disponíveis para o usuári                |
+|Foto do usuário    | Exibe informações do usuário logado e permite acesso ao perfil          |
+
 
 ## Cores
  
