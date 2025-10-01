@@ -3,25 +3,19 @@
 A Especificação do Projeto trata da definição do problema e da solução a partir da perspectiva do usuário. Serão apresentados o perfil de usuários, o diagrama de personas, as histórias de usuários, os requisitos funcionais e não funcionais, além das restrições do projeto.
 
 ## Perfis de Usuários
-<table>
-<tbody>
-<tr align=center>
-<th colspan="2"> Perfil consumidor e provedor de habilidades</th>
-</tr>
-<tr>
-<td width="150px"><b>Descrição</b></td>
-<td width="600px"> Usuários que possuem habilidades práticas ou técnicas e desejam trocá-las por créditos dentro da plataforma. </td>
-</tr>
-<tr>
-<td><b>Necessidades</b></td>
-<td>
-1. Ampliar o acesso a serviços e conhecimentos sem depender de recursos financeiros.
-2. Ter uma forma justa e segura de trocar habilidades.
-3. Evoluir profissionalmente e academicamente através da colaboração.
-</td>
-</tr>
-</tbody>
-</table>
+
+Os perfis de usuários na plataforma Trade Skills são definidos por sua <b>ação</b>: todos são membros da comunidade, mas atuam como <strong>Consumidores</strong> ou <strong>Provedores</strong> a depender do momento da transação. A seguir, apresentamos o perfil central que exemplifica essa dinâmica:
+
+| **Dados**                    | **Descrição**                                                                                                          |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| **Demográficos**             | Jovens, adultos e idosos, sendo maiores de idade e com letramento digital básico.     |
+| **Uso do Produto**           | Cadastrar habilidades, negociar e avaliar as trocas, a fim de fomentar a economia colaborativa e democratizar o acesso a serviços de capacitação.|
+| **Psicográficos**            | Buscam a valorização de suas habilidades, inclusão social e acessibilidade aos serviços de capacitação .                              |
+| **Sentimento do Cliente**    | Precisam de uma alternativa ao pagamento financeiro tradicional, para acessar serviços e conhecimentos, e buscam uma comunidade colaborativa. .                                |
+| **Tecnográficos**            | Usam dispositivos (celular, tablet, desktop) compatíveis com os principais navegadores.               |
+| **Nível de conhecimento tecnológico** | Precisam de letramento digital básico, necessário para a navegação e interação eficaz com a plataforma.                                      |
+| **Necessidades**             | Ferramentas intuitivas para cadastrar e encontrar habilidades de forma eficiente, visualizar o saldo de créditos e fazer avaliações que incentivem a qualidade e segurança.    |
+
 
 ## Persona
 
