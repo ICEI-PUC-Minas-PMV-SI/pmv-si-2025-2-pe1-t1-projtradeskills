@@ -33,15 +33,15 @@ Interface baseada em Menu Lateral + Menu Superior, com conteúdo central organiz
 ### Menu Superior
 
 | ![menu_superior](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/3810689a5b1a31145d5b29096eac4b39a766e6c5/docs/menu_superior.jpg) |
-|:------------------------------------------------------------------------------------------------:|
-| **Figura 4:** Menu superior do Tradeskills |
-
-| Elemento          | Função                                                                  |
-|-----------------  |----------------------------------------------------------------------- -|
-| Campo de busca    | Permite pesquisar habilidades/serviços dentro da aplicação              |
-|  Botão "Buscar    | executa a pesquisa digitada no campo de busca                           |
-|  Saldo atual      | Exibe a quantidade de créditos disponíveis para o usuári                |
-|Foto do usuário    | Exibe informações do usuário logado e permite acesso ao perfil          |
+| Elemento         | Função                                                                 |
+|------------------|------------------------------------------------------------------------|
+| Botão "Menu"     | Alterna a visibilidade do menu lateral                                 |
+| Campo de busca   | Permite pesquisar em todo o sistema                                     |
+| Ícone Casa       | Retorna à Página Inicial                                                |
+| Ícone Sino       | Alterna a visibilidade das notificações                                 |
+| Ícone Lua        | Ativa o modo noturno ou alto contraste                                  |
+| Ícone Círculo   | Exibe informações sobre o usuário logado                                |
+| Ícone Sair       | Realiza o logout da aplicação                                           |
 
 
 ## Cores
