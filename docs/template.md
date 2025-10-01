@@ -19,7 +19,7 @@ Interface baseada em Menu Lateral + Menu Superior, com conteúdo central organiz
 - **Nome exibido**: `Tradeskills`
 - **Função**: Redireciona para a tela inicial
 
-  ![Menu_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/main/docs/img/menu_trade.jpg)
+  ![Menu_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/469ab5d857d216d54f9422a926c362b2e2b04f61/docs/menu_trade.jpg)
   |:------------------------------------------------------------------------------------------------:|
 | **Figura 3:** Menu lateral do TradeSkills |
 | Elemento                  | Função                            |
