@@ -7,21 +7,21 @@ Explique as guias de estilo utilizadas no seu projeto.
 ## Design
 ![tela_inicial](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/7734e90eb2ddc9ece23ab567cbffd1a21ed3c71f/docs/img/tela_iniciall.jpg)
 |:---------------------------------------------------------------------------------------------------:|
-| **Figura 1:** Página inicial do tradeskills |
+| **Figura 1:** Página inicial do TradeSkills |
 
 Interface baseada em **Menu Lateral + informações pessoais na parte superior**, com conteúdo **Habilidadess**.
 
 
 ![logo_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/f16d4af099612aa1a91e32662cdf8114dfc58c8d/docs/img/logo_trade.jpg)
 |:------------------------------------------------------------------------------------------------:|
-| **Figura 1:** Logo do tradeskills |
+| **Figura 1:** Logo do TradeSkills |
 - **Localização**: Canto superior esquerdo
 - **Nome exibido**: `Tradeskills`
 - **Função**: Redireciona para a tela inicial
 
   ![Menu_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/main/docs/img/menu_trade.jpg)
   |:------------------------------------------------------------------------------------------------:|
-| **Figura 3:** Menu lateral do Tradeskills|
+| **Figura 3:** Menu lateral do TradeSkills |
 | Elemento                  | Função                            |
 |---------------------------|-----------------------------------|
 | Botão Dashboard         | Direciona o usuário para a página inicial/painel principal.    |
@@ -62,13 +62,12 @@ A iconografia do sistema define os ícones utilizados para facilitar a navegaç�
 | <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_thumb_up.svg" alt="ICON THUMBS UP" width="20" height="20"> | Dedo para cima | Marca uma solicitação como aceita. |
 | <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_thumb_down.svg" alt="ICON THUMBS DOWN" width="20" height="20"> | Dedo para baixo | Marca uma solicitação como recusada. |
 | <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_filter.svg" alt="ICON FILTER" width="20" height="20"> | Filtro | Abre opções de filtragem de solicitações. |
-| <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/main/docs/img/icon/icon_plus.svg" alt="ICON PLUS" width="20" height="20"> | Mais | Cria uma nova solicitação. |
 
-## Guia de Estilo CSS
+### Guia de Estilo CSS
 Nesta seção estão descritos os estilos gerais aplicados a todos os ícones da aplicação.
 O objetivo é padronizar tamanho, cor e comportamento visual, garantindo consistência em toda a interface. 
  
- **Classe Base para Ícones**
+ #### **Classe Base para Ícones**
  
  A classe base .icon define o estilo padrão que pode ser aplicado a todos os ícones. Apesar de ser a configuração base, ela pode ser modificada conforme a necessidade do contexto. Essas modificações, como variação de cor e tamamanho serão mostradas a seguir.
 
@@ -89,9 +88,9 @@ O objetivo é padronizar tamanho, cor e comportamento visual, garantindo consist
       }
 
 
-   **Tamanhos Opcionais**
+   #### **Tamanhos Opcionais**
    
-   **Ícone Pequeno**:
+   ##### **Ícone Pequeno**:
     
 
       .icon-sm {
@@ -103,7 +102,7 @@ O objetivo é padronizar tamanho, cor e comportamento visual, garantindo consist
        }
 
 
-   **Ícone Médio**:
+   ##### **Ícone Médio**:
     
 
       .icon-md {
@@ -115,7 +114,7 @@ O objetivo é padronizar tamanho, cor e comportamento visual, garantindo consist
        }
 
 
- **Ícone Grande**:
+ ##### **Ícone Grande**:
     
 
       .icon-lg {
@@ -127,9 +126,9 @@ O objetivo é padronizar tamanho, cor e comportamento visual, garantindo consist
        }
 
 
- **Cores Opcionais**
+ #### **Cores Opcionais**
    
-   **Cor Primária**:
+   ##### **Cor Primária**:
     
 
       .icon-primary {
@@ -139,7 +138,7 @@ O objetivo é padronizar tamanho, cor e comportamento visual, garantindo consist
        }
 
 
-   **Cor Secundária**:
+   ##### **Cor Secundária**:
     
 
       .icon-secondary {
@@ -149,7 +148,7 @@ O objetivo é padronizar tamanho, cor e comportamento visual, garantindo consist
        }
 
 
- **Cor de Sucesso**:
+ ##### **Cor de Sucesso**:
     
 
       .icon-success {
@@ -158,7 +157,7 @@ O objetivo é padronizar tamanho, cor e comportamento visual, garantindo consist
      
        }
 
-   **Cor de Perigo/Erro**:
+   ##### **Cor de Perigo/Erro**:
     
 
       .icon-danger {
@@ -167,7 +166,7 @@ O objetivo é padronizar tamanho, cor e comportamento visual, garantindo consist
      
        }
 
-   **Cor para Ícones Desativados**:
+   ##### **Cor para Ícones Desativados**:
     
 
       .icon-muted {
@@ -178,13 +177,3 @@ O objetivo é padronizar tamanho, cor e comportamento visual, garantindo consist
 
  
  ![Imagem CSS](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/main/docs/img/icon/exemplo_icones.png)
- - Essa imagem foi retirada do código origem para a formatação dos ícones, que encontra-se disponível neste link: 
-
-
-> **Links Úteis**:
->
-> -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
