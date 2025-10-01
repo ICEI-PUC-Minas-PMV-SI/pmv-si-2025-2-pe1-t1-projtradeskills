@@ -64,33 +64,31 @@ Esta documentação divide os requisitos em duas categorias principais: requisit
 |RF-002| A aplicação deve permitir que o usuário edite os dados do seu perfil, incluindo: nome, senha, foto, cidade, contato, e uma descrição detalhada das habilidades. Esta descrição deve contemplar o título do serviço, uma breve descrição, o valor sugerido em créditos, o horário e a forma de atendimento (remoto, presencial ou ambos).|  ALTA | 
 |RF-003| A aplicação deve solicitar a criação de uma pergunta de segurança e o cadastro da sua resposta, para garantir a possibilidade de recuperar a senha em caso de esquecimento. | ALTA | 
 |RF-004| A aplicação deve liberar os créditos iniciais de “boas-vindas” para o usuário somente após a conclusão do preenchimento dos dados do perfil e configuração da pergunta de segurança. |  ALTA | 
-|RF-005| A aplicação deve liberar os créditos iniciais de “boas-vindas” para o usuário somente após a conclusão do preenchimento dos dados do perfil e configuração da pergunta de segurança. | ALTA | 
-|RF-006| A aplicação deve permitir que o usuário exclua as habilidades cadastradas. |  ALTA | 
-|RF-007| A aplicação deve permitir que o usuário visualize o saldo atual de créditos. | ALTA | 
-|RF-008| A aplicação deve ter um botão de “visualizar histórico de transações”, que mostre um relatório de entrada e saída de créditos, incluindo: data e horário da transação, nome do serviço prestado ou contratado e nome do provedor ou consumidor. |  ALTA | 
-|RF-009| A aplicação deve permitir que o usuário pesquise serviços (habilidades) usando filtros como categoria, reputação do provedor e palavras-chave, para que ele encontre rapidamente o que precisa. | ALTA | 
-|RF-010| A aplicação deve permitir que o usuário visualize perfis dos outros usuários da plataforma, incluindo suas habilidades, histórico de serviços prestados, com o valor de créditos sugerido e avaliações dos consumidores. |  ALTA | 
-|RF-011| A aplicação deve permitir que o usuário clique no botão “solicitar serviço” e preencha o formulário obrigatório para iniciar a negociação com o provedor. | ALTA | 
-|RF-012| A aplicação deve conter um painel principal que exiba um resumo das atividades do usuário como provedor (pedidos recebidos) e como consumidor (solicitações enviadas), para que o usuário possa acompanhar facilmente suas interações na plataforma. |  ALTA | 
-|RF-013| Ao acessar a seção “solicitações enviadas”, a aplicação deve permitir que o usuário gerencie e acompanhe os status das solicitações de serviço que enviou a outro membro da plataforma.| ALTA | 
-|RF-014| Ao acessar a seção “solicitações enviadas”, a aplicação deve permitir que o usuário gerencie e acompanhe os status das solicitações de serviço que enviou a outro membro da plataforma.|  ALTA | 
-|RF-015| A aplicação deve permitir que o usuário provedor aceite ou rejeite solicitações de serviços recebidas, atualizando o status do painel de controle. | ALTA | 
-|RF-016| Uma vez aceita, a aplicação deve permitir que o usuário consumidor cancele sua solicitação de serviço, com uma justificativa opcional.|  ALTA | 
-|RF-017| O usuário consumidor deve confirmar a conclusão do serviço, para autorizar a transferência automática de créditos. | ALTA | 
-|RF-018| Após a confirmação da conclusão de um serviço, o sistema deve transferir automaticamente os créditos da conta do usuário consumidor para a do usuário provedor e atualizar o histórico de transações de ambas as contas. |  ALTA | 
-|RF-019| Após a conclusão de um serviço, a aplicação deve permitir que o usuário consumidor avalie o serviço prestado pelo provedor. | ALTA | 
-|RF-020| Após a conclusão de um serviço, a aplicação deve permitir que o usuário provedor avalie a conduta do consumidor. |  ALTA | 
-|RF-021| A aplicação deve impedir que o mesmo usuário registre uma troca consigo mesmo.| ALTA | 
-|RF-022| A aplicação deve alertar o usuário de que a exclusão de suas habilidades cadastradas impactará na sua capacidade de obter novos créditos para transações futuras, uma vez que ele não está mais oferecendo serviços (habilidade).    |  MÉDIA | 
-|RF-023| Ao clicar em “Esqueci minha senha” a aplicação deve enviar um link seguro para o e-mail do usuário para que ele possa redefinir sua senha. | MÉDIA | 
-|RF-024| A aplicação deve exibir notificações visuais internas (como ícones ou alertas) sobre novas solicitações, atualizações de status dos pedidos. |  MÉDIA | 
-|RF-025| A aplicação deve oferecer uma seção para que o usuário possa reportar bugs, comportamentos irregulares ou abusivos e sugerir melhorias. | MÉDIA | 
-|RF-026| A aplicação deve permitir que o usuário compre pacotes de créditos com dinheiro real, usando métodos de pagamento como cartão de crédito/débito e pix. |  MÉDIA | 
-|RF-027| A aplicação deve permitir que o usuário denuncie avaliações falsas ou inadequadas. | BAIXA | 
-|RF-028| A aplicação deve conter um sistema chat para que os usuários possam conversar com outros usuários. |  BAIXA | 
-|RF-029| A aplicação deve permitir exportar/importar dados em um arquivo (Json)     | BAIXA | 
-|RF-030| A aplicação deve permitir que o usuário adicione ou remova habilidades da sua lista de favoritos. |  BAIXA | 
-|RF-031| Ao solicitar um serviço, a aplicação deverá sugerir um “preço” em créditos para o consumidor, baseado em outras negociações realizadas na plataforma. |  BAIXA | 
+|RF-005| A aplicação deve permitir que o usuário exclua as habilidades cadastradas. |  ALTA | 
+|RF-006| A aplicação deve permitir que o usuário visualize o saldo atual de créditos. | ALTA | 
+|RF-007| A aplicação deve ter um botão de “visualizar histórico de transações”, que mostre um relatório de entrada e saída de créditos, incluindo: data e horário da transação, nome do serviço prestado ou contratado e nome do provedor ou consumidor. |  ALTA | 
+|RF-008| A aplicação deve permitir que o usuário pesquise serviços (habilidades) usando filtros como categoria, reputação do provedor e palavras-chave, para que ele encontre rapidamente o que precisa. | ALTA | 
+|RF-009| A aplicação deve permitir que o usuário visualize perfis dos outros usuários da plataforma, incluindo suas habilidades, histórico de serviços prestados, com o valor de créditos sugerido e avaliações dos consumidores. |  ALTA | 
+|RF-010| A aplicação deve permitir que o usuário clique no botão “solicitar serviço” e preencha o formulário obrigatório para iniciar a negociação com o provedor. | ALTA | 
+|RF-011| A aplicação deve conter um painel principal que exiba um resumo das atividades do usuário como provedor (pedidos recebidos) e como consumidor (solicitações enviadas), para que o usuário possa acompanhar facilmente suas interações na plataforma. |  ALTA | 
+|RF-012| Ao acessar a seção “solicitações enviadas”, a aplicação deve permitir que o usuário gerencie e acompanhe os status das solicitações de serviço que enviou a outro membro da plataforma.| ALTA | 
+|RF-013| A aplicação deve permitir que o usuário provedor aceite ou rejeite solicitações de serviços recebidas, atualizando o status do painel de controle. | ALTA | 
+|RF-014| Uma vez aceita, a aplicação deve permitir que o usuário consumidor cancele sua solicitação de serviço, com uma justificativa opcional.|  ALTA | 
+|RF-015| O usuário consumidor deve confirmar a conclusão do serviço, para autorizar a transferência automática de créditos. | ALTA | 
+|RF-016| Após a confirmação da conclusão de um serviço, o sistema deve transferir automaticamente os créditos da conta do usuário consumidor para a do usuário provedor e atualizar o histórico de transações de ambas as contas. |  ALTA | 
+|RF-017| Após a conclusão de um serviço, a aplicação deve permitir que o usuário consumidor avalie o serviço prestado pelo provedor. | ALTA | 
+|RF-018| Após a conclusão de um serviço, a aplicação deve permitir que o usuário provedor avalie a conduta do consumidor. |  ALTA | 
+|RF-019| A aplicação deve impedir que o mesmo usuário registre uma troca consigo mesmo.| ALTA | 
+|RF-020| A aplicação deve alertar o usuário de que a exclusão de suas habilidades cadastradas impactará na sua capacidade de obter novos créditos para transações futuras, uma vez que ele não está mais oferecendo serviços (habilidade).    |  MÉDIA | 
+|RF-021| Ao clicar em “Esqueci minha senha” a aplicação deve enviar um link seguro para o e-mail do usuário para que ele possa redefinir sua senha. | MÉDIA | 
+|RF-022| A aplicação deve exibir notificações visuais internas (como ícones ou alertas) sobre novas solicitações, atualizações de status dos pedidos. |  MÉDIA | 
+|RF-023| A aplicação deve oferecer uma seção para que o usuário possa reportar bugs, comportamentos irregulares ou abusivos e sugerir melhorias. | MÉDIA | 
+|RF-024| A aplicação deve permitir que o usuário compre pacotes de créditos com dinheiro real, usando métodos de pagamento como cartão de crédito/débito e pix. |  MÉDIA | 
+|RF-025| A aplicação deve permitir que o usuário denuncie avaliações falsas ou inadequadas. | BAIXA | 
+|RF-026| A aplicação deve conter um sistema chat para que os usuários possam conversar com outros usuários. |  BAIXA | 
+|RF-027| A aplicação deve permitir exportar/importar dados em um arquivo (Json)     | BAIXA | 
+|RF-028| A aplicação deve permitir que o usuário adicione ou remova habilidades da sua lista de favoritos. |  BAIXA | 
+|RF-029| Ao solicitar um serviço, a aplicação deverá sugerir um “preço” em créditos para o consumidor, baseado em outras negociações realizadas na plataforma. |  BAIXA | 
 
 ### Requisitos não Funcionais
 
