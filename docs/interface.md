@@ -3,7 +3,7 @@
 
 O projeto de interface tem como objetivo estruturar visualmente a interação entre o usuário e a aplicação, garantindo uma navegação clara, acessível e alinhada aos objetivos do sistema. Ele abrange a definição do fluxo de navegação do usuário (user flow) e a elaboração dos wireframes das principais telas.
 
-A construção das interfaces foi guiada pelos requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+A construção das interfaces foi guiada pelos requisitos funcionais, não funcionais e histórias de usuário abordados nas [Documentação de Especificação](especification.md).
 Os wireframes apresentados a seguir demonstram como as funcionalidades foram distribuídas nas telas, priorizando a usabilidade, a coerência visual e a eficiência na execução das tarefas pelos usuários.
 
 ## User Flow
