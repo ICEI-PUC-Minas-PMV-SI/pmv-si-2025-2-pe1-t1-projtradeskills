@@ -31,7 +31,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `QUEM`| QUERO/DESEJO ... `O QUE` |PARA ... `PORQUE`                 |
 |-----------------|--------------------------|----------------------------------|
-|Novo usuário | Me cadastrar e criar o perfil na plataforma, de forma simples, informando nome, email e senha| Ter acesso a comunidade e oferecer ou contratar serviços.|
+|Usuário da plataforma (consumidor e provedor). | Me cadastrar e criar o perfil na plataforma, de forma simples, informando nome, email e senha| Ter acesso a comunidade e oferecer ou contratar serviços.|
 |Usuário da plataforma (consumidor e provedor). | Editar meu perfil com foto, dados de contato, local de atendimento e descrição detalhada dos meus serviços (habilidades) oferecidos, incluindo nome, categoria e o valor sugerido em cráditos. | Que outros usuários possam me conhecer melhor e sentir confiança para negociar.|
 |Usuário da plataforma (consumidor e provedor).| Redefinir minha senha, em caso de esquecimento. | Que eu possa recuperar o acesso de minha conta.|
 |Usuário da plataforma (consumidor e provedor).| Remover serviços (habilidades) que cadastrei anteriormente no meu perfil.| Manter minha lista de habilidades sempre atualizada com serviços que posso oferecer.|
