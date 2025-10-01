@@ -23,17 +23,22 @@ Interface baseada em <b>Menu Lateral + Rodapé</b>, com conteúdo central organi
 ### Menu Lateral
 |![Menu_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/469ab5d857d216d54f9422a926c362b2e2b04f61/docs/menu_trade.jpg)|
 |:------------------------------------------------------------------------------------------------:|
-| **Figura 3:** Menu lateral do Tradeskills |
+| **Figura 3:** Menu lateral da Tradeskills |
+
 | Elemento                  | Função                            |
-| Botão Dashboard             | Direciona o usuário para a página inicial/painel principal      |
+|---------------------------|-----------------------------------|
+| Botão Dashboard             | Direciona o usuário para a página inicial/painel principal |
 | Botão Minhas solicitações                   | Exibe as solicitações realizadas pelo usuário |
 | Botão Meu histórico                   |  Mostra o histórico de atividades/ações do usuário. |
 | Botão Perfil                    | Acessa as informações e opções de edição do perfil do usuário |
 | Botão Configurações                     |Abre as opções de configuração do sistema |
 
-### Menu Superior
+### Campo de Busca
 
  ![menu_superior](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/3810689a5b1a31145d5b29096eac4b39a766e6c5/docs/menu_superior.jpg) 
+|:------------------------------------------------------------------------------------------------:|
+| **Figura 4:** Campo de busca da TradeSkills |
+ 
 | Elemento         | Função                                                                 |
 |------------------|------------------------------------------------------------------------|
 | Campo de busca     |  Permite pesquisar habilidades/serviços                               |
@@ -43,10 +48,10 @@ Interface baseada em <b>Menu Lateral + Rodapé</b>, com conteúdo central organi
      
 ## Área de Conteúdo Principal
 
-### Habilidades
+### Anúncio das Habilidades
 | ![Habilidades_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/7b337d1c300580bfbfe03e3af64f6cfa47454a65/docs/Habilidades_trade.jpg) |
 |:----------------------------------------------------------------------------------------------------------:|
-| **Figura 4:** Seção de habilidades |
+| **Figura 5:** Anúncio das habilidades da TradeSkills |
  - Cards com foto do prestador, nome e país de origem  
 - Título e breve descrição da habilidade/serviço  
 - Avaliação em estrelas visível abaixo da descrição  
@@ -55,9 +60,9 @@ Interface baseada em <b>Menu Lateral + Rodapé</b>, com conteúdo central organi
 ## Cores
 | ![Paleta de Cores](https://github.com/user-attachments/assets/1e72c4b8-404b-4e69-a59d-d1b63d1191ba) |
 |:---------------------------------------------------------------------------------------------------:|
-| **Figura 7:** Paleta de cores disponível |
+| **Figura 6:** Paleta de cores da TradeSkills |
 
-A paleta do TradeSkills foi definida com base em critérios de **acessibilidade visual**, garantindo contraste adequado e legibilidade para todos os tipos de usuários, incluindo aqueles com deficiências visuais, abordando os diferentes **tipos de daltonismo**.
+A paleta da TradeSkills foi definida com base em critérios de **acessibilidade visual**, garantindo contraste adequado e legibilidade para todos os tipos de usuários, incluindo aqueles com deficiências visuais, abordando os diferentes **tipos de daltonismo**.
 
 | Cor             | HEX       | Função na Interface                               |
 | :-------------- | :-------- | :------------------------------------------------ |
@@ -233,4 +238,5 @@ O objetivo é padronizar tamanho, cor e comportamento visual, garantindo consist
 
  
  ![Imagem CSS](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/main/docs/img/icon/icones_exemplo.png)
+ 
  Para acessar o código com a formatação dos ícones é só acessar o link: https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/tree/main/docs/exemple/icon
