@@ -25,7 +25,7 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 | **Componente**               | **Requisitos Atendidos**                                                                 |
 |------------------------------|------------------------------------------------------------------------------------------|
-| **Tela de login**              | RF01:	Permitir o login por e-mail e senha.|
+| **Tela de login**              | RF01:	Permitir o login por e-mail e senha. <br> RF03: Permitir a recuperação de senha, mediante confirmação de e-mail e resposta de segurança.|
 
 
 ### Tela de cadastro
@@ -37,17 +37,6 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 | **Componente**               | **Requisitos Atendidos**                                                                 |
 |------------------------------|------------------------------------------------------------------------------------------|
 | **Tela de Cadastro**              | RF02:	Permitir o cadastro com nome, e-mail e senha.|
-
-
-### Tela de recuperação de senha 
-
-|![Tela de recuperação de senha](img/wireframes/RF3-RecuperacaoSenha1.png)|
-|:--------------------------------------------------------------------------------------------:|
-| **Figura 4: Tela de recuperação de senha**   
-
-| **Componente**               | **Requisitos Atendidos**                                                                 |
-|------------------------------|------------------------------------------------------------------------------------------|
-| **Tela de recuperação de senha**              | RF03: Permitir a recuperação de senha, mediante confirmação de e-mail e resposta de segurança.|
 
 
 ### Tela inicial - Dashboard (Primeiro acesso - Desbloqueio de créditos iniciais) 
