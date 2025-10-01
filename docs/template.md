@@ -229,4 +229,5 @@ O objetivo é padronizar tamanho, cor e comportamento visual, garantindo consist
        }
 
  
- ![Imagem CSS](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/main/docs/img/icon/exemplo_icones.png)
+ ![Imagem CSS](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/main/docs/img/icon/icones_exemplo.png)
+ Para acessar o código com a formatação dos ícones é só acessar o link: https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/tree/main/docs/exemple/icon
