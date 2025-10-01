@@ -1,5 +1,7 @@
 # Especificações do Projeto
 
+A Especificação do Projeto trata da definição do problema e da solução a partir da perspectiva do usuário. Serão apresentados o perfil de usuários, o diagrama de personas, as histórias de usuários, os requisitos funcionais e não funcionais, além das restrições do projeto.
+
 ## Perfis de Usuários
 <table>
 <tbody>
