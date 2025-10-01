@@ -50,14 +50,48 @@ Interface baseada em <b>Menu Lateral + Rodapé</b>, com conteúdo central organi
 - Avaliação em estrelas visível abaixo da descrição  
 - Exibição do custo em créditos no canto inferior direito  
 
-
 ## Cores
- 
-Apresente a paleta de cores que será utilizada. Uma ferramenta interessante para a criação de palestas de cores é o *Adobe Color* ([https://color.adobe.com/pt/create/color-wheel](https://color.adobe.com/pt/create/color-wheel)).
+| ![Paleta de Cores](https://github.com/user-attachments/assets/1e72c4b8-404b-4e69-a59d-d1b63d1191ba) |
+|:---------------------------------------------------------------------------------------------------:|
+| **Figura 7:** Paleta de cores disponível |
+
+A paleta do TradeSkills foi definida com base em critérios de **acessibilidade visual**, garantindo contraste adequado e legibilidade para todos os tipos de usuários, incluindo aqueles com deficiências visuais, abordando os diferentes **tipos de daltonismo**.
+
+| Cor             | HEX       | Função na Interface                               |
+| :-------------- | :-------- | :------------------------------------------------ |
+| black-600       | `#161917` | Texto principal, fundos em modo escuro            |
+| gray-700        | `#2E3236` | Fundo de seções escuras, texto secundário         |
+| gray-600        | `#535353` | Texto de parágrafo, ícones                        |
+| gray-500        | `#888888` | Texto de placeholders, elementos desabilitados    |
+| gray-400        | `#6B7281` | Bordas, divisórias, texto de suporte              |
+| gray-300        | `#E5E7EB` | Fundo de campos de formulário, bordas sutis       |
+| gray-200        | `#F8F9FA` | Fundo principal da página ou de seções claras     |
+| dark-blue-800   | `#111827` | Efeito de hover em alguns elementos            |
+| blue-500        | `#1E3F66` | Botões primários (call-to-action), links ativos, rodapé   |
+| blue-400        | `#3D698D` | Elementos interativos, botões secundários, destaques |
+| blue-100        | `#DEE2E6` | Fundo do menu lateral da plataforma |
+| yellow-400      | `#EEC276` | Alertas de aviso, notificações, banners informativos |
+| red-400         | `#D02828` | Mensagens de erro, ações destrutivas (ex: excluir) |
+| green-400       | `#21A134` | Mensagens de sucesso, validação positiva          |
+
+Padrões de Acessibilidade (a11y) Implementados:
+- A plataforma oferece suporte ao daltonismo, fazendo com que a comunicação de informações críticas não dependa exclusivamente de cores. Ações e estados são sempre acompanhados por ícones, rótulos textuais claros ou variações de estilo para garantir a compreensão por usuários com protanopia, deuteranopia e tritanopia.
+- Oferece um alto contraste em todas as cores utilizadas em textos e componentes interativos atendem aos critérios de contraste do **WCAG 2.1 Nível AA**, garantindo a legibilidade para pessoas com baixa visão.
+- O layout utiliza uma combinação de texto, ícones e formas para transmitir significado, assegurando que a interface seja operável e compreensível mesmo sem a percepção de cores.
 
 ## Tipografia
 
-Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
+A tipografia utilizada na plataforma será a **Poppins**, uma fonte sem serifa conhecida por sua legibilidade  e versatilidade, permitindo a criação de uma hierarquia visual clara através de seus múltiplos pesos.
+
+### Hierarquia e Função
+
+| Elemento                  | Estilo Tipográfico                   | Função principal                                               |
+|---------------------------|--------------------------------------|----------------------------------------------------------------|
+| **Título de Página**      | Poppins, 32px, Bold | Indicar o nome ou tema principal da página                     |
+| **Título de Seção**       | Poppins, 24px, Semi Bold             | Destacar subdivisões do conteúdo dentro de uma mesma página   |
+| **Título em cards**        | Poppins, 22px/18px, Semi-bold, Regular                 | Exibir informações em destaque em elementos do tipo card, como uma instrução ou nome     |
+| **Rótulos de Componentes**| Poppins, 16px, Regular                 | Identificar campos, botões e outros elementos da interface     |
+| **Corpo de Texto**        | Poppins, 14px, Regular                 | Apresentar informações, instruções e conteúdos descritivos, como uma descrição     |
 
 ## Iconografia
 A iconografia do sistema define os ícones utilizados para facilitar a navegação e representar ações de forma clara. A tabela abaixo apresenta cada ícone da aplicação TradeSkills e sua respectiva função:
