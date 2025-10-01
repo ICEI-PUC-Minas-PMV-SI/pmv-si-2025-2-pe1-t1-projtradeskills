@@ -21,12 +21,13 @@ Interface baseada em <b>Menu Lateral + Rodapé</b>, com conteúdo central organi
 |![Menu_trade](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/469ab5d857d216d54f9422a926c362b2e2b04f61/docs/menu_trade.jpg)|
 |:------------------------------------------------------------------------------------------------:|
 | **Figura 3:** Menu lateral do Tradeskills |
-| Elemento                               | Função                            |
-| Botão Dashboard                          | Direciona o usuário para a página inicial/painel principal.    |
-| Botão Minhas solicitações                    |Exibe as solicitações realizadas pelo usuário. |
-| Botão Meu histórico                    | Mostra o histórico de atividades/ações do usuário.. |
-| Botão Perfil`                          | Acessa as informações e opções de edição do perfil do usuário. |
-| Botão Configurações                    | Abre as opções de configuração do sistema. |
+| Elemento                  | Função                            |
+|---------------------------|-----------------------------------|
+| Botão Dashboard             | Direciona o usuário para a página inicial/painel principal      |
+| Botão Minhas solicitações                   | Exibe as solicitações realizadas pelo usuário |
+| Botão Meu histórico                   |  Mostra o histórico de atividades/ações do usuário. |
+| Botão Perfil                    | Acessa as informações e opções de edição do perfil do usuário |
+| Botão Configurações                     |Abre as opções de configuração do sistema |
 
 ### Menu Superior
 
