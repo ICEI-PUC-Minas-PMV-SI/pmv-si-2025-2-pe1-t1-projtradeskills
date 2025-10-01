@@ -1,0 +1,81 @@
+
+/* ==========================================================================
+   ESTILOS GLOBAIS PARA Ícones (ICONOGRAFIA)
+   ========================================================================== */
+
+/* Classe base para todos os ícones. */
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    fill: #3d698d;
+    vertical-align: middle;
+    transition: fill 0.2s ease-in-out;
+}
+
+/* ==========================================================================
+   MODIFICADORES DE TAMANHO
+   ========================================================================== */
+
+
+/* Ícone Pequeno */
+.icon-sm {
+    width: 12px;
+    height: 12px;
+}
+
+/* Ícone Médio */
+.icon-md {
+    width: 24px;
+    height: 24px;
+}
+
+/* Ícone Grande */
+.icon-lg {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+/* ==========================================================================
+   MODIFICADORES DE COR
+   ========================================================================== */
+
+
+
+/* Cor Primária */
+.icon-primary {
+    fill: #3D698D;
+}
+
+/* Cor Secundária */
+.icon-secondary {
+    fill: #F8F9FA; 
+    
+    /* foi adicionado o background apenas para a cor ser visível no exemplo */
+    background-color: #3D698D;
+}
+
+/* Cor de Sucesso */
+.icon-success {
+    fill: #21A134;
+}
+
+/* Cor de Perigo/Erro */
+.icon-danger {
+    fill: #D02828;
+}
+
+/* Cor para Ícones desativados */
+.icon-muted {
+    fill: #E5E7EB;
+}
+
+/* Cor para Avaliação (estrelas) */
+.icon-star {
+    fill: #eec276;
+}
+
