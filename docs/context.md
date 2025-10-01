@@ -27,9 +27,9 @@ Os objetivos específicos do projeto são:
 
 ## Justificativa
 
-A escolha do tema do projeto se deu pela identificação da lacuna estrutural no mercado de trabalho brasileiro, marcada pelo alto índice de informalidade e pela dificuldade de monetização de talentos individuais (conforme dados do IBGE de 2024), ao mesmo tempo em que uma parcela da população enfrenta restrições financeiras para acessar serviços e capacitações essenciais.
+A escolha do projeto Trade Skills foi motivada pela necessidade de enfrentar os desafios estruturais do mercado de trabalho brasileiro, como a alta taxa de <strong> informalidade </strong> (37,8% segundo IBGE 2024) e a <strong>dificuldade de monetização de talentos individuais</strong>, que coexistem com as <strong> restrições financeiras de parte da população para acessar serviços essenciais</strong>. Identificamos, assim, uma lacuna social a ser preenchida pela economia colaborativa e pela revolução digital.
 
-Observou-se a necessidade de um modelo alternativo que utilizasse a força da revolução digital e da economia colaborativa para promover inclusão e acesso democrático. Nesse sentido, o projeto visa preencher essa lacuna ao propor um sistema de troca de habilidades por meio de créditos virtuais, o que permite aos usuários não apenas acessar serviços sem custo monetário, mas também valorizar e utilizar suas próprias competências de forma prática, transformando o conhecimento em uma "moeda" de troca para o fortalecimento da comunidade e do desenvolvimento pessoal.
+O projeto tem como função principal o desenvolvimento de um software que estabelece um modelo de troca de habilidades e conhecimentos, utilizando créditos virtuais em vez de dinheiro. Destinado a jovens, adultos e idosos com letramento digital básico, a plataforma visa democratizar o acesso a serviços e capacitação, promovendo inclusão e a valorização de talentos entre consumidores e provedores de habilidades na comunidade.
 
 ## Público-Alvo
 
