@@ -10,11 +10,11 @@ Os perfis de usuários na plataforma Trade Skills são definidos por sua <b>aç�
 |------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | **Demográficos**             | Jovens, adultos e idosos, sendo maiores de idade e possuindo o letramento digital básico.     |
 | **Uso do Produto**           | Cadastram e encontram habilidades, negociam e avaliam os serviços, a fim de fomentar a economia colaborativa e democratizar o acesso a serviços.|
-| **Psicográficos**            | Buscam a valorização de suas habilidades, inclusão social e desejam integrar uma comunidade que promove o acesso democrático ao conhecimento e aos serviços.  |
-| **Sentimento do Cliente**    | Precisam de uma alternativa ao pagamento financeiro tradicional para acessar serviços e conhecimentos, além disso buscam uma comunidade colaborativa.                                |
+| **Psicográficos**            | Buscam reconhecimento, valorização das suas habilidades e oportunidades de aprendizado colaborativo. |
+| **Sentimento do Cliente**    | Precisam de uma alternativa ao pagamento financeiro tradicional para acessar serviços e conhecimento, além disso, querem ter visibilidade e ser avaliados positivamente.                                |
 | **Tecnográficos**            | Usam dispositivos (celular, tablet, desktop) compatíveis com os principais navegadores.               |
 | **Nível de conhecimento tecnológico** | Precisam de letramento digital básico, necessário para a navegação e interação eficaz com a plataforma.                                      |
-| **Necessidades**             | Ferramentas intuitivas para cadastrar e encontrar habilidades de forma eficiente, visualizar o saldo de créditos e fazer avaliações que incentivem a qualidade e segurança.    |
+| **Necessidades**             | 1. Ter uma ferramenta intuitiva para cadastrar e encontrar habilidades. <br>2. Ampliar sua reputação e oportunidades de aprendizado. <br>3. Ter visibilidade para alcançar mais pessoas interessadas em suas habilidades. <br>4. Contar com um sistema de avaliação que valorize sua experiência e gere confiança.|
 
 
 ## Persona
