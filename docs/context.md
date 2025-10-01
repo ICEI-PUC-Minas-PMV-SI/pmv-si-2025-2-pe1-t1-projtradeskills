@@ -37,4 +37,11 @@ O sistema é projetado para acolher um público-alvo que engloba <strong>jovens,
 
 Dentro desse público, destacam-se dois perfis de usuários: consumidores, interessados em acessar serviços e adquirir novos conhecimentos, sem custo monetário, atendendo tanto a necessidades práticas (como consertos e reparos) quanto ao desenvolvimento pessoal (como hobbies e aprendizado de idiomas ou música), e provedores de habilidades, que se interessam em compartilhar seus conhecimentos e talentos em troca de créditos, os quais poderão ser convertidos em serviços de interesse próprio. Ambos compartilham a motivação de integrar-se a uma comunidade colaborativa que promove o acesso democrático ao conhecimento e aos serviços. 
 
+## Metodologia
+
+O desenvolvimento do projeto Trade Skills será gerido por meio de uma abordagem ágil, utilizando o método **Kanban** para a gestão do fluxo de trabalho. As tarefas serão organizadas e monitoradas de forma contínua no **Trello**, garantindo visibilidade e a alocação eficiente de responsáveis.
+
+O controle de versão será feito com **Git**, utilizando o **VS Code** como ambiente de desenvolvimento colaborativo. O projeto manterá a integração contínua diretamente no **GitHub**.
+
+A comunicação e o alinhamento da equipe serão realizados via **Microsoft Teams**, onde ocorrerão reuniões de acompanhamento periódicas. O **WhatsApp** será reservado para resolver questões pontuais de forma ágil. A combinação dessas ferramentas garante a aplicação de práticas de desenvolvimento ágil, otimização de processos e uma colaboração eficiente entre todos os membros da equipe.
 
