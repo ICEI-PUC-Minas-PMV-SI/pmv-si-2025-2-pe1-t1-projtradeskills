@@ -35,13 +35,12 @@ Interface baseada em Menu Lateral + Menu Superior, com conteúdo central organiz
 | ![menu_superior](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t1-pmv-si-2025-2-pe1-projtradeskills/blob/3810689a5b1a31145d5b29096eac4b39a766e6c5/docs/menu_superior.jpg) |
 | Elemento         | Função                                                                 |
 |------------------|------------------------------------------------------------------------|
-| Botão "Menu"     | Alterna a visibilidade do menu lateral                                 |
-| Campo de busca   | Permite pesquisar em todo o sistema                                     |
-| Ícone Casa       | Retorna à Página Inicial                                                |
-| Ícone Sino       | Alterna a visibilidade das notificações                                 |
-| Ícone Lua        | Ativa o modo noturno ou alto contraste                                  |
-| Ícone Círculo   | Exibe informações sobre o usuário logado                                |
-| Ícone Sair       | Realiza o logout da aplicação                                           |
+| Campo de busca     |  Permite pesquisar habilidades/serviços                               |
+|  Botão buscar    | Executa a pesquisa digitada no campo de busca                                    |
+| Saldo Atual        | Exibe a quantidade de Créditos disponivéis para o usuário                                                |
+| Foto do usuário| Exibe informações do usuário logado e permite acesso ao perfil                                 |
+     
+
 
 
 ## Cores
