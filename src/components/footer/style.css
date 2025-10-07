@@ -1,0 +1,26 @@
+.footer {
+  width: 100%;
+  background: var(--blue-500);
+  color: white;
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover {
+  color: var(--yellow-400);
+}
+
+.footer nav {
+  display: flex;
+  gap: 4rem;
+}
