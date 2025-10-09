@@ -6,12 +6,16 @@ class AppFooter extends HTMLElement {
 
   async connectedCallback() {
     try {
-      const response = await fetch("/components/footer/index.html");
+      const basePath = window.location.pathname.includes('/perfil/') ||
+        window.location.pathname.includes('/dashboard/') ?
+        '../components/sidebar/index.html' :
+        '/components/sidebar/index.html';
+
+      const response = await fetch(basePath);
       if (!response.ok) {
-        throw new Error("Não foi possível carregar o template do footer.");
+        throw new Error("Não foi possível carregar o template do sidebar.");
       }
       const htmlText = await response.text();
-
       const parser = new DOMParser();
       const doc = parser.parseFromString(htmlText, "text/html");
       const template = doc.getElementById("template-app-footer");

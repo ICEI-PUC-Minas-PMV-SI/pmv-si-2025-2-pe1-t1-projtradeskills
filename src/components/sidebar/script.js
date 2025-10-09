@@ -6,7 +6,13 @@ class AppSidebar extends HTMLElement {
 
   async connectedCallback() {
     try {
-      const response = await fetch("/components/sidebar/index.html");
+      // Detecta se estamos em uma subpasta e ajusta o caminho
+      const basePath = window.location.pathname.includes('/perfil/') || 
+                      window.location.pathname.includes('/dashboard/') ? 
+                      '../components/sidebar/index.html' : 
+                      '/components/sidebar/index.html';
+      
+      const response = await fetch(basePath);
       if (!response.ok) {
         throw new Error("Não foi possível carregar o template do sidebar.");
       }
@@ -21,11 +27,20 @@ class AppSidebar extends HTMLElement {
 
         const globalStyles = document.createElement("link");
         globalStyles.setAttribute("rel", "stylesheet");
-        globalStyles.setAttribute("href", "/assets/global.css");
+        // Ajusta o caminho dos estilos baseado na localização
+        const globalStylesPath = window.location.pathname.includes('/perfil/') || 
+                                window.location.pathname.includes('/dashboard/') ? 
+                                '../assets/global.css' : 
+                                '/assets/global.css';
+        globalStyles.setAttribute("href", globalStylesPath);
 
         const componentStyles = document.createElement("link");
         componentStyles.setAttribute("rel", "stylesheet");
-        componentStyles.setAttribute("href", "/components/sidebar/style.css");
+        const componentStylesPath = window.location.pathname.includes('/perfil/') || 
+                                   window.location.pathname.includes('/dashboard/') ? 
+                                   '../components/sidebar/style.css' : 
+                                   '/components/sidebar/style.css';
+        componentStyles.setAttribute("href", componentStylesPath);
 
         this.shadowRoot.appendChild(globalStyles);
         this.shadowRoot.appendChild(componentStyles);
