@@ -1,0 +1,47 @@
+.primary-title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 5.8rem;
+  width: 100%;
+}
+
+.secondary-title {
+  font-size: 2.2rem;
+  line-height: 3.6rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.primary-button {
+  color: #fff;
+  background: var(--blue-500);
+  padding: 1.2rem 5rem;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.primary-button:hover {
+  background: var(--blue-400);
+}
+
+.secondary-button {
+  color: var(--blue-400);
+  border: 1px solid var(--blue-400);
+  padding: 1.2rem 6.2rem;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.secondary-button:hover {
+  color: #fff;
+  background: var(--blue-400);
+}
