@@ -1,62 +1,23 @@
-.dashboard {
-  background-color: #ffffff;
-  width: 100%;
-  min-width: 1280px;
-  min-height: 1046px;
-  position: relative;
-}
-
-.dashboard .seo-principal {
-  position: absolute;
-  width: 750px;
-  height: 777px;
-  top: 119px;
-  left: 434px;
-  display: flex;
-  flex-direction: column;
-}
-
-.dashboard .barra-de-pesquisa {
+.dashboard .container-search-bar {
   margin-left: 91px;
-  width: 540.02px;
-  height: 45.04px;
   display: flex;
-  gap: 12px;
+  gap: 20px;
 }
 
-.dashboard .depth-frame {
-  width: 448px;
-  height: 44px;
+.dashboard .search-bar {
+  padding: 1.2rem 2rem;
   display: flex;
-  gap: 109px;
-  background-color: #eaeaea;
+  align-items: center;
+  gap: 10px;
+  background-color: #f8f9fa;
   border-radius: 8px;
   border: 1px solid;
-  border-color: #dbdde5;
+  border-color: #dee2e6;
 }
 
-.dashboard .div-wrapper {
-  margin-top: 13px;
-  width: 276px;
-  height: 24px;
-  position: relative;
-  margin-left: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.dashboard .text-wrapper {
-  position: relative;
-  width: 374px;
-  margin-top: -1.00px;
-  margin-right: -98.00px;
-  font-family: "Inter-Light", Helvetica;
-  font-weight: 300;
-  color: #111116;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: 24px;
+.dashboard .search-bar svg {
+  width: 20px;
+  height: 20px;
 }
 
 .dashboard .depth-frame-wrapper {
@@ -66,7 +27,6 @@
   align-items: center;
   padding: 8px;
   display: flex;
-  position: relative;
   flex-direction: column;
 }
 
@@ -75,42 +35,37 @@
   flex-direction: column;
   margin-bottom: -3.00px;
   align-items: center;
-  position: relative;
   flex: 0 0 auto;
 }
 
 .dashboard .vector-wrapper {
-  position: relative;
   flex: 1;
   width: 24px;
   flex-grow: 1;
 }
 
 .dashboard .vector {
-  position: absolute;
-  top: 2px;
-  left: 2px;
   width: 20px;
   height: 20px;
 }
 
-.dashboard .button {
-  display: flex;
-  margin-top: 4.0px;
-  width: 79.99px;
-  height: 40.99px;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 12px 24px;
-  background-color: #6f8096;
-  border-radius: 6px;
-  transform: rotate(0.03deg);
+/* APAGAR O PRIMARY BUTTON DPS DO PR DO JOÃO */
+.dashboard .primary-button {
+  color: #fff;
+  background: var(--blue-500);
+  padding: 1.2rem 5rem;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.dashboard .primary-button:hover {
+  background: var(--blue-400);
 }
 
 .dashboard .text-wrapper-2 {
-  position: relative;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,13 +88,11 @@
   margin-left: 62px;
   width: 611px;
   height: 166px;
-  position: relative;
+  
   margin-top: 59.0px;
 }
 
 .dashboard .depth-frame-2 {
-  position: absolute;
-  top: 41px;
   left: 0;
   width: 286px;
   height: 125px;
@@ -150,16 +103,13 @@
 
 .dashboard .depth-frame-3 {
   width: 159px;
-  position: absolute;
-  top: 10px;
-  left: 63px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .dashboard .text-wrapper-3 {
-  position: relative;
+  
   width: 217px;
   margin-top: -1.00px;
   margin-right: -58.00px;
@@ -172,9 +122,6 @@
 }
 
 .dashboard .text-wrapper-4 {
-  top: 51px;
-  left: 129px;
-  position: absolute;
   width: 43px;
   height: 39px;
   display: flex;
@@ -188,12 +135,9 @@
   line-height: 16px;
 }
 
-.dashboard .text-wrapper-5 {
-  position: absolute;
+.dashboard .text-wrapper-5 { 
   width: 47.55%;
   height: 14.40%;
-  top: 80.80%;
-  left: 26.22%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,9 +151,6 @@
 }
 
 .dashboard .depth-frame-4 {
-  position: absolute;
-  top: 41px;
-  left: 323px;
   width: 286px;
   height: 125px;
   border-radius: 8px;
@@ -219,16 +160,13 @@
 
 .dashboard .depth-frame-5 {
   width: 159px;
-  position: absolute;
-  top: 8px;
-  left: 63px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .dashboard .text-wrapper-6 {
-  position: relative;
+  
   width: 178px;
   margin-top: -1.00px;
   margin-right: -19.00px;
@@ -241,9 +179,6 @@
 }
 
 .dashboard .text-wrapper-7 {
-  top: 50px;
-  left: 130px;
-  position: absolute;
   width: 43px;
   height: 39px;
   display: flex;
@@ -258,11 +193,9 @@
 }
 
 .dashboard .text-wrapper-8 {
-  position: absolute;
+  
   width: 47.55%;
   height: 14.40%;
-  top: 80.80%;
-  left: 29.37%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -276,9 +209,6 @@
 }
 
 .dashboard .text-wrapper-9 {
-  position: absolute;
-  top: 0;
-  left: 115px;
   width: 380px;
   font-family: "Inter-Medium", Helvetica;
   font-weight: 500;
@@ -299,14 +229,14 @@
 .dashboard .depth-frame-6 {
   width: 380px;
   height: 24px;
-  position: relative;
+  
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .dashboard .text-wrapper-10 {
-  position: relative;
+  
   align-self: stretch;
   margin-top: -1.00px;
   font-family: "Inter-Medium", Helvetica;
@@ -320,16 +250,13 @@
 .dashboard .depth-frame-7 {
   width: 750px;
   height: 412px;
-  position: relative;
+  
   border-radius: 8px;
   border: 1px solid;
   border-color: #dbdde5;
 }
 
 .dashboard .depth-frame-8 {
-  position: absolute;
-  top: 22px;
-  left: 24px;
   width: 697px;
   height: 70px;
   display: flex;
@@ -352,12 +279,12 @@
   height: 24px;
   align-items: flex-start;
   display: flex;
-  position: relative;
+  
   flex-direction: column;
 }
 
 .dashboard .p {
-  position: relative;
+  
   width: 495px;
   margin-top: -1.00px;
   margin-right: -115.00px;
@@ -370,9 +297,6 @@
 }
 
 .dashboard .depth-frame-10 {
-  position: absolute;
-  top: 115px;
-  left: 24px;
   width: 697px;
   height: 70px;
   border-radius: 8px;
@@ -382,16 +306,13 @@
 
 .dashboard .depth-frame-11 {
   width: 555px;
-  position: absolute;
-  top: 23px;
-  left: 45px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .dashboard .text-wrapper-11 {
-  position: relative;
+  
   width: 602px;
   margin-top: -1.00px;
   margin-right: -47.00px;
@@ -404,25 +325,16 @@
 }
 
 .dashboard .thumb-up-off-alt {
-  position: absolute;
   width: 3.15%;
   height: 34.29%;
-  top: 32.86%;
-  left: 0;
 }
 
 .dashboard .vector-2 {
-  position: absolute;
   width: 91.67%;
   height: 83.33%;
-  top: 8.33%;
-  left: 4.16%;
 }
 
 .dashboard .depth-frame-12 {
-  position: absolute;
-  top: 208px;
-  left: 25px;
   width: 696px;
   height: 70px;
   display: flex;
@@ -433,7 +345,7 @@
 }
 
 .dashboard .text-wrapper-12 {
-  position: relative;
+  
   width: 489px;
   margin-top: -1.00px;
   margin-right: -109.00px;
@@ -446,9 +358,6 @@
 }
 
 .dashboard .depth-frame-13 {
-  position: absolute;
-  top: 301px;
-  left: 24px;
   width: 702px;
   height: 70px;
   display: flex;
@@ -466,7 +375,6 @@
 }
 
 .dashboard .text-wrapper-13 {
-  position: relative;
   width: 681px;
   margin-top: -1.00px;
   margin-right: -301.00px;
@@ -479,11 +387,6 @@
 }
 
 .dashboard .text-wrapper-14 {
-  position: absolute;
-  width: 13.20%;
-  height: 4.13%;
-  top: 93.69%;
-  left: 80.40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -497,9 +400,6 @@
 }
 
 .dashboard .arrow-right {
-  position: absolute;
-  top: 383px;
-  left: 702px;
   width: 24px;
   height: 24px;
 }
@@ -512,9 +412,6 @@
   align-items: flex-start;
   gap: 14.01px;
   padding: 30.5px 96px 44.38px;
-  position: absolute;
-  top: 922px;
-  left: 0;
   background-color: #d3dce7;
 }
 
@@ -524,7 +421,6 @@
   justify-content: center;
   gap: 24.5px;
   padding: 0px 638.34px 0px 638.33px;
-  position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
@@ -535,12 +431,10 @@
   display: inline-flex;
   align-items: flex-start;
   justify-content: center;
-  position: relative;
   flex: 0 0 auto;
 }
 
 .dashboard .text-wrapper-15 {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -562,7 +456,6 @@
   display: inline-flex;
   align-items: flex-start;
   justify-content: center;
-  position: relative;
   flex: 0 0 auto;
 }
 
@@ -572,7 +465,6 @@
   display: inline-flex;
   align-items: flex-start;
   justify-content: center;
-  position: relative;
   flex: 0 0 auto;
 }
 
@@ -582,7 +474,6 @@
   display: inline-flex;
   align-items: flex-start;
   justify-content: center;
-  position: relative;
   flex: 0 0 auto;
 }
 
@@ -590,7 +481,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
@@ -598,7 +488,6 @@
 }
 
 .dashboard .text-wrapper-16 {
-  position: relative;
   display: -webkit-box;
   align-items: center;
   justify-content: center;
@@ -623,9 +512,6 @@
   width: 320px;
   height: 737px;
   align-items: flex-start;
-  position: absolute;
-  top: 111px;
-  left: 24px;
   overflow: hidden;
 }
 
@@ -636,7 +522,6 @@
   align-items: flex-start;
   justify-content: space-around;
   padding: 16px;
-  position: relative;
   align-self: stretch;
   width: 100%;
   background-color: #ffffff;
@@ -647,7 +532,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
@@ -655,7 +539,6 @@
 
 .dashboard .depth-frame-16 {
   gap: 8px;
-  position: relative;
   flex: 1;
   align-self: stretch;
   width: 100%;
@@ -670,7 +553,7 @@
   align-items: center;
   gap: 12px;
   padding: 8px 12px;
-  position: relative;
+  
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
@@ -682,20 +565,17 @@
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  position: relative;
+  
   flex: 0 0 auto;
 }
 
 .dashboard .vector-3 {
-  left: 3px;
-  width: 18px;
-  position: absolute;
-  top: 2px;
+   width: 18px;
   height: 19px;
 }
 
 .dashboard .text-wrapper-17 {
-  position: relative;
+  
   align-self: stretch;
   margin-top: -1.00px;
   font-family: "Inter-Medium", Helvetica;
@@ -712,20 +592,20 @@
   align-items: center;
   gap: 12px;
   padding: 8px 12px;
-  position: relative;
+  
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
 }
 
 .dashboard .img-2 {
-  position: relative;
+  
   width: 24px;
   height: 24px;
 }
 
 .dashboard .text-wrapper-18 {
-  position: relative;
+  
   align-self: stretch;
   margin-top: -1.00px;
   font-family: "Inter-Medium", Helvetica;
@@ -737,10 +617,7 @@
 }
 
 .dashboard .vector-4 {
-  left: 2px;
   width: 20px;
-  position: absolute;
-  top: 2px;
   height: 19px;
 }
 
@@ -752,14 +629,11 @@
   width: 100%;
   margin-bottom: -48.00px;
   align-items: center;
-  position: relative;
+  
   flex: 0 0 auto;
 }
 
 .dashboard .header {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 1278px;
   height: 82px;
   display: flex;
@@ -774,24 +648,17 @@
   height: 39px;
   width: 174px;
   align-self: center;
-  position: relative;
   margin-left: 96px;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .dashboard .logo-trade-skill {
-  position: relative;
   width: 174px;
   height: 39px;
 }
 
 .dashboard .logo-trade-skill-2 {
-  position: absolute;
-  width: 89.08%;
-  height: 100%;
-  top: 0;
-  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -813,11 +680,9 @@
   align-items: flex-start;
   justify-content: center;
   display: flex;
-  position: relative;
 }
 
 .dashboard .label {
-  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -844,11 +709,9 @@
   border: 1px solid;
   border-color: #e1e1e2;
   display: flex;
-  position: relative;
 }
 
 .dashboard .cr-ditos {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -868,7 +731,6 @@
   justify-content: center;
   gap: 4px;
   padding: 0px 10px;
-  position: relative;
   flex: 0 0 auto;
   background-color: #fcfcfc;
   border-radius: 6px;
@@ -878,7 +740,6 @@
 }
 
 .dashboard .text {
-  position: relative;
   width: fit-content;
   font-family: var(--text-xs-font-medium-font-family);
   font-weight: var(--text-xs-font-medium-font-weight);
