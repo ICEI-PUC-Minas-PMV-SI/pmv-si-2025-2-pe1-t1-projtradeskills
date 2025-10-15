@@ -13,81 +13,52 @@
   <body>
     <app-sidebar></app-sidebar>
 
-    <main>
-      <div class="dashboard">
-        <div class="container-search-bar">
-          <div class="search-bar">
-            <img class="search-bar-icon" src="search.svg" alt="Icone de lupa" />
-            <p class="search-bar-text">
-              Digite aqui a habilidade que deseja buscar
-            </p>
+    <main id="dashboard">
+      <div class="container-search-bar">
+        <div class="search-bar">
+          <img class="search-bar-icon" src="search.svg" alt="Icone de lupa" />
+          <p class="search-bar-text">
+            Digite aqui a habilidade que deseja buscar
+          </p>
+        </div>
+        <button class="primary-button">Buscar</button>
+      </div>
+      <div id="my-requests">
+        <div class="subtitle">Resumo das minhas solicitações</div>
+        <div class="card-list">
+          <div class="card">
+            <div class="secondary-title">Pedidos que recebi</div>
+            <div class="description">5</div>
+            <div class="card-link">Ver minhas solicitações</div>
           </div>
-          <div class="primary-button">
-            <div class="text-wrapper-2">Buscar</div>
+          <div class="card">
+            <div class="secondary-title">Solicitações que enviei</div>
+            <div class="description">2</div>
+            <div class="card-link">Ver minhas solicitações</div>
           </div>
         </div>
-        <div class="minhas-solicitaes">
-          <div class="depth-frame-2">
-            <div class="depth-frame-3">
-              <div class="text-wrapper-3">Pedidos que recebi</div>
-            </div>
-            <div class="text-wrapper-4">5</div>
-            <div class="text-wrapper-5">Ver minhas solicitações</div>
+      </div>
+      <div id="recent-activities">
+        <h2>Atividades recentes</h2>
+        <div class="container-activities">
+          <div class="activity">
+            <img class="img" src="img/add-circle-outline.svg" />
+            <p>Novo pedido: João solicitou sua habilidade de aulas de inglês.</p>
           </div>
-          <div class="depth-frame-4">
-            <div class="depth-frame-5">
-              <div class="text-wrapper-6">Solicitações que enviei</div>
-            </div>
-            <div class="text-wrapper-7">2</div>
-            <div class="text-wrapper-8">Ver minhas solicitações</div>
+          <div class="activity">
+            <img class="img" src="img/add-circle-outline.svg" />
+            <p>Sua solicitação foi aceita: Maria aceitou seu pedido de aulas de violão.</p>
           </div>
-          <div class="text-wrapper-9">Resumo das minhas solicitações</div>
-        </div>
-        <div class="atividades-recentes">
-          <div class="depth-frame-6">
-            <div class="text-wrapper-10">Atividades recentes</div>
+          <div class="activity">
+            <img class="img" src="img/dollar-money-circle.svg" />
+              <p>Transação concluída! Você recebeu 50 créditos de Ana. </p>
           </div>
-          <div class="depth-frame-7">
-            <div class="depth-frame-8">
-              <img class="img" src="img/add-circle-outline.svg" />
-              <div class="depth-frame-9">
-                <p class="p">
-                  Novo pedido: João solicitou sua habilidade de aulas de inglês.
-                </p>
-              </div>
-            </div>
-            <div class="depth-frame-10">
-              <div class="depth-frame-11">
-                <p class="text-wrapper-11">
-                  Sua solicitação foi aceita: Maria aceitou seu pedido de aulas
-                  de violão.
-                </p>
-              </div>
-              <div class="thumb-up-off-alt">
-                <img class="vector-2" src="img/vector.svg" />
-              </div>
-            </div>
-            <div class="depth-frame-12">
-              <img class="img" src="img/dollar-money-circle.svg" />
-              <div class="depth-frame-9">
-                <p class="text-wrapper-12">
-                  Transação concluída! Você recebeu 50 créditos de Ana.
-                </p>
-              </div>
-            </div>
-            <div class="depth-frame-13">
-              <img
-                class="thumb-down-off-alt"
-                src="img/thumb-down-off-alt.svg"
-              />
-              <div class="depth-frame-9">
-                <p class="text-wrapper-13">
-                  Sua solicitação foi cancelada: Pedro cancelou seu pedido de
-                  mentoria de carreira.
-                </p>
-              </div>
-            </div>
-            <div class="text-wrapper-14">Ver meu histórico</div>
+          <div class="activity">
+            <img class="thumb-down-off-alt" src="img/thumb-down-off-alt.svg" />
+            <p class="text-wrapper-13">Sua solicitação foi cancelada: Pedro cancelou seu pedido de mentoria de carreira.</p>
+          </div>
+          <div class="activity-history-link">
+            <span>Ver meu histórico</span>
             <img class="arrow-right" src="img/arrow-right.svg" />
           </div>
         </div>
