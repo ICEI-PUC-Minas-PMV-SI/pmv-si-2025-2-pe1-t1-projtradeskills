@@ -6,7 +6,7 @@
 }
 
 #dashboard .container-search-bar {
-  margin-left: 91px;
+  /*margin-left: 91px;*/
   display: flex;
   gap: 20px;
 }
