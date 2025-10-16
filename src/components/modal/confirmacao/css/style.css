@@ -1,0 +1,11 @@
+.modal-body {
+    border-radius: 8px;
+    background-color: #4adb1d;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 45%;
+    height: 100;
+
+}
