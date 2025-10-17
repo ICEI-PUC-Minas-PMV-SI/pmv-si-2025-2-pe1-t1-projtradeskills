@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="./assets/home/style.css" />
     <script src="./components/footer/script.js" defer></script>
+    <script src="./assets/home/script.js" defer></script>
     <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
-    <title>Home</title>
+    <title>TradeSkills - Sua plataforma para troca de habilidades</title>
   </head>
   <body id="home">
     <header>
@@ -22,12 +23,26 @@
             </h1>
           </div>
           <div class="menu-box">
-            <a href="#" class="secondary-button">Login</a>
-            <a href="#" class="primary-button">Cadastre-se</a>
+            <nav>
+              <a href="#about" class="nav-link">Como Funciona</a>
+              <a href="#categories" class="nav-link">Categorias</a>
+              <a href="#testimonials" class="nav-link">Depoimentos</a>
+              <a href="#call-to-action" class="nav-link">Comece Agora</a>
+            </nav>
+            <div class="auth-buttons">
+              <a href="#" class="buttons secondary-button">Login</a>
+              <a href="#" class="buttons primary-button">Cadastre-se</a>
+            </div>
           </div>
+          <button class="menu-mobile">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+          </button>
         </div>
       </div>
     </header>
+
     <main>
       <section id="hero">
         <div class="container">
@@ -41,7 +56,9 @@
                 novas e resolver problemas sem gastar dinheiro. A sua moeda é o
                 seu conhecimento.
               </p>
-              <a href="#" class="primary-button">Comece a trocar agora</a>
+              <a href="#" class="buttons primary-button"
+                >Comece a trocar agora</a
+              >
             </div>
             <div class="image-box">
               <img src="./public/home/hero.webp" alt="Hero Image" />
@@ -207,7 +224,7 @@
                 Junte-se à TradeSkills hoje mesmo e comece a trocar suas
                 habilidades!
               </p>
-              <a href="#" class="primary-button">Cadastre-se Agora</a>
+              <a href="#" class="buttons primary-button">Cadastre-se Agora</a>
             </div>
           </div>
         </div>

@@ -14,6 +14,7 @@
   --red-400: #b91c1c;
   --green-400: #166534;
   --yellow-400: #eec276;
+  --header-height: 7.5rem;
 }
 
 * {
@@ -26,13 +27,15 @@
 }
 
 html {
-  width: 100dvw;
+  width: 100vw;
   height: 100dvh;
   font-size: 10px;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   position: relative;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-padding-top: var(--header-height);
 }
 
 body {
@@ -43,6 +46,11 @@ body {
   flex-wrap: wrap;
   color: var(--black-500);
   background-color: var(--gray-100);
+}
+
+body.menu-active {
+  overflow-y: hidden;
+  height: 100%;
 }
 
 main {
