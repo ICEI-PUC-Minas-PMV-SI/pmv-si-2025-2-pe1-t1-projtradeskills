@@ -9,16 +9,37 @@
 </head>
 
 <body>
-    <div class="modal-body">
-        <h1>SERVIÇO DE PINTURA</h1>
+    <div class="container">
+        <button id="botao-confirm" class="botao-confirm">Abrir Avaliação</button>
+    </div>
+        
 
 
         <!-- TERMINAR A MODAL DEPOIS -->
 
 
         <!-- BUTTON QUE CHAMA A MODAL -->
-        <button id="open-modal">Abrir Avaliação</button>
-    </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h1>Serviços de Pintura
+                </h1>
+                <span class="data-solicitacao">Solicitado 24/07/2024</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur est cum accusantium, consequatur.
+                </p>
+                <div class="valor-opcoes">
+                    <span class="tag">R$ 15,00 </span>
+                    <span class="tag">Dom</span>
+                        <span class="tag">Tarde</span>
+                        <span class="tag">Presencial</span>
+                    </span>
+                </div>
+                <p class="paragrafo mod">Desistir da solicitação.</p>
+                <div class="modal-actions">
+                    <button id="confirmar-conclusao" class="botao-confirm">Confirmar conclusão</button>
+                    <button id="close-modal" class="botao-cancel">Desistir</button>
+                </div>
+            </div>
+        </div>
 
     <script src="./js/script.js"></script>
 </body>
