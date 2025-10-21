@@ -1,6 +1,10 @@
+html, body { 
+  margin: 0;
+  padding: 0;
+}
 .footer {
   width: 100%;
-  background: var(--blue-500);
+  background: #1E3F66;
   color: white;
   text-align: center;
   padding: 3rem;
@@ -17,7 +21,7 @@
 }
 
 .footer a:hover {
-  color: var(--yellow-400);
+  color: #EEC276;
 }
 
 .footer nav {
