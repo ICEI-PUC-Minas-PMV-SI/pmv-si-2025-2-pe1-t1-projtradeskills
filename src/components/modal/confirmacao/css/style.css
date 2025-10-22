@@ -44,7 +44,8 @@ body{
     background-color: white;
     padding: 24px;
     border-radius: 12px;
-    width: 420px;
+    width: 530px;
+    height: 330px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -54,7 +55,7 @@ body{
     font-size: 14px;
     color: #A1A1AA;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin-bottom: 12px;
     
@@ -70,7 +71,8 @@ body{
 .modal-content p {
     font-size: 15px;
     color: #A1A1AA;
-    margin-bottom: 20px;
+    margin-bottom: 33px;
+    text-align: left;
 
 }
 
@@ -96,8 +98,9 @@ body{
 
 .modal-actions {
     display: flex;
-    justify-content: center;
-    gap: 12px;
+    justify-content: end;
+    gap: 15px;
+    padding: 2%;
 }
 
 .botao-confirm {
@@ -128,4 +131,23 @@ body{
 
 .botao-cancel:hover {
     background-color:#7f7e7e; 
+}
+
+.justificativa {
+width: 120px;
+height: 40px;
+margin-top: 8px;
+margin-top: 8px;
+padding: 14px;
+border-radius: 8px;
+border: 1px solid #ccc;
+font-size: 14px;
+resize: none;
+bottom: 74px;
+}
+
+.justificativa:focus {
+outline:none;
+border-color: #486286;
+box-shadow: 0 0 4px;
 }
