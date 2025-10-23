@@ -1,3 +1,5 @@
+const home = document.querySelector("#home");
+const header = document.querySelector("#home header");
 const menuMobile = document.querySelector(".menu-mobile");
 const menuBox = document.querySelector(".menu-box");
 const menuLinks = document.querySelectorAll(".nav-link");
@@ -18,8 +20,10 @@ handleMenu = () => {
 
 menuMobile.addEventListener("click", handleMenu);
 
-document.addEventListener("resize", () => {
-  if (window.innerWidth > 992) {
-    console.log("removendo classes");
-  }
-});
+const updateHeaderHeight = () => {
+  home.style = `--header-height: ${header.offsetHeight}px`;
+};
+
+updateHeaderHeight();
+
+window.addEventListener("resize", updateHeaderHeight);

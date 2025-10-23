@@ -1,9 +1,12 @@
 /* Header */
 
+#home html {
+  scroll-padding-top: var(--header-height);
+}
+
 #home header {
   position: sticky;
   top: 0;
-  z-index: 1000;
 }
 
 #home header h1 {
@@ -106,20 +109,23 @@
   }
 
   #home header .menu-box {
-    position: absolute;
-    transition: all 0.5s ease-in-out;
-    bottom: 0;
+    position: fixed;
     left: 0;
-    height: calc(100% - var(--header-height));
+    bottom: 0;
+    transition: all 0.75s ease-in-out;
     background: #fff;
-    width: 100%;
-    padding: 3rem;
+    width: 100vw;
+    height: calc(100% - var(--header-height));
     transform: translateX(-100%);
-    flex-direction: column;
+    overflow: scroll;
+    z-index: 1;
+    display: block;
+    padding: 4rem 2rem;
   }
 
   #home header .menu-box.active {
     transform: translateX(0);
+    overflow: scroll;
   }
 
   #home header nav {
