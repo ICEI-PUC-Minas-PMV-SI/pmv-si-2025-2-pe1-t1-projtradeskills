@@ -1,87 +1,162 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script src="../components/footer/script.js" defer></script>
+    <script src="../components/sidebar/script.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="global.css" />
-  <link rel="stylesheet" href="styleguide.css" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="../components/footer/script.js" defer></script>
-  <script src="../components/sidebar/script.js" defer></script>
-  <script src="script.js" defer></script>
-</head>
-
-<body>
-  <div class="perfil-editar-dados">
-    <app-sidebar></app-sidebar>
-    
-    <!-- Labels -->
-    <label class="input-label label-nome">Nome</label>
-    <label class="input-label label-email">Email</label>
-    <label class="input-label label-senha">Senha</label>
-    <label class="input-label label-celular">Celular</label>
-    <label class="input-label label-cidade">Cidade</label>
-    
-    <!-- Inputs -->
-    <div class="input-container input-nome">
-      <input class="input-standard" type="text" placeholder="Seu nome" value="">
-    </div>
-    
-    <div class="input-container input-email">
-      <input class="input-standard input-disabled" type="email" placeholder="inserir_email_usuario_aqui" value="inserir_email_usuario_aqui" readonly>
-    </div>
-    
-    <div class="input-container input-senha">
-      <input class="input-standard" type="password" placeholder="Digite sua senha">
-      <!-- Requisitos da senha -->
-      <div class="password-requirements">
-        <div class="requirements-column">
-          <div class="hint-text">minimum 8 characters</div>
-          <div class="hint-text">one special character</div>
-          <div class="hint-text">one number</div>
+  <body>
+    <main class="h-100 overflow-x-hidden">
+      <div class="row h-100">
+        <div class="col-2">
+          <app-sidebar></app-sidebar>
         </div>
-        <div class="requirements-column">
-          <div class="hint-text">one uppercase character</div>
-          <div class="hint-text">one lowercase character</div>
+        <div class="container row gap-5 col-10 mt-5">
+          <div class="container row">
+            <div>
+              <img
+                src="/docs/img/icon/icon_person_circle.svg"
+                width="200"
+                alt="icon person"
+              />
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="mb-3">
+              <span class="" id="basic-addon1">Dados pessoais</span>
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Nome</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Senha</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                type="tel"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Celular</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Cidade</label>
+            </div>
+            <button type="button" class="btn btn-primary">Salvar alterações</button>
+          </div>
+          <hr>
+           <div class="col-3">
+            <div class="mb-3">
+              <span class="" id="basic-addon1">Minhas habilidades</span>
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Nome</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Senha</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                type="tel"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Celular</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Cidade</label>
+            </div>
+            <button type="button" class="btn btn-primary">Salvar alterações</button>
+          </div>
         </div>
       </div>
-    </div>
-    
-    <div class="input-container input-celular">
-      <div class="input-with-dropdown">
-        <div class="dropdown-part">BR</div>
-        <input class="text-part" type="tel" placeholder="(00) 00000-0000">
-      </div>
-    </div>
-    
-    <div class="input-container input-cidade">
-      <input class="input-standard" type="text" placeholder="Sua cidade">
-    </div>
-
-    <button class="button" type="button">
-      <span class="text-wrapper-3">Salvar alterações</span>
-    </button>
-    
-    <!-- Avatar do usuário -->
-    <div class="user-circle">
-      <img class="union" src="/docs/img/icon/icon_person_circle.svg" id="output" width="200" />
-      <input id="file" type="file" accept="image/jpeg, image/png" onchange="loadFile(event)" style="display: none;" />
-      <label for="file">
-        <img class="edit" src="/docs/img/icon/icon_edit.svg" style="cursor: pointer;" />
-      </label>
-    </div>
-    
-    <!-- Informações do usuário -->
-    <div class="frame-wrapper">
-      <div class="frame-3">
-        <div class="text-wrapper-4">Nome</div>
-        <div class="text-wrapper-8">inserir_email_usuario_aqui</div>
-      </div>
-    </div>
-
-    <app-footer></app-footer>
-  </div>
-</body>
-
+      <!-- Labels -->
+    </main>
+    <!-- <app-footer></app-footer> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
