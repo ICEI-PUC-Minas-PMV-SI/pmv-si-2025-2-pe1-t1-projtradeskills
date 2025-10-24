@@ -1,196 +1,89 @@
-#dashboard{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
+#dashboard-search-bar p,
+#requests-resume a,
+#recent-activities span,
+.cards-dashboard .card-link {
+  color: #5f91bb;
 }
 
-#dashboard .container-search-bar {
-  /*margin-left: 91px;*/
-  display: flex;
-  gap: 20px;
+#dashboard h2,
+#dashboard h3,
+#dashboard h6,
+#recent-activities p {
+  color: #1e3f66;
 }
 
-#dashboard .search-bar {
-  padding: 1.2rem 2rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  border: 1px solid;
-  border-color: #dee2e6;
+.background-color-button-search {
+  background-color: #1f3f66;
 }
 
-#dashboard .search-bar svg {
-  width: 20px;
-  height: 20px;
-}
-
-/* APAGAR O PRIMARY BUTTON DPS DO PR DO JOÃO */
-#dashboard .primary-button {
+.color-icon-search {
   color: #fff;
-  background: var(--blue-500);
-  padding: 1.2rem 5rem;
-  border-radius: 0.8rem;
-  text-decoration: none;
-  transition: background 0.3s ease-in-out;
-  display: inline-block;
 }
 
-#dashboard .primary-button:hover {
-  background: var(--blue-400);
+.cards-dashboard {
+  border: none !important;
 }
 
-#dashboard #my-requests .subtitle {
- margin-top: 20px;
-  margin-bottom: 20px;
+#requests-resume .cards-dashboard {
+  width: 20rem;
 }
 
-#dashboard .card-list {
-  display: flex;
-  gap: 20px
+#requests-resume .cards-dashboard:first-of-type {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-left: 7px solid #1e3f66 !important;
 }
 
-#dashboard .card {
-  left: 0;
-  width: 286px;
-  height: 125px;
-  border-radius: 8px;
-  border: 1px solid;
-  border-color: #dbdde5;
+#requests-resume .cards-dashboard:nth-of-type(2) {
+  box-shadow: rgba(0, 0, 0, 0.15) -1.95px 1.95px 2.6px;
+  border-right: 7px solid #1e3f66 !important;
 }
 
-#dashboard .text-wrapper-3 {
-  
-  width: 217px;
-  margin-top: -1.00px;
-  margin-right: -58.00px;
-  font-family: "Inter-Medium", Helvetica;
+#requests-resume .cards-dashboard:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#requests-resume .cards-dashboard .icon-envelope {
+  color: #1e3f66;
+  font-size: 32px;
+}
+
+#recent-activities .cards-dashboard {
+  border-bottom: 1px solid #f2f2f2 !important;
+}
+
+#recent-activities .history-button {
+  border: 1px solid #1f3f66;
+  padding: 8px 30px;
+  margin-top: 24px;
+  font-size: 14px;
+  color: #1e3f66;
   font-weight: 500;
-  color: #111116;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 24px;
 }
 
-#dashboard .text-wrapper-4 {
-  width: 43px;
-  height: 39px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Roboto-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 48px;
-  letter-spacing: 0.40px;
-  line-height: 16px;
+#recent-activities .history-button:hover {
+  background-color: #1f3f66;
+  color: #fff;
 }
 
-#dashboard .text-wrapper-5 { 
-  width: 47.55%;
-  height: 14.40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Roboto-Light", Helvetica;
-  font-weight: 300;
-  color: #000000;
-  font-size: 12px;
-  letter-spacing: 0.40px;
-  line-height: 16px;
-  white-space: nowrap;
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: #3d698d !important;
 }
 
-#dashboard .depth-frame-5 {
-  width: 159px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+#recent-activities span,
+.cards-dashboard .card-link {
+  font-size: 12px !important;
 }
 
-#dashboard .text-wrapper-6 {
-  
-  width: 178px;
-  margin-top: -1.00px;
-  margin-right: -19.00px;
-  font-family: "Inter-Medium", Helvetica;
-  font-weight: 500;
-  color: #111116;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 24px;
+.card-body-text-title {
+  color: #1e3f66;
 }
 
-#dashboard .text-wrapper-7 {
-  width: 43px;
-  height: 39px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Roboto-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 48px;
-  letter-spacing: 0.40px;
-  line-height: 16px;
+.cards-resume-requests h2 {
+  font-size: 40px;
 }
 
-#dashboard .text-wrapper-8 {
-  
-  width: 47.55%;
-  height: 14.40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Roboto-Light", Helvetica;
-  font-weight: 300;
-  color: #000000;
-  font-size: 12px;
-  letter-spacing: 0.40px;
-  line-height: 16px;
-  white-space: nowrap;
-}
-
-#dashboard .text-wrapper-9 {
-  width: 380px;
-  font-family: "Inter-Medium", Helvetica;
-  font-weight: 500;
-  color: #111116;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: 24px;
-}
-
-#dashboard #recent-activities{
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-}
-
-#dashboard #recent-activities h2 {
-  align-self: stretch;
-  margin-top: -1.00px;
-  font-family: "Inter-Medium", Helvetica;
-  font-weight: 500;
-  color: #111116;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: 24px;
-}
-
-#dashboard .container-activities {
-  width: 750px;
-  height: 412px;
-}
-
-#dashboard .activity {
-  width: 697px;
-  height: 70px;
-  display: flex;
-  gap: 12px;
-  border-radius: 8px;
-  border: 1px solid;
-  border-color: #dbdde5;
+.card-title {
+  color: #1e3f66 !important;
 }
