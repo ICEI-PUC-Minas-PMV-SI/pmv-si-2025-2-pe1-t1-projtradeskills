@@ -63,8 +63,7 @@ const openModal = id => {
     <div class="modal-body">
       <p><strong>Localização:</strong> ${user.location}</p>
     </div>
-  </div>
-  `;
+  </div>`;
 
   const modal = document.createElement("div");
   modal.id = "user-modal";
