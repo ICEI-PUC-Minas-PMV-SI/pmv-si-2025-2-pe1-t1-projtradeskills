@@ -8,6 +8,10 @@
   gap: 32px;
 }
 
+#profile section {
+    width: 70%;
+}
+
 #profile p {
     color: #6c757d;
 }
@@ -120,6 +124,10 @@
 }
 
 /*Customização da seção de Habilidades*/
+#profile-skills {
+    padding: 32px;
+}
+
 .card-body {
     padding: 0px !important;
 }
