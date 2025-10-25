@@ -1,0 +1,135 @@
+#buscar .search .description {
+  font-size: 2rem;
+}
+
+#buscar .search .actions {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 4rem;
+}
+
+#buscar .search .actions .search-input {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  border: 1px solid var(--blue-500);
+  color: var(--blue-500);
+}
+
+#buscar .search .actions .search-input::placeholder {
+  color: var(--blue-500);
+}
+
+#buscar .search .actions .search-button {
+  background: var(--blue-500);
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 0.8rem;
+  font-weight: 600;
+  padding: 1.6rem 10rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+#buscar .search .actions .search-button:hover {
+  background: var(--blue-400);
+}
+
+#search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 6rem;
+  gap: 2.7rem;
+}
+
+#search-results .user-card {
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  width: 23.5%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#search-results .user-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  transform: translateY(-4px) scale(1.03);
+}
+
+#search-results .user-card .card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+}
+
+#search-results .user-card .card-header img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border: 1px solid var(--black-500);
+  border-radius: 50%;
+}
+
+#search-results .user-card .card-header .user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#search-results .user-card .card-header .user-info .user-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+#search-results .user-card .card-header .user-info .user-location {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+#search-results .user-card .card-body {
+  margin-bottom: 2rem;
+}
+
+#search-results .user-card .card-body .skill-name {
+  display: block;
+  color: var(--blue-500);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+#search-results .user-card .card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-results .user-card .card-footer .user-rating {
+  font-size: 1.2rem;
+  color: var(--blue-400);
+}
+
+/* Modal */
+
+#user-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.57);
+  display: flex;
+  justify-content: flex-end;
+  padding: 3rem;
+  z-index: 50;
+}
+
+#user-modal .modal-wrapper {
+  background: #fff;
+  width: 40%;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  position: relative;
+}

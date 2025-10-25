@@ -26,7 +26,6 @@
 }
 
 html {
-  width: 100vw;
   height: 100dvh;
   font-size: 10px;
   box-sizing: border-box;
@@ -38,13 +37,17 @@ html {
 }
 
 body {
-  min-height: 100dvh;
+  height: 100dvh;
   font-size: 1.6rem;
   line-height: 1.5;
-  display: flex;
-  flex-wrap: wrap;
   color: var(--black-500);
   background-color: var(--gray-100);
+  display: grid;
+  grid-template-areas:
+    "sidebar content"
+    "footer footer";
+  grid-template-columns: 290px auto;
+  grid-template-rows: 1fr auto;
 }
 
 body.menu-active {
@@ -55,17 +58,28 @@ body.menu-active {
 main {
   flex-grow: 1;
   padding: 3rem;
-  height: 100%;
+  grid-area: content;
+  overflow-y: auto;
+  min-height: 0;
 }
 
 img {
   max-width: 100%;
 }
 
+app-sidebar {
+  grid-area: sidebar;
+  position: sticky;
+  top: 0;
+  height: 100%;
+}
+
 app-footer {
   width: 100%;
-  /* position: fixed; */
-  /* bottom: 0; */
+  grid-area: footer;
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
 }
 
 .container {

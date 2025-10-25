@@ -1,0 +1,143 @@
+/*Customização da imagem de perfil*/
+#profile {
+  background-image: linear-gradient(to bottom right, #f0f7ff, #f8f9fa);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+#profile section {
+    width: 70%;
+}
+
+#profile p {
+    color: #6c757d;
+}
+
+#profile h6,
+.profile-image-container button i,
+.profile-form-fields label, 
+.profile-form-fields input {
+    color: #1f3f66;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.profile-image-circle {
+  width: 160px;
+  height: 160px;
+  background-image: linear-gradient(to bottom right, #1F3F66, #3D698D);
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image-circle i {
+  color: #fff;
+  font-size: 80px;
+}
+
+/*Customização do botão de câmera */
+.profile-image-container button {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #1f3f66;
+  position: relative;
+  right: 55px;
+}
+
+.profile-image-container button i {
+  font-size: 20px;
+}
+
+/*Customização da seção de Dados Pessoais*/
+
+/*Customização do container da seção de Dados Pessoais e do container dos cards de habilidades*/
+#profile-form,
+.profile-skills-cards > div {
+    border: none;
+    border-radius: 24px;
+    padding: 32px;
+    background-color: #FFF;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.profile-section-description h6,p {
+    padding: 0 !important;
+}
+
+.profile-section-description h6 {
+    margin-bottom: 5px !important;
+}
+
+.profile-section-description p {
+    margin-bottom: 0 !important;
+}
+
+.profile-section-description {
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-left-color: #1f3f66;
+    padding-left: 15px;
+    margin-bottom: 24px;
+}
+
+.profile-section-description p, 
+.profile-form-fields label, 
+.profile-form-fields input,
+.profile-button {
+    font-size: 14px !important;
+}
+
+.profile-form-fields label {
+    font-weight: 500;
+}
+
+.profile-form-fields input:focus {
+    border-color: #1F3F66;
+    box-shadow: none;
+}
+
+.profile-button-container {
+    margin-top: 24px;
+}
+
+.profile-button {
+    padding: 8px 12px;
+    background-image: linear-gradient(to bottom right, #1F3F66, #3D698D);
+    border: none !important;
+}
+
+.profile-button  i {
+   margin-right: 5px;
+}
+
+/*Customização da seção de Habilidades*/
+#profile-skills {
+    padding: 32px;
+}
+
+.card-body {
+    padding: 0px !important;
+}
+
+.skill-tag {
+    padding: 6px 12px;
+    border: 1px solid #bedbff;
+    background-image: linear-gradient(64deg,rgba(255, 255, 255, 1) 0%, rgba(231, 242, 255, 1) 18%, rgba(224, 238, 255, 1) 42%, rgba(222, 237, 255, 1) 31%, rgba(208, 229, 255, 1) 59%, rgba(190, 219, 255, 1) 94%);
+    border-radius: 3.40282e38px;
+    font-size: 12px ;
+    font-weight: bold;
+    color: #1976d2;
+}

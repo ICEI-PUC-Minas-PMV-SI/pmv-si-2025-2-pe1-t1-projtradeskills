@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="../../components/footer/script.js" defer></script>
+    <script src="../../components/sidebar/script.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="perfil-editar-habilidades">
+    <app-sidebar></app-sidebar>
+    
+    <!-- Botão principal -->
+    <button class="button" type="button">
+      <span class="text-wrapper">Salvar alterações</span>
+    </button>
+    
+    <!-- Avatar do usuário -->
+    <div class="user-circle" aria-label="Foto de perfil do usuário">
+      <img class="union" src="/docs/img/icon/icon_person_circle.svg" alt="Avatar do usuário" />
+    </div>
+    
+    <!-- Informações do usuário -->
+    <div class="frame-wrapper">
+      <div class="user-info">
+        <p class="user-name">Nome</p>
+        <p class="user-email">email@gmail.com</p>
+      </div>
+    </div>
+    
+    <!-- Campo de créditos -->
+    <div class="credits-input">
+      <img class="money-icon" src="/docs/img/icon/icon_money.svg" alt="Ícone de dinheiro" />
+      <span class="credits-value" contenteditable="true" id="editableValue">0.00</span>
+      <div class="badge-default">
+        <span class="text">Créditos</span>
+      </div>
+    </div>
+    
+    <!-- Dropdown de atendimento -->
+    <div class="dropdown-box">
+      <label for="atendimento-select" class="visually-hidden">Tipo de atendimento</label>
+      <select id="atendimento-select" class="dropdown-text">
+        <option value="remoto">Remoto</option>
+        <option value="presencial">Presencial</option>
+      </select>
+      <img class="chevron" src="img/direction-down.svg" alt="" aria-hidden="true" />
+    </div>
+    
+    <!-- Dropdown de disponibilidade - dia -->
+    <div class="availability-day">
+      <label for="disponibilidade-dia-select" class="visually-hidden">Dia da semana</label>
+      <select id="disponibilidade-dia-select" class="dropdown-text">
+        <option value="sab-dom">Sáb-dom</option>
+        <option value="seg-sex">Seg-sex</option>
+        <option value="todos">Todos os dias</option>
+      </select>
+      <img class="chevron" src="img/direction-down.svg" alt="" aria-hidden="true" />
+    </div>
+    
+    <!-- Dropdown de disponibilidade - período -->
+    <div class="availability-period">
+      <label for="disponibilidade-periodo-select" class="visually-hidden">Período do dia</label>
+      <select id="disponibilidade-periodo-select" class="dropdown-text">
+        <option value="manha">Manhã</option>
+        <option value="tarde">Tarde</option>
+        <option value="noite">Noite</option>
+      </select>
+      <img class="chevron" src="img/direction-down.svg" alt="" aria-hidden="true" />
+    </div>
+    
+    <!-- Labels das seções -->
+    <p class="suggested-value">VALOR SUGERIDO</p>
+    <p class="availability">DISPONIBILIDADE</p>
+    <p class="attendance">ATENDIMENTO</p>
+    
+    <!-- Indicador visual -->
+    <div class="atom-light" aria-hidden="true">
+      <div class="ellipse-2"></div>
+      <div class="ellipse-3"></div>
+      <div class="ellipse-4"></div>
+      <div class="ellipse-5"></div>
+    </div>
+    
+    <!-- Campo de descrição -->
+    <div class="textarea-input-field">
+      <div class="input-wrapper">
+        <div class="input-wrapper">
+          <label for="descricao-textarea" class="input-label">Descrição</label>
+          <div class="textarea-container">
+            <textarea id="descricao-textarea" class="textarea-content" rows="3">
+Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices.</textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Campo de habilidade -->
+    <div class="input-field">
+      <div class="input-wrapper">
+        <div class="input-wrapper">
+          <label for="habilidade-input" class="input-label">Habilidade</label>
+          <div class="input-container">
+            <div class="content">
+              <input class="input-standard" type="text" placeholder="Ex: Conserto de computadores" value="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <app-footer></app-footer>
+  </div>
+
+</body>
+
+</html>

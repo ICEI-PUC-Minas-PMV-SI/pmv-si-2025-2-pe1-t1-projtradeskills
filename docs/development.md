@@ -1,5 +1,8 @@
 # Programação de Funcionalidades
 
+(Esta seção apresenta a implementação do sistema desenvolvida pelo grupo, descrevendo as funcionalidades construídas a partir dos requisitos definidos nas etapas anteriores do projeto. São relacionados os requisitos funcionais e não funcionais atendidos, os respectivos artefatos de código-fonte produzidos, as estruturas de dados utilizadas.)
+
+
 Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
 
 Para cada requisito funcional, pode ser entregue um artefato desse tipo.
@@ -29,6 +32,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |------|------------------------|------------|-----------------|
 |RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | João | index.html |
 |RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês | Ana Paula | cadastro-noticia.html |
+|RF-014| Visualizar resumo das atividades como consumidor (solicitações enviadas) e provedor (pedidos recebidos) | Camila | src/feature-solicitacoes/solicitacao.html,css/solicitacao.css |
+|RF-015| Em solicitações enviadas, visualizar e gerenciar (nome da habilidade, provedor, status) | Camila | src/feature-solicitacoes/solicitacao.html |
+|RF-016| Em pedidos recebidos, visualizar e gerenciar (habilidade, solicitante, status) | Camila | src/feature-solicitacoes/solicitacao.html |
+
 
 ## Descrição das estruturas:
 
