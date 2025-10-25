@@ -12,7 +12,7 @@
 .profile-image-circle {
   width: 160px;
   height: 160px;
-  background-color: #1f3f66;
+  background-image: linear-gradient(to bottom right, #1F3F66, #3D698D);
   border-radius: 50%;
   border: 5px solid #fff;
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
@@ -50,6 +50,19 @@
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
+.profile-section-description h6,p {
+    padding: 0 !important;
+}
+
+.profile-section-description h6 {
+    margin-bottom: 5px !important;
+}
+
+.profile-section-description p {
+    margin-bottom: 0 !important;
+    color: #6c757d;
+}
+
 .profile-section-description {
     border-left-width: 4px;
     border-left-style: solid;
@@ -58,17 +71,38 @@
     margin-bottom: 24px;
 }
 
-.profile-section-description h6,p {
-    padding: 0 !important;
+.profile-section-description p, 
+.profile-form-fields label, 
+.profile-form-fields input,
+.profile-button {
+    font-size: 14px !important;
 }
 
-.profile-section-description h6 {
+.profile-section-description h6,
+.profile-form-fields label, 
+.profile-form-fields input {
     color: #1f3f66;
-    margin-bottom: 5px !important;
 }
 
-.profile-section-description p {
-    margin-bottom: 0 !important;
-    font-size: 14px;
-    color: #6c757d;
+.profile-form-fields label {
+    font-weight: 500;
+}
+
+.profile-form-fields input:focus {
+    border-color: #1F3F66;
+    box-shadow: none;
+}
+
+.profile-button-container {
+    margin-top: 24px;
+}
+
+.profile-button {
+    padding: 8px 12px;
+    background-image: linear-gradient(to bottom right, #1F3F66, #3D698D);
+    border: none !important;
+}
+
+.profile-button  i {
+   margin-right: 5px;
 }
