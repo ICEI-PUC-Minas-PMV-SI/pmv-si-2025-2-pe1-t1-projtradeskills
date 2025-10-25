@@ -1,6 +1,22 @@
 /*Customização da imagem de perfil*/
 #profile {
   background-image: linear-gradient(to bottom right, #f0f7ff, #f8f9fa);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+#profile p {
+    color: #6c757d;
+}
+
+#profile h6,
+.profile-image-container button i,
+.profile-form-fields label, 
+.profile-form-fields input {
+    color: #1f3f66;
 }
 
 .profile-image-container {
@@ -38,12 +54,15 @@
 }
 
 .profile-image-container button i {
-  color: #1f3f66;
   font-size: 20px;
 }
 
 /*Customização da seção de Dados Pessoais*/
-#profile-form {
+
+/*Customização do container da seção de Dados Pessoais e do container dos cards de habilidades*/
+#profile-form,
+.profile-skills-cards > div {
+    border: none;
     border-radius: 24px;
     padding: 32px;
     background-color: #FFF;
@@ -60,7 +79,6 @@
 
 .profile-section-description p {
     margin-bottom: 0 !important;
-    color: #6c757d;
 }
 
 .profile-section-description {
@@ -76,12 +94,6 @@
 .profile-form-fields input,
 .profile-button {
     font-size: 14px !important;
-}
-
-.profile-section-description h6,
-.profile-form-fields label, 
-.profile-form-fields input {
-    color: #1f3f66;
 }
 
 .profile-form-fields label {
@@ -105,4 +117,19 @@
 
 .profile-button  i {
    margin-right: 5px;
+}
+
+/*Customização da seção de Habilidades*/
+.card-body {
+    padding: 0px !important;
+}
+
+.skill-tag {
+    padding: 6px 12px;
+    border: 1px solid #bedbff;
+    background-image: linear-gradient(64deg,rgba(255, 255, 255, 1) 0%, rgba(231, 242, 255, 1) 18%, rgba(224, 238, 255, 1) 42%, rgba(222, 237, 255, 1) 31%, rgba(208, 229, 255, 1) 59%, rgba(190, 219, 255, 1) 94%);
+    border-radius: 3.40282e38px;
+    font-size: 12px ;
+    font-weight: bold;
+    color: #1976d2;
 }
