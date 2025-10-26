@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="styleguide.css" />
@@ -144,7 +144,11 @@
                     <span class="skill-tag">Sáb | Tarde</span>
                   </div>
                   <div class="d-flex flex-column justify-content-between">
-                    <i class="bi bi-pencil"></i>
+                    <i
+                      class="bi bi-pencil"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    ></i>
                     <i class="bi bi-trash3"></i>
                   </div>
                 </div>
@@ -170,23 +174,142 @@
                     <span class="skill-tag">Seg-Sáb | Manhã</span>
                   </div>
                   <div class="d-flex flex-column justify-content-between">
-                    <i class="bi bi-pencil"></i>
+                    <i
+                      class="bi bi-pencil"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    ></i>
                     <i class="bi bi-trash3"></i>
                   </div>
                 </div>
               </div>
             </div>
             <div class="profile-button-container">
-              <button type="button" class="btn btn-primary profile-button">
+              <button
+                type="button"
+                class="btn btn-primary profile-button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 <i class="bi bi-plus"></i>
                 Adicionar habilidade
               </button>
             </div>
           </section>
         </main>
+
+        <!-- Modal de Criar e Editar Habilidade -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="profile-skills-modal"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header flex-column">
+                <h6 class="modal-title">
+                  Editar Habilidade
+                </h6>
+                <p>
+                  Preencha os detalhes da sua habilidade para que outros
+                  usuários possam conhecê-la.
+                </p>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Título da habilidade</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Nome da habilidade"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Descrição</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="profile-skills-modal-container-labels">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Valor sugerido</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value=""
+                    />
+                  </div>
+    
+                  <div class="input-group mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Disponibilidade</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value=""
+                    />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value=""
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Valor sugerido</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value=""
+                    />
+                  </div>
+
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancelar
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Salvar alterações
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAL FIM -->
       </div>
     </div>
-    <!-- <app-footer></app-footer> -->
+    <app-footer></app-footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

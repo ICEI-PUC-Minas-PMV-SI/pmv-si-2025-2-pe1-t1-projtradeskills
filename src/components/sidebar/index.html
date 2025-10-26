@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
     <title>Sidebar - Component</title>
   </head>
   <body>
-    <template id="template-app-sidebar">
+   <template id="template-app-sidebar">
       <aside class="sidebar">
         <div class="logo">
-          <img src="/public/logo.svg" alt="TradeSkill Logo" />
+          <img src="/src/feature-solicitacoes/icon/logo_trade.jpg" alt="TradeSkill Logo" />
         </div>
         <nav class="sidebar-nav">
-          <a href="/dashboard/">
+          <a href="/src/dashboard/index.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -29,7 +30,7 @@
             </svg>
             Dashboard
           </a>
-          <a href="/solicitacoes/">
+          <a href="/src/feature-solicitacoes/solicitacao.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -61,7 +62,7 @@
             </svg>
             Meu histórico
           </a>
-          <a href="/perfil/">
+          <a href="/src/perfil/index.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -77,7 +78,7 @@
             </svg>
             Perfil
           </a>
-          <a href="/reportar/">
+          <a href="/src/bug/index.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -109,29 +110,8 @@
             </svg>
             Reportar
           </a>
-          <a href="/configuracoes/">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.438.995a6.427 6.427 0 010 .255c0 .382.145.755.438.995l1.003.827c.48.398.668 1.03.26 1.431l-1.296 2.247a1.125 1.125 0 01-1.37.49l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.063-.374-.313-.686-.645-.87a6.52 6.52 0 01-.22-.127c-.324-.196-.72-.257-1.075-.124l-1.217.456a1.125 1.125 0 01-1.37-.49l-1.296-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.437-.995a6.427 6.427 0 010-.255c0-.382-.145-.755-.437-.995l-1.004-.827a1.125 1.125 0 01-.26-1.431l1.296-2.247a1.125 1.125 0 011.37-.49l1.217.456c.355.133.75.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-            </svg>
-            Configurações
-          </a>
         </nav>
       </aside>
-    </template>
+   </template>
   </body>
 </html>

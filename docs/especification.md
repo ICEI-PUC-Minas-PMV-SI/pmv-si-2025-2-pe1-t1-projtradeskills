@@ -21,32 +21,34 @@ Os perfis de usuários na plataforma Trade Skills são definidos por sua <b>aç�
 
 João Silva tem 25 anos e é estudante universitário de Sistemas de Informação. Sem emprego formal, sua renda é proveniente de serviços esporádicos de manutenção de computadores que ele realiza para membros de sua igreja. Ele sonha com um estágio no Canadá, mas para isso precisa dominar o inglês, um custo que não consegue arcar. João está buscando uma plataforma onde ele possa oferecer sua habilidade em manutenção em troca de aulas de inglês.
 
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `QUEM`| QUERO/DESEJO ... `O QUE` |PARA ... `PORQUE`                 |
 |-----------------|--------------------------|----------------------------------|
-|Usuário da plataforma (consumidor e provedor). | Me cadastrar e criar o perfil na plataforma, de forma simples, informando nome, email e senha| Ter acesso a comunidade e oferecer ou contratar serviços.|
-|Usuário da plataforma (consumidor e provedor). | Editar meu perfil com foto, dados de contato, local de atendimento e descrição detalhada dos meus serviços (habilidades) oferecidos, incluindo nome, categoria e o valor sugerido em cráditos. | Que outros usuários possam me conhecer melhor e sentir confiança para negociar.|
-|Usuário da plataforma (consumidor e provedor).| Redefinir minha senha, em caso de esquecimento. | Que eu possa recuperar o acesso de minha conta.|
-|Usuário da plataforma (consumidor e provedor).| Remover serviços (habilidades) que cadastrei anteriormente no meu perfil.| Manter minha lista de habilidades sempre atualizada com serviços que posso oferecer.|
-Usuário da plataforma (consumidor e provedor).| Que o sistema me alerte sobre a exclusão de uma habilidade.| Que eu entenda que essa ação impactará a minha capacidade de ganhar novos créditos para transações futuras.|
-| Visualizar meu saldo atual de créditos.| Ter controle sobre minha "moeda virtual" e saber quanto posso gastar no momento.|
-|Usuário da plataforma (consumidor e provedor).|Visualizar meu histórico de transações.|Acompanhar o histórico de entrada e saída de créditos.|
-|Usuário da plataforma (consumidor e provedor).| Buscar por habilidades ou serviços usando palavras-chave e filtros (como categoria ou reputação).|Encontrar rapidamente os serviços que preciso.|
-|Usuário da plataforma (consumidor e provedor).| Visualizar perfis dos outros usuários da plataforma, incluindo suas habilidades, histórico de serviços prestados, com o valor de créditos cobrado e avaliações dos consumidores.|Tomar uma decisão informada e segura antes de consumir ou divulgar um serviço (habilidade).|
-|Usuário da plataforma (consumidor e provedor).| Enviar uma solicitação de serviço a um provedor.| Iniciar uma negociação e verificar a disponibilidade dele para realizar o trabalho.|
-|Usuário da plataforma (consumidor e provedor).|Aceitar ou rejeitar um pedido de serviço.|Gerenciar minha carga de trabalho.|
-|Usuário da plataforma (consumidor e provedor).| Confirmar que o serviço foi concluído com sucesso.| Liberar o pagamento dos créditos ao prestador e finalizar a transação. |
-|Usuário da plataforma (consumidor e provedor).|Adicionar uma avaliação com nota e um comentário sobre o serviço prestado/contratado.| Ajudar a construir um sistema de reputação que traga mais segurança para todos.|
-|Usuário da plataforma (consumidor e provedor).|Receber notificações sobre negociações, avaliações e mensagens.| Acompanhar o status das minhas negociações e responder rapidamente os outros usuários.|
-|Usuário da plataforma (consumidor e provedor).| Ter uma seção na plataforma para reportar bugs, comportamentos irregulares ou abusivos, para que possa sugerir melhorias.| Que eu possa contribuir para a segurança e melhoria contínua da plataforma.|
-|Usuário da plataforma (consumidor e provedor).|Deletar minha conta e todos os meus dados da plataforma a qualquer momento.| Que eu possa ter controle sobre minhas informações pessoais.|
-|Usuário da plataforma (consumidor e provedor).| Ter um sistema de chat para conversar com outros usuários.| Tirar dúvidas sobre o(s) serviço(s) antes de efetivamente "solicitar".|
-
-
-
+| Usuário da plataforma (consumidor e provedor). | Acessar o site da plataforma Trade Skills. | Encontrar o que preciso ou conhecer o funcionamento da plataforma antes de logar/cadastrar.|
+| Usuário da plataforma (consumidor e provedor). | Me cadastrar na plataforma informando nome, e-mail e senha. | Ter acesso à comunidade e começar a interagir. |
+| Usuário da plataforma (consumidor e provedor). | Fazer login com meu e-mail e senha. | Acessar minha conta de forma rápida e segura. |
+| Usuário da plataforma (consumidor e provedor). | Ser obrigado a completar meu perfil para liberar os créditos de boas-vindas. | Poder começar a prover serviços e acumular créditos. |
+| Usuário da plataforma (consumidor e provedor). | Ser redirecionado para o Dashboard e visualizar meu saldo atual de créditos e o resumo das atividades. | Ter controle sobre minha "moeda virtual" e acompanhar o status geral da minha conta. |
+| Usuário da plataforma (consumidor e provedor). | Cadastrar e editar minhas habilidades, definindo valor em créditos, horário e local de atendimento. | Que outros usuários possam me conhecer melhor e sentir confiança para negociar. |
+| Usuário da plataforma (consumidor e provedor). | Excluir uma habilidade cadastrada, recebendo um alerta de confirmação. | Manter minha lista de habilidades sempre atualizada com serviços que posso oferecer. |
+| Usuário da plataforma (consumidor e provedor). | Que o sistema me alerte especificamente sobre o impacto de excluir minha única habilidade. | Entender que essa ação impactará minha capacidade de ganhar novos créditos. |
+| Usuário da plataforma (consumidor e provedor). | Editar meus dados pessoais, como nome, e-mail, senha e foto de perfil, sempre que desejar. | Manter minhas informações de conta sempre atualizadas. |
+| Usuário da plataforma (consumidor e provedor). | Buscar por habilidades ou serviços usando palavras-chave e filtros (categoria, reputação, favoritos). | Encontrar rapidamente os serviços que preciso. |
+| Usuário da plataforma (consumidor e provedor). | Visualizar o perfil completo de um provedor, incluindo histórico de serviços e avaliações dos consumidores. | Tomar uma decisão informada e segura antes de contratar um serviço. |
+| Usuário da plataforma (consumidor e provedor). | Visualizar meu histórico de transações no menu principal, incluindo detalhes de entrada e saída de créditos. | Acompanhar todo o histórico financeiro e de serviços prestados/contratados. |
+| Usuário da plataforma (consumidor e provedor). | Acessar a tela de "Minhas Solicitações" para ver as solicitações que enviei e os pedidos que recebi, com o status atual de cada um. | Gerenciar ativamente minhas negociações como consumidor e provedor. |
+| Usuário da plataforma (consumidor e provedor). | Enviar uma solicitação de serviço a um provedor. | Iniciar uma negociação e verificar a disponibilidade dele. |
+|Usuário da plataforma (consumidor e provedor). | Aceitar ou Cancelar um pedido de serviço que está com o status "Pendente". | Gerenciar minha carga de trabalho e compromissos. |
+| Usuário da plataforma (consumidor e provedor). | Cancelar minha solicitação de serviço, com justificativa opcional, após o provedor tê-la aceito. | Ter flexibilidade em caso de imprevistos ou mudanças de plano. |
+| Usuário da plataforma (consumidor e provedor). | Sinalizar a conclusão de um serviço que está "Em Andamento". | Indicar que meu trabalho foi finalizado e aguardar o pagamento em créditos. |
+| Usuário da plataforma (consumidor e provedor). | Confirmar a conclusão do serviço e autorizar a transferência automática dos créditos. | Liberar o pagamento ao prestador e finalizar a transação. |
+| Usuário da plataforma (consumidor e provedor). | Avaliar o outro usuário logo após a confirmação da conclusão do serviço. | Ajudar a construir um sistema de reputação que traga segurança e confiança para as futuras transações na plataforma. |
+| Usuário da plataforma (consumidor e provedor). | Conseguir vizualizar as minhas solicitações enviadas e dos pedidos recebidos. | Acompanhar o status das minhas negociações. |
+| Usuário da plataforma (consumidor e provedor). | Ter uma seção de Suporte com opções claras para reportar problemas, dar sugestões ou fazer denúncias. | Que eu possa contribuir para a segurança e melhoria contínua da plataforma. |
 
 
 ## Requisitos
@@ -60,39 +62,24 @@ Esta documentação divide os requisitos em duas categorias principais: requisit
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-001| A aplicação deve permitir o login por e-mail e senha. | ALTA | 
-|RF-002| A aplicação deve permitir o cadastro com nome, e-mail e senha. | ALTA | 
-|RF-003| A aplicação deve permitir a recuperação de senha, mediante confirmação de e-mail e resposta de segurança. | MÉDIA | 
-|RF-004| A aplicação deve liberar os créditos iniciais de “boas-vindas” mediante a conclusão do preenchimento dos dados do perfil e configuração da pergunta de segurança. | ALTA | 
-|RF-005| A aplicação deve permitir a edição dos dados pessoais como nome, senha, foto, cidade e contato. | ALTA | 
-|RF-006| A aplicação deve permitir a edição das habilidades, incluindo título, descrição, valor sugerido em créditos, horário e forma de atendimento (remoto, presencial ou ambos). | ALTA | 
-|RF-007| A aplicação deve permitir que o usuário exclua as habilidades cadastradas. | ALTA | 
-|RF-008| A aplicação a criação de, no mínimo 1 e no máximo 2 perguntas e respostas de segurança, para garantir a possibilidade de recuperar a senha, em caso de esquecimento. | MÉDIA | 
-|RF-009| A aplicação deve permitir a visualização do saldo atual de créditos no cabeçalho do site. | ALTA | 
-|RF-010| A aplicação deve permitir a busca por habilidades desejadas, usando filtros como categoria, reputação do provedor e palavras-chave, para que ele encontre rapidamente o que precisa. | ALTA | 
-|RF-011| A aplicação deve permitir a visualização de perfis dos outros usuários da plataforma, incluindo suas habilidades, histórico de serviços prestados, com o valor de créditos sugerido e avaliações dos consumidores. | ALTA | 
-|RF-012| A aplicação deve permitir clicar no botão "solicitar serviço" para iniciar a negociação com o provedor. | ALTA | 
-|RF-013| A aplicação deve ter um botão de “Meu histórico” para permitir a visualização do histórico de transações, que contêm os valores de entrada e saída de créditos, incluindo data, horário, nome do serviço prestado e nome do provedor ou consumidor. | ALTA | 
-|RF-014| A aplicação deve permitir a visualização do resumo das atividades do usuário como provedor (pedidos recebidos) e como consumidor (solicitações enviadas), para que ele possa acompanhar facilmente suas interações na plataforma. | ALTA | 
-|RF-015| Ao acessar a seção “solicitações enviadas”, a aplicação deve permitir a visualização e o gerenciamento das solicitações enviadas, incluindo nome da habilidade, nome do provedor e status atual. | ALTA | 
-|RF-016| Ao acessar a seção “pedidos recebidos”, a aplicação deve p permitir a visualização e o gerenciamento dos pedidos recebidos, incluindo nome da habilidade, nome do solicitante e status atual. | ALTA | 
-|RF-017| A aplicação deve permitir que o usuário provedor aceite ou rejeite solicitações de serviços recebidas, atualizando o status do painel de controle. | ALTA | 
-|RF-018| Após o provedor aceitar a solicitação de serviço, o sistema deve permitir que o consumidor consiga cancelar sua solicitação de serviço, com a opção de adicionar uma justificativa. | ALTA | 
-|RF-019| O usuário consumidor deve confirmar a conclusão do serviço, para autorizar a transferência automática de créditos. | ALTA | 
-|RF-020| Após a confirmação da conclusão do serviço, por parte do consumidor, o sistema deve transferir automaticamente os créditos da conta do usuário consumidor para a do usuário provedor e atualizar o histórico de transações de ambas as contas. | ALTA | 
-|RF-021| Permitir que o consumidor consiga avaliar o serviço prestado pelo provedor. | ALTA | 
-|RF-022| Permitir que o provedor consiga avaliar a conduta do consumidor, durante a execução do serviço. | ALTA | 
-|RF-023| A aplicação deve impedir que o mesmo usuário registre uma troca consigo mesmo. | ALTA | 
-|RF-024| A aplicação deve alertar o usuário de que a exclusão de suas habilidades cadastradas impactará na sua capacidade de obter novos créditos para transações futuras, uma vez que ele não está mais oferecendo serviços (habilidade). | MÉDIA | 
-|RF-025| Ao clicar em “Esqueci minha senha” a aplicação deve enviar um link seguro para o e-mail do usuário para que ele possa redefinir sua senha.  | MÉDIA | 
-|RF-026| A aplicação deve exibir notificações visuais internas (como ícones ou alertas) sobre novas solicitações, atualizações de status dos pedidos. | MÉDIA | 
-|RF-027| A aplicação deve oferecer uma seção para que o usuário possa reportar bugs, comportamentos irregulares ou abusivos e sugerir melhorias. | MÉDIA | 
-|RF-028| A aplicação deve permitir que o usuário compre pacotes de créditos com dinheiro real, usando métodos de pagamento como cartão de crédito/débito e pix. | BAIXA | 
-|RF-029| A aplicação deve permitir que o usuário denuncie avaliações falsas ou inadequadas. | BAIXA | 
-|RF-030| A aplicação deve conter um sistema chat para que os usuários possam conversar com outros usuários. | BAIXA | 
-|RF-031| A aplicação deve permitir exportar/importar dados em um arquivo (Json). | BAIXA | 
-|RF-032| A aplicação deve permitir que o usuário adicione ou remova habilidades da sua lista de favoritos. | BAIXA | 
-|RF-033| Ao solicitar um serviço, a aplicação deverá sugerir um “preço” em créditos para o consumidor, baseado em outras negociações realizadas na plataforma. | BAIXA | 
+|RF-001| A aplicação deve possuir uma página inicial pública, que apresente detalhes sobre a plataforma Trade Skills. Esta página deve conter os botões “Cadastre-se” e “Login”. | ALTA |
+|RF-002| A aplicação deve permitir o login por e-mail e senha. | ALTA |
+|RF-003| A aplicação deve permitir o cadastro com nome, e-mail e senha. | ALTA |
+|RF-004| A aplicação deve redirecionar o usuário para o Dashboard após o login com sucesso e permitir a visualização do saldo atual de créditos e o resumo das atividades. No primeiro acesso, o Dashboard deve exibir um pop-up obrigatório (não fechável) solicitando que o usuário preencha seu perfil completo para a liberação dos créditos iniciais de boas-vindas. | ALTA |
+|RF-005| A aplicação deve permitir que o usuário cadastre, edite e exclua habilidades. A edição deve incluir título, descrição, valor sugerido em créditos, horário e forma de atendimento (remoto, presencial ou ambos). Ao tentar excluir uma habilidade, o sistema deve apresentar um alerta de confirmação. Se a habilidade em questão for a única cadastrada, o alerta deve ser específico, notificando o usuário de que essa ação impactará sua capacidade de obter novos créditos e, portanto, de prover serviços. | ALTA |
+|RF-006| A aplicação deve permitir a edição dos dados pessoais como nome, senha, foto, cidade e contato. | ALTA |
+|RF-007| A aplicação deve permitir a busca por habilidades com filtros (categoria, reputação, palavras-chave e favoritos) e a visualização resumida dos perfis dos provedores. | ALTA |
+|RF-008| Após o usuário clicar para visualizar o perfil completo de um provedor, a aplicação deve permitir a visualização completa incluindo todas as habilidades oferecidas, histórico de serviços prestados e avaliações dos consumidores. | ALTA |
+|RF-009| A aplicação deve ter um botão “Meu histórico” no menu principal, para permitir a visualização do histórico de transações, onde o usuário poderá visualizar os valores de entrada e saída de créditos, incluindo data, horário, nome do serviço prestado e nome do provedor ou consumidor. | ALTA |
+|RF-010| A aplicação deve ter um botão "Minhas Solicitações" no menu principal, que exibe uma tela com duas abas: "Solicitações Enviadas" (visão do consumidor) e "Pedidos Recebidos" (visão do provedor). Ambas as abas devem listar as transações com detalhes como habilidade, nome do provedor ou consumidor, data, status atual e uma opção para "Gerenciar/Visualizar" a transação. | ALTA |
+|RF-011| Na tela do consumidor (Solicitações enviadas), com o status "Em andamento", ao clicar em "Visualizar" abrirá o pop up com a opção "Confirmar conclusão" ou "Desistir(com justificativa opcional)". | ALTA |
+|RF-012| Na tela do provedor (Pedidos recebidos), com o status "Pendente", ao clicar em "Visualizar" abrirá o pop up com a opção "Aceitar ou Cancelar". | ALTA |
+|RF-013| Na tela do provedor (Pedidos recebidos), com o status "Em Andamento", ao clicar em "Visualizar" abrirá o pop up com a opção "Sinalizar conclusão". | ALTA |
+|RF-014| Após o provedor aceitar, o sistema deve permitir que o consumidor consiga cancelar sua solicitação (com justificativa opcional). | ALTA |
+|RF-015| O consumidor deve confirmar a conclusão, o que transfere automaticamente os créditos. Após o pagamento, o sistema deve obrigar a avaliação mútua (consumidor avalia provedor, provedor avalia consumidor). | ALTA |
+|RF-016| Exibe alertas visuais internos sobre novas solicitações e atualizações de status. | ALTA |
+|RF-017| Permitir que o provedor consiga avaliar a conduta do consumidor após a confirmação de conclusão do serviço. | ALTA |
+|RF-018| A aplicação deve disponibilizar um formulário para o Suporte, onde o usuário deverá selecionar o “Tipo de Requisição”: Sugestão de Melhoria, Reportar Problema no Sistema, Fazer Denúncia e Outros. | MÉDIA |
 
 
 ### Requisitos não Funcionais
