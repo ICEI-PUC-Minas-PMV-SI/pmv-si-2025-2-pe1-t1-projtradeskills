@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="styleguide.css" />
@@ -144,7 +144,11 @@
                     <span class="skill-tag">Sáb | Tarde</span>
                   </div>
                   <div class="d-flex flex-column justify-content-between">
-                    <i class="bi bi-pencil"></i>
+                    <i
+                      class="bi bi-pencil"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    ></i>
                     <i class="bi bi-trash3"></i>
                   </div>
                 </div>
@@ -170,20 +174,103 @@
                     <span class="skill-tag">Seg-Sáb | Manhã</span>
                   </div>
                   <div class="d-flex flex-column justify-content-between">
-                    <i class="bi bi-pencil"></i>
+                    <i
+                      class="bi bi-pencil"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    ></i>
                     <i class="bi bi-trash3"></i>
                   </div>
                 </div>
               </div>
             </div>
             <div class="profile-button-container">
-              <button type="button" class="btn btn-primary profile-button">
+              <button
+                type="button"
+                class="btn btn-primary profile-button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 <i class="bi bi-plus"></i>
                 Adicionar habilidade
               </button>
             </div>
           </section>
         </main>
+        
+        <!-- MODAL -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header flex-column">
+                <h5 class="modal-title fs-5" id="skillModal">
+                  Editar Habilidade
+                </h5>
+                <p>Preencha os detalhes da sua habilidade para que outros usuários possam conhecê-la.</p>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Título da habilidade</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Nome da habilidade"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Descrição</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Tags</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="name@example.com"
+                  />
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancelar
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Salvar alterações
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAL FIM -->
       </div>
     </div>
     <!-- <app-footer></app-footer> -->
