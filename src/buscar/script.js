@@ -81,7 +81,7 @@ const openModal = id => {
                   user.skills[0].availability ? "Remoto" : "Presencial"
                 }</p>
               </div>
-              <a href="/minhasSolicitacoes/" class="hire-button primary-button buttons">Solicitar serviço</a>
+              <a href="/solicitacoes/" class="hire-button primary-button buttons">Solicitar serviço</a>
             </div>
           </div>
         </div>
