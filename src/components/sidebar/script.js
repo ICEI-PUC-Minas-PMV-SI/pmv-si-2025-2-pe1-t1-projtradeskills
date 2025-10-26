@@ -8,24 +8,24 @@ class AppSidebar extends HTMLElement {
     try {
       // Lista de caminhos possíveis em ordem de prioridade
       const possiblePaths = [
-        './components/sidebar/index.html',        // Se estiver na raiz src
-        '../components/sidebar/index.html',       // Se estiver em uma subpasta
-        '../../components/sidebar/index.html',    // Se estiver em subpasta aninhada
-        '../../../components/sidebar/index.html', // Se estiver ainda mais profundo
-        '/src/components/sidebar/index.html'      // Caminho absoluto como fallback
+        "./components/sidebar/index.html", // Se estiver na raiz src
+        "../components/sidebar/index.html", // Se estiver em uma subpasta
+        "../../components/sidebar/index.html", // Se estiver em subpasta aninhada
+        "../../../components/sidebar/index.html", // Se estiver ainda mais profundo
+        "/src/components/sidebar/index.html" // Caminho absoluto como fallback
       ];
-      
+
       let response;
       let basePath;
-      
+
       // Tenta cada caminho até encontrar um que funcione
       for (const path of possiblePaths) {
         try {
-          console.log('Tentando carregar sidebar de:', path);
+          console.log("Tentando carregar sidebar de:", path);
           response = await fetch(path);
           if (response.ok) {
             basePath = path;
-            console.log('Sucesso! Carregado de:', path);
+            console.log("Sucesso! Carregado de:", path);
             break;
           }
         } catch (e) {
@@ -33,9 +33,11 @@ class AppSidebar extends HTMLElement {
           continue;
         }
       }
-      
+
       if (!response || !response.ok) {
-        throw new Error("Não foi possível carregar o template do sidebar de nenhum caminho.");
+        throw new Error(
+          "Não foi possível carregar o template do sidebar de nenhum caminho."
+        );
       }
       const htmlText = await response.text();
 
@@ -48,9 +50,12 @@ class AppSidebar extends HTMLElement {
 
         const globalStyles = document.createElement("link");
         globalStyles.setAttribute("rel", "stylesheet");
-        
+
         // Determina o prefixo baseado no caminho que funcionou
-        const pathPrefix = basePath.replace('components/sidebar/index.html', '');
+        const pathPrefix = basePath.replace(
+          "components/sidebar/index.html",
+          ""
+        );
         const globalStylesPath = `${pathPrefix}assets/global.css`;
         globalStyles.setAttribute("href", globalStylesPath);
 

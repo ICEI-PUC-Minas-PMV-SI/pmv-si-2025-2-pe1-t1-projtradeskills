@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cadastro — TradeSkills</title>
+    <title>Login — TradeSkills</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +17,7 @@
       <div class="container-row">
         <h1 class="logo" aria-label="TradeSkills">TradeSkills</h1>
         <nav class="top-nav" aria-label="Principal">
-          <a href="/login/">Entrar</a>
+          <a href="/cadastro/">Criar conta</a>
         </nav>
       </div>
     </header>
@@ -25,28 +25,16 @@
     <main class="container grid" role="main">
       <section class="panel">
         <form class="form" action="#" method="post" novalidate>
-          <h2 class="title">Criar conta</h2>
+          <h2 class="title">Entrar</h2>
           <p class="muted">
-            Já tem uma conta?
-            <a href="/login/">Faça login</a>
+            Ainda não tem uma conta?
+            <a href="/cadastro/">Cadastre-se</a>
           </p>
 
           <div class="field">
-            <label for="nome">Nome</label>
+            <label for="login-email">E-mail</label>
             <input
-              id="nome"
-              name="nome"
-              type="text"
-              placeholder="Seu nome"
-              autocomplete="name"
-              required
-            />
-          </div>
-
-          <div class="field">
-            <label for="cad-email">E‑mail</label>
-            <input
-              id="cad-email"
+              id="login-email"
               name="email"
               type="email"
               placeholder="voce@exemplo.com"
@@ -56,50 +44,28 @@
           </div>
 
           <div class="field">
-            <label for="cad-email-confirma">Confirmar e‑mail</label>
+            <label for="login-senha">Senha</label>
             <input
-              id="cad-email-confirma"
-              name="email_confirma"
-              type="email"
-              placeholder="voce@exemplo.com"
-              autocomplete="email"
-              required
-            />
-          </div>
-
-          <div class="field">
-            <label for="cad-senha">Senha</label>
-            <input
-              id="cad-senha"
+              id="login-senha"
               name="senha"
               type="password"
-              placeholder="Crie uma senha"
-              autocomplete="new-password"
+              placeholder="Sua senha"
+              autocomplete="current-password"
               required
-              minlength="6"
             />
           </div>
 
-          <div class="field">
-            <label for="cad-senha-confirma">Confirmar senha</label>
-            <input
-              id="cad-senha-confirma"
-              name="senha_confirma"
-              type="password"
-              placeholder="Repita a senha"
-              autocomplete="new-password"
-              required
-              minlength="6"
-            />
-          </div>
+          <p class="right">
+            <a class="small" href="#">Esqueceu sua senha?</a>
+          </p>
 
-          <button type="submit" class="btn">Cadastrar</button>
+          <button type="submit" class="btn">Entrar</button>
         </form>
       </section>
 
       <aside class="illustration">
         <img
-          src="assets/img/img.jpg"
+          src="assets/img/Img.jpg"
           alt="Ilustração da plataforma TradeSkills"
         />
       </aside>
