@@ -28,7 +28,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `QUEM`| QUERO/DESEJO ... `O QUE` |PARA ... `PORQUE`                 |
 |-----------------|--------------------------|----------------------------------|
-| Usuário da plataforma (consumidor e provedor). | Acessar o site da plataforma Trade Skills. | Encontrar o que preciso ou conhecer o funcionamento da plataforma antes de logar/cadastrar.|
+| Usuário da plataforma (consumidor e provedor). | Acessar o site da plataforma Trade Skills. | Conhecer o funcionamento da plataforma antes de logar/cadastrar. |
 | Usuário da plataforma (consumidor e provedor). | Me cadastrar na plataforma informando nome, e-mail e senha. | Ter acesso à comunidade e começar a interagir. |
 | Usuário da plataforma (consumidor e provedor). | Fazer login com meu e-mail e senha. | Acessar minha conta de forma rápida e segura. |
 | Usuário da plataforma (consumidor e provedor). | Ser obrigado a completar meu perfil para liberar os créditos de boas-vindas. | Poder começar a prover serviços e acumular créditos. |
@@ -42,12 +42,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Usuário da plataforma (consumidor e provedor). | Visualizar meu histórico de transações no menu principal, incluindo detalhes de entrada e saída de créditos. | Acompanhar todo o histórico financeiro e de serviços prestados/contratados. |
 | Usuário da plataforma (consumidor e provedor). | Acessar a tela de "Minhas Solicitações" para ver as solicitações que enviei e os pedidos que recebi, com o status atual de cada um. | Gerenciar ativamente minhas negociações como consumidor e provedor. |
 | Usuário da plataforma (consumidor e provedor). | Enviar uma solicitação de serviço a um provedor. | Iniciar uma negociação e verificar a disponibilidade dele. |
-|Usuário da plataforma (consumidor e provedor). | Aceitar ou Cancelar um pedido de serviço que está com o status "Pendente". | Gerenciar minha carga de trabalho e compromissos. |
-| Usuário da plataforma (consumidor e provedor). | Cancelar minha solicitação de serviço, com justificativa opcional, após o provedor tê-la aceito. | Ter flexibilidade em caso de imprevistos ou mudanças de plano. |
-| Usuário da plataforma (consumidor e provedor). | "Sinalizar a conclusão" ou "Cancelar" um serviço que está com o status "Em Andamento". | Indicar que meu trabalho foi finalizado e aguardar o pagamento em créditos ou . |
+| Usuário da plataforma (consumidor e provedor). | Aceitar ou Cancelar um pedido de serviço que está com o status "Pendente". | Gerenciar minha carga de trabalho e compromissos. |
+| Usuário da plataforma (consumidor e provedor). | Cancelar minha solicitação com justificativa obrigatória quando o serviço estiver "Em Andamento". | Garantir um registro formal do motivo do cancelamento de um trabalho já iniciado (RF-011). |
+| Usuário da plataforma (consumidor e provedor). | Sinalizar a conclusão ou Cancelar com justificativa obrigatória um serviço que está "Em Andamento". | Indicar o fim do trabalho ou registrar o motivo oficial de um cancelamento (RF-013). |
 | Usuário da plataforma (consumidor e provedor). | Confirmar a conclusão do serviço e autorizar a transferência automática dos créditos. | Liberar o pagamento ao prestador e finalizar a transação. |
-| Usuário da plataforma (consumidor e provedor). | Avaliar o outro usuário logo após a confirmação da conclusão do serviço. | Ajudar a construir um sistema de reputação que traga segurança e confiança para as futuras transações na plataforma. |
-| Usuário da plataforma (consumidor e provedor). | Conseguir vizualizar as minhas solicitações enviadas e dos pedidos recebidos. | Acompanhar o status das minhas negociações. |
+| Usuário da plataforma (consumidor e provedor). | Avaliar o outro usuário após a conclusão do serviço. | Ajudar a construir um sistema de reputação mútua obrigatório que traga segurança e confiança (RF-014). |
+| Usuário da plataforma (consumidor e provedor).| Receber alertas visuais internos sobre novas solicitações e atualizações de status. | Acompanhar o status das minhas negociações e responder rapidamente (RF-015).|
 | Usuário da plataforma (consumidor e provedor). | Ter uma seção de Suporte com opções claras para reportar problemas, dar sugestões ou fazer denúncias. | Que eu possa contribuir para a segurança e melhoria contínua da plataforma. |
 
 
