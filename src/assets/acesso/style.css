@@ -36,10 +36,17 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .logo {
   font-size: 20px;
   font-weight: 700;
 }
+
+.site-header a {
+  text-decoration: none;
+  color: var(--black-500);
+}
+
 .top-nav a {
   text-decoration: none;
   color: #2563eb;
@@ -54,6 +61,7 @@ body {
   padding: 24px 20px;
   flex: 1;
 }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

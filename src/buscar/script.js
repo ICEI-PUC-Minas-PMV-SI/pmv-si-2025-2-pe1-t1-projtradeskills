@@ -53,17 +53,67 @@ const openModal = id => {
 
   const modalContent = `
   <div class="modal-wrapper">
-      <span class="close-button" id="close-modal">&times;</span>
+      <div class="close-modal">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+      </div>
     <div class="modal-header">
       <img src="${user.image}" alt="${user.name}" class="modal-avatar"/>
-      <h2>${user.name}</h2>
+      <h2 class="modal-name">${user.name}</h2>
       <p class="member-since">Membro desde Setembro, 2025 • ${user.location}</p>
-      <p class="rating">${user.rating.score} (${user.rating.reviews} avaliações)</p>
+      <p class="rating">${user.rating.score} (${
+    user.rating.reviews
+  } avaliações)</p>
     </div>
     <div class="modal-body">
-      <p><strong>Localização:</strong> ${user.location}</p>
-    </div>
-  </div>`;
+      <h3 class="skill-name">${user.skills[0].name}</h3>
+      <div class="skill-card">
+        <div class="skill-icon"></div>
+          <div class="skill-details">
+            <strong class="skill-text">O que está incluído</strong>
+            <p class="skill-description">${user.skills[0].description}</p>
+            <div class="skill-footer">
+              <div class="skill-infos">
+                <p class="skill-price"><img src="./arrows.svg" alt="Variação"><img src="./credit.svg" alt="Preço">${
+                  user.skills[0].price
+                }</p>
+                <p class="skill-availability">${
+                  user.skills[0].availability ? "Remoto" : "Presencial"
+                }</p>
+              </div>
+              <a href="/minhasSolicitacoes/" class="hire-button primary-button buttons">Solicitar serviço</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review">
+        <h3>Avaliações</h3>
+        <div class="review-list">
+         <div class="review-card">
+            <div class="review-icon"></div>
+            <strong class="review-name">Eduardo Almada</strong>
+            <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero sapien, sagittis at dolor id, lacinia ullamcor justo. Nulla facilisi.</p>
+            <img src="./rating.svg" alt="Estrela" class="review-star"/>
+            <span class="review-tag">Qualidade de serviço</span>
+          </div>
+          <div class="review-card">
+            <div class="review-icon"></div>
+            <strong class="review-name">Fernando Miranda</strong>
+            <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero sapien, sagittis at dolor id, lacinia ullamcor justo. Nulla facilisi.</p>
+            <img src="./rating.svg" alt="Estrela" class="review-star"/>
+            <span class="review-tag">Comunicação</span>
+          </div>
+          <div class="review-card">
+            <div class="review-icon"></div>
+            <strong class="review-name">Carmem Vitória</strong>
+            <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero sapien, sagittis at dolor id, lacinia ullamcor justo. Nulla facilisi.</p>
+            <img src="./rating.svg" alt="Estrela" class="review-star"/>
+            <span class="review-tag">Atendimento</span>
+          </div>
+        </div>
+      </div>
+      <a class="view-profile buttons primary-button" href="/profile/">Ver perfil completo</a>
+    </div>`;
 
   const modal = document.createElement("div");
   modal.id = "user-modal";
@@ -71,7 +121,7 @@ const openModal = id => {
 
   document.body.appendChild(modal);
 
-  document.getElementById("close-modal").addEventListener("click", () => {
+  document.querySelector(".close-modal").addEventListener("click", () => {
     document.body.removeChild(modal);
   });
 
@@ -98,7 +148,7 @@ const createUserCard = ({ id, name, location, image, skills, rating }) => {
       </div>
       <div class="card-footer">
         <p class="user-rating">${rating.score} (${rating.reviews} avaliações)</p>
-        <strong class="skill-price">${skills[0].price}</strong>
+        <strong class="skill-price"><img src="./arrows.svg" alt="Variação"><img src="./credit.svg" alt="Preço">${skills[0].price}</strong>
       </div>
     </div>
   `;
