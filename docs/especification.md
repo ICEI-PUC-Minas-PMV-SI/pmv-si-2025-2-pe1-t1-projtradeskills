@@ -43,7 +43,6 @@ Usuário da plataforma (consumidor e provedor).| Que o sistema me alerte sobre a
 |Usuário da plataforma (consumidor e provedor).|Receber notificações sobre negociações, avaliações e mensagens.| Acompanhar o status das minhas negociações e responder rapidamente os outros usuários.|
 |Usuário da plataforma (consumidor e provedor).| Ter uma seção na plataforma para reportar bugs, comportamentos irregulares ou abusivos, para que possa sugerir melhorias.| Que eu possa contribuir para a segurança e melhoria contínua da plataforma.|
 |Usuário da plataforma (consumidor e provedor).|Deletar minha conta e todos os meus dados da plataforma a qualquer momento.| Que eu possa ter controle sobre minhas informações pessoais.|
-|Usuário da plataforma (consumidor e provedor).| Ter um sistema de chat para conversar com outros usuários.| Tirar dúvidas sobre o(s) serviço(s) antes de efetivamente "solicitar".|
 
 
 
@@ -60,39 +59,26 @@ Esta documentação divide os requisitos em duas categorias principais: requisit
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-001| A aplicação deve permitir o login por e-mail e senha. | ALTA | 
-|RF-002| A aplicação deve permitir o cadastro com nome, e-mail e senha. | ALTA | 
-|RF-003| A aplicação deve permitir a recuperação de senha, mediante confirmação de e-mail e resposta de segurança. | MÉDIA | 
-|RF-004| A aplicação deve liberar os créditos iniciais de “boas-vindas” mediante a conclusão do preenchimento dos dados do perfil e configuração da pergunta de segurança. | ALTA | 
-|RF-005| A aplicação deve permitir a edição dos dados pessoais como nome, senha, foto, cidade e contato. | ALTA | 
-|RF-006| A aplicação deve permitir a edição das habilidades, incluindo título, descrição, valor sugerido em créditos, horário e forma de atendimento (remoto, presencial ou ambos). | ALTA | 
-|RF-007| A aplicação deve permitir que o usuário exclua as habilidades cadastradas. | ALTA | 
-|RF-008| A aplicação a criação de, no mínimo 1 e no máximo 2 perguntas e respostas de segurança, para garantir a possibilidade de recuperar a senha, em caso de esquecimento. | MÉDIA | 
-|RF-009| A aplicação deve permitir a visualização do saldo atual de créditos no cabeçalho do site. | ALTA | 
-|RF-010| A aplicação deve permitir a busca por habilidades desejadas, usando filtros como categoria, reputação do provedor e palavras-chave, para que ele encontre rapidamente o que precisa. | ALTA | 
-|RF-011| A aplicação deve permitir a visualização de perfis dos outros usuários da plataforma, incluindo suas habilidades, histórico de serviços prestados, com o valor de créditos sugerido e avaliações dos consumidores. | ALTA | 
-|RF-012| A aplicação deve permitir clicar no botão "solicitar serviço" para iniciar a negociação com o provedor. | ALTA | 
-|RF-013| A aplicação deve ter um botão de “Meu histórico” para permitir a visualização do histórico de transações, que contêm os valores de entrada e saída de créditos, incluindo data, horário, nome do serviço prestado e nome do provedor ou consumidor. | ALTA | 
-|RF-014| A aplicação deve permitir a visualização do resumo das atividades do usuário como provedor (pedidos recebidos) e como consumidor (solicitações enviadas), para que ele possa acompanhar facilmente suas interações na plataforma. | ALTA | 
-|RF-015| Ao acessar a seção “solicitações enviadas”, a aplicação deve permitir a visualização e o gerenciamento das solicitações enviadas, incluindo nome da habilidade, nome do provedor e status atual. | ALTA | 
-|RF-016| Ao acessar a seção “pedidos recebidos”, a aplicação deve p permitir a visualização e o gerenciamento dos pedidos recebidos, incluindo nome da habilidade, nome do solicitante e status atual. | ALTA | 
-|RF-017| A aplicação deve permitir que o usuário provedor aceite ou rejeite solicitações de serviços recebidas, atualizando o status do painel de controle. | ALTA | 
-|RF-018| Após o provedor aceitar a solicitação de serviço, o sistema deve permitir que o consumidor consiga cancelar sua solicitação de serviço, com a opção de adicionar uma justificativa. | ALTA | 
-|RF-019| O usuário consumidor deve confirmar a conclusão do serviço, para autorizar a transferência automática de créditos. | ALTA | 
-|RF-020| Após a confirmação da conclusão do serviço, por parte do consumidor, o sistema deve transferir automaticamente os créditos da conta do usuário consumidor para a do usuário provedor e atualizar o histórico de transações de ambas as contas. | ALTA | 
-|RF-021| Permitir que o consumidor consiga avaliar o serviço prestado pelo provedor. | ALTA | 
-|RF-022| Permitir que o provedor consiga avaliar a conduta do consumidor, durante a execução do serviço. | ALTA | 
-|RF-023| A aplicação deve impedir que o mesmo usuário registre uma troca consigo mesmo. | ALTA | 
-|RF-024| A aplicação deve alertar o usuário de que a exclusão de suas habilidades cadastradas impactará na sua capacidade de obter novos créditos para transações futuras, uma vez que ele não está mais oferecendo serviços (habilidade). | MÉDIA | 
-|RF-025| Ao clicar em “Esqueci minha senha” a aplicação deve enviar um link seguro para o e-mail do usuário para que ele possa redefinir sua senha.  | MÉDIA | 
-|RF-026| A aplicação deve exibir notificações visuais internas (como ícones ou alertas) sobre novas solicitações, atualizações de status dos pedidos. | MÉDIA | 
-|RF-027| A aplicação deve oferecer uma seção para que o usuário possa reportar bugs, comportamentos irregulares ou abusivos e sugerir melhorias. | MÉDIA | 
-|RF-028| A aplicação deve permitir que o usuário compre pacotes de créditos com dinheiro real, usando métodos de pagamento como cartão de crédito/débito e pix. | BAIXA | 
-|RF-029| A aplicação deve permitir que o usuário denuncie avaliações falsas ou inadequadas. | BAIXA | 
-|RF-030| A aplicação deve conter um sistema chat para que os usuários possam conversar com outros usuários. | BAIXA | 
-|RF-031| A aplicação deve permitir exportar/importar dados em um arquivo (Json). | BAIXA | 
-|RF-032| A aplicação deve permitir que o usuário adicione ou remova habilidades da sua lista de favoritos. | BAIXA | 
-|RF-033| Ao solicitar um serviço, a aplicação deverá sugerir um “preço” em créditos para o consumidor, baseado em outras negociações realizadas na plataforma. | BAIXA | 
+|RF-001| A aplicação deve possuir uma página inicial pública, que apresente detalhes sobre a plataforma Trade Skills. Esta página deve conter os botões “Cadastre-se” e “Login”. | ALTA |
+|RF-002| A aplicação deve permitir o login por e-mail e senha. | ALTA |
+|RF-003| A aplicação deve permitir o cadastro com nome, e-mail e senha. | ALTA |
+|RF-004| A aplicação deve permitir a recuperação de senha, enviando um link seguro para o e-mail do usuário após ele ter clicado no botão "Esqueci Minha Senha". | MÉDIA |
+|RF-005| A aplicação deve redirecionar o usuário para o Dashboard após o login com sucesso e permitir a visualização do saldo atual de créditos e o resumo das atividades. No primeiro acesso, o Dashboard deve exibir um pop-up obrigatório (não fechável) solicitando que o usuário preencha seu perfil completo para a liberação dos créditos iniciais de boas-vindas. | ALTA |
+|RF-006| A aplicação deve permitir que o usuário cadastre, edite e exclua habilidades. A edição deve incluir título, descrição, valor sugerido em créditos, horário e forma de atendimento (remoto, presencial ou ambos). Ao tentar excluir uma habilidade, o sistema deve apresentar um alerta de confirmação. Se a habilidade em questão for a única cadastrada, o alerta deve ser específico, notificando o usuário de que essa ação impactará sua capacidade de obter novos créditos e, portanto, de prover serviços. | ALTA |
+|RF-007| A aplicação deve permitir a busca por habilidades com filtros (categoria, reputação, palavras-chave e favoritos) e a visualização resumida dos perfis dos provedores. | ALTA |
+|RF-008| Após o usuário clicar para visualizar o perfil completo de um provedor, a aplicação deve permitir a visualização completa incluindo todas as habilidades oferecidas, histórico de serviços prestados e avaliações dos consumidores. | ALTA |
+|RF-009| A aplicação deve ter um botão “Meu histórico” no menu principal, para permitir a visualização do histórico de transações, onde o usuário poderá visualizar os valores de entrada e saída de créditos, incluindo data, horário, nome do serviço prestado e nome do provedor ou consumidor. | ALTA |
+|RF-010| A aplicação deve ter um botão "Minhas Solicitações" no menu principal, que exibe uma tela com duas abas: "Solicitações Enviadas" (visão do consumidor) e "Pedidos Recebidos" (visão do provedor). Ambas as abas devem listar as transações com detalhes como habilidade, nome do provedor ou consumidor, data, status atual e uma opção para "Gerenciar" a transação. | ALTA |
+|RF-011| Permite ao consumidor, na aba "Solicitações Enviadas", "Confirmar conclusão" ou "Cancelar" a solicitação (com justificativa opcional). | ALTA |
+|RF-012| Permite ao provedor, na aba "Pedidos Recebidos", "Aceitar" ou "Cancelar" o pedido (com justificativa opcional). | ALTA |
+|RF-013| Após aceitar, o status muda para "Em Andamento". O provedor deve poder "Sinalizar Conclusão", mudando o status para "Aguardando Consumidor". | ALTA |
+|RF-014| Após o provedor aceitar, o sistema deve permitir que o consumidor consiga cancelar sua solicitação (com justificativa opcional). | ALTA |
+|RF-015| O consumidor deve confirmar a conclusão, o que transfere automaticamente os créditos. Após o pagamento, o sistema deve obrigar a avaliação mútua (consumidor avalia provedor, provedor avalia consumidor). | ALTA |
+|RF-016| Permite ao usuário adicionar ou remover provedores da sua lista de favoritos. | ALTA |
+|RF-017| Exibe alertas visuais internos sobre novas solicitações e atualizações de status. | ALTA |
+|RF-018| Permitir que o provedor consiga avaliar a conduta do consumidor durante a execução do serviço. Na avaliação de provedores, o sistema deve possibilitar adicionar o provedor em sua lista de favoritos. | ALTA |
+|RF-019| A aplicação deve disponibilizar um formulário para o Suporte, onde o usuário deverá selecionar o “Tipo de Requisição”: Sugestão de Melhoria, Reportar Problema no Sistema, Fazer Denúncia e Outros. | MÉDIA |
+|RF-020| A aplicação deve permitir que o usuário compre pacotes de créditos com dinheiro real, usando métodos de pagamento como cartão de crédito/débito e Pix. | BAIXA | 
 
 
 ### Requisitos não Funcionais
