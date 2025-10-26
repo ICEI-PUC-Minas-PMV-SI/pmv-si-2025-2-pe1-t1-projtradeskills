@@ -112,7 +112,7 @@ const openModal = id => {
           </div>
         </div>
       </div>
-      <a class="view-profile buttons primary-button" href="/src/profile/index.html">Ver perfil completo</a>
+      <a class="view-profile buttons primary-button" href="/profile/">Ver perfil completo</a>
     </div>`;
 
   const modal = document.createElement("div");
