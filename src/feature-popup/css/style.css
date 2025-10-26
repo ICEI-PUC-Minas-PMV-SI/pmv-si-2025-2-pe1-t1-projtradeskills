@@ -25,7 +25,6 @@ body{
 
 .modal {
     display: flex;
-    position: fixed;
     z-index: 999;
     left: 0;
     top: 0;
@@ -38,16 +37,17 @@ body{
 }
 
 
-
 .modal-content {
-    font-size: 18px;
+    position: relative;
     background-color: white;
     padding: 30px;
     border-radius: 12px;
     width: 507px;
-    height: 400px;
+    height: auto;
     text-align:left ;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    z-index: 1;
 }
 
 .cabecalho {
@@ -182,3 +182,16 @@ body{
     font-size: 12px;
 }
 
+.fechar-modal {
+  position: absolute;      
+  right: 16px;
+  background: none;         
+  border: none;             
+  font-size: 18px;                    
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.fechar-modal:hover {
+  color: #1E3F66;          
+}
