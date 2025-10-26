@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minhas Solicitações</title>
+    <link rel="stylesheet" href="./css/historico.css" />
+
+    <script src="../components/sidebar/script.js" defer></script>
+    <script src="../components/footer/script.js" defer></script>
+    <script src="../components/header/script.js" defer></script>
+
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+
+  <body>
+    <app-sidebar></app-sidebar>
+
+    <main class="conteudo-principal">
+      <app-header></app-header>
+
+      <section>
+        <div class="title-hist">
+          <h1>Meu Histórico de Transações</h1>
+        </div>
+      </section>
+
+      <section id="conteudo-enviadas" class="tab-conteudo active">
+        <div class="toolbar">
+          <button class="btn-icone" aria-label="Buscar">
+            <img src="./img/icon_search.svg" />
+          </button>
+
+          <button class="btn-icone" aria-label="Filtro">
+            <img src="./img/icon_filter.svg" />
+          </button>
+        </div>
+        <table class="tabela-solicitacoes">
+          <thead>
+            <tr>
+              <th>Habilidade</th>
+              <th>Solicitante</th>
+              <th>Data</th>
+              <th>Tipo</th>
+              <th>Créditos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Aula de Inglês</td>
+              <td>João Silva</td>
+              <td>2024-07-26</td>
+              <td>Saída</td>
+              <td class="valor">
+                <span class="quantia">-20</span>
+                <img class="icone-dinheiro" src="./img/icon_money.svg" />
+              </td>
+            </tr>
+            <tr>
+              <td>Instalação Elétrica</td>
+              <td>Carlos Lima</td>
+              <td>2024-07-25</td>
+              <td>Entrada</td>
+              <td class="valor">
+                <span class="quantia">+30</span>
+                <img class="icone-dinheiro" src="./img/icon_money.svg" />
+              </td>
+            </tr>
+            <tr>
+              <td>Serviço de Pintura</td>
+              <td>Isabela Costa</td>
+              <td>2024-07-24</td>
+              <td>Saída</td>
+              <td class="valor">
+                <span class="quantia">-15</span>
+                <img class="icone-dinheiro" src="./img/icon_money.svg" />
+              </td>
+            </tr>
+            <tr>
+              <td>Serviço de Jardinagem</td>
+              <td>Ricardo Silva</td>
+              <td>2024-07-23</td>
+              <td>Entrada</td>
+              <td class="valor">
+                <span class="quantia">+20</span>
+                <img class="icone-dinheiro" src="./img/icon_money.svg" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <app-footer></app-footer>
+  </body>
+</html>
