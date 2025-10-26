@@ -22,14 +22,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |RF-008| Após o usuário clicar para visualizar o perfil completo de um provedor, a aplicação deve permitir a visualização completa incluindo todas as habilidades oferecidas, histórico de serviços prestados e avaliações dos consumidores. | Nome | caminho/para/arquivo |
 |RF-009| A aplicação deve ter um botão “Meu histórico” no menu principal, para permitir a visualização do histórico de transações, onde o usuário poderá visualizar os valores de entrada e saída de créditos, incluindo data, horário, nome do serviço prestado e nome do provedor ou consumidor. | Nome | caminho/para/arquivo |
 |RF-010| A aplicação deve ter um botão "Minhas Solicitações" no menu principal, que exibe uma tela com duas abas: "Solicitações Enviadas" (visão do consumidor) e "Pedidos Recebidos" (visão do provedor). Ambas as abas devem listar as transações com detalhes como habilidade, nome do provedor ou consumidor, data, status atual e uma opção para "Gerenciar/Visualizar" a transação. | Camila | src/feature-solicitacoes/solicitacao.html |
-|RF-011| Na tela do consumidor (Solicitações enviadas), com o status "Em andamento", ao clicar em "Visualizar" abrirá o pop up com a opção "Confirmar conclusão" ou "Desistir (com justificativa opcional)". | Nome | caminho/para/arquivo |
+|RF-011| Na tela do consumidor (Solicitações enviadas), com o status "Em andamento", ao clicar em "Visualizar" abrirá o pop up com a opção "Confirmar conclusão" ou "Cancelar (com justificativa obrigatória)". | Nome | caminho/para/arquivo |
 |RF-012| Na tela do provedor (Pedidos recebidos), com o status "Pendente", ao clicar em "Visualizar" abrirá o pop up com a opção "Aceitar ou Cancelar". | Nome | caminho/para/arquivo |
-|RF-013| Na tela do provedor (Pedidos recebidos), com o status "Em Andamento", ao clicar em "Visualizar" abrirá o pop up com a opção "Sinalizar conclusão". | Ana Júlia | caminho/para/arquivo |
-|RF-014| Após o provedor aceitar, o sistema deve permitir que o consumidor consiga cancelar sua solicitação (com justificativa opcional). | Nome | caminho/para/arquivo |
-|RF-015| O consumidor deve confirmar a conclusão, o que transfere automaticamente os créditos. Após o pagamento, o sistema deve obrigar a avaliação mútua (consumidor avalia provedor, provedor avalia consumidor). | Nome | caminho/para/arquivo |
-|RF-016| Exibe alertas visuais internos sobre novas solicitações e atualizações de status. | Nome | caminho/para/arquivo |
-|RF-017| Permitir que o provedor consiga avaliar a conduta do consumidor após a confirmação de conclusão do serviço. | Nome | caminho/para/arquivo |
-|RF-018| A aplicação deve disponibilizar um formulário para o Suporte, onde o usuário deverá selecionar o “Tipo de Requisição”: Sugestão de Melhoria, Reportar Problema no Sistema, Fazer Denúncia e Outros. | Nome | caminho/para/arquivo |
+|RF-013| Na tela do provedor (Pedidos recebidos), com o status "Em Andamento", ao clicar em "Visualizar" abrirá o pop up com a opção "Sinalizar conclusão" ou "Cancelar (com justificativa obrigatória)". | Ana Júlia | caminho/para/arquivo |
+|RF-014|  Após o consumidor deve confirmar a conclusão do serviço, o sistema irá transferir automaticamente os créditos para o provedor. Após o pagamento, o sistema permitirá a avaliação mútua (consumidor avalia provedor, provedor avalia consumidor). | Nome | caminho/para/arquivo |
+|RF-015| Exibe alertas visuais internos sobre novas solicitações e atualizações de status. | Nome | caminho/para/arquivo |
+|RF-016| A aplicação deve disponibilizar um formulário para o Suporte, onde o usuário deverá selecionar o “Tipo de Requisição”: Sugestão de Melhoria, Reportar Problema no Sistema, Fazer Denúncia e Outros. | Nome | caminho/para/arquivo |
 
 
 ### Requisitos não Funcionais
