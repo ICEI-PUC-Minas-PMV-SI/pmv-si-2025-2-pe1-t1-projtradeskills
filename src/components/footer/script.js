@@ -6,14 +6,36 @@ class AppFooter extends HTMLElement {
 
   async connectedCallback() {
     try {
-      const basePath = window.location.pathname.includes('/perfil/') ||
-        window.location.pathname.includes('/dashboard/') ?
-        '../components/sidebar/index.html' :
-        '/components/sidebar/index.html';
-
-      const response = await fetch(basePath);
-      if (!response.ok) {
-        throw new Error("Não foi possível carregar o template do sidebar.");
+      // Lista de caminhos possíveis em ordem de prioridade
+      const possiblePaths = [
+        './components/footer/index.html',        // Se estiver na raiz src
+        '../components/footer/index.html',       // Se estiver em uma subpasta
+        '../../components/footer/index.html',    // Se estiver em subpasta aninhada
+        '../../../components/footer/index.html', // Se estiver ainda mais profundo
+        '/src/components/footer/index.html'      // Caminho absoluto como fallback
+      ];
+      
+      let response;
+      let basePath;
+      
+      // Tenta cada caminho até encontrar um que funcione
+      for (const path of possiblePaths) {
+        try {
+          console.log('Tentando carregar footer de:', path);
+          response = await fetch(path);
+          if (response.ok) {
+            basePath = path;
+            console.log('Sucesso! Carregado de:', path);
+            break;
+          }
+        } catch (e) {
+          // Continua para o próximo caminho
+          continue;
+        }
+      }
+      
+      if (!response || !response.ok) {
+        throw new Error("Não foi possível carregar o template do footer de nenhum caminho.");
       }
       const htmlText = await response.text();
       const parser = new DOMParser();
@@ -25,12 +47,17 @@ class AppFooter extends HTMLElement {
 
         const globalStyles = document.createElement("link");
         globalStyles.setAttribute("rel", "stylesheet");
-        globalStyles.setAttribute("href", "/assets/global.css");
+        
+        // Determina o prefixo baseado no caminho que funcionou
+        const pathPrefix = basePath.replace('components/footer/index.html', '');
+        const globalStylesPath = `${pathPrefix}assets/global.css`;
+        globalStyles.setAttribute("href", globalStylesPath);
         this.shadowRoot.appendChild(globalStyles);
 
         const componentStyles = document.createElement("link");
         componentStyles.setAttribute("rel", "stylesheet");
-        componentStyles.setAttribute("href", "/components/footer/style.css");
+        const componentStylesPath = `${pathPrefix}components/footer/style.css`;
+        componentStyles.setAttribute("href", componentStylesPath);
 
         this.shadowRoot.appendChild(componentStyles);
         this.shadowRoot.appendChild(templateContent);
