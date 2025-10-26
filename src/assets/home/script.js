@@ -27,3 +27,15 @@ const updateHeaderHeight = () => {
 updateHeaderHeight();
 
 window.addEventListener("resize", updateHeaderHeight);
+
+// --- Status logado ---
+
+const userStatus = localStorage.getItem("userStatus");
+
+console.log("User Status:", userStatus);
+
+if (userStatus) {
+  window.location.href = "/dashboard/";
+} else {
+  console.log("User not logged in");
+}
