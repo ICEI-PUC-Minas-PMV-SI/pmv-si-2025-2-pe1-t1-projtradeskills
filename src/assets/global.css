@@ -23,13 +23,13 @@
   border: none;
   outline: none;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
   height: 100dvh;
   font-size: 10px !important;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   position: relative;
   scroll-behavior: smooth;
   overflow-x: hidden;

@@ -81,7 +81,7 @@ const openModal = id => {
                   user.skills[0].availability ? "Remoto" : "Presencial"
                 }</p>
               </div>
-              <a href="/minhasSolicitacoes/" class="hire-button primary-button buttons">Solicitar serviço</a>
+              <a href="/solicitacoes/" class="hire-button primary-button buttons">Solicitar serviço</a>
             </div>
           </div>
         </div>
@@ -112,7 +112,7 @@ const openModal = id => {
           </div>
         </div>
       </div>
-      <a class="view-profile buttons primary-button" href="/src/profile/index.html">Ver perfil completo</a>
+      <a class="view-profile buttons primary-button" href="/profile/">Ver perfil completo</a>
     </div>`;
 
   const modal = document.createElement("div");
