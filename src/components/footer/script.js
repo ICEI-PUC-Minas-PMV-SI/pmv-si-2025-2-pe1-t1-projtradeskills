@@ -38,7 +38,6 @@ class AppFooter extends HTMLElement {
         throw new Error("Não foi possível carregar o template do footer de nenhum caminho.");
       }
       const htmlText = await response.text();
-
       const parser = new DOMParser();
       const doc = parser.parseFromString(htmlText, "text/html");
       const template = doc.getElementById("template-app-footer");

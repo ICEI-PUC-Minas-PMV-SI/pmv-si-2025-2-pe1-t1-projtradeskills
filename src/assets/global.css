@@ -72,6 +72,7 @@ app-sidebar {
   position: sticky;
   top: 0;
   height: 100%;
+  background-color: #FFFF;
 }
 
 app-footer {
