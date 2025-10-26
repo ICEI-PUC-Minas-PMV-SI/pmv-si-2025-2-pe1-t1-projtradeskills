@@ -21,31 +21,33 @@ Os perfis de usuários na plataforma Trade Skills são definidos por sua <b>aç�
 
 João Silva tem 25 anos e é estudante universitário de Sistemas de Informação. Sem emprego formal, sua renda é proveniente de serviços esporádicos de manutenção de computadores que ele realiza para membros de sua igreja. Ele sonha com um estágio no Canadá, mas para isso precisa dominar o inglês, um custo que não consegue arcar. João está buscando uma plataforma onde ele possa oferecer sua habilidade em manutenção em troca de aulas de inglês.
 
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `QUEM`| QUERO/DESEJO ... `O QUE` |PARA ... `PORQUE`                 |
 |-----------------|--------------------------|----------------------------------|
-|Usuário da plataforma (consumidor e provedor). | Me cadastrar e criar o perfil na plataforma, de forma simples, informando nome, email e senha| Ter acesso a comunidade e oferecer ou contratar serviços.|
-|Usuário da plataforma (consumidor e provedor). | Editar meu perfil com foto, dados de contato, local de atendimento e descrição detalhada dos meus serviços (habilidades) oferecidos, incluindo nome, categoria e o valor sugerido em cráditos. | Que outros usuários possam me conhecer melhor e sentir confiança para negociar.|
-|Usuário da plataforma (consumidor e provedor).| Redefinir minha senha, em caso de esquecimento. | Que eu possa recuperar o acesso de minha conta.|
-|Usuário da plataforma (consumidor e provedor).| Remover serviços (habilidades) que cadastrei anteriormente no meu perfil.| Manter minha lista de habilidades sempre atualizada com serviços que posso oferecer.|
-Usuário da plataforma (consumidor e provedor).| Que o sistema me alerte sobre a exclusão de uma habilidade.| Que eu entenda que essa ação impactará a minha capacidade de ganhar novos créditos para transações futuras.|
-| Visualizar meu saldo atual de créditos.| Ter controle sobre minha "moeda virtual" e saber quanto posso gastar no momento.|
-|Usuário da plataforma (consumidor e provedor).|Visualizar meu histórico de transações.|Acompanhar o histórico de entrada e saída de créditos.|
-|Usuário da plataforma (consumidor e provedor).| Buscar por habilidades ou serviços usando palavras-chave e filtros (como categoria ou reputação).|Encontrar rapidamente os serviços que preciso.|
-|Usuário da plataforma (consumidor e provedor).| Visualizar perfis dos outros usuários da plataforma, incluindo suas habilidades, histórico de serviços prestados, com o valor de créditos cobrado e avaliações dos consumidores.|Tomar uma decisão informada e segura antes de consumir ou divulgar um serviço (habilidade).|
-|Usuário da plataforma (consumidor e provedor).| Enviar uma solicitação de serviço a um provedor.| Iniciar uma negociação e verificar a disponibilidade dele para realizar o trabalho.|
-|Usuário da plataforma (consumidor e provedor).|Aceitar ou rejeitar um pedido de serviço.|Gerenciar minha carga de trabalho.|
-|Usuário da plataforma (consumidor e provedor).| Confirmar que o serviço foi concluído com sucesso.| Liberar o pagamento dos créditos ao prestador e finalizar a transação. |
-|Usuário da plataforma (consumidor e provedor).|Adicionar uma avaliação com nota e um comentário sobre o serviço prestado/contratado.| Ajudar a construir um sistema de reputação que traga mais segurança para todos.|
-|Usuário da plataforma (consumidor e provedor).|Receber notificações sobre negociações, avaliações e mensagens.| Acompanhar o status das minhas negociações e responder rapidamente os outros usuários.|
-|Usuário da plataforma (consumidor e provedor).| Ter uma seção na plataforma para reportar bugs, comportamentos irregulares ou abusivos, para que possa sugerir melhorias.| Que eu possa contribuir para a segurança e melhoria contínua da plataforma.|
-|Usuário da plataforma (consumidor e provedor).|Deletar minha conta e todos os meus dados da plataforma a qualquer momento.| Que eu possa ter controle sobre minhas informações pessoais.|
-
-
-
+| Usuário da plataforma (consumidor e provedor). | Acessar o site da plataforma Trade Skills. | Encontrar o que preciso ou conhecer o funcionamento da plataforma antes de logar/cadastrar.|
+| Usuário da plataforma (consumidor e provedor). | Me cadastrar na plataforma informando nome, e-mail e senha. | Ter acesso à comunidade e começar a interagir. |
+| Usuário da plataforma (consumidor e provedor). | Fazer login com meu e-mail e senha. | Acessar minha conta de forma rápida e segura. |
+|Usuário da plataforma (consumidor e provedor). | Ser obrigado a completar meu perfil para liberar os créditos de boas-vindas. | Poder começar a prover serviços e acumular créditos. |
+| Usuário da plataforma (consumidor e provedor). | Ser redirecionado para o Dashboard e visualizar meu saldo atual de créditos e o resumo das atividades. | Ter controle sobre minha "moeda virtual" e acompanhar o status geral da minha conta. |
+|Usuário da plataforma (consumidor e provedor). | Cadastrar e editar minhas habilidades, definindo valor em créditos, horário e local de atendimento. | Que outros usuários possam me conhecer melhor e sentir confiança para negociar. |
+| Usuário da plataforma (consumidor e provedor). | Excluir uma habilidade cadastrada, recebendo um alerta de confirmação. | Manter minha lista de habilidades sempre atualizada com serviços que posso oferecer. |
+| Usuário da plataforma (consumidor e provedor). | Que o sistema me alerte especificamente sobre o impacto de excluir minha única habilidade. | Entender que essa ação impactará minha capacidade de ganhar novos créditos. |
+| Usuário da plataforma (consumidor e provedor). | Buscar por habilidades ou serviços usando palavras-chave e filtros (categoria, reputação, favoritos). | Encontrar rapidamente os serviços que preciso. |
+| Usuário da plataforma (consumidor e provedor). | Visualizar o perfil completo de um provedor, incluindo histórico de serviços e avaliações dos consumidores. | Tomar uma decisão informada e segura antes de contratar um serviço. |
+| Usuário da plataforma (consumidor e provedor). | Visualizar meu histórico de transações no menu principal, incluindo detalhes de entrada e saída de créditos. | Acompanhar todo o histórico financeiro e de serviços prestados/contratados. |
+| Usuário da plataforma (consumidor e provedor). | Acessar a tela de "Minhas Solicitações" para ver as solicitações que enviei e os pedidos que recebi, com o status atual de cada um. | Gerenciar ativamente minhas negociações como consumidor e provedor. |
+| Usuário da plataforma (consumidor e provedor). | Enviar uma solicitação de serviço a um provedor. | Iniciar uma negociação e verificar a disponibilidade dele. |
+|Usuário da plataforma (consumidor e provedor). | Aceitar ou Cancelar um pedido de serviço que está com o status "Pendente". | Gerenciar minha carga de trabalho e compromissos. |
+| Usuário da plataforma (consumidor e provedor). | Cancelar minha solicitação de serviço, com justificativa opcional, após o provedor tê-la aceito. | Ter flexibilidade em caso de imprevistos ou mudanças de plano. |
+| Usuário da plataforma (consumidor e provedor). | Sinalizar a conclusão de um serviço que está "Em Andamento". | Indicar que meu trabalho foi finalizado e aguardar o pagamento. |
+| Usuário da plataforma (consumidor e provedor). | Confirmar a conclusão do serviço e autorizar a transferência automática dos créditos. | Liberar o pagamento ao prestador e finalizar a transação. |
+| Usuário da plataforma (consumidor e provedor). | Ser obrigado a avaliar o outro usuário logo após a confirmação do serviço. | Ajudar a construir um sistema de reputação obrigatório que traga segurança e confiança. |
+| Usuário da plataforma (consumidor e provedor). | Receber alertas visuais sobre novas solicitações e mudanças de status dos pedidos. | Acompanhar o status das minhas negociações e responder rapidamente. |
+| Usuário da plataforma (consumidor e provedor). | Ter uma seção de Suporte com opções claras para reportar problemas, dar sugestões ou fazer denúncias. | Que eu possa contribuir para a segurança e melhoria contínua da plataforma. |
 
 
 ## Requisitos
