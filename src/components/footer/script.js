@@ -12,7 +12,7 @@ class AppFooter extends HTMLElement {
         "../components/footer/index.html", // Se estiver em uma subpasta
         "../../components/footer/index.html", // Se estiver em subpasta aninhada
         "../../../components/footer/index.html", // Se estiver ainda mais profundo
-        "/src/components/footer/index.html" // Caminho absoluto como fallback
+        "/components/footer/index.html" // Caminho absoluto como fallback
       ];
 
       let response;

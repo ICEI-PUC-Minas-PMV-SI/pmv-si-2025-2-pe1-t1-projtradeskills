@@ -26,10 +26,21 @@
       <app-header></app-header>
 
       <section class="panel">
-        <form class="form" action="#" method="post" novalidate>
+        <form class="form" action="/reportar/">
           <h2 class="title-bug">
             Encontrou um bug ou deseja reportar um comportamento?
           </h2>
+
+          <select name="tipo_problema" id="tipo-problema">
+            <option value="" disabled selected>
+              Selecione o tipo de informação que deseja enviar
+            </option>
+            <option value="bug">Bug</option>
+            <option value="comportamento">Comportamento</option>
+            <option value="usuario">Usuário</option>
+            <option value="melhorias">Melhorias</option>
+            <option value="outro">Outro</option>
+          </select>
 
           <div class="field">
             <p class="descricao">Nos conte o que aconteceu</p>

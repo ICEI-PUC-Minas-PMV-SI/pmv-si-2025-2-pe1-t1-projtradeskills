@@ -12,7 +12,7 @@ class AppSidebar extends HTMLElement {
         "../components/sidebar/index.html", // Se estiver em uma subpasta
         "../../components/sidebar/index.html", // Se estiver em subpasta aninhada
         "../../../components/sidebar/index.html", // Se estiver ainda mais profundo
-        "/src/components/sidebar/index.html" // Caminho absoluto como fallback
+        "/components/sidebar/index.html" // Caminho absoluto como fallback
       ];
 
       let response;
