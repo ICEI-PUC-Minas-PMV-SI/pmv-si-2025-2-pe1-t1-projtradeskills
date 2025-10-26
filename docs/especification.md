@@ -31,9 +31,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Usuário da plataforma (consumidor e provedor). | Acessar o site da plataforma Trade Skills. | Encontrar o que preciso ou conhecer o funcionamento da plataforma antes de logar/cadastrar.|
 | Usuário da plataforma (consumidor e provedor). | Me cadastrar na plataforma informando nome, e-mail e senha. | Ter acesso à comunidade e começar a interagir. |
 | Usuário da plataforma (consumidor e provedor). | Fazer login com meu e-mail e senha. | Acessar minha conta de forma rápida e segura. |
-|Usuário da plataforma (consumidor e provedor). | Ser obrigado a completar meu perfil para liberar os créditos de boas-vindas. | Poder começar a prover serviços e acumular créditos. |
+| Usuário da plataforma (consumidor e provedor). | Ser obrigado a completar meu perfil para liberar os créditos de boas-vindas. | Poder começar a prover serviços e acumular créditos. |
 | Usuário da plataforma (consumidor e provedor). | Ser redirecionado para o Dashboard e visualizar meu saldo atual de créditos e o resumo das atividades. | Ter controle sobre minha "moeda virtual" e acompanhar o status geral da minha conta. |
-|Usuário da plataforma (consumidor e provedor). | Cadastrar e editar minhas habilidades, definindo valor em créditos, horário e local de atendimento. | Que outros usuários possam me conhecer melhor e sentir confiança para negociar. |
+| Usuário da plataforma (consumidor e provedor). | Cadastrar e editar minhas habilidades, definindo valor em créditos, horário e local de atendimento. | Que outros usuários possam me conhecer melhor e sentir confiança para negociar. |
 | Usuário da plataforma (consumidor e provedor). | Excluir uma habilidade cadastrada, recebendo um alerta de confirmação. | Manter minha lista de habilidades sempre atualizada com serviços que posso oferecer. |
 | Usuário da plataforma (consumidor e provedor). | Que o sistema me alerte especificamente sobre o impacto de excluir minha única habilidade. | Entender que essa ação impactará minha capacidade de ganhar novos créditos. |
 | Usuário da plataforma (consumidor e provedor). | Editar meus dados pessoais, como nome, e-mail, senha e foto de perfil, sempre que desejar. | Manter minhas informações de conta sempre atualizadas. |
@@ -44,10 +44,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Usuário da plataforma (consumidor e provedor). | Enviar uma solicitação de serviço a um provedor. | Iniciar uma negociação e verificar a disponibilidade dele. |
 |Usuário da plataforma (consumidor e provedor). | Aceitar ou Cancelar um pedido de serviço que está com o status "Pendente". | Gerenciar minha carga de trabalho e compromissos. |
 | Usuário da plataforma (consumidor e provedor). | Cancelar minha solicitação de serviço, com justificativa opcional, após o provedor tê-la aceito. | Ter flexibilidade em caso de imprevistos ou mudanças de plano. |
-| Usuário da plataforma (consumidor e provedor). | Sinalizar a conclusão de um serviço que está "Em Andamento". | Indicar que meu trabalho foi finalizado e aguardar o pagamento. |
+| Usuário da plataforma (consumidor e provedor). | Sinalizar a conclusão de um serviço que está "Em Andamento". | Indicar que meu trabalho foi finalizado e aguardar o pagamento em créditos. |
 | Usuário da plataforma (consumidor e provedor). | Confirmar a conclusão do serviço e autorizar a transferência automática dos créditos. | Liberar o pagamento ao prestador e finalizar a transação. |
-| Usuário da plataforma (consumidor e provedor). | Ser obrigado a avaliar o outro usuário logo após a confirmação do serviço. | Ajudar a construir um sistema de reputação obrigatório que traga segurança e confiança. |
-| Usuário da plataforma (consumidor e provedor). | Receber alertas visuais sobre novas solicitações e mudanças de status dos pedidos. | Acompanhar o status das minhas negociações e responder rapidamente. |
+| Usuário da plataforma (consumidor e provedor). | Avaliar o outro usuário logo após a confirmação da conclusão do serviço. | Ajudar a construir um sistema de reputação que traga segurança e confiança para as futuras transações na plataforma. |
+| Usuário da plataforma (consumidor e provedor). | Conseguir vizualizar as minhas solicitações enviadas e dos pedidos recebidos. | Acompanhar o status das minhas negociações. |
 | Usuário da plataforma (consumidor e provedor). | Ter uma seção de Suporte com opções claras para reportar problemas, dar sugestões ou fazer denúncias. | Que eu possa contribuir para a segurança e melhoria contínua da plataforma. |
 
 
