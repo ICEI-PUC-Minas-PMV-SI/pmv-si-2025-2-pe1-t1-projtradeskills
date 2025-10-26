@@ -4,17 +4,235 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css" />
-    <script src="./components/sidebar/script.js" defer></script>
+    <link rel="stylesheet" href="./assets/home/style.css" />
     <script src="./components/footer/script.js" defer></script>
-    <title>Home</title>
+    <script src="./assets/home/script.js" defer></script>
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
+    <title>TradeSkills - Sua plataforma para troca de habilidades</title>
   </head>
-  <body>
-    <app-sidebar></app-sidebar>
+  <body id="home">
+    <header>
+      <div class="container">
+        <div class="wrapper">
+          <div class="logo-box">
+            <a href="/"
+              ><img src="./public/logo.svg" alt="TradeSkill Logo"
+            /></a>
+            <h1>
+              TradeSkills, a plataforma para troca de habilidades do futuro.
+            </h1>
+          </div>
+          <div class="menu-box">
+            <nav>
+              <a href="#about" class="nav-link">Como Funciona</a>
+              <a href="#categories" class="nav-link">Categorias</a>
+              <a href="#testimonials" class="nav-link">Depoimentos</a>
+              <a href="#call-to-action" class="nav-link">Comece Agora</a>
+            </nav>
+            <div class="auth-buttons">
+              <a href="/login/" class="buttons secondary-button">Login</a>
+              <a href="/cadastrar/" class="buttons primary-button"
+                >Cadastre-se</a
+              >
+            </div>
+          </div>
+          <button class="menu-mobile">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+          </button>
+        </div>
+      </div>
+    </header>
 
     <main>
-      <h1>Home</h1>
-    </main>
+      <section id="hero">
+        <div class="container">
+          <div class="wrapper">
+            <div class="content-box">
+              <h2 class="primary-title">
+                Troque o que você sabe pelo que você precisa
+              </h2>
+              <p class="subtitle">
+                Uma comunidade para compartilhar habilidades, aprender coisas
+                novas e resolver problemas sem gastar dinheiro. A sua moeda é o
+                seu conhecimento.
+              </p>
+              <a href="/cadastrar/" class="buttons primary-button"
+                >Comece a trocar agora</a
+              >
+            </div>
+            <div class="image-box">
+              <img src="./public/home/hero.webp" alt="Hero Image" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <app-footer></app-footer>
+      <section id="about">
+        <div class="container">
+          <div class="wrapper">
+            <div class="title-box">
+              <h2 class="primary-title">Entenda como funciona</h2>
+              <p class="subtitle">
+                Veja como é fácil começar a fazer parte da nossa comunidade de
+                trocas.
+              </p>
+            </div>
+            <div class="card-list">
+              <div class="card">
+                <img src="./public/home/profile.svg" alt="Icone de cadastro" />
+                <h3 class="secondary-title">Cadastre suas habilidades</h3>
+                <p class="description">
+                  Crie um perfil e descreva o serviço que você oferece, seja
+                  consertar algo, dar aulas ou qualquer outro talento.
+                </p>
+              </div>
+              <div class="card">
+                <img src="./public/home/money.svg" alt="Icone de dinheiro" />
+                <h3 class="secondary-title">Ganhe créditos</h3>
+                <p class="description">
+                  Ao realizar um serviço para alguém da comunidade, você acumula
+                  créditos na sua conta para usar quando precisar.
+                </p>
+              </div>
+              <div class="card">
+                <img src="./public/home/clock.svg" alt="Icone de tempo" />
+                <h3 class="secondary-title">Negocie no seu tempo</h3>
+                <p class="description">
+                  Use seus créditos para contratar serviços quando precisar,
+                  tudo de forma simples e sem burocracia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="categories">
+        <div class="container">
+          <div class="wrapper">
+            <div class="title-box">
+              <h2 class="primary-title">
+                Conheça algumas categorias populares
+              </h2>
+              <p class="subtitle">
+                Descubra uma variedade de habilidades que você pode trocar na
+                nossa plataforma.
+              </p>
+            </div>
+            <div class="category-list">
+              <div class="category-card">
+                <h3 class="category-title">Aulas Particulares</h3>
+              </div>
+              <div class="category-card">
+                <h3 class="category-title">Reparos Domésticos</h3>
+              </div>
+              <div class="category-card">
+                <h3 class="category-title">Design Gráfico</h3>
+              </div>
+              <div class="category-card">
+                <h3 class="category-title">Consultoria de Negócios</h3>
+              </div>
+              <div class="category-card">
+                <h3 class="category-title">Aulas de Música</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <div class="container">
+          <div class="wrapper">
+            <div class="title-box">
+              <h2 class="primary-title">O que nossos usuários dizem</h2>
+              <p class="subtitle">
+                Veja como a TradeSkills ajudou pessoas a aprender e compartilhar
+                habilidades.
+              </p>
+            </div>
+            <div class="testimonial-list">
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  "Consegui finalmente <strong>aprender a tocar violão</strong>,
+                  algo que sempre quis. Consegui juntar créditos oferecendo
+                  aulas de inglês que eu já domino. Uma ideia fantástica!"
+                </p>
+                <div class="user-content">
+                  <img
+                    src="./public/home/profile.svg"
+                    alt="Foto de João Silva"
+                    class="user-photo"
+                  />
+                  <div class="user-info">
+                    <h3 class="user-name">João Silva</h3>
+                    <p class="user-role">Professor de inglês</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  "Meu computador estava muito lento e eu não podia pagar um
+                  técnico. Encontrei a Ana na TradeSkills e
+                  <strong>ela resolveu tudo.</strong>
+                  Já cadastrei minhas habilidades em jardinagem para ajudar
+                  alguém que precise."
+                </p>
+                <div class="user-content">
+                  <img
+                    src="./public/home/profile.svg"
+                    alt="Foto de Carlos Miguel"
+                    class="user-photo"
+                  />
+                  <div class="user-info">
+                    <h3 class="user-name">Paisagista</h3>
+                    <p class="user-role">Eletricista</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  "Como freelancer, às vezes preciso de pequenas artes para meus
+                  projetos.
+                  <strong>Aqui eu consegui designers talentosos.</strong> Uma
+                  plataforma que realmente valoriza o conhecimento de todos."
+                </p>
+                <div class="user-content">
+                  <img
+                    src="./public/home/profile.svg"
+                    alt="Foto de Pedro Martins"
+                    class="user-photo"
+                  />
+                  <div class="user-info">
+                    <h3 class="user-name">Pedro Martins</h3>
+                    <p class="user-role">Redator</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="call-to-action">
+        <div class="container">
+          <div class="wrapper">
+            <div class="title-box">
+              <h2 class="primary-title">
+                Pronto para transformar seu talento em moeda?
+              </h2>
+              <p class="subtitle">
+                Junte-se à TradeSkills hoje mesmo e comece a trocar suas
+                habilidades!
+              </p>
+              <a href="#" class="buttons primary-button">Cadastre-se Agora</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <app-footer></app-footer>
+    </main>
   </body>
 </html>

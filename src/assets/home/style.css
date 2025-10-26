@@ -1,0 +1,380 @@
+/* Header */
+
+#home html {
+  scroll-padding-top: var(--header-height);
+}
+
+#home header {
+  position: sticky;
+  top: 0;
+}
+
+#home header h1 {
+  display: none;
+}
+
+#home header {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 2.4rem 0;
+  height: fit-content;
+}
+
+#home header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#home header .logo-box a {
+  display: block;
+  width: fit-content;
+}
+
+#home header .logo-box img {
+  width: 100%;
+  max-width: 20rem;
+}
+
+#home header .menu-box {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+#home header .menu-box nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+#home header .menu-box .nav-link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--gray-400);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+#home header .menu-box .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--black-500);
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#home header .menu-box .nav-link:hover::after {
+  width: 100%;
+}
+
+#home header .menu-box .nav-link:hover {
+  color: var(--black-500);
+}
+
+#home header .auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+#home header .menu-mobile {
+  display: none;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #home header .menu-box {
+    gap: 2rem;
+  }
+
+  #home header .menu-box nav {
+    gap: 1.5rem;
+  }
+
+  #home header .auth-buttons .buttons {
+    padding: 1rem;
+    width: max-content;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 991px) {
+  #home header .logo-box {
+    display: flex;
+    align-items: center;
+  }
+
+  #home header .menu-box {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transition: all 0.75s ease-in-out;
+    background: #fff;
+    width: 100vw;
+    height: calc(100% - var(--header-height));
+    transform: translateX(-100%);
+    overflow: scroll;
+    z-index: 1;
+    display: block;
+    padding: 4rem 2rem;
+  }
+
+  #home header .menu-box.active {
+    transform: translateX(0);
+    overflow: scroll;
+  }
+
+  #home header nav {
+    flex-direction: column;
+  }
+
+  #home header .auth-buttons {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  #home header .menu-mobile {
+    display: flex;
+    position: relative;
+    width: 32px;
+    height: 24px;
+  }
+
+  #home header .menu-mobile .bar {
+    height: 4px;
+    width: 100%;
+    background: var(--black-500);
+    border-radius: 2rem;
+    transition: all 0.5s ease-in-out;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+  }
+
+  #home header .menu-mobile .bar1 {
+    top: 0;
+  }
+
+  #home header .menu-mobile .bar2 {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #home header .menu-mobile .bar3 {
+    bottom: 0;
+  }
+
+  #home header .menu-mobile.active .bar1 {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  #home header .menu-mobile.active .bar2 {
+    opacity: 0;
+  }
+
+  #home header .menu-mobile.active .bar3 {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
+
+/* Hero */
+
+#home main {
+  padding: 0;
+}
+
+#home #hero {
+  padding: 10rem 0;
+}
+
+#home #hero .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+#home #hero .image-box {
+  max-width: 53rem;
+  width: 100%;
+}
+
+#home #hero .content-box .subtitle {
+  max-width: 50rem;
+  padding: 2.2rem 0;
+  color: var(--gray-400);
+}
+
+/* About */
+
+#home #about {
+  background: var(--gray-700);
+  padding: 9rem 0;
+  text-align: center;
+}
+
+#home #about .primary-title {
+  color: #fff;
+}
+
+#home #about .subtitle {
+  color: #fff;
+  padding: 2rem 0 5rem;
+}
+
+#home #about .card-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+#home #about .card {
+  background: #fff;
+  border-radius: 1.2rem;
+  gap: 1.2rem;
+  padding: 4rem 3rem;
+}
+
+#home #about .card .secondary-title {
+  padding: 1.2rem 0;
+}
+
+#home #about .card .description {
+  padding: 0;
+}
+
+/* Categories */
+
+#home #categories {
+  padding: 9rem 0;
+  text-align: center;
+}
+
+#home #categories .subtitle {
+  padding: 2rem 0 5rem;
+}
+
+#home #categories .category-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+#home #categories .category-card {
+  border-radius: 0.8rem;
+  background: #fff;
+  padding: 2rem 4rem;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+#home #categories .category-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Testimonials */
+
+#home #testimonials {
+  background: var(--gray-200);
+  padding: 9rem 0;
+}
+
+#home #testimonials .title-box {
+  text-align: center;
+}
+
+#home #testimonials .subtitle {
+  padding: 2rem 0 5rem;
+}
+
+#home #testimonials .testimonial-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+#home #testimonials .testimonial-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  padding: 4rem 2.3rem 12rem;
+  width: 100%;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+#home #testimonials .testimonial-card .testimonial-text {
+  font-style: italic;
+}
+
+#home #testimonials .testimonial-card .user-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: absolute;
+  bottom: 4rem;
+}
+
+#home #testimonials .testimonial-card .user-content .user-role {
+  color: var(--gray-400);
+}
+
+/* Call to action */
+
+#home #call-to-action {
+  padding: 9rem 0;
+  text-align: center;
+}
+
+#home #call-to-action .primary-title {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+#home #call-to-action .subtitle {
+  padding: 2rem 0;
+}
+
+@media (max-width: 1199px) {
+  /* Hero */
+  #home #hero .wrapper {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+  }
+
+  #home #hero .primary-title {
+    max-width: 60rem;
+  }
+
+  #home #hero .subtitle {
+    margin: 0 auto;
+  }
+
+  /* About */
+  #home #about .card-list {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  #home #categories .category-list,
+  #home #testimonials .testimonial-list {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 475px) {
+  #home header .logo-box img {
+    width: 80%;
+  }
+}

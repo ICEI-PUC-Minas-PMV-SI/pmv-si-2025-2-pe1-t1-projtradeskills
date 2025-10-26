@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <div class="modal" id="modal">
+
+        <div class="modal-body">
+
+            <div class="modal-header">
+                <p class="modal-title">Avalie sua experiência</p>
+                <p class="modal-text">Conte como foi sua experiência com o serviço </p>
+            </div>
+
+            <div class="avaliacao">
+                <p class="modal-sec-title">Sua avaliação geral</p>
+                <div class="stars" id="selectStar">
+                <span class="star">
+                    <img src="../icon/icon_star.svg" alt="Ícone de estrela">
+                </span>
+                <span class="star">
+                    <img src="../icon/icon_star.svg" alt="Ícone de estrela">
+                </span>
+                <span class="star">
+                    <img src="../icon/icon_star.svg" alt="Ícone de estrela">
+                </span>
+                <span class="star">
+                    <img src="../icon/icon_star.svg" alt="Ícone de estrela">
+                </span>
+                <span class="star">
+                    <img src="../icon/icon_star.svg" alt="Ícone de estrela">
+                </span>
+            </div>
+            <div class="highlight">
+                <p class="modal-sec-title">O que mais se destacou?</p>
+                <div class="chip-container" id="chipContainer">
+                    <div class="chip" data-value="profissionalismo">Profissionalismo</div>
+                    <div class="chip" data-value="atencao">Atenção</div>
+                    <div class="chip" data-value="pontualidade">Pontualidade</div>
+                    <div class="chip" data-value="comunicacao">Comunicação</div>
+                    <div class="chip" data-value="humor">Humor</div>
+                    <div class="chip" data-value="cuidado">Cuidado</div>
+
+                </div>
+                <div class="coments">
+                    <p class="modal-sec-title">Deixe um comentário (opcional)</p>
+                    <textarea class="experiencia" placeholder="Descreva com mais detalhes como foi sua experiência..."></textarea>
+                    <button class="send">Enviar Avaliação</button>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
+
+
+<!--Comentários
+as classes são: 
+"modal": que se refere a parte em preto, o que está por trás do card
+"modal-body": é o corpo da modal
+"modal-title": se refere ao título "Avalie sua experiência
+modal-text">Conte como foi sua experiência com o serviço"
+"avaliacao" se refere a parte que tem o texto Sua avaliacao aqui e as estrelas estão dentro da div tbm, mas para pegar 
+as estrelas tem a div com class stars(que é a div que esas estão dentro) e a class star (que pega só as estrelas)
+"highlight" se refere aos destaques com a classe chip-container para pegar todos e a classe chip 
+e tem a parte de coments
+
+O que precisa ser feito ainda:
+
+Fazer as estrelas ao serem clicadas ficar amarelas
+Arrumar a textarea
+Arrumar o botão de Enviar avaliação-->

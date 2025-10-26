@@ -1,0 +1,89 @@
+#dashboard-search-bar p,
+#requests-resume a,
+#recent-activities span,
+.cards-dashboard .card-link {
+  color: #5f91bb;
+}
+
+#dashboard h2,
+#dashboard h3,
+#dashboard h6,
+#recent-activities p {
+  color: #1e3f66;
+}
+
+.background-color-button-search {
+  background-color: #1f3f66;
+}
+
+.color-icon-search {
+  color: #fff;
+}
+
+.cards-dashboard {
+  border: none !important;
+}
+
+#requests-resume .cards-dashboard {
+  width: 20rem;
+}
+
+#requests-resume .cards-dashboard:first-of-type {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-left: 7px solid #1e3f66 !important;
+}
+
+#requests-resume .cards-dashboard:nth-of-type(2) {
+  box-shadow: rgba(0, 0, 0, 0.15) -1.95px 1.95px 2.6px;
+  border-right: 7px solid #1e3f66 !important;
+}
+
+#requests-resume .cards-dashboard:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#requests-resume .cards-dashboard .icon-envelope {
+  color: #1e3f66;
+  font-size: 32px;
+}
+
+#recent-activities .cards-dashboard {
+  border-bottom: 1px solid #f2f2f2 !important;
+}
+
+#recent-activities .history-button {
+  border: 1px solid #1f3f66;
+  padding: 8px 30px;
+  margin-top: 24px;
+  font-size: 14px;
+  color: #1e3f66;
+  font-weight: 500;
+}
+
+#recent-activities .history-button:hover {
+  background-color: #1f3f66;
+  color: #fff;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: #3d698d !important;
+}
+
+#recent-activities span,
+.cards-dashboard .card-link {
+  font-size: 12px !important;
+}
+
+.card-body-text-title {
+  color: #1e3f66;
+}
+
+.cards-resume-requests h2 {
+  font-size: 40px;
+}
+
+.card-title {
+  color: #1e3f66 !important;
+}

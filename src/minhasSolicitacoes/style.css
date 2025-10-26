@@ -1,0 +1,613 @@
+.solicitation-modal {
+    position: relative;
+    width: 816px;
+    height: 1281px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.solicitation-modal .user-avatar {
+    top: 106px;
+    left: 333px;
+    width: 150px;
+    height: 150px;
+    background-color: #d9d9d9;
+    border-radius: 75px;
+    position: absolute;
+    display: flex;
+}
+
+.solicitation-modal .user-icon {
+    margin-top: 35.2px;
+    width: 79.7px;
+    height: 76.64px;
+    margin-left: 35.1px;
+}
+
+.solicitation-modal .user-name {
+    position: absolute;
+    top: 281px;
+    left: 326px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.solicitation-modal .user-info {
+    position: absolute;
+    top: 323px;
+    left: 179px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.solicitation-modal .user-rating {
+    top: 364px;
+    left: 342px;
+    width: 141px;
+    height: 25px;
+    gap: 4.7px;
+    position: absolute;
+    display: flex;
+}
+
+.solicitation-modal .star-icon {
+    margin-top: 2.2px;
+    width: 19.62px;
+    height: 18.76px;
+    margin-left: 2.7px;
+}
+
+.solicitation-modal .rating-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    width: 112px;
+    height: 20px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #505050;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.solicitation-modal .section-divider {
+    position: absolute;
+    top: 410px;
+    left: 33px;
+    width: 750px;
+    height: 1px;
+    object-fit: cover;
+}
+
+.frame .line-divider {
+    position: absolute;
+    top: 410px;
+    left: 33px;
+    width: 750px;
+    height: 1px;
+    background-color: #dfdfdf;
+}
+
+.frame .custom-image {
+    position: absolute;
+    top: 410px;
+    left: 33px;
+    width: 750px;
+    height: 1px;
+    /* background-color: #dfdfdf; */
+}
+
+.solicitation-modal .service-title {
+    position: absolute;
+    top: 441px;
+    left: 298px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.solicitation-modal .messages-header {
+    position: absolute;
+    top: 781px;
+    left: 273px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.solicitation-modal .negotiation-details {
+    top: 486px;
+    left: 33px;
+    width: 750px;
+    height: 246px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: #dfdfdf;
+    position: absolute;
+    overflow: hidden;
+}
+
+.solicitation-modal .details-header {
+    top: 16px;
+    left: 25px;
+    width: 310px;
+    height: 50px;
+    gap: 9px;
+    position: absolute;
+    display: flex;
+}
+
+.solicitation-modal .header-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #d9d9d9;
+    border-radius: 25px;
+}
+
+.solicitation-modal .header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 249px;
+    height: 20px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.solicitation-modal .negotiation-info {
+    position: absolute;
+    top: 79px;
+    left: 97px;
+    width: 629px;
+    height: 60px;
+    display: flex;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.solicitation-modal .price-badge {
+    display: inline-flex;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 6px 20px;
+    top: 181px;
+    left: 84px;
+    background-color: #f8f9fa;
+    border-radius: 100px;
+    border: 1px solid;
+    border-color: #dee2e6;
+    position: absolute;
+    overflow: hidden;
+}
+
+.solicitation-modal .price-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.solicitation-modal .price-value {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.solicitation-modal .time-badge {
+    display: inline-flex;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 6px 20px;
+    top: 181px;
+    left: 209px;
+    background-color: #f8f9fa;
+    border-radius: 100px;
+    border: 1px solid;
+    border-color: #dee2e6;
+    position: absolute;
+    overflow: hidden;
+}
+
+.solicitation-modal .modality-badge {
+    display: flex;
+    width: 130px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px;
+    top: 181px;
+    left: 334px;
+    background-color: #f8f9fa;
+    border-radius: 100px;
+    border: 1px solid;
+    border-color: #dee2e6;
+    position: absolute;
+    overflow: hidden;
+}
+
+.solicitation-modal .modality-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-top: -3.00px;
+    margin-bottom: -1.00px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.solicitation-modal .status-badge {
+    display: flex;
+    max-width: 480px;
+    width: 177px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;
+    position: absolute;
+    top: 9px;
+    left: 564px;
+    background-color: #ced7e4;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.solicitation-modal .status-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.solicitation-modal .status-text {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #111116;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 21px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.solicitation-modal .message-received {
+    top: 817px;
+    left: 33px;
+    width: 750px;
+    height: 92px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: #dfdfdf;
+    position: absolute;
+    overflow: hidden;
+}
+
+.solicitation-modal .sender-info {
+    width: 145px;
+    position: absolute;
+    top: 6px;
+    left: 23px;
+    height: 50px;
+    display: flex;
+    gap: 9px;
+}
+
+.solicitation-modal .sender-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 84px;
+    height: 20px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.solicitation-modal .message-content {
+    position: absolute;
+    top: 35px;
+    left: 75px;
+    width: 629px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.solicitation-modal .message-timestamp {
+    position: absolute;
+    top: 6px;
+    left: 620px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #505050;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.solicitation-modal .new-message-label {
+    position: absolute;
+    top: 1035px;
+    left: 39px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.solicitation-modal .message-input-container {
+    top: 1061px;
+    left: 33px;
+    width: 750px;
+    height: 128px;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: #dfdfdf;
+    position: absolute;
+    overflow: hidden;
+}
+
+.solicitation-modal .message-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    width: 164px;
+    height: 40px;
+    margin-left: 17px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #505050;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.solicitation-modal .message-sent {
+    top: 918px;
+    left: 33px;
+    width: 750px;
+    height: 86px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: #dfdfdf;
+    position: absolute;
+    overflow: hidden;
+}
+
+.solicitation-modal .message-sent .sender-info {
+    width: 103px;
+    position: absolute;
+    top: 6px;
+    left: 23px;
+    height: 50px;
+    display: flex;
+    gap: 9px;
+}
+
+.solicitation-modal .sender-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 42px;
+    height: 20px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.solicitation-modal .message-text {
+    position: absolute;
+    top: 43px;
+    left: 46px;
+    width: 629px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.solicitation-modal .send-button {
+    display: flex;
+    width: 750px;
+    height: 47px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px 18px;
+    top: 1211px;
+    left: 33px;
+    background-color: #2d3135;
+    border-radius: 8px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.solicitation-modal .send-button-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.frame .img {
+    position: absolute;
+    top: 79px;
+    left: 716px;
+    width: 37px;
+    height: 37px;
+}
+
+.solicitation-modal .close-icon {
+    position: absolute;
+    top: 79px;
+    left: 716px;
+    width: 37px;
+    height: 37px;
+}
+
+.frame .line-2 {
+    position: absolute;
+    top: 79px;
+    left: 718px;
+    width: 37px;
+    height: 37px;
+}
+
+/* Classes para avatares nas mensagens */
+.solicitation-modal .sender-avatar {
+    width: 32px;
+    height: 32px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    margin-top: 9px;
+}
+
+.solicitation-modal .time-icon {
+    margin-top: 2.2px;
+    width: 19.62px;
+    height: 18.76px;
+    margin-left: 2.7px;
+}
+
+.solicitation-modal .time-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    width: 112px;
+    height: 20px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
