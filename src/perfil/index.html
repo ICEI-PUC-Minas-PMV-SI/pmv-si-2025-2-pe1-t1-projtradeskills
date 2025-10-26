@@ -197,22 +197,25 @@
             </div>
           </section>
         </main>
-        
-        <!-- MODAL -->
+
+        <!-- Modal de Criar e Editar Habilidade -->
         <div
           class="modal fade"
           id="exampleModal"
           tabindex="-1"
-          aria-labelledby="exampleModalLabel"
+          aria-labelledby="profile-skills-modal"
           aria-hidden="true"
         >
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header flex-column">
-                <h5 class="modal-title fs-5" id="skillModal">
+                <h6 class="modal-title">
                   Editar Habilidade
-                </h5>
-                <p>Preencha os detalhes da sua habilidade para que outros usuários possam conhecê-la.</p>
+                </h6>
+                <p>
+                  Preencha os detalhes da sua habilidade para que outros
+                  usuários possam conhecê-la.
+                </p>
                 <button
                   type="button"
                   class="btn-close"
@@ -242,16 +245,49 @@
                     rows="3"
                   ></textarea>
                 </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label"
-                    >Tags</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="name@example.com"
-                  />
+                <div class="profile-skills-modal-container-labels">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Valor sugerido</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value=""
+                    />
+                  </div>
+    
+                  <div class="input-group mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Disponibilidade</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value=""
+                    />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value=""
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Valor sugerido</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value=""
+                    />
+                  </div>
+
                 </div>
               </div>
               <div class="modal-footer">

@@ -159,3 +159,14 @@
 .modal-backdrop{
     background: color-mix(in oklab, #000 50%, #00000000)!important;
 }
+
+.modal-content {
+    max-width: 600px;
+    border-radius: 16px;
+}
+
+.profile-skills-modal-container-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
