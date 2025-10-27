@@ -2,7 +2,7 @@
 
 Nesta seção, são apresentados os **requisitos funcionais** e **não-funcionais** atendidos durante a implementação do sistema. Cada requisito é relacionado aos artefatos gerados, como código fonte ou páginas desenvolvidas, além das estruturas de dados utilizadas.  O sistema pode ser acessado e testado através do **Vercell**. 
 
-> Vercell [inserir link]
+> Vercell https://deploy-preview-14--puc-tradeskills.netlify.app/
 
 ## Requisitos Atendidos
 
