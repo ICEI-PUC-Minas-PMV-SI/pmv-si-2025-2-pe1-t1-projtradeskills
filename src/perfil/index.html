@@ -198,7 +198,7 @@
           </section>
         </main>
 
-        <!-- Modal de Criar e Editar Habilidade -->
+        <!-- Início Modal de Criar e Editar Habilidade -->
         <div
           class="modal fade"
           id="exampleModal"
@@ -206,16 +206,18 @@
           aria-labelledby="profile-skills-modal"
           aria-hidden="true"
         >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header flex-column">
-                <h6 class="modal-title">
+          <div class="modal-dialog skills-modal">
+            <div class="modal-content skills-modal-header-content">
+              <div class="modal-header skills-modal-header">
+                <div class="skills-modal-header-text"> 
+                <h4 class="modal-title">
                   Editar Habilidade
-                </h6>
+                </h4>
                 <p>
                   Preencha os detalhes da sua habilidade para que outros
                   usuários possam conhecê-la.
                 </p>
+                </div>
                 <button
                   type="button"
                   class="btn-close"
@@ -258,16 +260,10 @@
                     />
                   </div>
     
-                  <div class="input-group mb-3">
+                  <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label"
                       >Disponibilidade</label
                     >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="exampleFormControlInput1"
-                      value=""
-                    />
                     <input
                       type="text"
                       class="form-control"
@@ -298,7 +294,7 @@
                 >
                   Cancelar
                 </button>
-                <button type="button" class="btn btn-primary">
+                <button type="button" class="btn profile-button">
                   Salvar alterações
                 </button>
               </div>

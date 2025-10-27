@@ -12,14 +12,16 @@
     width: 70%;
 }
 
-#profile p {
+#profile p,
+.skills-modal-header p {
     color: #6c757d;
 }
 
 #profile h6,
 .profile-image-container button i,
 .profile-form-fields label, 
-.profile-form-fields input {
+.profile-form-fields input,
+.skills-modal-header h4 {
     color: #1f3f66;
 }
 
@@ -104,7 +106,8 @@
     font-weight: 500;
 }
 
-.profile-form-fields input:focus {
+.profile-form-fields input:focus,
+.skills-modal-header-content .modal-body input:focus {
     border-color: #1F3F66;
     box-shadow: none;
 }
@@ -114,9 +117,10 @@
 }
 
 .profile-button {
-    padding: 8px 12px;
+    padding: 9px 12px !important;
     background-image: linear-gradient(to bottom right, #1F3F66, #3D698D);
     border: none !important;
+    color:#FFF !important;
 }
 
 .profile-button  i {
@@ -160,13 +164,32 @@
     background: color-mix(in oklab, #000 50%, #00000000)!important;
 }
 
+.skills-modal .modal-header {
+    align-items: start !important;
+}
+
+.skills-modal .modal-content {
+    border: none;
+    border-radius: 24px;
+    padding: 20px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
 .modal-content {
     max-width: 600px;
     border-radius: 16px;
 }
+.skills-modal-header-text p {
+    margin-bottom: 0 !important;
+}
+
+.skills-modal-header-content .modal-body div label {
+    color: #1f3f66;
+    font-weight: 600;
+}
 
 .profile-skills-modal-container-labels {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 20px; 
 }
