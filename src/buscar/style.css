@@ -1,0 +1,331 @@
+#buscar .search .description {
+  font-size: 2rem;
+}
+
+#buscar .search .actions {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 4rem;
+}
+
+#buscar .search .actions .search-input {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  border: 1px solid var(--blue-500);
+  color: var(--blue-500);
+}
+
+#buscar .search .actions .search-input::placeholder {
+  color: var(--blue-500);
+}
+
+#buscar .search .actions .search-button {
+  background: var(--blue-500);
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 0.8rem;
+  font-weight: 600;
+  padding: 1.6rem 10rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+#buscar .search .actions .search-button:hover {
+  background: var(--blue-400);
+}
+
+#search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 6rem;
+  gap: 2.7rem;
+}
+
+#search-results .user-card {
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  width: 23.5%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#search-results .user-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  transform: translateY(-4px) scale(1.03);
+}
+
+#search-results .user-card .card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+}
+
+#search-results .user-card .card-header img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border: 1px solid var(--black-500);
+  border-radius: 50%;
+}
+
+#search-results .user-card .card-header .user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#search-results .user-card .card-header .user-info .user-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+#search-results .user-card .card-header .user-info .user-location {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+#search-results .user-card .card-body {
+  margin-bottom: 2rem;
+}
+
+#search-results .user-card .card-body .skill-name {
+  display: block;
+  color: var(--blue-500);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+#search-results .user-card .card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-results .user-card .card-footer .user-rating {
+  font-size: 1.2rem;
+  color: var(--blue-400);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#search-results .user-card .card-footer .user-rating::before {
+  content: "";
+  display: block;
+  background: url(./star.svg);
+  width: 2rem;
+  height: 2rem;
+  background-size: cover;
+  margin-top: -0.6rem;
+}
+
+#search-results .user-card .card-footer .skill-price {
+  font-size: 2.4rem;
+  color: var(--blue-500);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Modal */
+
+#user-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.57);
+  display: flex;
+  justify-content: flex-end;
+  padding: 3rem;
+  z-index: 50;
+  text-align: center;
+}
+
+#user-modal .modal-wrapper {
+  background: #fff;
+  width: 40%;
+  border-radius: 0.8rem;
+  padding: 3rem;
+  position: relative;
+  overflow: auto;
+}
+
+#user-modal .close-modal {
+  display: flex;
+  position: relative;
+  width: 32px;
+  height: 24px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+#user-modal .close-modal .bar {
+  height: 4px;
+  width: 100%;
+  background: var(--black-500);
+  border-radius: 2rem;
+  transition: all 0.5s ease-in-out;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+}
+
+#user-modal .close-modal .bar1 {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+#user-modal .close-modal .bar2 {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+#user-modal .modal-avatar {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+}
+
+#user-modal .modal-name {
+  margin: 1rem 0;
+}
+
+#user-modal .member-since {
+  margin-bottom: 1rem;
+}
+
+#user-modal .rating {
+  color: #515151;
+  font-size: 1.2rem;
+}
+
+#user-modal .rating::before {
+  content: "";
+  display: inline-block;
+  background: url(./star.svg);
+  width: 1.6rem;
+  height: 1.6rem;
+  background-size: cover;
+  margin-right: 0.5rem;
+  position: relative;
+  top: 0.2rem;
+}
+
+#user-modal .modal-body {
+  padding-top: 3rem;
+  margin-top: 3rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+#user-modal .modal-body .skill-name {
+  font-size: 2.4rem;
+}
+
+#user-modal .modal-body .skill-card {
+  border: 1px solid var(--gray-200);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  text-align: left;
+  display: flex;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  border-radius: 1.2rem;
+}
+
+#user-modal .modal-body .skill-details {
+  width: max-content;
+}
+
+#user-modal .modal-body .skill-icon {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  background: var(--gray-200);
+  border-radius: 50%;
+}
+
+#user-modal .modal-body .skill-text {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+#user-modal .modal-body .skill-description {
+  margin: 0.8rem 0 3rem;
+}
+
+#user-modal .modal-body .skill-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#user-modal .modal-body .skill-infos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#user-modal .modal-body .skill-price,
+#user-modal .modal-body .skill-availability {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--blue-500);
+  font-weight: 600;
+  background: var(--gray-200);
+  padding: 0.5rem 3rem;
+  border-radius: 10rem;
+  border: 1px solid var(--gray-400);
+}
+
+#user-modal .modal-body .hire-button {
+  border-radius: 10rem;
+  padding: 0.6rem 3rem;
+  cursor: pointer;
+}
+
+#user-modal .review {
+  margin-top: 3rem;
+}
+
+#user-modal .review .review-list {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+#user-modal .review .review-card {
+  border: 1px solid var(--gray-200);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 0.8rem;
+}
+
+#user-modal .review .review-text {
+  margin: 2rem 0;
+  font-size: 1.4rem;
+}
+
+#user-modal .review .review-tag {
+  font-size: 1.2rem;
+  background: var(--blue-500);
+  padding: 0.8rem 1.2rem;
+  color: #fff;
+  border-radius: 10rem;
+  margin-top: 1rem;
+  display: block;
+}
+
+#user-modal .view-profile {
+  width: 100%;
+  margin-top: 3rem;
+  border-radius: 30rem;
+}

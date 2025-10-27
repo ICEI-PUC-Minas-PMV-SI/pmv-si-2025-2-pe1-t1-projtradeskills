@@ -1,11 +1,12 @@
 .sidebar {
   width: 290px;
   background-color: white;
-  border-right: 1px solid var(--gray-200);
+  border-right: 1px solid #f8f9fa;
   padding: 20px;
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow: auto;
 }
 
 .sidebar .logo {
@@ -13,7 +14,7 @@
   font-weight: 700;
   margin-bottom: 40px;
   padding: 10px 0;
-  color: var(--blue-500);
+  color: #1E3f66;
 }
 
 .sidebar-nav a {
@@ -22,7 +23,7 @@
   padding: 15px;
   border-radius: 0.8rem;
   text-decoration: none;
-  color: var(--color-text-secondary);
+  color: #1E3f66;
   font-weight: 500;
   margin-bottom: 10px;
   transition: background-color 0.2s, color 0.2s;
@@ -30,7 +31,7 @@
 
 .sidebar-nav a.active,
 .sidebar-nav a:hover {
-  background-color: var(--blue-500);
+  background-color: #1E3f66;
   color: white;
 }
 
