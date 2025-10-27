@@ -153,10 +153,16 @@ function setupModalCallbacks() {
             
             switch(options.context) {
                 case 'confirmacao':
+                    // Confirmar conclusão de serviço em andamento (enviadas) - REDIRECIONAR
                     alert(`Serviço "${modalData.habilidade}" confirmado como concluído!`);
+                    // Redirecionar para tela de avaliação após confirmar
+                    setTimeout(() => {
+                        window.location.href = '../components/modal/avaliacao/index.html';
+                    }, 1500);
                     break;
                     
                 case 'confirmacao-recebidos':
+                    // TODO: na 4a etapa deve mudar status do pedido
                     alert(`Pedido "${modalData.habilidade}" aceito!`);
                     break;
                     
@@ -165,7 +171,12 @@ function setupModalCallbacks() {
                     break;
                     
                 case 'cancelamento-recebidos':
+                    // Sinalizar conclusão do pedido em andamento (recebidos) - REDIRECIONAR
                     alert(`Serviço "${modalData.habilidade}" sinalizado como concluído! Aguardando confirmação do consumidor.`);
+                    // Redirecionar para tela de avaliação após sinalizar conclusão
+                    setTimeout(() => {
+                        window.location.href = '../components/modal/avaliacao/index.html';
+                    }, 2000);
                     break;
                     
                 case 'visualizacao':
