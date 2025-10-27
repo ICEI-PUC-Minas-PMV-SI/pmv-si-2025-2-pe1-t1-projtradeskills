@@ -1,3 +1,8 @@
+#buscar .search .title {
+  font-size: 32px !important;
+  font-weight: bold !important;
+}
+
 #dashboard-search-bar p,
 #requests-resume a,
 #recent-activities span,
@@ -12,12 +17,10 @@
   color: #1e3f66;
 }
 
-.background-color-button-search {
-  background-color: #1f3f66;
-}
-
-.color-icon-search {
-  color: #fff;
+.title-sections-dashboard {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 .cards-dashboard {
@@ -25,7 +28,11 @@
 }
 
 #requests-resume .cards-dashboard {
-  width: 20rem;
+  width: 32rem;
+}
+
+.cards-dashboard .card-title {
+  font-size: 20px;
 }
 
 #requests-resume .cards-dashboard:first-of-type {
@@ -45,25 +52,33 @@
 
 #requests-resume .cards-dashboard .icon-envelope {
   color: #1e3f66;
-  font-size: 32px;
+  font-size: 45px;
 }
 
 #recent-activities .cards-dashboard {
   border-bottom: 1px solid #f2f2f2 !important;
 }
 
-#recent-activities .history-button {
-  border: 1px solid #1f3f66;
-  padding: 8px 30px;
-  margin-top: 24px;
-  font-size: 14px;
-  color: #1e3f66;
-  font-weight: 500;
-}
-
 #recent-activities .history-button:hover {
   background-color: #1f3f66;
   color: #fff;
+}
+
+#recent-activities .card-body-text-title,
+#recent-activities p{
+  font-size: 16px !important;
+}
+
+#recent-activities .card-body-text-title {
+  font-weight: 500;
+}
+
+#recent-activities .card-body .button-icon-circle{
+  padding: 10px;
+}
+
+#recent-activities .card-body i {
+  font-size: 16px;
 }
 
 .form-control:focus {
@@ -73,7 +88,7 @@
 
 #recent-activities span,
 .cards-dashboard .card-link {
-  font-size: 12px !important;
+  font-size: 14px !important;
 }
 
 .card-body-text-title {
@@ -86,4 +101,16 @@
 
 .card-title {
   color: #1e3f66 !important;
+}
+
+.hystoric-button {
+    background: var(--blue-500);
+    font-size: 2rem;
+    color: #fff;
+    margin: 24px;
+    border-radius: 0.8rem;
+    font-weight: 600;
+    padding: 1.6rem 6rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;       
 }
