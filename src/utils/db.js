@@ -3,7 +3,7 @@ export const users = [
     id: 1,
     name: "Ricardo Amorim",
     location: "São Paulo, SP",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Desenvolvimento Web",
@@ -25,7 +25,7 @@ export const users = [
     id: 2,
     name: "Ana Silva",
     location: "Rio de Janeiro, RJ",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Marketing Digital",
@@ -49,7 +49,7 @@ export const users = [
     id: 3,
     name: "Carlos Souza",
     location: "Belo Horizonte, MG",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Desenvolvimento Mobile",
@@ -72,7 +72,7 @@ export const users = [
     id: 4,
     name: "Fernanda Costa",
     location: "Curitiba, PR",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Tradução",
@@ -95,7 +95,7 @@ export const users = [
     id: 5,
     name: "João Pereira",
     location: "Porto Alegre, RS",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Consultoria Financeira",
@@ -119,7 +119,7 @@ export const users = [
     id: 6,
     name: "Mariana Oliveira",
     location: "Salvador, BA",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Desenvolvimento Web",
@@ -142,7 +142,7 @@ export const users = [
     id: 7,
     name: "Lucas Almeida",
     location: "Fortaleza, CE",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Ilustração",
@@ -165,7 +165,7 @@ export const users = [
     id: 8,
     name: "Gabriela Santos",
     location: "Manaus, AM",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Desenvolvimento Mobile",
@@ -189,7 +189,7 @@ export const users = [
     id: 9,
     name: "Pedro Henrique",
     location: "Recife, PE",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Edição de Vídeo",
@@ -212,7 +212,7 @@ export const users = [
     id: 10,
     name: "Larissa Lima",
     location: "Goiânia, GO",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Tradução",
@@ -235,7 +235,7 @@ export const users = [
     id: 11,
     name: "Rafael Martins",
     location: "Florianópolis, SC",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Consultoria Financeira",
@@ -259,7 +259,7 @@ export const users = [
     id: 12,
     name: "Beatriz Rocha",
     location: "Vitória, ES",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Desenvolvimento Web",
@@ -282,7 +282,7 @@ export const users = [
     id: 13,
     name: "Thiago Costa",
     location: "Campo Grande, MS",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Ilustração",
@@ -305,7 +305,7 @@ export const users = [
     id: 14,
     name: "Camila Ferreira",
     location: "Belém, PA",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Desenvolvimento Mobile",
@@ -329,7 +329,7 @@ export const users = [
     id: 15,
     name: "Eduardo Nunes",
     location: "São Luís, MA",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Edição de Vídeo",
@@ -352,7 +352,7 @@ export const users = [
     id: 16,
     name: "Isabela Ribeiro",
     location: "Maceió, AL",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Tradução",
@@ -375,7 +375,7 @@ export const users = [
     id: 17,
     name: "Gustavo Carvalho",
     location: "João Pessoa, PB",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Consultoria Financeira",
@@ -399,7 +399,7 @@ export const users = [
     id: 18,
     name: "Luana Mendes",
     location: "Aracaju, SE",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Desenvolvimento Web",
@@ -422,7 +422,7 @@ export const users = [
     id: 19,
     name: "Felipe Barbosa",
     location: "Teresina, PI",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Ilustração",
@@ -445,7 +445,7 @@ export const users = [
     id: 20,
     name: "Vanessa Gomes",
     location: "Natal, RN",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Desenvolvimento Mobile",
@@ -469,7 +469,7 @@ export const users = [
     id: 21,
     name: "Bruno Araújo",
     location: "Palmas, TO",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Edição de Vídeo",
@@ -492,7 +492,7 @@ export const users = [
     id: 22,
     name: "Patrícia Duarte",
     location: "Macapá, AP",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Tradução",
@@ -515,7 +515,7 @@ export const users = [
     id: 23,
     name: "Rodrigo Teixeira",
     location: "Rio Branco, AC",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Consultoria Financeira",
@@ -539,7 +539,7 @@ export const users = [
     id: 24,
     name: "Clara Lopes",
     location: "Boa Vista, RR",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Desenvolvimento Web",
@@ -562,7 +562,7 @@ export const users = [
     id: 25,
     name: "André Vieira",
     location: "Brasília, DF",
-    image: "/buscar/profile.svg",
+    image: "/public/icons/profile.svg",
     skills: [
       {
         name: "Ilustração",

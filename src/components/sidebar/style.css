@@ -1,5 +1,5 @@
 .sidebar {
-  width: 290px;
+  /* width: 290px; */
   background-color: white;
   border-right: 1px solid #f8f9fa;
   padding: 20px;
@@ -14,7 +14,8 @@
   font-weight: 700;
   margin-bottom: 40px;
   padding: 10px 0;
-  color: #1E3f66;
+  color: #1e3f66;
+  text-align: center;
 }
 
 .sidebar-nav a {
@@ -23,7 +24,7 @@
   padding: 15px;
   border-radius: 0.8rem;
   text-decoration: none;
-  color: #1E3f66;
+  color: #1e3f66;
   font-weight: 500;
   margin-bottom: 10px;
   transition: background-color 0.2s, color 0.2s;
@@ -31,7 +32,7 @@
 
 .sidebar-nav a.active,
 .sidebar-nav a:hover {
-  background-color: #1E3f66;
+  background-color: #1e3f66;
   color: white;
 }
 
@@ -39,4 +40,44 @@
   width: 24px;
   height: 24px;
   margin-right: 15px;
+}
+
+.sidebar-nav #logout {
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    position: relative;
+  }
+
+  .sidebar .menu-mobile {
+    display: flex;
+    position: absolute;
+    width: 32px;
+    height: 24px;
+    left: 3rem;
+    top: 3rem;
+  }
+
+  .sidebar .menu-mobile .bar {
+    height: 4px;
+    width: 100%;
+    background: var(--black-500);
+    border-radius: 2rem;
+    transition: all 0.5s ease-in-out;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+  }
+
+  .sidebar .menu-mobile .bar1 {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .sidebar .menu-mobile .bar2 {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
 }
