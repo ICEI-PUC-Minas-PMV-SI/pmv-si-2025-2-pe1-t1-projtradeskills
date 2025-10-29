@@ -21,7 +21,8 @@ class AppHeader extends HTMLElement {
 
         const globalStyles = document.createElement("link");
         globalStyles.setAttribute("rel", "stylesheet");
-        globalStyles.setAttribute("href", "/assets/global.css");
+        globalStyles.setAttribute("href", "/assets/styles/css/global.css");
+
         this.shadowRoot.appendChild(globalStyles);
 
         const componentStyles = document.createElement("link");

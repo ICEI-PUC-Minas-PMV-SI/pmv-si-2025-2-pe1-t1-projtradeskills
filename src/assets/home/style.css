@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: var(--header-height);
+}
+
 #home {
   display: block;
 }
@@ -5,6 +9,7 @@
 #home header {
   position: sticky;
   top: 0;
+  z-index: 5;
 }
 
 #home header h1 {
@@ -338,10 +343,6 @@
 
 #home #call-to-action .subtitle {
   padding: 2rem 0;
-}
-
-#home app-footer {
-  position: static;
 }
 
 @media (max-width: 1199px) {

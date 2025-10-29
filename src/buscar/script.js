@@ -51,6 +51,8 @@ const openModal = id => {
   const user = users.find(user => user.id === parseInt(id));
   if (!user) return;
 
+  document.documentElement.style.overflow = "hidden";
+
   const modalContent = `
   <div class="modal-wrapper">
       <div class="close-modal">
@@ -74,7 +76,7 @@ const openModal = id => {
             <p class="skill-description">${user.skills[0].description}</p>
             <div class="skill-footer">
               <div class="skill-infos">
-                <p class="skill-price"><img src="./arrows.svg" alt="Variação"><img src="./credit.svg" alt="Preço">${
+                <p class="skill-price"><img src="/public/icons/arrows.svg" alt="Variação"><img src="/public/icons/credit.svg" alt="Preço">${
                   user.skills[0].price
                 }</p>
                 <p class="skill-availability">${
@@ -93,21 +95,21 @@ const openModal = id => {
             <div class="review-icon"></div>
             <strong class="review-name">Eduardo Almada</strong>
             <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero sapien, sagittis at dolor id, lacinia ullamcor justo. Nulla facilisi.</p>
-            <img src="./rating.svg" alt="Estrela" class="review-star"/>
+            <img src="/public/icons/rating.svg" alt="Estrela" class="review-star"/>
             <span class="review-tag">Qualidade de serviço</span>
           </div>
           <div class="review-card">
             <div class="review-icon"></div>
             <strong class="review-name">Fernando Miranda</strong>
             <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero sapien, sagittis at dolor id, lacinia ullamcor justo. Nulla facilisi.</p>
-            <img src="./rating.svg" alt="Estrela" class="review-star"/>
+            <img src="/public/icons/rating.svg" alt="Estrela" class="review-star"/>
             <span class="review-tag">Comunicação</span>
           </div>
           <div class="review-card">
             <div class="review-icon"></div>
             <strong class="review-name">Carmem Vitória</strong>
             <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero sapien, sagittis at dolor id, lacinia ullamcor justo. Nulla facilisi.</p>
-            <img src="./rating.svg" alt="Estrela" class="review-star"/>
+            <img src="/public/icons/rating.svg" alt="Estrela" class="review-star"/>
             <span class="review-tag">Atendimento</span>
           </div>
         </div>
@@ -123,11 +125,13 @@ const openModal = id => {
 
   document.querySelector(".close-modal").addEventListener("click", () => {
     document.body.removeChild(modal);
+    document.documentElement.style.overflow = "auto";
   });
 
   modal.addEventListener("click", event => {
     if (event.target === modal) {
       document.body.removeChild(modal);
+      document.documentElement.style.overflow = "auto";
     }
   });
 };
@@ -148,7 +152,7 @@ const createUserCard = ({ id, name, location, image, skills, rating }) => {
       </div>
       <div class="card-footer">
         <p class="user-rating">${rating.score} (${rating.reviews} avaliações)</p>
-        <strong class="skill-price"><img src="./arrows.svg" alt="Variação"><img src="./credit.svg" alt="Preço">${skills[0].price}</strong>
+        <strong class="skill-price"><img src="/public/icons/arrows.svg" alt="Variação"><img src="/public/icons/credit.svg" alt="Preço">${skills[0].price}</strong>
       </div>
     </div>
   `;

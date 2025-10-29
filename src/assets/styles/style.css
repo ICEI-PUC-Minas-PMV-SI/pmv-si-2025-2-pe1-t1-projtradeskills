@@ -1,0 +1,5 @@
+@import "./css/global.css";
+@import "./css/defaults.css";
+@import "/components/sidebar/style.css";
+@import "/components/header/style.css";
+@import "/components/footer/style.css";

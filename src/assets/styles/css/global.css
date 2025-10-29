@@ -33,20 +33,21 @@ html {
   position: relative;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  scroll-padding-top: var(--header-height);
 }
 
 body {
-  height: 100dvh;
+  /* height: 100dvh; */
+  min-height: 100dvh;
   font-size: 1.6rem !important;
   line-height: 1.5;
   color: var(--black-500);
   background-color: var(--gray-100);
+  position: relative;
   display: grid;
   grid-template-areas:
     "sidebar content"
     "footer footer";
-  grid-template-columns: 290px auto;
+  grid-template-columns: 331px auto;
   grid-template-rows: 1fr auto;
 }
 
@@ -77,11 +78,10 @@ app-sidebar {
 }
 
 app-footer {
-  width: 100%;
+  max-width: 100%;
   grid-area: footer;
-  /* position: sticky;
-  bottom: 0;
-  z-index: 20; */
+  display: block;
+  z-index: 2;
 }
 
 .container {

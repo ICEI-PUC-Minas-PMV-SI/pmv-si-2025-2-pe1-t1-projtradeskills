@@ -1,4 +1,4 @@
-const home = document.querySelector("#home");
+const html = document.documentElement;
 const header = document.querySelector("#home header");
 const menuMobile = document.querySelector(".menu-mobile");
 const menuBox = document.querySelector(".menu-box");
@@ -21,11 +21,8 @@ handleMenu = () => {
 menuMobile.addEventListener("click", handleMenu);
 
 const updateHeaderHeight = () => {
-  home.style = `--header-height: ${header.offsetHeight}px`;
+  html.style.setProperty("--header-height", `${header.offsetHeight}px`);
 };
 
-updateHeaderHeight();
-
 window.addEventListener("resize", updateHeaderHeight);
-
-// --- Status logado ---
+window.addEventListener("load", updateHeaderHeight);
