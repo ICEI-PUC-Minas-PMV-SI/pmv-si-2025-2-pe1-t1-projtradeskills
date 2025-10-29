@@ -19,288 +19,285 @@
     <script src="../components/footer/script.js" defer></script>
     <script src="../components/sidebar/script.js" defer></script>
     <script src="./script.js" defer></script>
+
+    <link rel="stylesheet" href="/assets/style.css" />
   </head>
 
   <body>
-    <div class="h-100 overflow-x-hidden">
-      <div class="row h-100">
-        <div class="col-2">
-          <app-sidebar></app-sidebar>
-        </div>
-        <main id="profile" class="container col-10">
-          <section id="profile-image" class="container row">
-            <div class="profile-image-container">
-              <div class="profile-image-circle">
-                <i class="bi bi-person-fill"></i>
-              </div>
-              <button>
-                <i class="bi bi-camera"></i>
-              </button>
+    <app-sidebar></app-sidebar>
+    <div>
+      <main id="profile">
+        <section id="profile-image" class="container row">
+          <div class="profile-image-container">
+            <div class="profile-image-circle">
+              <i class="bi bi-person-fill"></i>
             </div>
-          </section>
-          <section id="profile-form" class="container row col-12">
-            <div class="profile-form-container">
-              <div class="row profile-section-description">
-                <h6>Dados pessoais</h6>
-                <p>
-                  Mantenha seus dados atualizados para garantir uma melhor
-                  experiência
-                </p>
-              </div>
-              <div class="row profile-form-fields">
-                <div class="col-6">
-                  <div class="mb-3">
-                    <label>Nome</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="nome"
-                      placeholder="Digite seu nome completo"
-                      value="João Silva"
-                    />
-                  </div>
-
-                  <div class="mb-3">
-                    <label>Nova Senha</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="password"
-                      placeholder="Digite uma nova senha (opcional)"
-                      value=""
-                    />
-                  </div>
-
-                  <div class="mb-3">
-                    <label>Cidade/Estado</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="cityState"
-                      placeholder="Digite sua Cidade e Estado"
-                      value="São Paulo/SP"
-                    />
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="mb-3">
-                    <label>E-mail</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="seu@email.com"
-                      value="joao.silva@email.com"
-                    />
-                  </div>
-
-                  <div class="mb-3">
-                    <label>Celular</label>
-                    <input
-                      type="tel"
-                      class="form-control"
-                      id="tel"
-                      placeholder="(00) 00000-0000"
-                      value="(11) 98765-4321"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="profile-button-container">
-                <button type="button" class="btn btn-primary profile-button">
-                  <i class="bi bi-floppy"></i>
-                  Salvar alterações
-                </button>
-              </div>
-            </div>
-          </section>
-          <section id="profile-skills" class="col-12">
+            <button>
+              <i class="bi bi-camera"></i>
+            </button>
+          </div>
+        </section>
+        <section id="profile-form" class="container row col-12">
+          <div class="profile-form-container">
             <div class="row profile-section-description">
-              <h6>Minhas habilidades</h6>
+              <h6>Dados pessoais</h6>
               <p>
-                Demonstre aqui o seu nível de proficiência nas suas habilidades
+                Mantenha seus dados atualizados para garantir uma melhor
+                experiência
               </p>
             </div>
-            <div class="row profile-skills-cards">
-              <div class="card mb-3">
-                <div class="card-body d-flex flex-row gap-3">
-                  <div>
-                    <i class="bi bi-briefcase"></i>
-                  </div>
-                  <div>
-                    <h6 class="card-title">Manutenção de Computadores</h6>
-                    <p class="card-text">
-                      Cansado de lentidão? Eu resolvo! Com mais de 4 anos de
-                      experiência, ofereço suporte técnico especializado para
-                      que você ou sua empresa não percam tempo com problemas de
-                      informática. Meus serviços incluem: Manutenção Completa de
-                      Computadores/Notebooks, Formatação, Limpeza de
-                      Componentes. Troca de pasta Térmica, e muito mais! Entre
-                      em contato agora e vamos restaurar a performance total do
-                      seu equipamento.
-                    </p>
-                    <span class="skill-tag">$20</span>
-                    <span class="skill-tag">Presencial</span>
-                    <span class="skill-tag">Sáb | Tarde</span>
-                  </div>
-                  <div class="d-flex flex-column justify-content-between">
-                    <i
-                      class="bi bi-pencil"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                    ></i>
-                    <i class="bi bi-trash3"></i>
-                  </div>
+            <div class="row profile-form-fields">
+              <div class="col-6">
+                <div class="mb-3">
+                  <label>Nome</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nome"
+                    placeholder="Digite seu nome completo"
+                    value="João Silva"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label>Nova Senha</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Digite uma nova senha (opcional)"
+                    value=""
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label>Cidade/Estado</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cityState"
+                    placeholder="Digite sua Cidade e Estado"
+                    value="São Paulo/SP"
+                  />
                 </div>
               </div>
-              <div class="card mb-3">
-                <div class="card-body d-flex flex-row gap-3">
-                  <div>
-                    <i class="bi bi-briefcase"></i>
-                  </div>
-                  <div>
-                    <h6 class="card-title">Aulas de Matemática Básica</h6>
-                    <p class="card-text">
-                      Sou estudante de Sistemas de Informação e trago uma
-                      abordagem lógica e clara para a Matemática. Tenho 2 anos
-                      de experiência com aulas particulares e atuo como Monitor
-                      na Universidade, o que me deu uma didática excelente para
-                      simplificar temas complexos. Posso ajudar seu filho(a) a
-                      dominar a Matemática Básica, entre em contato e vamos
-                      agendar a primeira aula!
-                    </p>
-                    <span class="skill-tag">$10</span>
-                    <span class="skill-tag">Online</span>
-                    <span class="skill-tag">Seg-Sáb | Manhã</span>
-                  </div>
-                  <div class="d-flex flex-column justify-content-between">
-                    <i
-                      class="bi bi-pencil"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                    ></i>
-                    <i class="bi bi-trash3"></i>
-                  </div>
+              <div class="col-6">
+                <div class="mb-3">
+                  <label>E-mail</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="seu@email.com"
+                    value="joao.silva@email.com"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label>Celular</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="tel"
+                    placeholder="(00) 00000-0000"
+                    value="(11) 98765-4321"
+                  />
                 </div>
               </div>
             </div>
             <div class="profile-button-container">
-              <button
-                type="button"
-                class="btn btn-primary profile-button"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <i class="bi bi-plus"></i>
-                Adicionar habilidade
+              <button type="button" class="btn btn-primary profile-button">
+                <i class="bi bi-floppy"></i>
+                Salvar alterações
               </button>
             </div>
-          </section>
-        </main>
-
-        <!-- Início Modal de Criar e Editar Habilidade -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="profile-skills-modal"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog skills-modal">
-            <div class="modal-content skills-modal-header-content">
-              <div class="modal-header skills-modal-header">
-                <div class="skills-modal-header-text">
-                  <h4 class="modal-title">Editar Habilidade</h4>
-                  <p>
-                    Preencha os detalhes da sua habilidade para que outros
-                    usuários possam conhecê-la.
-                  </p>
+          </div>
+        </section>
+        <section id="profile-skills" class="col-12">
+          <div class="row profile-section-description">
+            <h6>Minhas habilidades</h6>
+            <p>
+              Demonstre aqui o seu nível de proficiência nas suas habilidades
+            </p>
+          </div>
+          <div class="row profile-skills-cards">
+            <div class="card mb-3">
+              <div class="card-body d-flex flex-row gap-3">
+                <div>
+                  <i class="bi bi-briefcase"></i>
                 </div>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
+                <div>
+                  <h6 class="card-title">Manutenção de Computadores</h6>
+                  <p class="card-text">
+                    Cansado de lentidão? Eu resolvo! Com mais de 4 anos de
+                    experiência, ofereço suporte técnico especializado para que
+                    você ou sua empresa não percam tempo com problemas de
+                    informática. Meus serviços incluem: Manutenção Completa de
+                    Computadores/Notebooks, Formatação, Limpeza de Componentes.
+                    Troca de pasta Térmica, e muito mais! Entre em contato agora
+                    e vamos restaurar a performance total do seu equipamento.
+                  </p>
+                  <span class="skill-tag">$20</span>
+                  <span class="skill-tag">Presencial</span>
+                  <span class="skill-tag">Sáb | Tarde</span>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <i
+                    class="bi bi-pencil"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  ></i>
+                  <i class="bi bi-trash3"></i>
+                </div>
               </div>
-              <div class="modal-body">
+            </div>
+            <div class="card mb-3">
+              <div class="card-body d-flex flex-row gap-3">
+                <div>
+                  <i class="bi bi-briefcase"></i>
+                </div>
+                <div>
+                  <h6 class="card-title">Aulas de Matemática Básica</h6>
+                  <p class="card-text">
+                    Sou estudante de Sistemas de Informação e trago uma
+                    abordagem lógica e clara para a Matemática. Tenho 2 anos de
+                    experiência com aulas particulares e atuo como Monitor na
+                    Universidade, o que me deu uma didática excelente para
+                    simplificar temas complexos. Posso ajudar seu filho(a) a
+                    dominar a Matemática Básica, entre em contato e vamos
+                    agendar a primeira aula!
+                  </p>
+                  <span class="skill-tag">$10</span>
+                  <span class="skill-tag">Online</span>
+                  <span class="skill-tag">Seg-Sáb | Manhã</span>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <i
+                    class="bi bi-pencil"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  ></i>
+                  <i class="bi bi-trash3"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="profile-button-container">
+            <button
+              type="button"
+              class="btn btn-primary profile-button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <i class="bi bi-plus"></i>
+              Adicionar habilidade
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <!-- Início Modal de Criar e Editar Habilidade -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="profile-skills-modal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog skills-modal">
+          <div class="modal-content skills-modal-header-content">
+            <div class="modal-header skills-modal-header">
+              <div class="skills-modal-header-text">
+                <h4 class="modal-title">Editar Habilidade</h4>
+                <p>
+                  Preencha os detalhes da sua habilidade para que outros
+                  usuários possam conhecê-la.
+                </p>
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Título da habilidade</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Nome da habilidade"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Descrição</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="profile-skills-modal-container-labels">
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label"
-                    >Título da habilidade</label
+                    >Valor sugerido</label
                   >
                   <input
                     type="text"
                     class="form-control"
                     id="exampleFormControlInput1"
-                    placeholder="Nome da habilidade"
+                    value=""
                   />
                 </div>
+
                 <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Descrição</label
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Disponibilidade</label
                   >
-                  <textarea
+                  <input
+                    type="text"
                     class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  ></textarea>
+                    id="exampleFormControlInput1"
+                    value=""
+                  />
                 </div>
-                <div class="profile-skills-modal-container-labels">
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label"
-                      >Valor sugerido</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="exampleFormControlInput1"
-                      value=""
-                    />
-                  </div>
 
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label"
-                      >Disponibilidade</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="exampleFormControlInput1"
-                      value=""
-                    />
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label"
-                      >Valor sugerido</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="exampleFormControlInput1"
-                      value=""
-                    />
-                  </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Valor sugerido</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    value=""
+                  />
                 </div>
               </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Cancelar
-                </button>
-                <button type="button" class="btn profile-button">
-                  Salvar alterações
-                </button>
-              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancelar
+              </button>
+              <button type="button" class="btn profile-button">
+                Salvar alterações
+              </button>
             </div>
           </div>
         </div>
-
-        <!-- MODAL FIM -->
       </div>
+
+      <!-- MODAL FIM -->
     </div>
     <app-footer></app-footer>
     <script
