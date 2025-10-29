@@ -1,4 +1,4 @@
-import { users } from "./users.js";
+let users = JSON.parse(localStorage.getItem("users")) || [];
 
 const searchResultsContainer = document.getElementById("search-results");
 const searchInput = document.querySelector(".search-input");
