@@ -153,7 +153,7 @@ body {
 .conteudo-principal {
   grid-column: 2;
   padding: 3rem;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .secao-botoes {

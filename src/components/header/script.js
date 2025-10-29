@@ -22,27 +22,17 @@ class AppHeader extends HTMLElement {
         const globalStyles = document.createElement("link");
         globalStyles.setAttribute("rel", "stylesheet");
         globalStyles.setAttribute("href", "/assets/global.css");
+        this.shadowRoot.appendChild(globalStyles);
 
         const componentStyles = document.createElement("link");
         componentStyles.setAttribute("rel", "stylesheet");
         componentStyles.setAttribute("href", "/components/header/style.css");
 
-        this.shadowRoot.appendChild(globalStyles);
         this.shadowRoot.appendChild(componentStyles);
         this.shadowRoot.appendChild(templateContent);
 
         const currentPath = window.location.pathname;
         const links = this.shadowRoot.querySelectorAll("a");
-
-        links.forEach(link => {
-          const linkPath = new URL(link.href, window.location.origin).pathname;
-
-          if (linkPath === currentPath) {
-            link.classList.add("active");
-          } else {
-            link.classList.remove("active");
-          }
-        });
       } else {
         console.error(
           "Template 'template-app-header' não encontrado dentro de header/index.html."
