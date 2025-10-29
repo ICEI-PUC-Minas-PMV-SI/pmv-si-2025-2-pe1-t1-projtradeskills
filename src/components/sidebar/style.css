@@ -15,6 +15,7 @@
   margin-bottom: 40px;
   padding: 10px 0;
   color: #1e3f66;
+  text-align: center;
 }
 
 .sidebar-nav a {
@@ -43,4 +44,40 @@
 
 .sidebar-nav #logout {
   cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    position: relative;
+  }
+
+  .sidebar .menu-mobile {
+    display: flex;
+    position: absolute;
+    width: 32px;
+    height: 24px;
+    left: 3rem;
+    top: 3rem;
+  }
+
+  .sidebar .menu-mobile .bar {
+    height: 4px;
+    width: 100%;
+    background: var(--black-500);
+    border-radius: 2rem;
+    transition: all 0.5s ease-in-out;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+  }
+
+  .sidebar .menu-mobile .bar1 {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .sidebar .menu-mobile .bar2 {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
 }

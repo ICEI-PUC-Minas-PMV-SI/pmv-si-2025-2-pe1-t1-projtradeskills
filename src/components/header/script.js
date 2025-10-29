@@ -1,3 +1,5 @@
+import { initMobileMenu } from "/components/header/mobile-menu.js";
+
 class AppHeader extends HTMLElement {
   constructor() {
     super();
@@ -32,8 +34,7 @@ class AppHeader extends HTMLElement {
         this.shadowRoot.appendChild(componentStyles);
         this.shadowRoot.appendChild(templateContent);
 
-        const currentPath = window.location.pathname;
-        const links = this.shadowRoot.querySelectorAll("a");
+        initMobileMenu(this.shadowRoot);
       } else {
         console.error(
           "Template 'template-app-header' não encontrado dentro de header/index.html."

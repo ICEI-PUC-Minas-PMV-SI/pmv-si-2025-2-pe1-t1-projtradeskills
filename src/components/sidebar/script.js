@@ -1,3 +1,5 @@
+import { toggleMobileMenu } from "/components/header/mobile-menu.js";
+
 class AppSidebar extends HTMLElement {
   constructor() {
     super();
@@ -52,6 +54,8 @@ class AppSidebar extends HTMLElement {
             window.location.href = "/";
           });
         }
+
+        toggleMobileMenu(this.shadowRoot);
       } else {
         console.error(
           "Template 'template-app-sidebar' não encontrado dentro de sidebar/index.html."

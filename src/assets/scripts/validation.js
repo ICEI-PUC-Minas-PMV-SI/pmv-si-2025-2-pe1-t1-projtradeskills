@@ -1,7 +1,5 @@
 const userStatus = localStorage.getItem("userStatus");
 
-console.log("User Status:", typeof userStatus);
-
 if (userStatus != "online") {
   const alertMessage = `
   <div id="alert-container">
