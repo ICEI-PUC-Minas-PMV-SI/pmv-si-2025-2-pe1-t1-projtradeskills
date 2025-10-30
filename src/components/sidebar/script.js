@@ -1,3 +1,5 @@
+import { toggleMobileMenu } from "/components/header/mobile-menu.js";
+
 class AppSidebar extends HTMLElement {
   constructor() {
     super();
@@ -6,38 +8,9 @@ class AppSidebar extends HTMLElement {
 
   async connectedCallback() {
     try {
-      // Lista de caminhos possíveis em ordem de prioridade
-      const possiblePaths = [
-        "./components/sidebar/index.html", // Se estiver na raiz src
-        "../components/sidebar/index.html", // Se estiver em uma subpasta
-        "../../components/sidebar/index.html", // Se estiver em subpasta aninhada
-        "../../../components/sidebar/index.html", // Se estiver ainda mais profundo
-        "/components/sidebar/index.html" // Caminho absoluto como fallback
-      ];
-
-      let response;
-      let basePath;
-
-      // Tenta cada caminho até encontrar um que funcione
-      for (const path of possiblePaths) {
-        try {
-          console.log("Tentando carregar sidebar de:", path);
-          response = await fetch(path);
-          if (response.ok) {
-            basePath = path;
-            console.log("Sucesso! Carregado de:", path);
-            break;
-          }
-        } catch (e) {
-          // Continua para o próximo caminho
-          continue;
-        }
-      }
-
-      if (!response || !response.ok) {
-        throw new Error(
-          "Não foi possível carregar o template do sidebar de nenhum caminho."
-        );
+      const response = await fetch("/components/sidebar/index.html");
+      if (!response.ok) {
+        throw new Error("Não foi possível carregar o template do sidebar.");
       }
       const htmlText = await response.text();
 
@@ -50,21 +23,14 @@ class AppSidebar extends HTMLElement {
 
         const globalStyles = document.createElement("link");
         globalStyles.setAttribute("rel", "stylesheet");
+        globalStyles.setAttribute("href", "/assets/styles/css/global.css");
 
-        // Determina o prefixo baseado no caminho que funcionou
-        const pathPrefix = basePath.replace(
-          "components/sidebar/index.html",
-          ""
-        );
-        const globalStylesPath = `${pathPrefix}assets/global.css`;
-        globalStyles.setAttribute("href", globalStylesPath);
+        this.shadowRoot.appendChild(globalStyles);
 
         const componentStyles = document.createElement("link");
         componentStyles.setAttribute("rel", "stylesheet");
-        const componentStylesPath = `${pathPrefix}components/sidebar/style.css`;
-        componentStyles.setAttribute("href", componentStylesPath);
+        componentStyles.setAttribute("href", "/components/sidebar/style.css");
 
-        this.shadowRoot.appendChild(globalStyles);
         this.shadowRoot.appendChild(componentStyles);
         this.shadowRoot.appendChild(templateContent);
 
@@ -80,6 +46,16 @@ class AppSidebar extends HTMLElement {
             link.classList.remove("active");
           }
         });
+
+        const logoutButton = this.shadowRoot.getElementById("logout");
+        if (logoutButton) {
+          logoutButton.addEventListener("click", () => {
+            localStorage.removeItem("userStatus");
+            window.location.href = "/";
+          });
+        }
+
+        toggleMobileMenu(this.shadowRoot);
       } else {
         console.error(
           "Template 'template-app-sidebar' não encontrado dentro de sidebar/index.html."

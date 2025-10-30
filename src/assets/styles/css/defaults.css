@@ -23,6 +23,7 @@
   padding: 1.2rem 3rem;
   font-size: 1.6rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .primary-button {

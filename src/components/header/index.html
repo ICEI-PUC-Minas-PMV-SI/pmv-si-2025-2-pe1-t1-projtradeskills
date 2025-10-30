@@ -9,6 +9,12 @@
   <body>
     <template id="template-app-header">
       <header id="header">
+        <button class="menu-mobile">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </button>
+
         <div class="money">
           <span class="current-balance">Saldo atual</span>
           <div class="value">
@@ -16,10 +22,11 @@
             <span class="currency">créditos</span>
           </div>
         </div>
-        <div class="profile">
+
+        <a href="/perfil/" class="profile">
           <strong class="name">Paula Fernandes</strong>
           <img src="/public/profile.png" alt="Perfil" class="image" />
-        </div>
+        </a>
       </header>
     </template>
   </body>

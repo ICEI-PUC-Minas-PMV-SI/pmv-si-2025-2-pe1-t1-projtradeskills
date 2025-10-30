@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/global.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
 
-     <link rel="stylesheet" href="../buscar/style.css" />
+    <link rel="stylesheet" href="../buscar/style.css" />
 
     <style>
       @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
     </style>
 
-    <script src="../components/header/script.js" defer></script>
-    <script src="../components/sidebar/script.js" defer></script>
-    <script src="../components/footer/script.js" defer></script>
+    <script src="../components/header/script.js" type="module" defer></script>
+    <script src="../components/sidebar/script.js" type="module" defer></script>
+    <script src="../components/footer/script.js" type="module" defer></script>
+
+    <script src="/assets/scripts/validation.js" defer></script>
 
     <title>Dashboard</title>
   </head>
@@ -25,7 +26,7 @@
 
     <main id="dashboard">
       <app-header></app-header>
-      
+
       <div class="search">
         <div class="text">
           <h1 class="title">Encontre a habilidade que você precisa</h1>
@@ -40,14 +41,19 @@
             class="search-input"
             placeholder="O que você procura hoje?"
           />
-          <button class="search-button" onclick="window.location.href='/buscar/'">Buscar</button>
+          <button
+            class="search-button"
+            onclick="window.location.href='/buscar/'"
+          >
+            Buscar
+          </button>
         </div>
       </div>
 
       <div id="search-results"></div>
-      
+
       <section id="requests-resume" class="container mt-5 mb-5">
-          <h2 class="title-sections-dashboard">Resumo das minhas solicitações</h2>
+        <h2 class="title-sections-dashboard">Resumo das minhas solicitações</h2>
         <div
           class="d-flex flex-row flex-wrap justify-content-center align-items-center gap-5"
         >
@@ -89,7 +95,10 @@
         <div
           class="d-flex flex-column flex-wrap justify-content-center align-items-center gap-4"
         >
-          <div class="card w-100 shadow" style="border-color: #dee2e6; padding: 15px">
+          <div
+            class="card w-100 shadow"
+            style="border-color: #dee2e6; padding: 15px"
+          >
             <div class="card w-100 rounded-0 rounded-top-1 cards-dashboard">
               <div class="card-body">
                 <div class="d-flex flex-row gap-3">
@@ -188,7 +197,10 @@
         <div
           class="container d-flex justify-content-center align-items-center mt-3 mb-3"
         >
-          <button class="hystoric-button" onclick="window.location.href='/historico/'">
+          <button
+            class="hystoric-button"
+            onclick="window.location.href='/historico/'"
+          >
             Ver histórico completo
           </button>
         </div>

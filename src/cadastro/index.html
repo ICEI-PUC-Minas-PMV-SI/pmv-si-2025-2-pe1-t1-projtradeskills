@@ -11,9 +11,10 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/assets/style.css" />
-    <script src="../components/footer/script.js" defer></script>
+    <script src="/components/footer/script.js" defer></script>
+    <script src="/assets/scripts/registerUsers.js" type="module" defer></script>
 
+    <link rel="stylesheet" href="/assets/styles/style.css" />
     <link rel="stylesheet" href="/assets/acesso/style.css" />
   </head>
   <body id="cadastro">
@@ -99,7 +100,13 @@
             />
           </div>
 
-          <button type="submit" class="btn" onclick="event.preventDefault(); window.location.href='/login/'">Cadastrar</button>
+          <button
+            type="submit"
+            class="btn"
+            onclick="event.preventDefault(); window.location.href='/login/'"
+          >
+            Cadastrar
+          </button>
         </form>
       </section>
 
