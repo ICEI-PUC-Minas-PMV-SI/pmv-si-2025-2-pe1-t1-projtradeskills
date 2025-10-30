@@ -7,8 +7,6 @@
     <title>Perfil - Trade Skills</title>
 
     <link rel="stylesheet" href="/assets/styles/style.css" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/styleguide.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -28,8 +26,10 @@
 
   <body>
     <app-sidebar></app-sidebar>
-    <div>
-      <main id="profile">
+      <main id="profile row">
+        <app-header></app-header>
+        <div class="profile-wrapper">
+         <div class="profile-wrapper-content">
         <section id="profile-image" class="container row">
           <div class="profile-image-container">
             <div class="profile-image-circle">
@@ -197,6 +197,8 @@
             </button>
           </div>
         </section>
+        </div>
+        </div>
       </main>
 
       <!-- Início Modal de Criar e Editar Habilidade -->
