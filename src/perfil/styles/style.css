@@ -1,25 +1,16 @@
 /*Customização da imagem de perfil*/
 #profile {
   background-image: linear-gradient(to bottom right, #f0f7ff, #f8f9fa);
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
 }
 
 .profile-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    max-width: 70%;
+    margin: 0 auto;
 }
 
-.profile-wrapper-content {
-    display: flex;
-    flex-direction: column;
-    max-width: 70%;
-    gap: 32px;
+#profile-image,
+#profile-form {
+    margin-bottom: 32px;
 }
 
 #profile p,
@@ -35,6 +26,7 @@
     color: #1f3f66;
 }
 
+/*Customização do container da imagem de perfil*/
 .profile-image-container {
   display: flex;
   justify-content: center;
@@ -202,4 +194,30 @@
     display: flex;
     align-items: center;
     gap: 20px; 
+}
+
+/* Responsividade */
+
+@media (max-width: 475px) {
+  .profile-image-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-image-circle i {
+    font-size: 60px;
+  }
+
+  .profile-image-container button {
+    width: 40px;
+    height: 40px;
+    right: 40px;
+    border-width: 1px;
+  }
+
+  .profile-image-container button i {
+    font-size: 16px;
+  }
+    
+
 }
