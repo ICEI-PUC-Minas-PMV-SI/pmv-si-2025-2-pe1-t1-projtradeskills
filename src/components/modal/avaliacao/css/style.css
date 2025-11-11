@@ -86,6 +86,15 @@
     transition: transform 0.2s;
 }
 
+.star.selected {
+    background-color: gold;
+    border-radius: 10px;
+}
+
+.star.selected img {
+    filter: brightness(1.1);
+}
+
 .star:hover{ 
     transform: scale(1.1);
     background-color: gold;

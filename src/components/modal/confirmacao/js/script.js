@@ -175,6 +175,9 @@ console.log('Script do Modal Genérico carregando...');
         }
       } else {
         desistirSection.classList.add('hidden');
+        if (justificativaEl) {
+          justificativaEl.value = '';
+        }
       }
     }
   }
@@ -204,7 +207,48 @@ console.log('Script do Modal Genérico carregando...');
     if (primaryBtn) {
       primaryBtn.addEventListener('click', () => {
         const justificativa = justificativaEl ? justificativaEl.value.trim() : '';
-        
+        const context = currentConfig.context;
+
+        const closeIfNeeded = () => {
+          if (currentConfig.primaryAction !== 'keep-open') {
+            GenericModal.close();
+          }
+        };
+
+        const resetJustificativa = () => {
+          if (justificativaEl) {
+            justificativaEl.value = '';
+          }
+        };
+
+        if (context === 'confirmacao-recebidos') {
+          if (currentConfig.onPrimary) {
+            if (currentConfig.showDesistirSection) {
+              currentConfig.onPrimary({ action: 'cancel', justificativa });
+            } else {
+              currentConfig.onPrimary({ action: 'accept' });
+            }
+          }
+
+          resetJustificativa();
+          closeIfNeeded();
+          return;
+        }
+
+        if (context === 'cancelamento-recebidos') {
+          if (currentConfig.onPrimary) {
+            if (currentConfig.showDesistirSection) {
+              currentConfig.onPrimary({ action: 'cancel', justificativa });
+            } else {
+              currentConfig.onPrimary({ action: 'confirm' });
+            }
+          }
+
+          resetJustificativa();
+          closeIfNeeded();
+          return;
+        }
+
         // Para confirmacao, quando a seção de justificativa está visível
         if (currentConfig.context === 'confirmacao' && currentConfig.showDesistirSection) {
           if (!justificativa) {
@@ -221,61 +265,30 @@ console.log('Script do Modal Genérico carregando...');
           return;
         }
         
-        // Para confirmacao-recebidos, quando a seção de justificativa está visível
-        if (currentConfig.context === 'confirmacao-recebidos' && currentConfig.showDesistirSection) {
-          if (!justificativa) {
-            alert('Por favor, informe o motivo do cancelamento.');
-            return;
-          }
-          
-          // Chamar o callback original com a justificativa
-          if (currentConfig._originalSecondaryCallback) {
-            currentConfig._originalSecondaryCallback({ justificativa });
-          }
-          
-          GenericModal.close();
-          return;
-        }
-        
-        // Para cancelamento-recebidos, quando a seção de justificativa está visível
-        if (currentConfig.context === 'cancelamento-recebidos' && currentConfig.showDesistirSection) {
-          if (!justificativa) {
-            alert('Por favor, informe o motivo do cancelamento.');
-            return;
-          }
-          
-          // Chamar o callback original com a justificativa
-          if (currentConfig._originalSecondaryCallback) {
-            currentConfig._originalSecondaryCallback({ justificativa });
-          }
-          
-          GenericModal.close();
-          return;
-        }
-        
         // Para cancelamento, quando a seção de justificativa está visível
         if (currentConfig.context === 'cancelamento' && currentConfig.showDesistirSection) {
-          if (!justificativa) {
-            alert('Por favor, informe o motivo do cancelamento.');
-            return;
+          const payload = { justificativa };
+
+          if (currentConfig.onPrimary) {
+            currentConfig.onPrimary(payload);
           }
-          
-          // Chamar o callback original com a justificativa
+
           if (currentConfig._originalSecondaryCallback) {
-            currentConfig._originalSecondaryCallback({ justificativa });
+            currentConfig._originalSecondaryCallback(payload);
           }
-          
-          GenericModal.close();
+
+          resetJustificativa();
+          closeIfNeeded();
           return;
         }
         
         if (currentConfig.onPrimary) {
-          currentConfig.onPrimary({ justificativa });
+          const payload = currentConfig.showDesistirSection ? { justificativa } : undefined;
+          currentConfig.onPrimary(payload);
         }
-        
-        if (currentConfig.primaryAction !== 'keep-open') {
-          GenericModal.close();
-        }
+
+        resetJustificativa();
+        closeIfNeeded();
       });
     }
 
