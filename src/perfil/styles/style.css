@@ -28,7 +28,11 @@
 
 #profile h6 {
     font-weight: 600;
-    font-size: 16px;
+}
+
+.profile-section-description h6,
+.profile-skills-cards .card-title {
+     font-size: 16px;
 }
 
 /*Customização do container da imagem de perfil*/
@@ -73,6 +77,11 @@
 /*Customização da seção de Dados Pessoais*/
 
 /*Customização do container da seção de Dados Pessoais e do container dos cards de habilidades*/
+.profile-skills-cards .card-body {
+    display: flex;
+    justify-content: center;
+}
+
 #profile-form,
 .profile-skills-cards > div {
     border: none;
@@ -80,6 +89,10 @@
     padding: 32px;
     background-color: #FFF;
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.profile-skills-cards .card-content-container {
+    padding-inline: 10px;
 }
 
 .profile-section-description h6,p {
@@ -193,6 +206,7 @@
     max-width: 600px;
     border-radius: 16px;
 }
+
 .skills-modal-header-text p {
     margin-bottom: 0 !important;
 }
@@ -250,6 +264,51 @@
 
     .profile-form-fields > div {
         width: 100%;
+    }
+
+    /* Responsividade da seção Minhas habilidades */
+    #profile-skills {
+        padding: 0px;
+    }
+
+    #profile-form, 
+    .profile-skills-cards > div {
+        padding: 22px;
+    }
+
+     .profile-skills-cards > div {
+        height: 300px;
+     }     
+
+    .profile-skills-cards .card-title {
+        font-size: 14px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .profile-skills-cards .card-text {
+        font-size: 14px;
+    }
+
+    #profile p,
+    .skills-modal-header p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+    overflow: hidden;   
+    }
+
+
+    .skill-tags-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+    }
+
+    .skill-tag {
+        padding: 6px 8px;
+        font-size: 10px;
     }
 }
 
