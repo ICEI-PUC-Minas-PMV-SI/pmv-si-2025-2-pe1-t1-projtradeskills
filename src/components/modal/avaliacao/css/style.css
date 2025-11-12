@@ -84,13 +84,24 @@
     width: 35px;
     height: 35px;
     transition: transform 0.2s;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(100%);
+}
+
+
+.star.selected img {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(86%) saturate(1549%) hue-rotate(359deg) brightness(101%) contrast(101%);
 }
 
 .star:hover{ 
-    transform: scale(1.1);
-    background-color: gold;
-    transform: translateY(-2px);
+    transform: scale(1.1) translateY(-2px);
+    /* background-color: gold;
+    transform: translateY(-2px); */
 }
+
+.star:hover img { 
+    filter: brightness(0) saturate(100%) invert(74%) sepia(86%) saturate(1549%) hue-rotate(359deg) brightness(101%) contrast(101%);
+}
+
 
 
 .chip-container {
@@ -159,4 +170,216 @@
 
 .send:hover{
     background-color: #486286;
+}
+
+/* RESPONSIVIDADE  */
+
+/* Tablet  */
+@media (max-width: 1023px) {
+  .modal {
+    padding: 16px;
+  }
+
+  .modal-body {
+    max-width: 90%;
+    padding: 16px;
+  }
+
+  .modal-title {
+    font-size: 28px;
+  }
+
+  .modal-text {
+    font-size: 16px;
+  }
+
+  .modal-sec-title {
+    font-size: 16px;
+  }
+
+  .star {
+    padding: 10px;
+  }
+
+  .star img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .modal {
+    padding: 12px;
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+
+  .modal-body {
+    max-width: 100%;
+    padding: 20px 16px;
+    border-radius: 12px;
+    margin: auto 0;
+  }
+
+  .modal-title {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+
+  .modal-text {
+    font-size: 15px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+
+  .modal-sec-title {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+  }
+
+  .avaliacao {
+    margin-bottom: 12px;
+  }
+
+  .highlight {
+    margin-bottom: 12px;
+  }
+
+  .stars {
+    gap: 4px;
+    margin: 8px 0;
+  }
+
+  .star {
+    padding: 8px;
+  }
+
+  .star img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .chip-container {
+    gap: 6px;
+    padding: 8px 4px;
+  }
+
+  .chip {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  .experiencia {
+    font-size: 13px;
+    padding: 10px;
+    min-height: 70px;
+  }
+
+  .send {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .modal {
+    padding: 8px;
+  }
+
+  .modal-body {
+    padding: 16px 12px;
+    border-radius: 8px;
+    gap: 10px;
+  }
+
+  .modal-title {
+    font-size: 20px;
+  }
+
+  .modal-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .modal-sec-title {
+    font-size: 14px;
+  }
+
+  .stars {
+    gap: 2px;
+    margin: 6px 0;
+  }
+
+  .star {
+    padding: 6px;
+  }
+
+  .star img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .chip-container {
+    gap: 5px;
+    padding: 6px 2px;
+  }
+
+  .chip {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+  .experiencia {
+    font-size: 12px;
+    padding: 8px;
+    min-height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .send {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .modal {
+    align-items: flex-start;
+  }
+
+  .modal-body {
+    margin: 10px auto;
+    max-height: 95vh;
+  }
+
+  .modal-title {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+
+  .modal-text {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .stars {
+    margin: 4px 0;
+  }
+
+  .star {
+    padding: 4px;
+  }
+
+  .star img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .experiencia {
+    min-height: 50px;
+  }
 }

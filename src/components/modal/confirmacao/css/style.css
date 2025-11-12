@@ -297,45 +297,173 @@ body {
   }
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+
+/* RESPONSIVIDADE */
+
+/* Tablet */
+@media (max-width: 1023px) {
   .modal {
     padding: 16px;
   }
 
   .modal-content {
+    max-width: 90%;
+    border-radius: 14px;
+  }
+
+  .modal-title {
+    font-size: 18px;
+  }
+
+  .modal-description {
+    font-size: 14px;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .modal {
+    padding: 12px;
+    align-items: flex-end;
+  }
+
+  .modal-content {
     max-width: 100%;
-    border-radius: 12px;
+    border-radius: 16px 16px 0 0;
+    max-height: 85vh;
   }
 
   .modal-header {
     padding: 20px 20px 0 20px;
   }
 
+  .modal-title {
+    font-size: 18px;
+  }
+
+  .close-btn {
+    padding: 6px;
+  }
+
   .modal-body {
     padding: 16px 20px 20px 20px;
   }
 
+  .modal-subtitle {
+    font-size: 13px;
+  }
+
+  .modal-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .modal-tags {
+    gap: 6px;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .tag[data-type="currency"] {
+    padding-left: 26px;
+  }
+
+  .tag[data-type="currency"]::before {
+    width: 14px;
+    height: 14px;
+    left: 6px;
+  }
+
+  .desistir-section {
+    margin-top: 20px;
+    padding-top: 16px;
+  }
+
+  .desistir-label {
+    font-size: 13px;
+  }
+
+  .justificativa {
+    padding: 10px 12px;
+    font-size: 13px;
+    min-height: 70px;
+  }
+
   .modal-footer {
     padding: 16px 20px 20px 20px;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 10px;
   }
 
   .btn {
     width: 100%;
-  }
-
-  .modal-title {
-    font-size: 18px;
+    padding: 12px 20px;
+    font-size: 14px;
   }
 }
 
+/* Mobile pequeno */
 @media (max-width: 480px) {
   .modal {
-    padding: 12px;
+    padding: 0;
   }
 
   .modal-content {
-    border-radius: 8px;
+    border-radius: 12px 12px 0 0;
+    max-height: 90vh;
+  }
+
+  .modal-header {
+    padding: 16px 16px 0 16px;
+  }
+
+  .modal-title {
+    font-size: 16px;
+  }
+
+  .modal-body {
+    padding: 12px 16px 16px 16px;
+  }
+
+  .modal-description {
+    font-size: 13px;
+  }
+
+  .tag {
+    font-size: 10px;
+  }
+
+  .justificativa {
+    font-size: 12px;
+  }
+
+  .modal-footer {
+    padding: 12px 16px 16px 16px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .modal {
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  .modal-content {
+    border-radius: 12px;
+    max-height: 95vh;
   }
 }
