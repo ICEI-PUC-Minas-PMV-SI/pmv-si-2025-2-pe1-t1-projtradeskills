@@ -1,5 +1,11 @@
 const STORAGE_KEY = 'tradeSkillsData';
 const DEFAULT_USER_ID = 'user-paula';
+const SEARCH_INPUT_CLASS = 'toolbar-search-input';
+const FILTER_DROPDOWN_CLASS = 'filter-dropdown';
+const HISTORY_FILTER_OPTIONS = [
+  { value: 'entrada', label: 'Entrada' },
+  { value: 'saida', label: 'Saída' }
+];
 
 const DEFAULT_DATA = {
   currentUserId: DEFAULT_USER_ID,
@@ -161,6 +167,9 @@ function renderHistory() {
   tableBody.innerHTML = entries.length
     ? entries.map(buildHistoryRow).join('')
     : '<tr><td colspan="5">Nenhuma movimentação registrada ainda.</td></tr>';
+
+  attachHistorySearch();
+  attachHistoryFilters();
 }
 
 function buildHistoryRow(entry) {
@@ -168,7 +177,7 @@ function buildHistoryRow(entry) {
   const sinal = entry.type === 'entrada' ? '+' : '-';
 
   return `
-    <tr>
+    <tr data-type="${entry.type}">
       <td>${entry.habilidade}</td>
       <td>${entry.pessoa}</td>
       <td>${entry.date}</td>
@@ -182,3 +191,262 @@ function buildHistoryRow(entry) {
 }
 
 document.addEventListener('DOMContentLoaded', renderHistory);
+
+function attachHistorySearch() {
+  const toolbar = document.querySelector('.tab-conteudo .toolbar');
+  const button = toolbar ? toolbar.querySelector('.btn-icone[aria-label="Buscar"]') : null;
+  const section = toolbar ? toolbar.closest('.tab-conteudo') : null;
+
+  if (!toolbar || !button || !section) {
+    return;
+  }
+
+  if (typeof toolbar.dataset.searchTerm === 'undefined') {
+    toolbar.dataset.searchTerm = '';
+  }
+
+  if (button.dataset.searchBound !== 'true') {
+    button.dataset.searchBound = 'true';
+
+    const handleInput = event => {
+      const value = event.target.value || '';
+      toolbar.dataset.searchTerm = value;
+      filterHistoryRows(section, value);
+    };
+
+    const clearAndRemoveInput = inputElement => {
+      inputElement.value = '';
+      toolbar.dataset.searchTerm = '';
+      filterHistoryRows(section, '');
+      inputElement.remove();
+      button.focus();
+    };
+
+    const handleKeydown = event => {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        clearAndRemoveInput(event.target);
+      }
+    };
+
+    const handleBlur = event => {
+      if ((event.target.value || '').trim().length === 0) {
+        clearAndRemoveInput(event.target);
+      }
+    };
+
+    button.addEventListener('click', () => {
+      let input = toolbar.querySelector(`.${SEARCH_INPUT_CLASS}`);
+
+      if (!input) {
+        input = document.createElement('input');
+        input.type = 'search';
+        input.className = SEARCH_INPUT_CLASS;
+        input.placeholder = 'Buscar por habilidade, pessoa, data ou tipo';
+        input.setAttribute('aria-label', 'Buscar histórico de transações');
+        input.value = toolbar.dataset.searchTerm || '';
+        input.addEventListener('input', handleInput);
+        input.addEventListener('keydown', handleKeydown);
+        input.addEventListener('blur', handleBlur);
+        button.insertAdjacentElement('afterend', input);
+      }
+
+      requestAnimationFrame(() => {
+        input.focus();
+        input.setSelectionRange(0, input.value.length);
+      });
+    });
+  }
+
+  const storedTerm = toolbar.dataset.searchTerm || '';
+  filterHistoryRows(section, storedTerm);
+
+  const input = toolbar.querySelector(`.${SEARCH_INPUT_CLASS}`);
+  if (input && input.value !== storedTerm) {
+    input.value = storedTerm;
+  }
+}
+
+function getHistorySelectedFilters(toolbar) {
+  if (!toolbar) {
+    return [];
+  }
+
+  const stored = toolbar.dataset.filterValues;
+  if (!stored) {
+    return [];
+  }
+
+  return stored.split(',').filter(Boolean);
+}
+
+function attachHistoryFilters() {
+  const toolbars = document.querySelectorAll('.tab-conteudo .toolbar');
+
+  toolbars.forEach(toolbar => {
+    const button = toolbar.querySelector('.btn-icone[aria-label="Filtro"]');
+    const section = toolbar.closest('.tab-conteudo');
+
+    if (!button || !section) {
+      return;
+    }
+
+    if (typeof toolbar.dataset.filterValues === 'undefined') {
+      toolbar.dataset.filterValues = '';
+    }
+
+    const updateFilters = () => {
+      const currentSearch = toolbar.dataset.searchTerm || '';
+      filterHistoryRows(section, currentSearch);
+    };
+
+    const syncMenuState = menu => {
+      const selected = getHistorySelectedFilters(toolbar);
+      menu.querySelectorAll('input[type="checkbox"]').forEach(input => {
+        input.checked = selected.includes(input.value);
+      });
+    };
+
+    const closeMenu = menu => {
+      if (!menu || !menu.classList.contains('open')) {
+        return;
+      }
+
+      menu.classList.remove('open');
+
+      if (menu._outsideClickHandler) {
+        document.removeEventListener('mousedown', menu._outsideClickHandler);
+        delete menu._outsideClickHandler;
+      }
+
+      if (menu._escapeHandler) {
+        document.removeEventListener('keydown', menu._escapeHandler);
+        delete menu._escapeHandler;
+      }
+    };
+
+    const getOrCreateMenu = () => {
+      let menu = toolbar.querySelector(`.${FILTER_DROPDOWN_CLASS}`);
+
+      if (!menu) {
+        menu = document.createElement('div');
+        menu.className = FILTER_DROPDOWN_CLASS;
+
+        HISTORY_FILTER_OPTIONS.forEach(option => {
+          const label = document.createElement('label');
+          const input = document.createElement('input');
+          input.type = 'checkbox';
+          input.value = option.value;
+
+          input.addEventListener('change', () => {
+            const selected = Array.from(menu.querySelectorAll('input[type="checkbox"]'))
+              .filter(checkbox => checkbox.checked)
+              .map(checkbox => checkbox.value);
+
+            toolbar.dataset.filterValues = selected.join(',');
+            updateFilters();
+          });
+
+          const text = document.createElement('span');
+          text.textContent = option.label;
+
+          label.append(input, text);
+          menu.appendChild(label);
+        });
+
+        button.insertAdjacentElement('afterend', menu);
+      }
+
+      syncMenuState(menu);
+      return menu;
+    };
+
+    const openMenu = menu => {
+      if (menu.classList.contains('open')) {
+        return;
+      }
+
+      syncMenuState(menu);
+      menu.classList.add('open');
+
+      const outsideHandler = event => {
+        if (!menu.contains(event.target) && !button.contains(event.target)) {
+          closeMenu(menu);
+        }
+      };
+
+      const escapeHandler = event => {
+        if (event.key === 'Escape') {
+          closeMenu(menu);
+        }
+      };
+
+      menu._outsideClickHandler = outsideHandler;
+      menu._escapeHandler = escapeHandler;
+
+      document.addEventListener('mousedown', outsideHandler);
+      document.addEventListener('keydown', escapeHandler);
+    };
+
+    if (button.dataset.filterBound !== 'true') {
+      button.dataset.filterBound = 'true';
+
+      button.addEventListener('click', event => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const menu = getOrCreateMenu();
+
+        if (menu.classList.contains('open')) {
+          closeMenu(menu);
+        } else {
+          openMenu(menu);
+        }
+      });
+    }
+
+    if (!section.classList.contains('active')) {
+      const menu = toolbar.querySelector(`.${FILTER_DROPDOWN_CLASS}`);
+      if (menu) {
+        closeMenu(menu);
+      }
+    }
+
+    updateFilters();
+  });
+}
+
+function filterHistoryRows(section, term) {
+  if (!section || !section.classList.contains('active')) {
+    return;
+  }
+
+  const toolbar = section.querySelector('.toolbar');
+  const selectedFilters = getHistorySelectedFilters(toolbar);
+  const normalizedTerm = (term || '').trim().toLowerCase();
+  const rows = section.querySelectorAll('tbody tr');
+
+  rows.forEach(row => {
+    const cells = Array.from(row.querySelectorAll('td'));
+
+    if (!cells.length) {
+      return;
+    }
+
+    if (cells.length === 1) {
+      row.style.display = normalizedTerm || selectedFilters.length ? 'none' : '';
+      return;
+    }
+
+    const searchableText = cells
+      .slice(0, 4)
+      .map(cell => (cell.textContent || '').toLowerCase())
+      .join(' ');
+
+    const matchesSearch = !normalizedTerm || searchableText.includes(normalizedTerm);
+    const typeKey = (row.dataset.type || '').toLowerCase();
+    const matchesFilter = !selectedFilters.length || selectedFilters.includes(typeKey);
+
+    row.style.display = matchesSearch && matchesFilter ? '' : 'none';
+  });
+}

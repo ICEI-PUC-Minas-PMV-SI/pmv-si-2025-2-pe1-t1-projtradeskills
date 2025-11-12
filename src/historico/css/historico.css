@@ -91,6 +91,7 @@
   justify-content: flex-end;
   gap: 10px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .btn-icone {
@@ -114,6 +115,63 @@
   width: 20px;
   height: 20px;
   fill: #1e3f66;
+}
+
+.toolbar-search-input {
+  width: 220px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1e3f66;
+  background: #fff;
+}
+
+.toolbar-search-input:focus {
+  outline: 2px solid rgba(30, 63, 102, 0.3);
+  outline-offset: 2px;
+}
+
+.filter-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px;
+  min-width: 200px;
+  background: #fff;
+  border: 1px solid #1e3f66;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(30, 63, 102, 0.15);
+  z-index: 1000;
+}
+
+.filter-dropdown.open {
+  display: flex;
+}
+
+.filter-dropdown label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #1e3f66;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.filter-dropdown label:hover {
+  background-color: rgba(30, 63, 102, 0.08);
+}
+
+.filter-dropdown input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  accent-color: #1e3f66;
 }
 
 .tabela-solicitacoes {

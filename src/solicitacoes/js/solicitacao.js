@@ -21,6 +21,16 @@ const SEED_MODES = {
 };
 let seedToggleInitialized = false;
 
+const SEARCH_INPUT_CLASS = 'toolbar-search-input';
+const FILTER_DROPDOWN_CLASS = 'filter-dropdown';
+const STATUS_FILTER_OPTIONS = [
+    { value: 'pendente', label: 'Pendente' },
+    { value: 'em-andamento', label: 'Em andamento' },
+    { value: 'aguardando-cliente', label: 'Aguardando Cliente' },
+    { value: 'concluido', label: 'Concluído' },
+    { value: 'cancelado', label: 'Cancelado' }
+];
+
 const DEFAULT_DATA = {
     currentUserId: DEFAULT_USER_ID,
     users: [
@@ -241,6 +251,9 @@ document.querySelectorAll('.btn-tab').forEach(botao => {
         document
             .getElementById('conteudo-' + this.dataset.tab)
             .classList.add('active');
+
+        attachSearch();
+        attachFilters();
     });
 });
 
@@ -360,6 +373,276 @@ function renderRequests() {
         : '<tr><td colspan="5">Nenhum pedido recebido até o momento.</td></tr>';
 
     bindRowActions();
+    attachSearch();
+    attachFilters();
+}
+
+function attachSearch() {
+    const toolbars = document.querySelectorAll('.tab-conteudo .toolbar');
+
+    toolbars.forEach(toolbar => {
+        const button = toolbar.querySelector('.btn-icone[aria-label="Buscar"]');
+        const section = toolbar.closest('.tab-conteudo');
+
+        if (!button || !section) {
+            return;
+        }
+
+        if (typeof toolbar.dataset.searchTerm === 'undefined') {
+            toolbar.dataset.searchTerm = '';
+        }
+
+        if (button.dataset.searchBound !== 'true') {
+            button.dataset.searchBound = 'true';
+
+            const handleInput = event => {
+                const value = event.target.value || '';
+                toolbar.dataset.searchTerm = value;
+                filterSolicitationRows(section, value);
+            };
+
+            const clearAndRemoveInput = inputElement => {
+                inputElement.value = '';
+                toolbar.dataset.searchTerm = '';
+                filterSolicitationRows(section, '');
+                inputElement.remove();
+                button.focus();
+            };
+
+            const handleKeydown = event => {
+                if (event.key === 'Escape') {
+                    event.preventDefault();
+                    const inputElement = event.target;
+                    clearAndRemoveInput(inputElement);
+                }
+            };
+
+            const handleBlur = event => {
+                if ((event.target.value || '').trim().length === 0) {
+                    clearAndRemoveInput(event.target);
+                }
+            };
+
+            button.addEventListener('click', () => {
+                let input = toolbar.querySelector(`.${SEARCH_INPUT_CLASS}`);
+
+                if (!input) {
+                    input = document.createElement('input');
+                    input.type = 'search';
+                    input.className = SEARCH_INPUT_CLASS;
+                    input.placeholder = 'Buscar por habilidade, pessoa, data ou status';
+                    input.setAttribute('aria-label', 'Buscar solicitações');
+                    input.value = toolbar.dataset.searchTerm || '';
+                    input.addEventListener('input', handleInput);
+                    input.addEventListener('keydown', handleKeydown);
+                    input.addEventListener('blur', handleBlur);
+                    button.insertAdjacentElement('afterend', input);
+                }
+
+                requestAnimationFrame(() => {
+                    input.focus();
+                    input.setSelectionRange(0, input.value.length);
+                });
+            });
+        }
+
+        if (section.classList.contains('active')) {
+            const storedTerm = toolbar.dataset.searchTerm || '';
+            filterSolicitationRows(section, storedTerm);
+            const input = toolbar.querySelector(`.${SEARCH_INPUT_CLASS}`);
+            if (input && input.value !== storedTerm) {
+                input.value = storedTerm;
+            }
+        }
+    });
+}
+
+function getToolbarSelectedFilters(toolbar) {
+    if (!toolbar) {
+        return [];
+    }
+
+    const stored = toolbar.dataset.filterValues;
+    if (!stored) {
+        return [];
+    }
+
+    return stored.split(',').filter(Boolean);
+}
+
+function attachFilters() {
+    const toolbars = document.querySelectorAll('.tab-conteudo .toolbar');
+
+    toolbars.forEach(toolbar => {
+        const button = toolbar.querySelector('.btn-icone[aria-label="Filtro"]');
+        const section = toolbar.closest('.tab-conteudo');
+
+        if (!button || !section) {
+            return;
+        }
+
+        if (typeof toolbar.dataset.filterValues === 'undefined') {
+            toolbar.dataset.filterValues = '';
+        }
+
+        const updateFilters = () => {
+            const currentSearch = toolbar.dataset.searchTerm || '';
+            filterSolicitationRows(section, currentSearch);
+        };
+
+        const syncMenuState = menu => {
+            const selected = getToolbarSelectedFilters(toolbar);
+            menu
+                .querySelectorAll('input[type="checkbox"]')
+                .forEach(input => {
+                    input.checked = selected.includes(input.value);
+                });
+        };
+
+        const closeMenu = menu => {
+            if (!menu || !menu.classList.contains('open')) {
+                return;
+            }
+
+            menu.classList.remove('open');
+
+            if (menu._outsideClickHandler) {
+                document.removeEventListener('mousedown', menu._outsideClickHandler);
+                delete menu._outsideClickHandler;
+            }
+
+            if (menu._escapeHandler) {
+                document.removeEventListener('keydown', menu._escapeHandler);
+                delete menu._escapeHandler;
+            }
+        };
+
+        const getOrCreateMenu = () => {
+            let menu = toolbar.querySelector(`.${FILTER_DROPDOWN_CLASS}`);
+
+            if (!menu) {
+                menu = document.createElement('div');
+                menu.className = FILTER_DROPDOWN_CLASS;
+
+                STATUS_FILTER_OPTIONS.forEach(option => {
+                    const label = document.createElement('label');
+                    const input = document.createElement('input');
+                    input.type = 'checkbox';
+                    input.value = option.value;
+
+                    input.addEventListener('change', () => {
+                        const selected = Array.from(
+                            menu.querySelectorAll('input[type="checkbox"]')
+                        )
+                            .filter(checkbox => checkbox.checked)
+                            .map(checkbox => checkbox.value);
+
+                        toolbar.dataset.filterValues = selected.join(',');
+                        updateFilters();
+                    });
+
+                    const text = document.createElement('span');
+                    text.textContent = option.label;
+
+                    label.append(input, text);
+                    menu.appendChild(label);
+                });
+
+                button.insertAdjacentElement('afterend', menu);
+            }
+
+            syncMenuState(menu);
+            return menu;
+        };
+
+        const openMenu = menu => {
+            if (menu.classList.contains('open')) {
+                return;
+            }
+
+            syncMenuState(menu);
+            menu.classList.add('open');
+
+            const outsideHandler = event => {
+                if (!menu.contains(event.target) && !button.contains(event.target)) {
+                    closeMenu(menu);
+                }
+            };
+
+            const escapeHandler = event => {
+                if (event.key === 'Escape') {
+                    closeMenu(menu);
+                }
+            };
+
+            menu._outsideClickHandler = outsideHandler;
+            menu._escapeHandler = escapeHandler;
+
+            document.addEventListener('mousedown', outsideHandler);
+            document.addEventListener('keydown', escapeHandler);
+        };
+
+        if (button.dataset.filterBound !== 'true') {
+            button.dataset.filterBound = 'true';
+
+            button.addEventListener('click', event => {
+                event.preventDefault();
+                event.stopPropagation();
+
+                const menu = getOrCreateMenu();
+
+                if (menu.classList.contains('open')) {
+                    closeMenu(menu);
+                } else {
+                    openMenu(menu);
+                }
+            });
+        }
+
+        if (!section.classList.contains('active')) {
+            const menu = toolbar.querySelector(`.${FILTER_DROPDOWN_CLASS}`);
+            if (menu) {
+                closeMenu(menu);
+            }
+        }
+
+        updateFilters();
+    });
+}
+
+function filterSolicitationRows(section, term) {
+    if (!section || !section.classList.contains('active')) {
+        return;
+    }
+
+    const toolbar = section.querySelector('.toolbar');
+    const selectedFilters = getToolbarSelectedFilters(toolbar);
+    const normalizedTerm = (term || '').trim().toLowerCase();
+    const rows = section.querySelectorAll('tbody tr');
+
+    rows.forEach(row => {
+        const cells = Array.from(row.querySelectorAll('td'));
+
+        if (!cells.length) {
+            return;
+        }
+
+        if (cells.length === 1) {
+            row.style.display = normalizedTerm || selectedFilters.length ? 'none' : '';
+            return;
+        }
+
+        const searchableText = cells
+            .slice(0, 4)
+            .map(cell => (cell.textContent || '').toLowerCase())
+            .join(' ');
+
+        const matchesSearch = !normalizedTerm || searchableText.includes(normalizedTerm);
+        const statusKey = row.dataset.status || '';
+        const matchesFilter = !selectedFilters.length || selectedFilters.includes(statusKey);
+
+        row.style.display = matchesSearch && matchesFilter ? '' : 'none';
+    });
 }
 
 function buildRowMarkup(request, view) {
@@ -367,7 +650,7 @@ function buildRowMarkup(request, view) {
     const statusInfo = formatStatus(request.status);
 
     return `
-        <tr data-request-id="${request.id}" data-view="${view}">
+        <tr data-request-id="${request.id}" data-view="${view}" data-status="${request.status}">
             <td>${request.habilidade}</td>
             <td>${otherName}</td>
             <td>${request.date}</td>
@@ -801,5 +1084,3 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// localStorage.setItem('tradeSkillsData', JSON.stringify(DEFAULT_DATA));
-//location.reload();    Código para rodar no console para aparecer os dados 
