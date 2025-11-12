@@ -22,7 +22,8 @@
 .profile-image-container button i,
 .profile-form-fields label,
 .profile-form-fields input,
-.skills-modal-header h4 {
+.skills-modal-header h4,
+.skills-modal-content label {
   color: #1f3f66;
 }
 
@@ -31,7 +32,8 @@
 }
 
 .profile-section-description h6,
-.profile-skills-cards .card-title {
+.profile-skills-cards .card-title,
+.skills-modal-content h4 {
   font-size: 16px;
 }
 
@@ -116,7 +118,12 @@ p {
 .profile-section-description p,
 .profile-form-fields label,
 .profile-form-fields input,
-.profile-button {
+.profile-button,
+.skills-modal-content p,
+.skills-modal-content label,
+.skills-modal-content input,
+.skills-modal-content .modal-body textarea,
+.skills-modal-content select  {
   font-size: 14px;
 }
 
@@ -129,12 +136,15 @@ p {
   width: 48%;
 }
 
-.profile-form-fields label {
+.profile-form-fields label,
+.skills-modal-content label {
   font-weight: 500;
 }
 
 .profile-form-fields input:focus,
-.skills-modal-header-content .modal-body input:focus {
+.skills-modal-content .modal-body input:focus,
+.skills-modal-content .modal-body textarea:focus,
+.skills-modal-content select:focus {
   border-color: #1f3f66;
   box-shadow: none;
 }
@@ -146,14 +156,33 @@ p {
 .profile-button {
   padding: 9px 12px !important;
   font-size: 14px !important;
-  background-image: linear-gradient(to bottom right, #1f3f66, #3d698d);
-  border: none !important;
   border-radius: 6px !important;
+}
+
+.profile-button.primary {
+  border: none;
+  background-image: linear-gradient(to bottom right, #1f3f66, #3d698d);
   color: #fff !important;
 }
 
 .profile-button i {
   margin-right: 5px;
+}
+
+.profile-button.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(30, 63, 102, 0.15);
+}
+
+.profile-button.secondary {
+  background: white;
+  color: #6b7280;
+  border: 1.5px solid #e5e7eb;
+}
+
+.profile-button.secondary:hover {
+  color: #1f3f66;
+  border-color: #1f3f66;
 }
 
 /*Customização da seção de Habilidades*/
@@ -197,8 +226,12 @@ p {
 }
 
 /*Customização do Modal de Edição das Habilidades*/
-.modal-backdrop {
-  background: color-mix(in oklab, #000 50%, #00000000) !important;
+
+.modal.fade.show {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
 }
 
 .skills-modal .modal-header {
@@ -207,7 +240,7 @@ p {
 
 .skills-modal .modal-content {
   border: none;
-  border-radius: 24px;
+  border-radius: 16px;
   padding: 20px;
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
@@ -231,6 +264,22 @@ p {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.profile-skills-modal-container-labels {
+  flex-direction: column;
+  align-items: normal;
+  gap: 0px;
+}
+
+.profile-skills-modal-container-labels-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-skills-modal-container-inputs {
+  display: flex;
+  gap: 15px;
 }
 
 /* Responsividade */
@@ -301,14 +350,6 @@ p {
     font-size: 14px;
   }
 
-  #profile p,
-  .skills-modal-header p {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 9;
-    overflow: hidden;
-  }
-
   .skill-tags-container {
     display: flex;
     flex-wrap: wrap;
@@ -318,6 +359,31 @@ p {
   .skill-tag {
     padding: 6px 8px;
     font-size: 10px;
+  }
+
+  /*Responsividade do Modal de Edição das Habilidades*/
+  .modal-dialog {
+    margin: 12px !important;
+  }
+
+  .skills-modal .modal-content {
+    border-radius: 8px;
+  }
+
+  #profile p,
+  .skills-modal-header p,
+  .skills-modal-content label,
+  .skills-modal-content input,
+  .skills-modal-content select {
+    font-size: 12px;
+  }
+
+  #profile p,
+  .skills-modal-header p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 11;
+    overflow: hidden;
   }
 }
 
