@@ -209,14 +209,14 @@
 }
 
 .tabela-solicitacoes tbody tr:last-child {
-  border-bottom: none; /* Remove borda da última linha */
+  border-bottom: none; 
 }
 
 .tabela-solicitacoes td {
   padding: 16px 20px;
   color: #333;
   font-size: 14px;
-  vertical-align: middle; /*Alinha verticalmente */
+  vertical-align: middle; 
 }
 
 .badge {
@@ -255,7 +255,7 @@
   font-style: italic;
 }
 
-/* === FOOTER === */
+/*  FOOTER */
 .footer {
   position: fixed;
   bottom: 0;
@@ -335,5 +335,125 @@
   .tabela-solicitacoes th,
   .tabela-solicitacoes td {
     padding: 12px 10px;
+  }
+}
+
+/* RESPONSIVIDADE  */
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .conteudo-principal {
+    padding: 2rem;
+  }
+
+  .footer {
+    padding-left: 260px;
+    padding: 20px 30px;
+  }
+}
+
+/* Mobile*/
+@media (max-width: 767px) {
+  .conteudo-principal {
+    padding: 1rem;
+    grid-column: 1 / -1;
+  }
+
+  .title-hist h1 {
+    font-size: 24px;
+  }
+
+  .toolbar {
+    gap: 8px;
+  }
+
+  .btn-icone {
+    width: 36px;
+    height: 36px;
+  }
+
+  .toolbar-search-input {
+    width: 180px;
+    font-size: 13px;
+  }
+
+  .filter-dropdown {
+    right: 0;
+    left: auto;
+    min-width: 180px;
+  }
+
+  /* Tabela responsiva - scroll horizontal */
+  .tabela-solicitacoes {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tabela-solicitacoes th,
+  .tabela-solicitacoes td {
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .nota-rodape {
+    padding: 10px 12px;
+  }
+
+  .nota-rodape p {
+    font-size: 12px;
+  }
+
+  .footer {
+    padding-left: 0;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links a:not(:last-child)::after {
+    display: none;
+  }
+
+  .footer-copyright {
+    font-size: 12px;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .conteudo-principal {
+    padding: 0.75rem;
+  }
+
+  .title-hist h1 {
+    font-size: 20px;
+  }
+
+  .toolbar-search-input {
+    width: 150px;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .btn-icone {
+    width: 32px;
+    height: 32px;
+  }
+
+  .tabela-solicitacoes th,
+  .tabela-solicitacoes td {
+    padding: 10px 8px;
+    font-size: 12px;
   }
 }

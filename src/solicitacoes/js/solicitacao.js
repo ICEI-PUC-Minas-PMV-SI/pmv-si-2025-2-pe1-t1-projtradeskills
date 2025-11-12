@@ -801,6 +801,15 @@ function setupModalCallbacks() {
                 } else if (data && data.action === 'confirm') {
                     updateRequestStatus(requestId, 'aguardando-cliente');
                     alert('Conclusão sinalizada! Aguardando confirmação do cliente.');
+                    setTimeout(() => {
+                        openEvaluationModal({
+                            requestId: modalData.requestId,
+                            habilidade: modalData.habilidade,
+                            pessoa: modalData.pessoa,
+                            date: modalData.date,
+                            credits: modalData.credits || 0
+                        });
+                    }, 200);
                 }
             }
 

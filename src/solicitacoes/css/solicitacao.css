@@ -65,7 +65,7 @@ body {
 
 .menu-item span:last-child {
   font-size: 15px;
-  white-space: nowrap; /*impede texto de quebrar */
+  white-space: nowrap; 
 }
 
 .icone {
@@ -153,7 +153,7 @@ body {
 .conteudo-principal {
   grid-column: 2;
   padding: 3rem;
-  /* min-height: 100vh; */
+  
 }
 
 .secao-botoes {
@@ -317,14 +317,14 @@ body {
 }
 
 .tabela-solicitacoes tbody tr:last-child {
-  border-bottom: none; /* Remove borda da última linha */
+  border-bottom: none; 
 }
 
 .tabela-solicitacoes td {
   padding: 16px 20px;
   color: #333;
   font-size: 14px;
-  vertical-align: middle; /*Alinha verticalmente */
+  vertical-align: middle; 
 }
 
 .badge {
@@ -361,4 +361,214 @@ body {
   font-size: 13px;
   color: #6b7281;
   font-style: italic;
+}
+
+
+/*  RESPONSIVIDADE  */
+
+/* Tablet */
+@media (max-width: 1023px) {
+  body {
+    grid-template-columns: 220px 1fr;
+  }
+
+  .sidebar {
+    width: 220px;
+  }
+
+  .logo img {
+    width: 160px;
+  }
+
+  .conteudo-principal {
+    padding: 2rem;
+  }
+
+  .saldo-container {
+    top: 15px;
+    right: 20px;
+  }
+
+  .saldo-valor {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 2000;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .conteudo-principal {
+    grid-column: 1;
+    padding: 1rem;
+    padding-top: 80px; 
+  }
+
+  .saldo-container {
+    top: 15px;
+    right: 15px;
+    left: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .saldo-creditos {
+    padding: 6px 10px;
+  }
+
+  .saldo-valor {
+    font-size: 16px;
+  }
+
+  .saldo-label,
+  .saldo-atual {
+    font-size: 12px;
+  }
+
+  .secao-botoes {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 15px;
+  }
+
+  .btn-tab {
+    padding: 10px 20px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .toolbar {
+    gap: 8px;
+  }
+
+  .btn-icone {
+    width: 36px;
+    height: 36px;
+  }
+
+  .toolbar-search-input {
+    width: 160px;
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .filter-dropdown {
+    right: 0;
+    left: auto;
+    min-width: 180px;
+  }
+
+  /* Tabela- scroll horizontal */
+  .tabela-solicitacoes {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tabela-solicitacoes th,
+  .tabela-solicitacoes td {
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .link-visualizar {
+    font-size: 13px;
+  }
+
+  .nota-rodape {
+    padding: 10px 12px;
+    margin-top: 15px;
+  }
+
+  .nota-rodape p {
+    font-size: 12px;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .conteudo-principal {
+    padding: 0.75rem;
+    padding-top: 75px;
+  }
+
+  .saldo-container {
+    gap: 4px;
+  }
+
+  .saldo-valor {
+    font-size: 14px;
+  }
+
+  .saldo-icone {
+    width: 16px;
+    height: 16px;
+  }
+
+  .credito-label {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+
+  .btn-tab {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .toolbar-search-input {
+    width: 130px;
+    font-size: 12px;
+  }
+
+  .btn-icone {
+    width: 32px;
+    height: 32px;
+  }
+
+  .btn-icone svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .tabela-solicitacoes th,
+  .tabela-solicitacoes td {
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+}
+
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .conteudo-principal {
+    padding-top: 70px;
+  }
+
+  .saldo-container {
+    top: 10px;
+  }
 }
