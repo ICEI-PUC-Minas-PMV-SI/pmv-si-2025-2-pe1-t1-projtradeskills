@@ -3,18 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
     <title>Minhas Solicitações</title>
 
-    <script src="../components/sidebar/script.js" type="module" defer></script>
-    <script src="../components/footer/script.js" type="module" defer></script>
-    <script src="../components/header/script.js" type="module" defer></script>
-
-    <link rel="stylesheet" href="./css/solicitacao.css" />
     <link rel="stylesheet" href="/assets/styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="../components/modal/confirmacao/css/style.css"
-    />
+    <link rel="stylesheet" href="/solicitacoes/css/solicitacao.css" />
+    <link rel="stylesheet" href="/components/modal/confirmacao/css/style.css" />
+
+    <script src="/components/sidebar/script.js" type="module" defer></script>
+    <script src="/components/footer/script.js" type="module" defer></script>
+    <script src="/components/header/script.js" type="module" defer></script>
   </head>
 
   <body>
@@ -73,34 +71,7 @@
               <th>Ação</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>Aula de Violão</td>
-              <td>Maria Silva</td>
-              <td>2024-07-25</td>
-              <td>
-                <span class="badge em-andamento">Em andamento</span>
-              </td>
-              <td>
-                <a href="javascript:void(0)" class="link-visualizar"
-                  >Visualizar</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>Serviço de Pintura</td>
-              <td>Isabela Costa</td>
-              <td>2024-07-24</td>
-              <td>
-                <span class="badge pendente">Pendente</span>
-              </td>
-              <td>
-                <a href="javascript:void(0)" class="link-visualizar"
-                  >Visualizar</a
-                >
-              </td>
-            </tr>
-          </tbody>
+          <tbody></tbody>
         </table>
         <div class="nota-rodape">
           <p>
@@ -154,73 +125,7 @@
               <th>Ação</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>Aula de Inglês</td>
-              <td>João Silva</td>
-              <td>2024-07-26</td>
-              <td>
-                <span class="badge pendente">Pendente</span>
-              </td>
-              <td>
-                <a href="javascript:void(0)" class="link-visualizar"
-                  >Visualizar</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>Instalação Elétrica</td>
-              <td>Carlos Lima</td>
-              <td>2024-07-25</td>
-              <td>
-                <span class="badge em-andamento">Em andamento</span>
-              </td>
-              <td>
-                <a href="javascript:void(0)" class="link-visualizar"
-                  >Visualizar</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>Aula de Inglês</td>
-              <td>Isabela Costa</td>
-              <td>2024-07-24</td>
-              <td>
-                <span class="badge concluido">Concluído</span>
-              </td>
-              <td>
-                <a href="javascript:void(0)" class="link-visualizar"
-                  >Visualizar</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>Serviço de Jardinagem</td>
-              <td>Ricardo Silva</td>
-              <td>2024-07-23</td>
-              <td>
-                <span class="badge aguardando">Aguardando Cliente</span>
-              </td>
-              <td>
-                <a href="javascript:void(0)" class="link-visualizar"
-                  >Visualizar</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>Serviço de Limpeza</td>
-              <td>Mariana Pereira</td>
-              <td>2024-07-22</td>
-              <td>
-                <span class="badge concluido">Concluido</span>
-              </td>
-              <td>
-                <a href="javascript:void(0)" class="link-visualizar"
-                  >Visualizar</a
-                >
-              </td>
-            </tr>
-          </tbody>
+          <tbody></tbody>
         </table>
       </section>
     </main>
@@ -231,8 +136,8 @@
     <generic-modal></generic-modal>
 
     <!-- Scripts -->
-    <script src="../components/modal/confirmacao/modal-component.js"></script>
-    <script src="../components/modal/confirmacao/js/script.js"></script>
-    <script src="./js/solicitacao.js"></script>
+    <script src="/components/modal/confirmacao/modal-component.js"></script>
+    <script src="/components/modal/confirmacao/js/script.js"></script>
+    <script src="/solicitacoes/js/solicitacao.js"></script>
   </body>
 </html>

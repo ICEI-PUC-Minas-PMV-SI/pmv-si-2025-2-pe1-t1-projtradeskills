@@ -22,5 +22,23 @@ function getSelectedValues() {
     return Array.from(selectedChips).map(chip=> chip.dataset.value);
 }
 
-//Selecionar estrelas
-const selectStar = document.getElementById("selectStar");
+// Selecionar estrelas
+const stars = modalElement.querySelectorAll('.star');
+let currentRating = 0;
+
+const updateStars = (rating) => {
+  stars.forEach((star, index) => {
+    if (index < rating) {
+      star.classList.add('selected');
+    } else {
+      star.classList.remove('selected');
+    }
+  });
+};
+
+stars.forEach((star, index) => {
+  star.addEventListener('click', () => {
+    currentRating = index + 1;
+    updateStars(currentRating);
+  });
+});
