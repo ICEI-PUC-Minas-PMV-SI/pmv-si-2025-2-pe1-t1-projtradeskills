@@ -34,7 +34,22 @@ class AppHeader extends HTMLElement {
         this.shadowRoot.appendChild(componentStyles);
         this.shadowRoot.appendChild(templateContent);
 
+        // Carrega dados do usuário após renderizar o template
+        this.loadUserData();
+
         initMobileMenu(this.shadowRoot);
+
+        // Escuta mudanças no localStorage (para outras abas)
+        window.addEventListener('storage', (e) => {
+          if (e.key === 'currentUser') {
+            this.loadUserData();
+          }
+        });
+
+        // Escuta evento customizado para mudanças na mesma aba
+        window.addEventListener('currentUserChanged', () => {
+          this.loadUserData();
+        });
       } else {
         console.error(
           "Template 'template-app-header' não encontrado dentro de header/index.html."
@@ -42,6 +57,26 @@ class AppHeader extends HTMLElement {
       }
     } catch (error) {
       console.error(error);
+    }
+  }
+
+  loadUserData() {
+    try {
+      const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+      
+      const nameElement = this.shadowRoot.querySelector('.name');
+      const imageElement = this.shadowRoot.querySelector('.image');
+      
+      if (currentUser) {
+        if (nameElement) {
+          nameElement.textContent = currentUser.name;
+        }
+        if (imageElement) {
+          imageElement.src = currentUser.image;
+        }
+      }
+    } catch (error) {
+      console.error('Erro ao carregar dados do usuário no header:', error);
     }
   }
 }
