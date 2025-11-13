@@ -57,23 +57,23 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Login de usuário com solicitações enviadas e pedidos recebidos |
 **Resultado obtido** | Sucesso |
 
-**Caso de Teste** | **CT11 A - Confirmar conclusão - Consumidor**
+**Caso de Teste** | **CT11 - Confirmar conclusão - Consumidor**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse "Minhas solicitações" > aba "Solicitações Enviadas"<br>2) Localize uma solicitação com status "Em andamento"<br>3) Clique em "Visualizar"<br>4) Clique no botão "Confirmar Conclusão"<br>5) Verifique a transferência de créditos<br> 6)Avalie o provedor do serviço na modal de avaliação |
+**Procedimento**  | 1) Acesse "Minhas solicitações" > aba "Solicitações Enviadas"<br>2) Localize uma solicitação com status "Em andamento" ou "Aguardando Cliente"<br>3) Clique em "Visualizar"<br>4) Clique no botão "Confirmar Conclusão"<br>5) Verifique a transferência de créditos<br> 6)Avalie o provedor do serviço na modal de avaliação |
 **Requisitos associados** | RF-011 |
 **Resultado esperado** |Modal abre com opções, ao confirmar: status muda para "Concluído", créditos transferidos, modal de avaliação abre |
 **Dados de entrada** | Solicitação com status "Em andamento" |
 **Resultado obtido** | Sucesso |
 
-**Caso de Teste** | **CT11 B - Desistir solicitação - Consumidor**
+**Caso de Teste** | **CT11 - Desistir solicitação - Consumidor**
  :--------------: | ------------
-**Procedimento**  | 1) Na modal de visualização de uma solicitação "Em andamento"<br>2) Clique em "Cancelar"<br>3) Preencha a justificativa (opcional)<br>4) Confirme o cancelamento |
+**Procedimento**  | 1) Acesse "Minhas solicitações" > aba "Solicitações Enviadas"<br>2) Localize uma solicitação "Em andamento" ou "Pendente"<br>3) Clique em "Cancelar"<br>4) Preencha a justificativa (opcional)<br>5) Confirme o cancelamento |
 **Requisitos associados** | RF-011 |
 **Resultado esperado** |Solicitação cancelada, status muda para "Cancelado", justificativa registrada |
 **Dados de entrada** | Justificativa: "Não preciso mais do serviço" |
 **Resultado obtido** | Sucesso |
 
-**Caso de Teste** | **CT12 A - Aceitar pedido - Provedor**
+**Caso de Teste** | **CT12 - Aceitar pedido - Provedor**
  :--------------: | ------------
 **Procedimento**  | 1) Acesse "Minhas solicitações" > aba "Pedidos Recebidos"<br>2) Localize um pedido com status "Pendente"<br>3) Clique em "Visualizar"<br>4) Clique em "Aceitar" |
 **Requisitos associados** | RF-012 |
@@ -81,15 +81,15 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Pedido com status "Pendente" |
 **Resultado obtido** | Sucesso |
 
-**Caso de Teste** | **CT12 B - Cancelar pedido - Provedor**
+**Caso de Teste** | **CT12 - Cancelar pedido - Provedor**
  :--------------: | ------------
-**Procedimento**  | 1) Na modal de visualização de um pedido "Pendente"<br>2) Clique em "Cancelar"<br>3) Preencha a justificativa<br>4) Confirme |
+**Procedimento**  | 1) Acesse "Minhas solicitações" > aba "Pedidos Recebidos"<br> 2)Localize um pedido com status "Pendente"<br>3) Clique em "Cancelar"<br>4) Preencha a justificativa<br>5) Confirme |
 **Requisitos associados** | RF-012 |
 **Resultado esperado** |Pedido cancelado, status muda para "Cancelado", justificativa registrada |
 **Dados de entrada** | Justificativa: "Não tenho disponibilidade" |
 **Resultado obtido** | Sucesso |
 
-**Caso de Teste** | **CT13 A - Sinalizar conclusão - Provedor**
+**Caso de Teste** | **CT13 - Sinalizar conclusão - Provedor**
  :--------------: | ------------
 **Procedimento**  | 1) Acesse "Minhas solicitações" > aba "Pedidos Recebidos"<br>2) Localize um pedido com status "Em andamento"<br>3) Clique em "Visualizar"<br>4) Clique no botão "Sinalizar Conclusão"<br>5) Verifique a mudança de status |
 **Requisitos associados** | RF-013 |
@@ -97,9 +97,9 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Pedido com status "Em andamento" |
 **Resultado obtido** | Sucesso |
 
-**Caso de Teste** | **CT13 B - Cancelar pedido em andamento - Provedor**
+**Caso de Teste** | **CT13 - Cancelar pedido em andamento - Provedor**
  :--------------: | ------------
-**Procedimento**  | 1) Na modal de visualização de um pedido "Em andamento"<br>2) Clique em "Cancelar"<br>3) Tente confirmar sem preencher a justificativa<br>4) Preencha a justificativa obrigatória<br>5) Confirme o cancelamento |
+**Procedimento**  | 1) Acesse "Minhas solicitações" > aba "Pedidos Recebidos"<br> 2)Localize um pedido "Em andamento"<br>3) Clique em "Cancelar"<br>4) Tente confirmar sem preencher a justificativa<br>5) Preencha a justificativa obrigatória<br>6) Confirme o cancelamento |
 **Requisitos associados** | RF-013 |
 **Resultado esperado** |Sistema exige justificativa obrigatória, após preenchida cancela o pedido com status "Cancelado" |
 **Dados de entrada** | Justificativa obrigatória: "Problemas pessoais impedem a continuação" |
@@ -127,50 +127,40 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
 
-|*Caso de Teste*                                 |*CT09 - Visualizar histórico de transações*                                        |
+|*Caso de Teste*                |*CT09 - Visualizar histórico de transações*                                        |
 |---|---|
 |Requisito Associado | RF-009 - A aplicação deve ter um botão “Meu histórico” no menu principal, para permitir a visualização do histórico de transações, onde o usuário poderá visualizar os valores de entrada e saída de créditos, incluindo data, horário, nome do serviço prestado e nome do provedor ou consumidor.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: | [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/16hUuj86h8k7kDPLQkqqNi0o7wA6DWYIo/view?usp=sharing) | 
 
-|*Caso de Teste*                                 |*CT10 - Visualizar minhas solicitações*                                        |
+|*Caso de Teste*                |*CT10 - Visualizar minhas solicitações*                                        |
 |---|---|
 |Requisito Associado | RF-010 - A aplicação deve ter um botão "Minhas Solicitações" no menu principal, que exibe uma tela com duas abas: "Solicitações Enviadas" (visão do consumidor) e "Pedidos Recebidos" (visão do provedor). Ambas as abas devem listar as transações com detalhes como habilidade, nome do provedor ou consumidor, data, status atual e uma opção para "Gerenciar/Visualizar" a transação.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: | [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1Nqxwg0ya2pZlRcJSzqmr849TkaGOmlck/view?usp=sharing) | 
 
-|*Caso de Teste*                                 |*CT11 A - Confirmar conclusão -Consumidor*                                        |
+|*Caso de Teste*               |*CT11 - Confirmar conclusão e Desistir da Conclusão -Consumidor*                                        |
 |---|---|
-|Requisito Associado | RF-011 - Na tela do consumidor (Solicitações enviadas), com o status "Em andamento", ao clicar em "Visualizar" abrirá o pop up com a opção "Confirmar conclusão" ou "Desistir (com justificativa opcional)". |
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Requisito Associado | RF-011 - Na tela do consumidor (Solicitações enviadas), com o status "Em andamento" ou "Aguardando Cliente", ao clicar em "Visualizar" abrirá o pop up com a opção "Confirmar conclusão" ou "Desistir (com justificativa opcional)". |
+|Link do vídeo do teste realizado: |confirmação: [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1jI0Wg3m1KrrZybt_Leuq8d-fWDyx-LoK/view?usp=drive_link)<br> desistência:[https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/14NykGkdKsj_PY_2Jgnp0oawpyI7SDjqj/view?usp=drive_link) | 
 
-|*Caso de Teste*                                 |*CT11 B - Desistir solicitação -Consumidor*                                        |
-|---|---|
-|Requisito Associado | RF-011 - Na tela do consumidor (Solicitações enviadas), com o status "Em andamento", ao clicar em "Visualizar" abrirá o pop up com a opção "Confirmar conclusão" ou "Desistir (com justificativa opcional)".|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+ 
 
-|*Caso de Teste*                                 |*CT12 A - Aceitar pedido - Provedor*                                        |
+|*Caso de Teste*              |*CT12 - Aceitar pedido e Desistir do pedido - Provedor*                                        |
 |---|---|
 |Requisito Associado | RF-012 - Na tela do provedor (Pedidos recebidos), com o status "Pendente", ao clicar em "Visualizar" abrirá o pop up com a opção "Aceitar ou Cancelar". |
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: | aceitar: [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/10ZHAcDUzZWpSLyvw7OE1IF34DUZK4-n9/view?usp=drive_link)<br> desistir: [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1du63lyW2m2-HRHTwbfh_LpEvnx4ijDV9/view?usp=drive_link)  | 
 
-|*Caso de Teste*                                 |*CT12 B - Desistir pedido - Provedor*                                        |
-|---|---|
-|Requisito Associado | RF-012 - Na tela do provedor (Pedidos recebidos), com o status "Pendente", ao clicar em "Visualizar" abrirá o pop up com a opção "Aceitar ou Cancelar". |
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
 
-|*Caso de Teste*                                 |*CT13 A - Sinalizar conclusão - Provedor*                                        |
+
+|*Caso de Teste*              |*CT13 - Sinalizar conclusão e Cancelar Pedido - Provedor*                                        |
 |---|---|
 |Requisito Associado | RF-013 - NNa tela do provedor (Pedidos recebidos), com o status "Em Andamento", ao clicar em "Visualizar" abrirá o pop up com a opção "Sinalizar conclusão" ou "Cancelar (com justificativa obrigatória)".|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: | conclusão: [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1ksdvddSLUFI9DMWLKwinP-SOxaDVn7A0/view?usp=drive_link)<br> cancelamento: [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1PjC-D6PaZcUrwNBzTEJdXaLi9Guup9VP/view?usp=drive_link)  | 
 
-|*Caso de Teste*                                 |*CT13 B - Cancelar pedido em andamento - Provedor*                                        |
-|---|---|
-|Requisito Associado | RF-013 - Na tela do provedor (Pedidos recebidos), com o status "Em Andamento", ao clicar em "Visualizar" abrirá o pop up com a opção "Sinalizar conclusão" ou "Cancelar (com justificativa obrigatória)".|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
 
 |*Caso de Teste*                                 |*CT14 - Avaliar após conclusão*                                        |
 |---|---|
 |Requisito Associado | RF-014 - Após o consumidor deve confirmar a conclusão do serviço, o sistema irá transferir automaticamente os créditos para o provedor. Após o pagamento, o sistema permitirá a avaliação mútua (consumidor avalia provedor, provedor avalia consumidor).	|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: | [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1NzZdoPAaYC4HyOIKd42XhDIwzfzK4D1W/view?usp=drive_link) | 
 
 
 ## Avaliação dos Testes de Software
