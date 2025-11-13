@@ -40,7 +40,10 @@ const DEFAULT_DATA = {
         { id: 'user-ana', name: 'Ana Souza' },
         { id: 'user-joao', name: 'João Pedro' },
         { id: 'user-laura', name: 'Laura Nunes' },
-        { id: 'user-ricardo', name: 'Ricardo Alves' }
+        { id: 'user-ricardo', name: 'Ricardo Alves' },
+        { id: 'user-pedro', name: 'Pedro Henrique' },
+        { id: 'user-larissa', name: 'Larissa Lima' },
+        { id: 'user-jose', name: 'José Silva' },
     ],
     requests: [
         {
@@ -110,8 +113,45 @@ const DEFAULT_DATA = {
             modality: 'Presencial',
             status: 'concluido',
             completedAt: '2025-09-15'
-        }
+        },
+
+        {
+            id: 'req-7',
+            habilidade: 'Edição de Vídeo',
+            providerId: 'user-pedro',
+            consumerId: 'user-paula',
+            date: '2025-10-18',
+            credits: 25,
+            availability: 'Dom | Manhã',
+            modality: 'Online',
+            status: 'pendente'
+        },
+
+         {
+            id: 'req-8',
+            habilidade: 'Tradução',
+            providerId: 'user-larissa',
+            consumerId: 'user-paula',
+            date: '2025-11-18',
+            credits: 15,
+            availability: 'Sex | Manhã',
+            modality: 'Online',
+            status: 'em-andamento'
+        },
+
+        {
+            id: 'req-9',
+            habilidade: 'Manutenção de Computadores',
+            providerId: 'user-paula',
+            consumerId: 'user-josé',
+            date: '2025-10-15',
+            credits: 40,
+            availability: 'Sáb | Manhã',
+            modality: 'Presencial',
+            status: 'pendente'
+        },
     ],
+    
     history: [
         {
             id: 'hist-1',
@@ -782,6 +822,10 @@ function setupModalCallbacks() {
                 }, 200);
             } else if (context === 'confirmacao-recebidos') {
                 if (data && data.action === 'cancel') {
+                    if (!data.justificativa || data.justificativa.trim() === '') {
+                        alert('Por favor, preencha a justificativa antes de cancelar.');
+                        return false;
+                    }
                     cancelRequest(requestId, data.justificativa || '', 'provider');
                     alert('Pedido cancelado com sucesso.');
                 } else if (data && data.action === 'accept') {
@@ -796,6 +840,10 @@ function setupModalCallbacks() {
                 }
             } else if (context === 'cancelamento-recebidos') {
                 if (data && data.action === 'cancel') {
+                    if (!data.justificativa || data.justificativa.trim() === '') {
+                        alert('Por favor, preencha a justificativa antes de cancelar.');
+                        return false;
+                    }
                     cancelRequest(requestId, data.justificativa || '', 'provider');
                     alert('Pedido cancelado com sucesso.');
                 } else if (data && data.action === 'confirm') {

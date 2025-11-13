@@ -23,7 +23,7 @@ function getSelectedValues() {
 }
 
 // Selecionar estrelas
-const stars = modalElement.querySelectorAll('.star');
+const stars = document.querySelectorAll('.star');
 let currentRating = 0;
 
 const updateStars = (rating) => {
