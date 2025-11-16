@@ -47,6 +47,26 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 ## Descrição das estruturas:
 
-## ...
-|  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
-|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
+## Usuários
+| **Nome**      | **Tipo**             | **Descrição**                                      | **Exemplo**                                        |
+|------------------------|----------------------|----------------------------------------------------|----------------------------------------------------|
+| id                     | Número (int)         | Identificador único do usuário                     | 94283                                              |
+| name                   | Texto (string)       | Nome do usuário                                    | "Alice"                                            |
+| email                  | Texto (string)       | Endereço de e-mail                                 | "fake@email.com"                                   |
+| password               | Texto (string)       | Hash da senha do usuário                           | "b26729a...."                                      |
+| phoneNumber            | Texto (string)       | Número de telefone                                 | "1234567890"                                       |
+| city                   | Texto (string)       | Cidade de residência do usuário                    | "São Paulo"                                        |
+| state                  | Texto (string)       | Estado de residência                               | "SP"                                               |
+| image                  | Texto (base64)       | Imagem de perfil codificada em base64              | "iVBORw0KGgoAAAANSUhEUgAA"                         |
+| skills                 | Array de objetos     | Lista de habilidades oferecidas pelo usuário       | [{ name: "...", price: 5, description: "..." }]    |
+| rating                 | Objeto               | Avaliação geral do usuário                         | { score: 4.8, reviews: 120 }                       |
+| rating.score           | Número (float)       | Nota média de avaliação                            | 4.8                                                |
+| rating.reviews         | Número (int)         | Quantidade de avaliações                           | 120                                                |
+| skills[].name          | Texto (string)       | Nome da habilidade                                 | "Desenvolvimento Web"                              |
+| skills[].price         | Número (int/float)   | Preço cobrado pela habilidade                      | 5                                                  |
+| skills[].description   | Texto (string)       | Descrição detalhada da habilidade                  | "Criação e manutenção de websites..."              |
+
+## Serviços
+
+| **Nome do Campo**     | **Tipo**              | **Descrição**                                              | **Exemplo**                         |
+|-------------------|-------------------|--------------------------------------------------------|--------------------------------|
