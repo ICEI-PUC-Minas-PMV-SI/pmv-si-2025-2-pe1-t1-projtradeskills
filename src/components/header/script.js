@@ -36,6 +36,7 @@ class AppHeader extends HTMLElement {
 
         // Carrega dados do usuário após renderizar o template
         this.loadUserData();
+        this.loadUserCredits();
 
         initMobileMenu(this.shadowRoot);
 
@@ -44,11 +45,20 @@ class AppHeader extends HTMLElement {
           if (e.key === 'currentUser') {
             this.loadUserData();
           }
+          if (e.key === 'tradeSkillsData') {
+            this.loadUserCredits();
+          }
         });
+
 
         // Escuta evento customizado para mudanças na mesma aba
         window.addEventListener('currentUserChanged', () => {
           this.loadUserData();
+
+        });
+
+        window.addEventListener('creditsUpdated', () => {
+          this.loadUserCredits();
         });
       } else {
         console.error(
@@ -63,10 +73,10 @@ class AppHeader extends HTMLElement {
   loadUserData() {
     try {
       const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-      
+
       const nameElement = this.shadowRoot.querySelector('.name');
       const imageElement = this.shadowRoot.querySelector('.image');
-      
+
       if (currentUser) {
         if (nameElement) {
           nameElement.textContent = currentUser.name;
@@ -77,6 +87,23 @@ class AppHeader extends HTMLElement {
       }
     } catch (error) {
       console.error('Erro ao carregar dados do usuário no header:', error);
+    }
+  }
+
+  loadUserCredits() {
+    try {
+      const data = JSON.parse(localStorage.getItem('tradeSkillsData'));
+
+      if (data && data.currentUserId && data.users) {
+        const currentUser = data.users.find(u => u.id === data.currentUserId);
+        const creditsElement = this.shadowRoot.querySelector('.amount'); 
+
+        if (creditsElement && currentUser && typeof currentUser.credits === 'number') {
+          creditsElement.textContent = currentUser.credits;
+        }
+      }
+    } catch (error) {
+      console.error('Erro ao carregar créditos do usuário:', error);
     }
   }
 }

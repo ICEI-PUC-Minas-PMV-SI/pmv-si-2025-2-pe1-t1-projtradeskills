@@ -34,16 +34,16 @@ const STATUS_FILTER_OPTIONS = [
 const DEFAULT_DATA = {
     currentUserId: DEFAULT_USER_ID,
     users: [
-        { id: 'user-paula', name: 'Paula Fernandes' },
-        { id: 'user-maria', name: 'Maria Silva' },
-        { id: 'user-carlos', name: 'Carlos Lima' },
-        { id: 'user-ana', name: 'Ana Souza' },
-        { id: 'user-joao', name: 'João Pedro' },
-        { id: 'user-laura', name: 'Laura Nunes' },
-        { id: 'user-ricardo', name: 'Ricardo Alves' },
-        { id: 'user-pedro', name: 'Pedro Henrique' },
-        { id: 'user-larissa', name: 'Larissa Lima' },
-        { id: 'user-jose', name: 'José Silva' },
+        { id: 'user-paula', name: 'Paula Fernandes', credits: 50 },
+        { id: 'user-maria', name: 'Maria Silva', credits: 50},
+        { id: 'user-carlos', name: 'Carlos Lima', credits: 50 },
+        { id: 'user-ana', name: 'Ana Souza', credits: 50 },
+        { id: 'user-joao', name: 'João Pedro', credits: 50 },
+        { id: 'user-laura', name: 'Laura Nunes', credits: 50 },
+        { id: 'user-ricardo', name: 'Ricardo Alves', credits: 50 },
+        { id: 'user-pedro', name: 'Pedro Henrique', credits: 50 },
+        { id: 'user-larissa', name: 'Larissa Lima', credits: 50},
+        { id: 'user-jose', name: 'José Silva', credits: 50 },
     ],
     requests: [
         {
@@ -1062,6 +1062,29 @@ function storeEvaluation(evaluation) {
     }
 }
 
+function updateUserCredits(userId, amount, operation) { 
+    const user = appData.users.find(u => u.id === userId);
+    if (!user) {
+        console.warn(`Usuário ${userId} não encontrado`);
+        return;
+    }
+    if (typeof user.credits !== 'number') {
+        user.credits = 50;
+    }
+    if (operation === 'add') {
+        user.credits += amount;
+    } else if (operation === 'subtract') {
+        user.credits -= amount;
+    }
+    console.log(`Créditos atualizados para ${user.name}: ${user.credits}`);
+
+}
+
+function transferCredits(fromUserId, toUserId, amount) {
+    updateUserCredits(fromUserId, amount, 'subtract'); 
+    updateUserCredits(toUserId, amount, 'add');      
+}
+
 function addHistoryEntries(request) {
     if (!Array.isArray(appData.history)) {
         appData.history = [];
@@ -1101,10 +1124,16 @@ function addHistoryEntries(request) {
             habilidade: request.habilidade,
             pessoa: getUserName(request.providerId)
         });
+        
     }
-
+       transferCredits(request.consumerId, request.providerId, request.credits);
 
     saveAppData();
+
+    window.dispatchEvent(new CustomEvent('creditsUpdated', {
+        detail: { userId: getCurrentUserId() }
+    }));
+
 }
 
 handleSeedQueryToggle();
