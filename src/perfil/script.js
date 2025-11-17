@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const uploadButton = document.getElementById("uploadButton");
     const image = document.getElementById("output");
     const icon = document.getElementById("defaultIcon");
-        const saveButton = document.getElementById('saveProfileButton');
+    const saveButton = document.getElementById('saveProfileButton');
 
     const nomeInput = document.getElementById("nome");
     const emailInput = document.getElementById("email");

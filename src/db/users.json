@@ -8,6 +8,7 @@
         "city": "São Paulo",
         "state": "SP",
         "image": "/public/icons/profile.svg",
+        "credits": 154,
         "skills": [
             {
                 "name": "Desenvolvimento Web",
@@ -34,6 +35,7 @@
         "city": "Rio de Janeiro",
         "state": "RJ",
         "image": "/public/icons/profile.svg",
+        "credits": 92,
         "skills": [
             {
                 "name": "Marketing Digital",
@@ -60,6 +62,7 @@
         "city": "Curitiba",
         "state": "PR",
         "image": "/public/icons/profile.svg",
+        "credits": 187,
         "skills": [
             {
                 "name": "Tradução Inglês-Português",
@@ -81,6 +84,7 @@
         "city": "Porto Alegre",
         "state": "RS",
         "image": "/public/icons/profile.svg",
+        "credits": 133,
         "skills": [
             {
                 "name": "Edição de Vídeo",
@@ -112,6 +116,7 @@
         "city": "Belo Horizonte",
         "state": "MG",
         "image": "/public/icons/profile.svg",
+        "credits": 59,
         "skills": [
             {
                 "name": "Ilustração Digital",
@@ -148,6 +153,7 @@
         "city": "Niterói",
         "state": "RJ",
         "image": "/public/icons/profile.svg",
+        "credits": 121,
         "skills": [
             {
                 "name": "Suporte Técnico",
@@ -174,6 +180,7 @@
         "city": "Florianópolis",
         "state": "SC",
         "image": "/public/icons/profile.svg",
+        "credits": 198,
         "skills": [
             {
                 "name": "Redação Publicitária",
@@ -205,6 +212,7 @@
         "city": "São Paulo",
         "state": "SP",
         "image": "/public/icons/profile.svg",
+        "credits": 64,
         "skills": [
             {
                 "name": "Programação Mobile",
@@ -226,6 +234,7 @@
         "city": "Recife",
         "state": "PE",
         "image": "/public/icons/profile.svg",
+        "credits": 173,
         "skills": [
             {
                 "name": "Consultoria Financeira",
@@ -252,6 +261,7 @@
         "city": "Brasília",
         "state": "DF",
         "image": "/public/icons/profile.svg",
+        "credits": 148,
         "skills": [
             {
                 "name": "Arquitetura de Software",
