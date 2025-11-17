@@ -5,7 +5,7 @@ if (userStatus != "online") {
   <div id="alert-container">
     <div class="alert alert-danger" role="alert">
       Você precisa estar logado para acessar esta página.
-      <a href="/login/" class="" aria-label="Fechar">Voltar</a>
+      <a href="/login/" class="close-button" aria-label="Fechar">Voltar</a>
     </div>
   </div>
   `;
