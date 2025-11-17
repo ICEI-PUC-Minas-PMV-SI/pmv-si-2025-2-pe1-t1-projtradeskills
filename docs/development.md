@@ -58,6 +58,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | city                   | Texto (string)       | Cidade de residência do usuário                    | "São Paulo"                                        |
 | state                  | Texto (string)       | Estado de residência                               | "SP"                                               |
 | image                  | Texto (base64)       | Imagem de perfil codificada em base64              | "iVBORw0KGgoAAAANSUhEUgAA"                         |
+| credits                | Número (int)         | Saldo de créditos do usuário                       | 54                                                 |
 | skills                 | Array de objetos     | Lista de habilidades oferecidas pelo usuário       | [{ name: "...", price: 5, description: "..." }]    |
 | rating                 | Objeto               | Avaliação geral do usuário                         | { score: 4.8, reviews: 120 }                       |
 | rating.score           | Número (float)       | Nota média de avaliação                            | 4.8                                                |
