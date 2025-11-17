@@ -50,7 +50,21 @@ class AppSidebar extends HTMLElement {
         const logoutButton = this.shadowRoot.getElementById("logout");
         if (logoutButton) {
           logoutButton.addEventListener("click", () => {
+            let users = JSON.parse(localStorage.getItem("users")) || [];
+            const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+            if (currentUser) {
+              users = users.map(user => {
+                if (user.email === currentUser.email) {
+                  return { ...user };
+                }
+                return user;
+              });
+              localStorage.setItem("users", JSON.stringify(users));
+            }
+
             localStorage.removeItem("userStatus");
+            localStorage.removeItem("currentUser");
             window.location.href = "/";
           });
         }

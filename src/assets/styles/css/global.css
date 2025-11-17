@@ -111,9 +111,11 @@ app-footer {
   flex-direction: column;
   gap: 2rem;
   padding: 3rem;
+  background: #fff;
+  border-radius: 1.2rem;
 }
 
-#alert-container a {
+#alert-container .close-button {
   padding: 1rem 2rem;
   background-color: var(--red-400);
   color: #fff;
@@ -124,7 +126,7 @@ app-footer {
   text-decoration: none;
 }
 
-#alert-container a:hover {
+#alert-container .close-button:hover {
   opacity: 0.6;
 }
 

@@ -1,292 +1,297 @@
 [
-    {
-        "id": 94283,
-        "name": "Alice",
-        "email": "alice@gmail.com",
-        "password": "b26729a594076b6468a6460145c5ad51",
-        "phoneNumber": "1234567890",
-        "city": "São Paulo",
-        "state": "SP",
-        "image": "/public/icons/profile.svg",
-        "credits": 154,
-        "skills": [
-            {
-                "name": "Desenvolvimento Web",
-                "price": 5,
-                "description": "Criação e manutenção de websites e aplicações web."
-            },
-            {
-                "name": "Design Gráfico",
-                "price": 7,
-                "description": "Criação de identidades visuais, layouts e peças gráficas."
-            }
-        ],
-        "rating": {
-            "score": 4.8,
-            "reviews": 120
-        }
-    },
-    {
-        "id": 51764,
-        "name": "Bruno",
-        "email": "bruno@gmail.com",
-        "password": "b234346729a594076b645c5ad5",
-        "phoneNumber": "1234567890",
-        "city": "Rio de Janeiro",
-        "state": "RJ",
-        "image": "/public/icons/profile.svg",
-        "credits": 92,
-        "skills": [
-            {
-                "name": "Marketing Digital",
-                "price": 8,
-                "description": "Estratégias de marketing online para promoção de marcas e produtos."
-            },
-            {
-                "name": "Fotografia",
-                "price": 10,
-                "description": "Captura e tratamento de imagens fotográficas profissionais."
-            }
-        ],
-        "rating": {
-            "score": 4.5,
-            "reviews": 95
-        }
-    },
-    {
-        "id": 80152,
-        "name": "Carla",
-        "email": "carla@gmail.com",
-        "password": "a92b31b768f5e1a9f00a2e45ccf6da12",
-        "phoneNumber": "11987654321",
-        "city": "Curitiba",
-        "state": "PR",
-        "image": "/public/icons/profile.svg",
-        "credits": 187,
-        "skills": [
-            {
-                "name": "Tradução Inglês-Português",
-                "price": 6,
-                "description": "Tradução e revisão de textos técnicos e acadêmicos."
-            }
-        ],
-        "rating": {
-            "score": 4.9,
-            "reviews": 68
-        }
-    },
-    {
-        "id": 36598,
-        "name": "Diego",
-        "email": "diego@gmail.com",
-        "password": "c7a32f0db65197b9e34fa682c413fcba",
-        "phoneNumber": "21988556644",
-        "city": "Porto Alegre",
-        "state": "RS",
-        "image": "/public/icons/profile.svg",
-        "credits": 133,
-        "skills": [
-            {
-                "name": "Edição de Vídeo",
-                "price": 12,
-                "description": "Montagem e pós-produção de vídeos para redes sociais e YouTube."
-            },
-            {
-                "name": "Animação 2D",
-                "price": 15,
-                "description": "Criação de animações explicativas e promocionais."
-            },
-            {
-                "name": "Motion Design",
-                "price": 18,
-                "description": "Animações gráficas para vídeos institucionais e comerciais."
-            }
-        ],
-        "rating": {
-            "score": 4.7,
-            "reviews": 88
-        }
-    },
-    {
-        "id": 77841,
-        "name": "Fernanda",
-        "email": "fernanda@gmail.com",
-        "password": "d871bc1f9a7cce12f9de34b1a5e5a9f3",
-        "phoneNumber": "31995553322",
-        "city": "Belo Horizonte",
-        "state": "MG",
-        "image": "/public/icons/profile.svg",
-        "credits": 59,
-        "skills": [
-            {
-                "name": "Ilustração Digital",
-                "price": 9,
-                "description": "Criação de ilustrações personalizadas para livros, jogos e mídias."
-            },
-            {
-                "name": "Pintura Digital",
-                "price": 11,
-                "description": "Retratos e concept art com técnicas digitais."
-            },
-            {
-                "name": "Design de Personagens",
-                "price": 13,
-                "description": "Desenvolvimento de personagens para animações e jogos."
-            },
-            {
-                "name": "Storyboard",
-                "price": 10,
-                "description": "Planejamento visual de cenas e sequências animadas."
-            }
-        ],
-        "rating": {
-            "score": 4.9,
-            "reviews": 142
-        }
-    },
-    {
-        "id": 62410,
-        "name": "Gustavo",
-        "email": "gustavo@gmail.com",
-        "password": "c9a5d2f654d1be32908fabe23e112ba9",
-        "phoneNumber": "21999887766",
-        "city": "Niterói",
-        "state": "RJ",
-        "image": "/public/icons/profile.svg",
-        "credits": 121,
-        "skills": [
-            {
-                "name": "Suporte Técnico",
-                "price": 4,
-                "description": "Assistência e manutenção de computadores e redes."
-            },
-            {
-                "name": "Administração de Sistemas",
-                "price": 6,
-                "description": "Gestão de servidores Linux e Windows."
-            }
-        ],
-        "rating": {
-            "score": 4.4,
-            "reviews": 57
-        }
-    },
-    {
-        "id": 91732,
-        "name": "Helena",
-        "email": "helena@gmail.com",
-        "password": "f51ab9e728ae4a7fd8c134af9a733ea1",
-        "phoneNumber": "47997711223",
-        "city": "Florianópolis",
-        "state": "SC",
-        "image": "/public/icons/profile.svg",
-        "credits": 198,
-        "skills": [
-            {
-                "name": "Redação Publicitária",
-                "price": 9,
-                "description": "Criação de textos criativos e persuasivos para campanhas."
-            },
-            {
-                "name": "Gestão de Conteúdo",
-                "price": 8,
-                "description": "Planejamento e execução de estratégias de conteúdo digital."
-            },
-            {
-                "name": "SEO",
-                "price": 10,
-                "description": "Otimização de conteúdo para mecanismos de busca."
-            }
-        ],
-        "rating": {
-            "score": 4.6,
-            "reviews": 73
-        }
-    },
-    {
-        "id": 48219,
-        "name": "Igor",
-        "email": "igor@gmail.com",
-        "password": "a13c29b912f54e8d43c0a8b67f8bce12",
-        "phoneNumber": "11988997755",
-        "city": "São Paulo",
-        "state": "SP",
-        "image": "/public/icons/profile.svg",
-        "credits": 64,
-        "skills": [
-            {
-                "name": "Programação Mobile",
-                "price": 14,
-                "description": "Desenvolvimento de aplicativos para Android e iOS."
-            }
-        ],
-        "rating": {
-            "score": 4.3,
-            "reviews": 41
-        }
-    },
-    {
-        "id": 26951,
-        "name": "Juliana",
-        "email": "juliana@gmail.com",
-        "password": "d72fcb913c5e1a2d9fbc76d1f23b4e99",
-        "phoneNumber": "81993322110",
-        "city": "Recife",
-        "state": "PE",
-        "image": "/public/icons/profile.svg",
-        "credits": 173,
-        "skills": [
-            {
-                "name": "Consultoria Financeira",
-                "price": 20,
-                "description": "Planejamento financeiro pessoal e empresarial."
-            },
-            {
-                "name": "Análise de Investimentos",
-                "price": 22,
-                "description": "Avaliação e recomendação de investimentos."
-            }
-        ],
-        "rating": {
-            "score": 4.9,
-            "reviews": 210
-        }
-    },
-    {
-        "id": 55984,
-        "name": "Lucas",
-        "email": "lucas@gmail.com",
-        "password": "b9128a9e5f11a3c0d8f4b12e79c0e812",
-        "phoneNumber": "61997766554",
-        "city": "Brasília",
-        "state": "DF",
-        "image": "/public/icons/profile.svg",
-        "credits": 148,
-        "skills": [
-            {
-                "name": "Arquitetura de Software",
-                "price": 25,
-                "description": "Definição e modelagem de sistemas escaláveis e seguros."
-            },
-            {
-                "name": "DevOps",
-                "price": 18,
-                "description": "Integração contínua e automação de deploys."
-            },
-            {
-                "name": "Cloud Computing",
-                "price": 20,
-                "description": "Implementação de soluções em nuvem AWS, Azure e GCP."
-            },
-            {
-                "name": "Segurança da Informação",
-                "price": 22,
-                "description": "Proteção e auditoria de dados corporativos."
-            }
-        ],
-        "rating": {
-            "score": 4.8,
-            "reviews": 156
-        }
+  {
+    "id": 94283,
+    "name": "Alice",
+    "email": "alice@gmail.com",
+    "password": "6384e2b2184bcbf58eccf10ca7a6563c",
+    "phoneNumber": "1234567890",
+    "city": "São Paulo",
+    "state": "SP",
+    "image": "/public/icons/profile.svg",
+    "skills": [
+      {
+        "name": "Desenvolvimento Web",
+        "price": 5,
+        "description": "Criação e manutenção de websites e aplicações web."
+      },
+      {
+        "name": "Design Gráfico",
+        "price": 7,
+        "description": "Criação de identidades visuais, layouts e peças gráficas."
+      }
+    ],
+    "rating": {
+      "score": 4.8,
+      "reviews": 120
     }
+  },
+  {
+    "id": 51764,
+    "name": "Bruno",
+    "email": "bruno@gmail.com",
+    "password": "b234346729a594076b645c5ad5",
+    "phoneNumber": "1234567890",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "image": "/public/icons/profile.svg",
+    "skills": [
+      {
+        "name": "Marketing Digital",
+        "price": 8,
+        "description": "Estratégias de marketing online para promoção de marcas e produtos."
+      },
+      {
+        "name": "Fotografia",
+        "price": 10,
+        "description": "Captura e tratamento de imagens fotográficas profissionais."
+      }
+    ],
+    "rating": {
+      "score": 4.5,
+      "reviews": 95
+    }
+  },
+  {
+    "id": 80152,
+    "name": "Carla",
+    "email": "carla@gmail.com",
+    "password": "a92b31b768f5e1a9f00a2e45ccf6da12",
+    "phoneNumber": "11987654321",
+    "city": "Curitiba",
+    "state": "PR",
+    "image": "/public/icons/profile.svg",
+    "skills": [
+      {
+        "name": "Tradução Inglês-Português",
+        "price": 6,
+        "description": "Tradução e revisão de textos técnicos e acadêmicos."
+      }
+    ],
+    "rating": {
+      "score": 4.9,
+      "reviews": 68
+    }
+  },
+  {
+    "id": 36598,
+    "name": "Diego",
+    "email": "diego@gmail.com",
+    "password": "c7a32f0db65197b9e34fa682c413fcba",
+    "phoneNumber": "21988556644",
+    "city": "Porto Alegre",
+    "state": "RS",
+    "image": "/public/icons/profile.svg",
+    "skills": [
+      {
+        "name": "Edição de Vídeo",
+        "price": 12,
+        "description": "Montagem e pós-produção de vídeos para redes sociais e YouTube."
+      },
+      {
+        "name": "Animação 2D",
+        "price": 15,
+        "description": "Criação de animações explicativas e promocionais."
+      },
+      {
+        "name": "Motion Design",
+        "price": 18,
+        "description": "Animações gráficas para vídeos institucionais e comerciais."
+      }
+    ],
+    "rating": {
+      "score": 4.7,
+      "reviews": 88
+    }
+  },
+  {
+    "id": 77841,
+    "name": "Fernanda",
+    "email": "fernanda@gmail.com",
+    "password": "d871bc1f9a7cce12f9de34b1a5e5a9f3",
+    "phoneNumber": "31995553322",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "image": "/public/icons/profile.svg",
+    "skills": [
+      {
+        "name": "Ilustração Digital",
+        "price": 9,
+        "description": "Criação de ilustrações personalizadas para livros, jogos e mídias."
+      },
+      {
+        "name": "Pintura Digital",
+        "price": 11,
+        "description": "Retratos e concept art com técnicas digitais."
+      },
+      {
+        "name": "Design de Personagens",
+        "price": 13,
+        "description": "Desenvolvimento de personagens para animações e jogos."
+      },
+      {
+        "name": "Storyboard",
+        "price": 10,
+        "description": "Planejamento visual de cenas e sequências animadas."
+      }
+    ],
+    "rating": {
+      "score": 4.9,
+      "reviews": 142
+    }
+  },
+  {
+    "id": 62410,
+    "name": "Gustavo",
+    "email": "gustavo@gmail.com",
+    "password": "c9a5d2f654d1be32908fabe23e112ba9",
+    "phoneNumber": "21999887766",
+    "city": "Niterói",
+    "state": "RJ",
+    "image": "/public/icons/profile.svg",
+    "skills": [
+      {
+        "name": "Suporte Técnico",
+        "price": 4,
+        "description": "Assistência e manutenção de computadores e redes."
+      },
+      {
+        "name": "Administração de Sistemas",
+        "price": 6,
+        "description": "Gestão de servidores Linux e Windows."
+      }
+    ],
+    "rating": {
+      "score": 4.4,
+      "reviews": 57
+    }
+  },
+  {
+    "id": 91732,
+    "name": "Helena",
+    "email": "helena@gmail.com",
+    "password": "f51ab9e728ae4a7fd8c134af9a733ea1",
+    "phoneNumber": "47997711223",
+    "city": "Florianópolis",
+    "state": "SC",
+    "image": "/public/icons/profile.svg",
+    "skills": [
+      {
+        "name": "Redação Publicitária",
+        "price": 9,
+        "description": "Criação de textos criativos e persuasivos para campanhas."
+      },
+      {
+        "name": "Gestão de Conteúdo",
+        "price": 8,
+        "description": "Planejamento e execução de estratégias de conteúdo digital."
+      },
+      {
+        "name": "SEO",
+        "price": 10,
+        "description": "Otimização de conteúdo para mecanismos de busca."
+      }
+    ],
+    "rating": {
+      "score": 4.6,
+      "reviews": 73
+    }
+  },
+  {
+    "id": 48219,
+    "name": "Igor",
+    "email": "igor@gmail.com",
+    "password": "a13c29b912f54e8d43c0a8b67f8bce12",
+    "phoneNumber": "11988997755",
+    "city": "São Paulo",
+    "state": "SP",
+    "image": "/public/icons/profile.svg",
+    "skills": [
+      {
+        "name": "Programação Mobile",
+        "price": 14,
+        "description": "Desenvolvimento de aplicativos para Android e iOS."
+      }
+    ],
+    "rating": {
+      "score": 4.3,
+      "reviews": 41
+    }
+  },
+  {
+    "id": 26951,
+    "name": "Juliana",
+    "email": "juliana@gmail.com",
+    "password": "d72fcb913c5e1a2d9fbc76d1f23b4e99",
+    "phoneNumber": "81993322110",
+    "city": "Recife",
+    "state": "PE",
+    "image": "/public/icons/profile.svg",
+    "skills": [
+      {
+        "name": "Consultoria Financeira",
+        "price": 20,
+        "description": "Planejamento financeiro pessoal e empresarial."
+      },
+      {
+        "name": "Análise de Investimentos",
+        "price": 22,
+        "description": "Avaliação e recomendação de investimentos."
+      }
+    ],
+    "rating": {
+      "score": 4.9,
+      "reviews": 210
+    }
+  },
+  {
+    "id": 55984,
+    "name": "Lucas",
+    "email": "lucas@gmail.com",
+    "password": "b9128a9e5f11a3c0d8f4b12e79c0e812",
+    "phoneNumber": "61997766554",
+    "city": "Brasília",
+    "state": "DF",
+    "image": "/public/icons/profile.svg",
+    "skills": [
+      {
+        "name": "Arquitetura de Software",
+        "price": 25,
+        "description": "Definição e modelagem de sistemas escaláveis e seguros."
+      },
+      {
+        "name": "DevOps",
+        "price": 18,
+        "description": "Integração contínua e automação de deploys."
+      },
+      {
+        "name": "Cloud Computing",
+        "price": 20,
+        "description": "Implementação de soluções em nuvem AWS, Azure e GCP."
+      },
+      {
+        "name": "Segurança da Informação",
+        "price": 22,
+        "description": "Proteção e auditoria de dados corporativos."
+      }
+    ],
+    "rating": {
+      "score": 4.8,
+      "reviews": 156
+    }
+  },
+  {
+    "id": 123456789,
+    "name": "Admin",
+    "email": "admin@admin.com",
+    "password": "21232f297a57a5a743894a0e4a801fc3",
+    "city": "Admin City",
+    "state": "Admin State",
+    "image": "/public/icons/profile.svg",
+    "skills": [],
+    "rating": {
+      "score": 5.0,
+      "reviews": 0
+    },
+    "isAdmin": true
+  }
 ]
