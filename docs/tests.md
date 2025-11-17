@@ -173,7 +173,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                                 |*CT14 - Avaliar após conclusão*                                        |
 |---|---|
 |Requisito Associado | RF-014 - Após o consumidor deve confirmar a conclusão do serviço, o sistema irá transferir automaticamente os créditos para o provedor. Após o pagamento, o sistema permitirá a avaliação mútua (consumidor avalia provedor, provedor avalia consumidor).	|
-|Link do vídeo do teste realizado: | [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1NzZdoPAaYC4HyOIKd42XhDIwzfzK4D1W/view?usp=drive_link) | 
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1BZWsxgh7kcfOiLEv3oXKkH-xYAdG-e9F/view?usp=drive_link | 
 
 
 ## Avaliação dos Testes de Software
