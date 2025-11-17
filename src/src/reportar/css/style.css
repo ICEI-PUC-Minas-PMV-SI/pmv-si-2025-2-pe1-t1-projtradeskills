@@ -1,0 +1,76 @@
+.title-bug {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1e3f66;
+  max-width: 51rem;
+  margin: 0 auto;
+}
+
+select {
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  appearance: none;
+  border: 1px solid var(--blue-500);
+  border-radius: 0.8rem;
+  width: 100%;
+  max-width: 60rem;
+  background: url(/public/icons/arrow.png) no-repeat right 1.5rem center /
+    1.2rem auto;
+  color: var(--blue-500);
+}
+
+.descricao {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 2rem 0 1rem;
+  color: #1e3f66;
+}
+
+.textarea-bug {
+  height: 100px;
+  width: 100%;
+  max-width: 60rem;
+  color: var(--blue-500);
+}
+
+.btn {
+  width: 100%;
+  max-width: 60rem;
+  background-color: #1e3f66;
+  color: white;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+}
+
+#bug {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#bug app-header {
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+#bug .panel {
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  text-align: center;
+  padding: 6rem 3rem;
+  border-radius: 0.8rem;
+}
+
+#bug .textarea-bug {
+  display: block;
+  border: 1px solid var(--blue-500);
+  margin: 0 auto 3rem;
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+}

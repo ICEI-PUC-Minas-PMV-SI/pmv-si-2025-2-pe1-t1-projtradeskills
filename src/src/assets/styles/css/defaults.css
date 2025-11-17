@@ -1,0 +1,72 @@
+.primary-title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 5.8rem;
+  width: 100%;
+}
+
+.secondary-title {
+  font-size: 2.2rem;
+  line-height: 3.6rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.buttons {
+  border-radius: 0.8rem;
+  text-decoration: none;
+  padding: 1.2rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-button {
+  color: #fff;
+  background: var(--blue-500);
+  transition: background 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.primary-button:hover {
+  background: var(--blue-400);
+}
+
+.secondary-button {
+  color: var(--blue-400);
+  border: 1px solid var(--blue-400);
+  display: inline-block;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.secondary-button:hover {
+  color: #fff;
+  background: var(--blue-400);
+}
+
+@media (max-width: 991px) {
+  .primary-title {
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+  }
+
+  .secondary-title {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .buttons {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
+}

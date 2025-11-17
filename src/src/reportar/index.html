@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reportar Bug — TradeSkills</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="../components/sidebar/script.js" type="module" defer></script>
+    <script src="../components/header/script.js" type="module" defer></script>
+    <script src="../components/footer/script.js" type="module" defer></script>
+
+    <script src="/assets/scripts/validation.js" defer></script>
+
+    <script src="../assets/scripts/userStorageManager.js" defer></script>
+    <script type="module" src="./script.js"></script>
+  </head>
+
+  <body>
+    <app-sidebar></app-sidebar>
+
+    <main id="bug">
+      <app-header></app-header>
+
+      <section class="panel">
+        <form class="form" action="/reportar/">
+          <h2 class="title-bug">
+            Encontrou um bug ou deseja reportar um comportamento?
+          </h2>
+
+          <select name="tipo_problema" id="tipo-problema">
+            <option value="" disabled selected>
+              Selecione o tipo de informação que deseja enviar
+            </option>
+            <option value="bug">Bug</option>
+            <option value="comportamento">Comportamento</option>
+            <option value="usuario">Usuário</option>
+            <option value="melhorias">Melhorias</option>
+            <option value="outro">Outro</option>
+          </select>
+
+          <div class="field">
+            <p class="descricao">Nos conte o que aconteceu</p>
+          </div>
+          <textarea
+            class="textarea-bug"
+            name="descricao"
+            id="descricao"
+            maxlength="500"
+            placeholder="Descreva o problema encontrado"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">Enviar Relatório</button>
+        </form>
+      </section>
+    </main>
+
+    <app-footer></app-footer>
+  </body>
+</html>
