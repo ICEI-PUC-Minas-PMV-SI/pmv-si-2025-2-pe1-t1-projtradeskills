@@ -41,6 +41,14 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro
 **Resultado obtido** | Sucesso
 
+**Caso de Teste** | **CT06 - Editar dados pessoais**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse a aplicação<br>2) Faça login no sistema<br>3) Acesse o menu de perfil<br>4) Identifique os campos já preenchidos<br>5) Modifique nome, senha, foto, cidade ou contato<br>6) Salve as alterações |
+**Requisitos associados** | RF-006 |
+**Resultado esperado** | O sistema deve atualizar os dados pessoais do usuário e exibir mensagem de confirmação de sucesso |
+**Dados de entrada** | Usuário autenticado com dados pessoais previamente cadastrados |
+**Resultado obtido** | Sucesso |
+
 **Caso de Teste** | **CT09 - Visualizar histórico de transações**
  :--------------: | ------------
 **Procedimento**  | 1) Acesse a aplicação<br>2) Faça login no sistema<br>3) Clique no botão "Meu histórico" no menu lateral<br>4) Visualize a lista de transações com valores de entrada e saída |
@@ -127,6 +135,11 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
 
+| *Caso de Teste* | *CT06 - Editar dados pessoais* |
+|---|---|
+| **Requisito Associado** | RF-006 - A aplicação deve permitir a edição dos dados pessoais como nome, senha, foto, cidade e contato. |
+| **Link do vídeo do teste realizado:** | [https://drive.google.com/file/d/1LlySdbaOYHNficRbDna4BQ1X7UMKTe5i/view?usp=sharing](https://drive.google.com/file/d/1LlySdbaOYHNficRbDna4BQ1X7UMKTe5i/view?usp=sharing) |
+
 |*Caso de Teste*                |*CT09 - Visualizar histórico de transações*                                        |
 |---|---|
 |Requisito Associado | RF-009 - A aplicação deve ter um botão “Meu histórico” no menu principal, para permitir a visualização do histórico de transações, onde o usuário poderá visualizar os valores de entrada e saída de créditos, incluindo data, horário, nome do serviço prestado e nome do provedor ou consumidor.|
@@ -167,9 +180,6 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 
 Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
 
-## Testes de unidade automatizados (Opcional)
-
-Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de software, ele podera desenvolver testes automatizados de software que verificam o funcionamento das funções JavaScript desenvolvidas. Para conhecer sobre testes unitários em JavaScript, leia 0 documento  [Ferramentas de Teste para Java Script](https://geekflare.com/javascript-unit-testing/).
 
 # Testes de Usabilidade
 
