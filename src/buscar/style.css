@@ -39,9 +39,8 @@
 #search-results {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 6rem;
-  gap: 2.6rem;
+  gap: 3rem;
 }
 
 #search-results .user-card {
