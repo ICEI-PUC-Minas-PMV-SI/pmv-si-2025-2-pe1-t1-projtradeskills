@@ -76,7 +76,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |consumerId         | string/number     | ID do usuário consumidor do serviço                    | "user-maria"                   |
 | name              | string            | Nome da habilidade/serviço                             | "Aula de Violão"               |
 | credits           | number            | Preço em créditos cobrado pelo serviço                 | "40"                           | 
-| date              | number            | Data da criação da solicitacão                         | "18-10-2025"                   |
+| date              | number            | Data da criação da solicitação                         | "18-10-2025"                   |
 | availability      | string            | Opções de horários, disponibilidade                    | "Sábado                        |
 | modality          | string            | Modalidade oferecida (presencial, online)              | "Presencial"                   |
 | status            | string            | Situação atual do pedido                               | "Em andamento"                 |
