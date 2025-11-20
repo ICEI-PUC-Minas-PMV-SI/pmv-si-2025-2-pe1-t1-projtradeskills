@@ -385,6 +385,25 @@ function generateId(prefix) {
 }
 
 function renderRequests() {
+    function isKnownUser(userId) {
+  return Array.isArray(appData.users) && appData.users.some(u => u.id === userId);
+}
+
+function renderRequests() {
+  const currentUserId = getCurrentUserId();
+
+  if (!isKnownUser(currentUserId)) {
+    
+    const sentTable = document.querySelector('#conteudo-enviadas tbody');
+    const receivedTable = document.querySelector('#conteudo-recebidos tbody');
+
+    if (sentTable) sentTable.innerHTML = '<tr><td colspan="5">Você ainda não enviou solicitações.</td></tr>';
+    if (receivedTable) receivedTable.innerHTML = '<tr><td colspan="5">Nenhum pedido recebido até o momento.</td></tr>';
+    return;
+  }
+
+}
+
     const currentUserId = getCurrentUserId();
 
     const sentTable = document.querySelector('#conteudo-enviadas tbody');

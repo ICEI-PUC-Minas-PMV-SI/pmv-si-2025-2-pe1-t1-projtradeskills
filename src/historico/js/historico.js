@@ -151,6 +151,23 @@ function getCurrentUserId() {
 }
 
 function renderHistory() {
+  function isKnownUser(userId) {
+  return Array.isArray(appData.users) && appData.users.some(u => u.id === userId);
+}
+
+function renderHistory() {
+  const currentUserId = getCurrentUserId();
+
+  if (!isKnownUser(currentUserId)) {
+    const tableBody = document.querySelector('.tabela-solicitacoes tbody');
+    if (tableBody) {
+      tableBody.innerHTML = '<tr><td colspan="5">Nenhuma movimentação registrada ainda.</td></tr>';
+    }
+    return;
+  }
+
+}
+
   const tableBody = document.querySelector('.tabela-solicitacoes tbody');
 
   if (!tableBody) {
