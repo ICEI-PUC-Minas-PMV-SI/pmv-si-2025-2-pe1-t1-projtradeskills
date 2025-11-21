@@ -1,13 +1,11 @@
-/*document.addEventListener('DOMContentLoaded', function() {
-    // Capturando o elemento de modal
-    const creditsUnlockModal = document.getElementById('modal-credits-unlock');
+// Espera até que o documento HTML seja totalmente carregado 
+  document.addEventListener('DOMContentLoaded', function () {
+    // 1. Encontra o elemento modal pelo seu ID
+    var creditsUnlockModal = document.getElementById('modal-credits-unlock');
 
-    // Check if the browser supports the <dialog> element's showModal method
-    if (creditsUnlockModal && typeof creditsUnlockModal.showModal === 'function') {
-        creditsUnlockModal.showModal(); // Show the modal
-    } else if (creditsUnlockModal) {
-        // Fallback for older browsers or if using a custom modal implementation
-        // For example, if you're using CSS to hide/show the modal
-        creditsUnlockModal.style.display = 'block'; 
-    }
-});*/
+    // 2. Cria uma nova instância Modal do Bootstrap
+    var creditsUnlockModal = new bootstrap.Modal(creditsUnlockModal);
+
+    // 3. Mostra o modal
+    creditsUnlockModal.show();
+  });

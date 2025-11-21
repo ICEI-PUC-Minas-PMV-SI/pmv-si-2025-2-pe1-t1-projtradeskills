@@ -141,7 +141,7 @@ section {
 }
 
 #requests-resume .cards-dashboard .icon-envelope {
-  color: #5f91bb;
+  color: #4881b0;
   font-size: 45px;
 }
 
@@ -244,6 +244,85 @@ section {
 .hystoric-button:hover {
   background: #1f3f66;
   color: #FFF;
+}
+
+/*Modal de Desbloqueio de Créditos*/
+.modal-content {
+  padding: 14px;
+  text-align: center;
+}
+
+.modal-header {
+  border-bottom: none !important;
+  flex-direction: column;
+}
+
+.icon-coin-circle-container {
+  margin-bottom: 20px;
+}
+
+.icon-coin-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  background-image: linear-gradient(to right, #1F3F66, #3D698D);
+  border-radius: 3.40282e38px;
+}
+
+.icon-coin-circle i {
+  font-size: 25px;
+  color: #FFF;
+}
+
+.modal-title {
+  font-size: 25px;
+  color: #1e3f66;
+  font-weight: 600;
+}
+
+.modal-body p {
+  font-size: 18px;
+  line-height: 1.55556;
+}
+
+.modal-body p,
+.modal-footer .container-more-info p {
+  color: #6c757d;
+}
+
+.modal-footer .container-more-info span {
+  color: #3d698d;
+  font-weight: 500;
+}
+
+.modal-footer .container-more-info {
+  text-align: left;
+}
+
+.modal-footer {
+  border-top: none !important;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-footer .container-more-info {
+  padding: 12px;
+  background-color: #f0f7ff;
+}
+
+.modal-footer .container-more-info p {
+ font-size: 14px;
+}
+
+.modal-footer button {
+  width: 100%;
+  padding: 12px; 
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  background:linear-gradient(to right, #1F3F66, #3D698D);
 }
 
 /* Responsividade */

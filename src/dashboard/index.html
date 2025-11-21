@@ -204,7 +204,7 @@
             <div class="w-100 no-activities-content">
               <div class="calendar-icon">
                 <div class="calendar-icon-circle">
-                  <img src="./calendar.svg" alt="Ícone de calendário vazio" />
+                  <img src="img/calendar.svg" alt="Ícone de calendário vazio" />
                 </div>
               </div>
               <div class="no-activities-description">
@@ -235,15 +235,20 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">
-              Desbloqueie Seus Primeiros Créditos e Comece a Trocar Habilidades!
-            </h5>
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
+            <div class="icon-coin-circle-container">
+              <div class="icon-coin-circle">
+                <i class="bi bi-unlock"></i>
+              </div>
+            </div>
+            <h2 class="modal-title">
+              Desbloqueie Seus Primeiros Créditos e Comece a Trocar Habilidades!
+            </h2>
           </div>
           <div class="modal-body">
             <p>
@@ -253,7 +258,11 @@
             </p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary">
+            <div class="container-more-info">   
+              <p>💸 Complete seu perfil e ganhe <span>50 créditos</span> para começar!</p>
+              <p>📋 Adicione pelo menos 1 habilidade que você pode oferecer</p>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/perfil/'">
               Completar Perfil
             </button>
           </div>
@@ -268,6 +277,17 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
     <app-footer></app-footer>
   </body>
 </html>
