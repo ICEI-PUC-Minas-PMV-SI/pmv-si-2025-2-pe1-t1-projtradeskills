@@ -48,6 +48,10 @@ submitButton.addEventListener("click", () => {
     email,
     password: md5(password),
     newUser: true,
+    credits: 0,
+    requests: [],
+    responses: [],
+    activities: [],
     image: "/public/icons/profile.svg"
   };
 

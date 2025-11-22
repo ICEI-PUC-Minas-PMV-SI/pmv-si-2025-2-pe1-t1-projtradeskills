@@ -288,6 +288,10 @@
     "state": "Admin State",
     "image": "/public/icons/profile.svg",
     "skills": [],
+    "credits": 0,
+    "requests": [],
+    "responses": [],
+    "activities": [],
     "rating": {
       "score": 5,
       "reviews": 0
