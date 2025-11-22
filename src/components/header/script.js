@@ -41,23 +41,21 @@ class AppHeader extends HTMLElement {
         initMobileMenu(this.shadowRoot);
 
         // Escuta mudanças no localStorage (para outras abas)
-        window.addEventListener('storage', (e) => {
-          if (e.key === 'currentUser') {
+        window.addEventListener("storage", e => {
+          if (e.key === "currentUser") {
             this.loadUserData();
           }
-          if (e.key === 'tradeSkillsData') {
+          if (e.key === "tradeSkillsData") {
             this.loadUserCredits();
           }
         });
 
-
         // Escuta evento customizado para mudanças na mesma aba
-        window.addEventListener('currentUserChanged', () => {
+        window.addEventListener("currentUserChanged", () => {
           this.loadUserData();
-
         });
 
-        window.addEventListener('creditsUpdated', () => {
+        window.addEventListener("creditsUpdated", () => {
           this.loadUserCredits();
         });
       } else {
@@ -72,10 +70,10 @@ class AppHeader extends HTMLElement {
 
   loadUserData() {
     try {
-      const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+      const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
-      const nameElement = this.shadowRoot.querySelector('.name');
-      const imageElement = this.shadowRoot.querySelector('.image');
+      const nameElement = this.shadowRoot.querySelector(".name");
+      const imageElement = this.shadowRoot.querySelector(".image");
 
       if (currentUser) {
         if (nameElement) {
@@ -86,24 +84,23 @@ class AppHeader extends HTMLElement {
         }
       }
     } catch (error) {
-      console.error('Erro ao carregar dados do usuário no header:', error);
+      console.error("Erro ao carregar dados do usuário no header:", error);
     }
   }
 
   loadUserCredits() {
     try {
-      const data = JSON.parse(localStorage.getItem('tradeSkillsData'));
+      const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
-      if (data && data.currentUserId && data.users) {
-        const currentUser = data.users.find(u => u.id === data.currentUserId);
-        const creditsElement = this.shadowRoot.querySelector('.amount'); 
+      if (currentUser) {
+        const creditsElement = this.shadowRoot.querySelector(".amount");
 
-        if (creditsElement && currentUser && typeof currentUser.credits === 'number') {
+        if (creditsElement && currentUser) {
           creditsElement.textContent = currentUser.credits;
         }
       }
     } catch (error) {
-      console.error('Erro ao carregar créditos do usuário:', error);
+      console.error("Erro ao carregar créditos do usuário:", error);
     }
   }
 }
