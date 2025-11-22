@@ -248,12 +248,13 @@ section {
 
 /*Modal de Desbloqueio de Créditos*/
 .modal-content {
-  padding: 14px;
+  padding: 18px;
   text-align: center;
 }
 
 .modal-header {
   border-bottom: none !important;
+  padding: 0px 0px !important;
   flex-direction: column;
 }
 
@@ -276,8 +277,12 @@ section {
   color: #FFF;
 }
 
+.modal.show {
+  padding-right: 0px !important;
+}
+
 .modal-title {
-  font-size: 25px;
+  font-size: 24px;
   color: #1e3f66;
   font-weight: 600;
 }
@@ -308,8 +313,9 @@ section {
 }
 
 .modal-footer .container-more-info {
-  padding: 12px;
+  padding: 8px;
   background-color: #f0f7ff;
+  border-radius: 8px;
 }
 
 .modal-footer .container-more-info p {
@@ -364,6 +370,22 @@ section {
     font-size: 12px;
     line-height: 1.55556;
     max-width: 400px
+  }
+
+  .modal-dialog {
+    margin-inline: 20px !important;
+  }
+
+  .modal-body {
+    padding: 15px 0px !important;
+  }
+
+  .modal-body p {
+    font-size: 14px;
+  }
+
+  .modal-footer {
+    padding: 0px !important;
   }
   
 }
