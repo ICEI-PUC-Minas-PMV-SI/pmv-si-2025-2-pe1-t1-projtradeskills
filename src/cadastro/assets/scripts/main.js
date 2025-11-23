@@ -52,6 +52,7 @@ submitButton.addEventListener("click", () => {
     requests: [],
     responses: [],
     activities: [],
+    skills: [],
     image: "/public/icons/profile.svg"
   };
 
