@@ -155,77 +155,13 @@
               </p>
             </div>
             <div class="profile-skills-cards">
-              <!--<div class="card mb-4">
-                <div class="card-body">
-                  <div>
-                    <i class="bi bi-briefcase"></i>
-                  </div>
-                  <div class="card-content-container">
-                    <h6 class="card-title">Manutenção de Computadores</h6>
-                    <p class="card-text">
-                      Cansado de lentidão? Eu resolvo! Com mais de 4 anos de
-                      experiência, ofereço suporte técnico especializado para
-                      que você ou sua empresa não percam tempo com problemas de
-                      informática. Meus serviços incluem: Manutenção Completa de
-                      Computadores/Notebooks, Formatação, Limpeza de
-                      Componentes. Troca de pasta Térmica, e muito mais! Entre
-                      em contato agora e vamos restaurar a performance total do
-                      seu equipamento.
-                    </p>
-                    <div class="skill-tags-container">
-                      <span class="skill-tag">$20</span>
-                      <span class="skill-tag">Presencial</span>
-                      <span class="skill-tag">Sáb | Tarde</span>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-column justify-content-between">
-                    <i
-                      class="bi bi-pencil"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                    ></i>
-                    <i class="bi bi-trash3"></i>
-                  </div>
-                </div>
-              </div>-->
-
-             <!--<div class="card mb-4">
-                <div class="card-body">
-                  <div>
-                    <i class="bi bi-briefcase"></i>
-                  </div>
-                  <div class="card-content-container">
-                    <h6 class="card-title">Aulas de Matemática Básica</h6>
-                    <p class="card-text">
-                      Sou estudante de Sistemas de Informação e trago uma
-                      abordagem lógica e clara para a Matemática. Tenho 2 anos
-                      de experiência com aulas particulares e atuo como Monitor
-                      na Universidade, o que me deu uma didática excelente para
-                      simplificar temas complexos. Posso ajudar seu filho(a) a
-                      dominar a Matemática Básica, entre em contato e vamos
-                      agendar a primeira aula!
-                    </p>
-                    <div class="skill-tags-container">
-                      <span class="skill-tag">$10</span>
-                      <span class="skill-tag">Online</span>
-                      <span class="skill-tag">Seg-Sáb | Manhã</span>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-column justify-content-between">
-                    <i
-                      class="bi bi-pencil"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                    ></i>
-                    <i class="bi bi-trash3"></i>
-                  </div>
-                </div>
-              </div>-->
+             <!--Card de habilidades-->
             </div>
             <div class="profile-button-container">
               <button
                 type="button"
                 class="profile-button primary"
+                id="skills-modal-create"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
               >
@@ -265,25 +201,28 @@
           </div>
           <div class="modal-body">
             <div class="mb-2">
-              <label for="exampleFormControlInput1" class="form-label"
+              <label for="skills-name" class="form-label"
                 >Título da habilidade</label
               >
               <input
                 type="text"
                 class="form-control"
-                id="exampleFormControlInput1"
-                placeholder=""
+                id="skills-name"
+                required
               />
+              <p class="error-message" id="error-skills-name" style="display: none;">Campo obrigatório.</p>
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label"
+              <label for="skills-description" class="form-label"
                 >Descrição</label
               >
               <textarea
                 class="form-control"
-                id="exampleFormControlTextarea1"
+                id="skills-description"
                 rows="6"
+                required
               ></textarea>
+              <p class="error-message" id="error-skills-description" style="display: none;">Campo obrigatório.</p>
             </div>
             <div class="profile-skills-modal-container-labels">
 
@@ -301,14 +240,17 @@
                     type="number"
                     class="form-control"
                     id="suggested-credit"
+                    required
                   />
+                  <p class="error-message" id="error-suggested-credit" style="display: none;">Campo obrigatório.</p>
                   <select
                     class="form-select form-select-sm"
                     aria-label="Small select example"
                     id="service-models"
+                    required
                   >
-                    <option value="1" selected>Presencial</option>
-                    <option value="2">Online</option>
+                    <option value="presencial">Presencial</option>
+                    <option value="online">Online</option>
                   </select>
                 </div>
               </div>
@@ -323,15 +265,18 @@
                     type="text"
                     class="form-control"
                     id="weekly"
+                    required
                   />
+                  <p class="error-message" id="error-weekly" style="display: none;">Campo obrigatório.</p>
                   <select
                     class="form-select form-select-sm"
                     id="shift"
                     aria-label="Small select example"
+                    required
                   >
-                    <option value="1" selected>Manhã</option>
-                    <option value="2">Tarde</option>
-                    <option value="2">Noite</option>
+                    <option value="manha" selected>Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
                   </select>
                 </div>
               </div>
@@ -345,7 +290,7 @@
             >
               Cancelar
             </button>
-            <button type="button" class="profile-button primary">
+            <button type="button" class="profile-button primary" id="skills-modal-save" onclick="saveSkills()">
               Salvar alterações
             </button>
           </div>

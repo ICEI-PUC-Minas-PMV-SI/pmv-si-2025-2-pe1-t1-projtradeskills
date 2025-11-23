@@ -349,6 +349,17 @@ p {
   border-color: #ffd230;
 } 
 
+/* Estilos para validação nativa */
+.invalid-input {
+  border-color: #dc3545 !important; /* Vermelho para erro */
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
 /* Responsividade */
 
 @media (max-width: 575px) {

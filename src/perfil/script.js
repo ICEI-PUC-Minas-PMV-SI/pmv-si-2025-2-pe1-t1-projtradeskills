@@ -1,9 +1,206 @@
+// Skills Modal
+const skillsName = document.querySelector("#skills-name");
+const skillsModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+const skillsDescription = document.querySelector("#skills-description");
+const skillsPrice = document.querySelector("#suggested-credit");
+
+const serviceModelsSelect = document.querySelector("#service-models");
+const serviceModelsOptionSelected = serviceModelsSelect.options[serviceModelsSelect.selectedIndex].text;
+
+const skillsSchedule = {
+  daysOfWeek: document.querySelector("#weekly"),
+  serviceModels: document.querySelector("#service-models"),
+  shift: document.querySelector("#shift"),
+};
+
+let modalTitle = document.querySelector(".modal-title");
+
+function openCreateModal() {
+  modalTitle.textContent = 'Adicionar Habilidade';
+
+  // Limpa os campos do formulário
+  skillsName.value = "";
+  skillsDescription.value = "";
+  skillsPrice.value = "";
+  skillsSchedule.daysOfWeek.value = "";
+  serviceModelsSelect.value = "Presencial"; // Valor padrão
+  skillsSchedule.shift.value = "Manhã"; // Valor padrão
+
+  // Garante que o botão de salvar não esteja em modo de edição
+  const saveButton = document.getElementById("skills-modal-save");
+  delete saveButton.dataset.editingIndex;
+
+  skillsModal.show();
+}
+
+function saveSkills() {
+  try {
+    const currentUser = UserStorage.getCurrentUser();
+    if (!currentUser) {
+      alert("Nenhum usuário logado encontrado.");
+      return;
+    }
+
+    // Validação nativa dos campos do modal
+    let isFormValid = true;
+    const fieldsToValidate = [
+      { input: skillsName, errorId: "error-skills-name" },
+      { input: skillsDescription, errorId: "error-skills-description" },
+      { input: skillsPrice, errorId: "error-suggested-credit" },
+      { input: skillsSchedule.daysOfWeek, errorId: "error-weekly" },
+    ];
+
+    fieldsToValidate.forEach(field => {
+      const errorElement = document.getElementById(field.errorId);
+      if (!field.input.value.trim()) {
+        field.input.classList.add("invalid-input");
+        if (errorElement) errorElement.style.display = "block";
+        isFormValid = false;
+      } else {
+        field.input.classList.remove("invalid-input");
+        if (errorElement) errorElement.style.display = "none";
+      }
+    });
+
+    if (!isFormValid) {
+      return; // Interrompe a execução se o formulário for inválido
+    }
+
+    // Captura os dados do modal
+    const newSkill = {
+      name: skillsName.value,
+      price: parseFloat(skillsPrice.value),
+      description: skillsDescription.value,
+      // Você pode adicionar outros campos aqui conforme a estrutura do seu objeto
+      // serviceModel: serviceModelsSelect.value,
+      // availability: { days: skillsSchedule.daysOfWeek.value, shift: skillsSchedule.shift.value }
+      serviceModel: serviceModelsSelect.value,
+      availability: { days: skillsSchedule.daysOfWeek.value, shift: skillsSchedule.shift.value }
+    };
+
+    // Garante que o array de skills exista no usuário
+    if (!currentUser.skills) {
+      currentUser.skills = [];
+    }
+
+    const saveButton = document.getElementById("skills-modal-save");
+    const editingIndex = saveButton.dataset.editingIndex;
+
+    if (editingIndex !== undefined) {
+      // Modo de Edição: atualiza a habilidade existente
+      currentUser.skills[editingIndex] = newSkill;
+      alert("Habilidade atualizada com sucesso!");
+      delete saveButton.dataset.editingIndex; // Limpa o índice de edição
+    } else {
+      // Modo de Criação: adiciona uma nova habilidade
+      currentUser.skills.push(newSkill);
+      alert("Habilidade adicionada com sucesso!");
+    }
+
+    UserStorage.updateUserData(currentUser); // Salva o objeto de usuário completo
+    skillsModal.hide();
+    window.location.reload(); // Recarrega a página para exibir a nova habilidade
+  } catch (error) {
+    console.error("Erro ao salvar habilidade:", error);
+    alert("Ocorreu um erro ao salvar a habilidade.");
+  }
+}
+
+function openEditModal(skillIndex) {
+  const currentUser = UserStorage.getCurrentUser();
+  const skill = currentUser.skills[skillIndex];
+
+  if (!skill) {
+    console.error("Habilidade não encontrada para edição.");
+    return;
+  }
+
+  modalTitle.textContent = 'Editar Habilidade';
+
+  // Preenche o modal com os dados da habilidade
+  skillsName.value = skill.name || '';
+  skillsDescription.value = skill.description || '';
+  skillsPrice.value = skill.price || '';
+  serviceModelsSelect.value = skill.serviceModel || 'presencial';
+  skillsSchedule.daysOfWeek.value = skill.availability?.days || '';
+  skillsSchedule.shift.value = skill.availability?.shift || 'manha';
+
+  // Armazena o índice da habilidade que está sendo editada no botão de salvar
+  const saveButton = document.getElementById("skills-modal-save");
+  saveButton.dataset.editingIndex = skillIndex;
+
+  skillsModal.show();
+}
+
+function loadUserSkills() {
+  try {
+    const currentUser = UserStorage.getCurrentUser();
+    const skillsContainer = document.querySelector(".profile-skills-cards");
+
+    if (!currentUser || !currentUser.skills || !skillsContainer) {
+      return;
+    }
+
+    skillsContainer.innerHTML = ""; // Limpa o container antes de adicionar os novos cards
+
+    if (currentUser.skills.length === 0) {
+      skillsContainer.innerHTML = "<p>Nenhuma habilidade cadastrada ainda. Adicione sua primeira habilidade!</p>";
+      return;
+    }
+
+    currentUser.skills.forEach((skill, index) => {
+      const skillCard = `
+        <div class="card mb-4">
+          <div class="card-body">
+            <div>
+              <i class="bi bi-briefcase"></i>
+            </div>
+            <div class="card-content-container">
+              <h6 class="card-title">${skill.name || "Habilidade sem título"}</h6>
+              <p class="card-text">${skill.description || "Sem descrição."}</p>
+              <div class="skill-tags-container">
+                <span class="skill-tag">$${skill.price || 0}</span>
+                <span class="skill-tag">${skill.serviceModel || "Não informado"}</span>
+                <span class="skill-tag">${skill.availability?.days || "N/A"} | ${skill.availability?.shift || "N/A"}</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column justify-content-between">
+              <i class="bi bi-pencil" onclick="openEditModal(${index})"></i>
+              <i class="bi bi-trash3" onclick="deleteSkill(${currentUser.skills.indexOf(skill)})"></i>
+            </div>
+          </div>
+        </div>`;
+      skillsContainer.innerHTML += skillCard;
+    });
+  } catch (error) {
+    console.error("Erro ao carregar habilidades do usuário:", error);
+  }
+}
+
+function deleteSkill(skillIndex) {
+  if (!confirm("Tem certeza que deseja excluir esta habilidade?")) {
+    return;
+  }
+  try {
+    const currentUser = UserStorage.getCurrentUser();
+    currentUser.skills.splice(skillIndex, 1);
+    UserStorage.updateUserData(currentUser);
+    alert("Habilidade excluída com sucesso!");
+    window.location.reload();
+  } catch (error) {
+    console.error("Erro ao excluir habilidade:", error);
+    alert("Ocorreu um erro ao excluir a habilidade.");
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const fileInput = document.getElementById("file");
   const uploadButton = document.getElementById("uploadButton");
   const image = document.getElementById("output");
   const icon = document.getElementById("defaultIcon");
   const saveButton = document.getElementById("saveProfileButton");
+  const createSkillButton = document.getElementById("skills-modal-create");
+  const saveSkillButton = document.getElementById("skills-modal-save");
 
   const nomeInput = document.getElementById("nome");
   const emailInput = document.getElementById("email");
@@ -67,6 +264,15 @@ document.addEventListener("DOMContentLoaded", () => {
           telInput.classList.remove("pending");
           bulletPointAlert[0].style.backgroundColor = "#00c951";
         }
+
+        if (currentUser.skills.length > 0) {
+          bulletPointAlert[2].style.backgroundColor = "#00c951";
+        }
+
+        if (currentUser.skills.length > 0 && currentUser.phoneNumber.length > 0 && currentUser.city.length > 0) {
+          document.querySelector('.alert-imcomplete-profile').remove()
+        }
+
       }
     } catch (error) {
       console.error("Erro ao carregar dados do usuário:", error);
@@ -199,10 +405,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loadCurrentUserImage();
   loadCurrentUserData();
+  loadUserSkills();
 
   // Event listener para o botão "Salvar alterações"
   if (saveButton) {
     saveButton.addEventListener("click", updateUserData);
+  }
+
+  // Event listener para o botão "Salvar alterações" do modal de skills
+  if (saveSkillButton) {
+    saveSkillButton.removeAttribute("onclick"); // Remove o onclick antigo do HTML
+    saveSkillButton.addEventListener("click", saveSkills);
+  }
+
+  // Event listener para o botão "Adicionar habilidade"
+  if (createSkillButton) {
+    createSkillButton.removeAttribute("data-bs-toggle"); // Remove o controle do Bootstrap
+    createSkillButton.removeAttribute("data-bs-target");
+    createSkillButton.addEventListener("click", openCreateModal);
   }
 
   // Event listener para formatar o telefone enquanto digita

@@ -49,6 +49,7 @@ submitButton.addEventListener("click", () => {
     password: md5(password),
     newUser: true,
     credits: 0,
+    skills: [],
     requests: [],
     responses: [],
     activities: [],
