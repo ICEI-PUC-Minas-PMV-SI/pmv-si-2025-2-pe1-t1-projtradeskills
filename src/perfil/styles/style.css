@@ -13,8 +13,7 @@
   margin-bottom: 35px;
 }
 
-#profile p,
-.skills-modal-header p {
+#profile .profile-wrapper-content p {
   color: #6c757d;
 }
 
@@ -35,6 +34,55 @@
 .profile-skills-cards .card-title,
 .skills-modal-content h4 {
   font-size: 16px;
+}
+
+/*Customização do container do alerta para preenchimento dos dados obrigatórios para desbloqueio dos créditos iniciais*/
+.alert-imcomplete-profile {
+  padding: 24px;
+  background-image: linear-gradient(to bottom right, #fefce8, #fffbeb);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  margin-bottom: 50px;
+  border-radius: 8px;
+  border-left: 4px solid #fd9a00;
+}
+
+.alert-imcomplete-profile-content,
+.alert-imcomplete-profile-pending-inputs,
+.alert-imcomplete-profile-pending-inputs > div {
+  display: flex;
+  gap: 10px;
+}
+
+.alert-imcomplete-profile-icon i {
+  color: #e17100;
+  font-size: 28px;
+}
+
+.alert-imcomplete-profile-description h3 {
+  font-size: 20px;
+  color: #7b3306;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+.alert-imcomplete-profile-description p {
+  color: #973c00;
+}
+
+.alert-imcomplete-profile-pending-inputs {
+  font-size: 14px;
+  color: #bb4d00;
+}
+
+ .bullet-point-alert {
+  width: 8px;
+  height: 8px;
+  background-color: #ffba00;
+  border-radius: 4px;
+}
+
+.alert-imcomplete-profile-pending-inputs > div {
+  align-items: center;
 }
 
 /*Customização do container da imagem de perfil*/
@@ -118,6 +166,7 @@ p {
 .profile-section-description p,
 .profile-form-fields label,
 .profile-form-fields input,
+.profile-form-fields select,
 .profile-button,
 .skills-modal-content p,
 .skills-modal-content label,
@@ -126,6 +175,11 @@ p {
 .skills-modal-content select {
   font-size: 14px;
 }
+
+#profile input::placeholder,
+ #profile select::placeholder {
+  color: #bdbcbc;
+ }
 
 .profile-form-fields {
   display: flex;
@@ -282,6 +336,37 @@ p {
   gap: 15px;
 }
 
+.profile-skills-modal-container-inputs.credit {
+  position: relative;
+}
+
+.profile-skills-modal-container-inputs.credit::before {
+ content: url("/public/icons/credit.svg");
+ position: absolute;
+ top: 5px;
+ left: 5px;
+}
+
+#suggested-credit {
+  padding-left: 30px;
+}
+
+.profile-form-fields input.pending,
+.profile-form-fields select.pending  {
+  border-color: #ffd230;
+} 
+
+/* Estilos para validação nativa */
+.invalid-input {
+  border-color: #dc3545 !important; /* Vermelho para erro */
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
 /* Responsividade */
 
 @media (max-width: 575px) {
@@ -370,7 +455,11 @@ p {
     border-radius: 8px;
   }
 
-  #profile p,
+  .profile-skills-modal-container-inputs.credit::before {
+    top: 3px;
+  }
+
+  #profile .profile-wrapper-content p,
   .skills-modal-header p,
   .skills-modal-content label,
   .skills-modal-content input,
@@ -378,12 +467,26 @@ p {
     font-size: 12px;
   }
 
-  #profile p,
-  .skills-modal-header p {
+  #profile .profile-wrapper-content p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 11;
     overflow: hidden;
+  }
+
+  /* Responsividade do alerta para preenchimento dos dados obrigatórios para desbloqueio dos créditos iniciais */
+  .alert-imcomplete-profile-description h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .alert-imcomplete-profile-description p {
+    font-size: 14px;
+  }
+
+  .alert-imcomplete-profile-pending-inputs {
+    flex-wrap: wrap;
+    font-size: 12px;
   }
 }
 

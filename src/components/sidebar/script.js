@@ -69,6 +69,26 @@ class AppSidebar extends HTMLElement {
           });
         }
 
+        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+        if (currentUser.newUser) {
+          const disabledLinks = [
+            "buscar",
+            "solicitacoes",
+            "historico",
+            "reportar"
+          ];
+
+          disabledLinks.forEach(link => {
+            const anchor = this.shadowRoot.querySelector(`a[href*="${link}"]`);
+            if (anchor) {
+              anchor.classList.add("disabled");
+              anchor.addEventListener("click", event => {
+                event.preventDefault();
+              });
+            }
+          });
+        }
+
         toggleMobileMenu(this.shadowRoot);
       } else {
         console.error(
