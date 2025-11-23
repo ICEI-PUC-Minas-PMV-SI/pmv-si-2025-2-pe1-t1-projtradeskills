@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
+  // Altera o valor dos cards de Pedidos recebidos e Solicitações Enviadas
   const cardRequest = document.querySelector(".card-request .card-text");
   const cardResponse = document.querySelector(".card-response .card-text");
 
@@ -11,6 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
   cardResponse.textContent = currentUser.responses?.length
     ? currentUser.responses?.length
     : 0;
+
+   // Exibe o primeiro nome do usuário na mensagem de saudação
+  const dashboardGreeting = document.querySelector(
+    ".find-skills-greeting span"
+  );
+  if (currentUser.name.length > 0) {
+    const firstName = currentUser.name.split(" ")[0];
+    dashboardGreeting.textContent = `Olá, ${firstName}! 👋`;
+  }
 
   // Só exibe o modal de desbloqueio dos créditos iniciais quando for novo usuário (ou seja nâo preencheu todos os dados de Perfil ainda)
   if (currentUser.newUser) {
@@ -38,14 +48,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     historyButton.removeAttribute("onclick");
     historyButton.style.cursor = "not-allowed";
-  }
-
-  // Exibe o primeiro nome do usuário na mensagem de saudação
-  const dashboardGreeting = document.querySelector(
-    ".find-skills-greeting span"
-  );
-  if (currentUser.name.length > 0) {
-    const firstName = currentUser.name.split(" ")[0];
-    dashboardGreeting.textContent = `Olá, ${firstName}! 👋`;
   }
 });
