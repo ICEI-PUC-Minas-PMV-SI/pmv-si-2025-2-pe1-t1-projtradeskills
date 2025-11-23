@@ -75,8 +75,12 @@ const openModal = id => {
     <div class="modal-header">
       <img src="${user.image}" alt="${user.name}" class="modal-avatar"/>
       <h2 class="modal-name">${user.name}</h2>
-      <p class="member-since">Membro desde Setembro, 2025 • ${user.location}</p>
-      <p class="rating">${user.rating.score} (${user.rating.reviews} avaliações)</p>
+      <p class="member-since">Membro desde Setembro, 2025 • ${user.city}, ${
+    user.state
+  }</p>
+      <p class="rating">${user.rating?.score ? user.rating.score : "N/A"} (${
+    user.rating?.reviews ? user.rating.reviews : 0
+  } avaliações)</p>
     </div>
     <div class="modal-body">
       <h3 class="skill-name">${skill.name}</h3>
@@ -87,7 +91,9 @@ const openModal = id => {
             <p class="skill-description">${skill.description}</p>
             <div class="skill-footer">
               <div class="skill-infos">
-                <p class="skill-price"><img src="/public/icons/arrows.svg" alt="Variação"><img src="/public/icons/credit.svg" alt="Preço">${skill.price}</p>
+                <p class="skill-price"><img src="/public/icons/arrows.svg" alt="Variação"><img src="/public/icons/credit.svg" alt="Preço">${
+                  skill.price
+                }</p>
                 <p class="skill-availability">${modality}</p>
               </div>
               <button class="hire-button primary-button buttons"
@@ -102,7 +108,9 @@ const openModal = id => {
         </div>
       </div>
 
-      <a class="view-profile buttons primary-button" href="/profile/?id=${user.id}">Ver perfil completo</a>
+      <a class="view-profile buttons primary-button" href="/profile/?id=${
+        user.id
+      }">Ver perfil completo</a>
     </div>`;
 
   const modal = document.createElement("div");
@@ -139,8 +147,12 @@ const createUserCard = ({ id, name, state, city, image, skills, rating }) => {
         <p class="skill-description">${skills[0].description}</p>
       </div>
       <div class="card-footer">
-        <p class="user-rating">${rating.score} (${rating.reviews} avaliações)</p>
-        <strong class="skill-price"><img src="/public/icons/arrows.svg" alt="Variação"><img src="/public/icons/credit.svg" alt="Preço">${skills[0].price}</strong>
+        <p class="rating">${rating?.score ? rating.score : "N/A"} (${
+    rating?.reviews ? rating.reviews : 0
+  } avaliações)</p>
+        <strong class="skill-price"><img src="/public/icons/arrows.svg" alt="Variação"><img src="/public/icons/credit.svg" alt="Preço">${
+          skills[0].price
+        }</strong>
       </div>
     </div>
   `;
