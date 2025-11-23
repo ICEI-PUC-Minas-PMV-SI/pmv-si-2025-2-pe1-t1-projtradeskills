@@ -330,6 +330,10 @@ p {
   gap: 15px;
 }
 
+.profile-form-fields input.pending {
+  border-color: #ffd230;
+} 
+
 /* Responsividade */
 
 @media (max-width: 575px) {
