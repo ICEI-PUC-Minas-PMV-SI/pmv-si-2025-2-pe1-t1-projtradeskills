@@ -55,8 +55,19 @@ document.addEventListener("click", event => {
     const userRequests = Array.isArray(currentUser.requests)
       ? currentUser.requests
       : [];
-    userRequests.push(newRequest);
+    const userActivities = Array.isArray(currentUser.activities)
+      ? currentUser.activities
+      : [];
 
+    userRequests.push(newRequest);
+    userActivities.push({
+      icon: "bi bi-plus-circle",
+      type: "solicitação enviada",
+      description: `Solicitou o serviço "${skillName}" por ${credits} créditos.`,
+      date: new Date()
+    });
+
+    UserStorage.updateUserData({ activities: userActivities });
     const success = UserStorage.updateUserData({ requests: userRequests });
 
     if (success) {
