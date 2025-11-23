@@ -330,6 +330,21 @@ p {
   gap: 15px;
 }
 
+.profile-skills-modal-container-inputs.credit {
+  position: relative;
+}
+
+.profile-skills-modal-container-inputs.credit::before {
+ content: url("/public/icons/credit.svg");
+ position: absolute;
+ top: 5px;
+ left: 5px;
+}
+
+#suggested-credit {
+  padding-left: 30px;
+}
+
 .profile-form-fields input.pending {
   border-color: #ffd230;
 } 
@@ -420,6 +435,10 @@ p {
 
   .skills-modal .modal-content {
     border-radius: 8px;
+  }
+
+  .profile-skills-modal-container-inputs.credit::before {
+    top: 3px;
   }
 
   #profile .profile-wrapper-content p,
