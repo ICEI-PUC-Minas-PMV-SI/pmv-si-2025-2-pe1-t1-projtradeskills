@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/assets/styles/style.css" />
 
     <link rel="stylesheet" href="../buscar/style.css" />
+    <script src="/assets/scripts/validation.js" defer></script>
 
     <style>
       @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
@@ -16,8 +17,6 @@
     <script src="../components/sidebar/script.js" type="module" defer></script>
     <script src="../components/footer/script.js" type="module" defer></script>
     <script src="./script.js" defer></script>
-
-    <script src="/assets/scripts/validation.js" defer></script>
 
     <title>Dashboard</title>
   </head>
@@ -68,7 +67,7 @@
         <div
           class="d-flex flex-row flex-wrap justify-content-center align-items-center gap-5"
         >
-          <div class="card text-center cards-dashboard">
+          <div class="card text-center cards-dashboard card-request">
             <div class="card-body cards-resume-requests">
               <i class="bi bi-envelope-arrow-down icon-envelope"></i>
               <h6 class="card-title">Pedidos que recebi</h6>
@@ -80,14 +79,14 @@
               ></a>
             </div>
           </div>
-          <div class="card text-center cards-dashboard">
+          <div class="card text-center cards-dashboard card-response">
             <div class="card-body cards-resume-requests">
               <i class="bi bi-envelope-arrow-up icon-envelope"></i>
               <h6 class="card-title card-body-text-title">
                 Solicitações que enviei
               </h6>
               <h2 class="card-text">0</h2>
-             <a href="/solicitacoes/" class="card-link text-decoration-none"
+              <a href="/solicitacoes/" class="card-link text-decoration-none"
                 >Ver minhas solicitações
                 <i class="bi bi-arrow-right mx-2 align-middle"></i
               ></a>
@@ -258,11 +257,18 @@
             </p>
           </div>
           <div class="modal-footer">
-            <div class="container-more-info">   
-              <p>💸 Complete seu perfil e ganhe <span>50 créditos</span> para começar!</p>
+            <div class="container-more-info">
+              <p>
+                💸 Complete seu perfil e ganhe <span>50 créditos</span> para
+                começar!
+              </p>
               <p>📋 Adicione pelo menos 1 habilidade que você pode oferecer</p>
             </div>
-            <button type="button" class="btn btn-primary" onclick="window.location.href='/perfil/'">
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="window.location.href='/perfil/'"
+            >
               Completar Perfil
             </button>
           </div>

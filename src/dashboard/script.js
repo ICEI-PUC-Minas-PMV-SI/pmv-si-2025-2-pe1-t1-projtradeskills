@@ -2,6 +2,16 @@
 document.addEventListener("DOMContentLoaded", function () {
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
+  const cardRequest = document.querySelector(".card-request .card-text");
+  const cardResponse = document.querySelector(".card-response .card-text");
+
+  cardRequest.textContent = currentUser.requests?.length
+    ? currentUser.requests?.length
+    : 0;
+  cardResponse.textContent = currentUser.responses?.length
+    ? currentUser.responses?.length
+    : 0;
+
   // Só exibe o modal de desbloqueio dos créditos iniciais quando for novo usuário (ou seja nâo preencheu todos os dados de Perfil ainda)
   if (currentUser.newUser) {
     // 1. Encontra o elemento modal pelo seu ID
@@ -23,14 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
       element.href = "#";
     });
 
-    findSkillsButton.removeAttribute("onclick"); 
+    findSkillsButton.removeAttribute("onclick");
     findSkillsButton.style.cursor = "not-allowed";
 
-    historyButton.removeAttribute("onclick"); 
+    historyButton.removeAttribute("onclick");
     historyButton.style.cursor = "not-allowed";
 
-
     // TODO Desabilitar os itens do menu Meu Histórico, Minhas solicitações e Buscar Habilidades.
-
   }
 });
