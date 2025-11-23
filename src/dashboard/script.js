@@ -38,7 +38,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     historyButton.removeAttribute("onclick");
     historyButton.style.cursor = "not-allowed";
-
-    // TODO Desabilitar os itens do menu Meu Histórico, Minhas solicitações e Buscar Habilidades.
+  }
+  
+     // Exibe o primeiro nome do usuário na mensagem de saudação
+    const dashboardGreeting = document.querySelector(".find-skills-greeting span");
+    if(currentUser.name.length > 0) {
+            const firstName = currentUser.name.split(" ")[0];
+             dashboardGreeting.textContent = `Olá, ${firstName}! 👋`
+           
   }
 });

@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const passwordInput = document.getElementById("password");
   const telInput = document.getElementById("tel");
   const cityStateInput = document.getElementById("cityState");
+  const bulletPointAlert = document.querySelectorAll(".bullet-point-alert");
 
   // Função para formatar o telefone enquanto o usuário digita
   function formatarTelefone(input) {
@@ -54,12 +55,17 @@ document.addEventListener("DOMContentLoaded", () => {
             currentUser.state
           );
           cityStateInput.value = cityState;
+          if (currentUser.city.length > 0 || currentUser.state.length > 0) {
+            cityStateInput.classList.remove("pending");
+            bulletPointAlert[1].style.backgroundColor = "#00c951";
+          }
         }
 
         // Formata o número de telefone ao carregar, se existir
         if (telInput && telInput.value) {
           formatarTelefone(telInput);
           telInput.classList.remove("pending");
+          bulletPointAlert[0].style.backgroundColor = "#00c951";
         }
       }
     } catch (error) {
@@ -101,12 +107,26 @@ document.addEventListener("DOMContentLoaded", () => {
         return; // Interrompe o salvamento
       }
 
-      if (cityStateInput && cityStateInput.value.trim()) {
+      // Remove a classe 'pending' do input de telefone se ele foi validado
+
+      if (telInput && numerosTelefone.length === 11) {
+        telInput.classList.remove("pending");
+        bulletPointAlert[0].style.backgroundColor = "#00c951";
+
+        updateData.phoneNumber = telInput.value.trim();
+      }
+
+      if (cityStateInput.value.length === 0) {
+        cityStateInput.classList.add("pending");
+        alert("Por favor, preencha o campo Cidade e Estado.");
+        return;
+      } else {
         const { city, state } = UserStorage.parseCityState(
           cityStateInput.value.trim()
         );
         updateData.city = city;
         updateData.state = state;
+        cityStateInput.classList.remove("pending");
       }
 
       const success = UserStorage.updateUserData(updateData);
@@ -120,10 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         alert("Dados salvos com sucesso!");
-        // Remove a classe 'pending' do input de telefone se ele foi validado
-        if (telInput && numerosTelefone.length === 11) {
-          telInput.classList.remove("pending");
-        }
+        window.location.reload();
 
         // Limpa o campo de senha após salvar (não vamos exibir a senha na tela)
         if (passwordInput) passwordInput.value = "";
