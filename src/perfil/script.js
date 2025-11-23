@@ -206,7 +206,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const emailInput = document.getElementById("email");
   const passwordInput = document.getElementById("password");
   const telInput = document.getElementById("tel");
-  const cityStateInput = document.getElementById("cityState");
+  const cityInput = document.getElementById("city");
+  const stateInput = document.getElementById("state");
   const bulletPointAlert = document.querySelectorAll(".bullet-point-alert");
 
   // Função para formatar o telefone enquanto o usuário digita
@@ -246,16 +247,17 @@ document.addEventListener("DOMContentLoaded", () => {
         if (nomeInput) nomeInput.value = currentUser.name || "";
         if (emailInput) emailInput.value = currentUser.email || "";
         if (telInput) telInput.value = currentUser.phoneNumber || "";
-        if (cityStateInput) {
-          const cityState = UserStorage.formatCityState(
-            currentUser.city,
-            currentUser.state
-          );
-          cityStateInput.value = cityState;
-          if (currentUser.city.length > 0 || currentUser.state.length > 0) {
-            cityStateInput.classList.remove("pending");
-            bulletPointAlert[1].style.backgroundColor = "#00c951";
-          }
+        if (cityInput) cityInput.value = currentUser.city || "";
+        if (stateInput) stateInput.value = currentUser.state || "";
+
+        if (currentUser.city) {
+          cityInput.classList.remove("pending");
+          bulletPointAlert[1].style.backgroundColor = "#00c951";
+        }
+
+        if (currentUser.state) {
+          stateInput.classList.remove("pending");
+          bulletPointAlert[2].style.backgroundColor = "#00c951";
         }
 
         // Formata o número de telefone ao carregar, se existir
@@ -266,11 +268,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (currentUser.skills.length > 0) {
-          bulletPointAlert[2].style.backgroundColor = "#00c951";
+          bulletPointAlert[3].style.backgroundColor = "#00c951";
         }
 
-        if (currentUser.skills.length > 0 && currentUser.phoneNumber.length > 0 && currentUser.city.length > 0) {
-          document.querySelector('.alert-imcomplete-profile').remove()
+        // Verifica se o perfil está completo
+        const isProfileComplete =
+          currentUser.skills?.length > 0 &&
+          currentUser.phoneNumber?.length > 0 &&
+          currentUser.city?.length > 0 &&
+          currentUser.state?.length > 0;
+
+        // Se o perfil estiver completo, remove o alerta
+        if (isProfileComplete) {
+          // Se for um novo usuário completando o perfil, concede os créditos
+          if (currentUser.newUser) {
+            currentUser.newUser = false;
+            currentUser.credits = 50;
+            UserStorage.updateUserData(currentUser); // Salva as alterações
+            alert("Parabéns! Você completou seu perfil e ganhou 50 créditos!");
+          }
+          document.querySelector(".alert-imcomplete-profile").remove();
         }
 
       }
@@ -290,61 +307,96 @@ document.addEventListener("DOMContentLoaded", () => {
       // Prepara os dados para atualização
       const updateData = {};
 
-      if (nomeInput && nomeInput.value.trim()) {
+      // Validação para usuários com perfil completo: nenhum campo obrigatório pode ficar vazio.
+      let isFormValid = true;
+      const requiredFields = [nomeInput, emailInput, telInput, cityInput, stateInput];
+
+      // Limpa o feedback de erro de todos os campos antes de revalidar
+      requiredFields.forEach(input => {
+        input.classList.remove("invalid-input");
+      });
+
+      //verifica se o campo está preenchido atualmente e se é diferente do valor armazenado no LocalStorage
+      if (nomeInput.value.trim() !== (currentUser.name || "")) {
+        if (!currentUser.newUser && !nomeInput.value.trim()) {
+          nomeInput.classList.add("invalid-input");
+          alert("O campo Nome é obrigatório e não pode ficar vazio.");
+          return;
+        }
         updateData.name = nomeInput.value.trim();
       }
 
-      if (emailInput && emailInput.value.trim()) {
+      if (emailInput.value.trim() !== (currentUser.email || "")) {
+        if (!currentUser.newUser && !emailInput.value.trim()) {
+          emailInput.classList.add("invalid-input");
+          alert("O campo E-mail é obrigatório e não pode ficar vazio.");
+          return;
+        }
         updateData.email = emailInput.value.trim();
       }
 
-      if (passwordInput && passwordInput.value.trim()) {
+      // A senha é sempre uma alteração se preenchida
+      if (passwordInput.value.trim()) {
         updateData.password = md5(passwordInput.value.trim());
       }
 
       // Valida e prepara o telefone
-      const numerosTelefone = telInput.value.replace(/\D/g, "");
-
-      if (numerosTelefone.length !== 11 || !numerosTelefone) {
-        telInput.classList.add("pending");
-        alert(
-          "Por favor, preencha o número de telefone completo com 11 dígitos (DDD + número)."
-        );
-        return; // Interrompe o salvamento
-      }
-
-      // Remove a classe 'pending' do input de telefone se ele foi validado
-
-      if (telInput && numerosTelefone.length === 11) {
-        telInput.classList.remove("pending");
-        bulletPointAlert[0].style.backgroundColor = "#00c951";
-
-        updateData.phoneNumber = telInput.value.trim();
-      }
-
-      if (cityStateInput.value.length === 0) {
-        cityStateInput.classList.add("pending");
-        alert("Por favor, preencha o campo Cidade e Estado.");
-        return;
-      } else {
-        const { city, state } = UserStorage.parseCityState(
-          cityStateInput.value.trim()
-        );
-        updateData.city = city;
-        updateData.state = state;
-        cityStateInput.classList.remove("pending");
-      }
-
-      const success = UserStorage.updateUserData(updateData);
-
-      if (success) {
-        if (cityStateInput && updateData.city) {
-          cityStateInput.value = UserStorage.formatCityState(
-            updateData.city,
-            updateData.state
-          );
+      if (telInput.value.trim() !== (currentUser.phoneNumber || "")) {
+        if (!currentUser.newUser && !telInput.value.trim()) {
+          telInput.classList.add("invalid-input");
+          alert("O campo Celular é obrigatório e não pode ficar vazio.");
+          return;
         }
 
+        const numerosTelefone = telInput.value.replace(/\D/g, "");
+        if (telInput.value.trim() && numerosTelefone.length !== 11) { // Só valida o tamanho se não estiver vazio
+          telInput.classList.add("invalid-input");
+          alert("O número de telefone deve ter 11 dígitos (DDD + número).");
+          return;
+        } else {
+          telInput.classList.remove("invalid-input");
+          bulletPointAlert[0].style.backgroundColor = "#00c951";
+          updateData.phoneNumber = telInput.value.trim();
+        }
+      }
+
+      // Valida e prepara a Cidade
+      if (cityInput.value.trim() !== (currentUser.city || "")) {
+        if (!currentUser.newUser && !cityInput.value.trim()) {
+          cityInput.classList.add("invalid-input");
+          alert("O campo Cidade é obrigatório e não pode ficar vazio.");
+          return;
+        }
+        updateData.city = cityInput.value.trim();
+        cityInput.classList.remove("invalid-input");
+        bulletPointAlert[1].style.backgroundColor = "#00c951";
+      }
+
+      // Valida e prepara o Estado
+      if (stateInput.value.trim() !== (currentUser.state || "")) {
+        if (!currentUser.newUser && !stateInput.value.trim()) {
+          stateInput.classList.add("invalid-input");
+          alert("O campo Estado é obrigatório e não pode ficar vazio.");
+          return;
+        }
+        updateData.state = stateInput.value.trim();
+        stateInput.classList.remove("invalid-input");
+        bulletPointAlert[2].style.backgroundColor = "#00c951";
+      }
+
+      // Verifica se houve alguma alteração real no objeto
+      if (Object.keys(updateData).length === 0) {
+        alert("Nenhuma alteração foi feita nos dados.");
+        return; // Interrompe a função se não houver nada para atualizar
+      }
+
+      // Mescla os dados atualizados com o objeto do usuário atual
+      const updatedUser = { ...currentUser, ...updateData };
+
+      // Salva o objeto de usuário completo e atualizado
+      const success = UserStorage.updateUserData(updatedUser);
+
+      if (success) {
         alert("Dados salvos com sucesso!");
         window.location.reload();
 
