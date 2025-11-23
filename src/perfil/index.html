@@ -38,7 +38,11 @@
             </div>
             <div class="alert-imcomplete-profile-description">
               <h3>Complete seu perfil para desbloquear 50 créditos!</h3>
-              <p>Para começar a trocar habilidades na plataforma, preencha todos os campos obrigatórios abaixo e adicione pelo menos 1 habilidade que você pode oferecer.</p>
+              <p>
+                Para começar a trocar habilidades na plataforma, preencha todos
+                os campos obrigatórios abaixo e adicione pelo menos 1 habilidade
+                que você pode oferecer.
+              </p>
               <div class="alert-imcomplete-profile-pending-inputs">
                 <div>
                   <div class="bullet-point-alert"></div>
@@ -46,7 +50,11 @@
                 </div>
                 <div>
                   <div class="bullet-point-alert"></div>
-                  <span>Cidade e Estado </span>
+                  <span>Cidade</span>
+                </div>
+                <div>
+                  <div class="bullet-point-alert"></div>
+                  <span>Estado</span>
                 </div>
                 <div>
                   <div class="bullet-point-alert"></div>
@@ -62,14 +70,19 @@
               <div class="profile-image-circle">
                 <i class="bi bi-person-fill" id="defaultIcon"></i>
 
-                <img id="output" alt="Foto de perfil" style="display: none;" />
+                <img id="output" alt="Foto de perfil" style="display: none" />
               </div>
 
               <button id="uploadButton" type="button">
                 <i class="bi bi-camera"></i>
               </button>
 
-              <input id="file" type="file" accept="image/*" style="display: none;" />
+              <input
+                id="file"
+                type="file"
+                accept="image/*"
+                style="display: none"
+              />
             </div>
           </section>
           <section id="profile-form">
@@ -84,7 +97,7 @@
               <div class="profile-form-fields">
                 <div>
                   <div class="mb-3">
-                    <label>Nome</label>
+                    <label for="nome">Nome</label>
                     <input
                       type="text"
                       class="form-control"
@@ -95,7 +108,7 @@
                   </div>
 
                   <div class="mb-3">
-                    <label>Nova Senha</label>
+                    <label for="password">Nova Senha</label>
                     <input
                       type="password"
                       class="form-control"
@@ -105,19 +118,19 @@
                   </div>
 
                   <div class="mb-3">
-                    <label>Cidade/Estado</label>
+                    <label for="city">Cidade</label>
                     <input
                       type="text"
                       class="form-control pending"
-                      id="cityState"
-                      placeholder="Digite sua Cidade e Estado"
+                      id="city"
+                      placeholder="Digite sua Cidade"
                       required
                     />
                   </div>
                 </div>
                 <div>
                   <div class="mb-3">
-                    <label>E-mail</label>
+                    <label for="email">E-mail</label>
                     <input
                       type="email"
                       class="form-control"
@@ -128,19 +141,61 @@
                   </div>
 
                   <div class="mb-3">
-                    <label>Celular</label>
+                    <label for="tel">Celular</label>
                     <input
-                      type="tel"               
+                      type="tel"
                       class="form-control pending"
                       id="tel"
                       placeholder="(00) 00000-0000"
                       required
                     />
                   </div>
+
+                  <div class="mb-3">
+                    <label for="state">Estado</label>
+                    <select
+                      class="form-select pending"
+                      id="state"
+                      aria-label="Default select example"
+                      required
+                    >
+                      <option value="Acre">Acre</option>
+                      <option value="Alagoas">Alagoas</option>
+                      <option value="Amapá">Amapá</option>
+                      <option value="Amazonas">Amazonas</option>
+                      <option value="Bahia">Bahia</option>
+                      <option value="Ceará">Ceará</option>
+                      <option value="Espírito Santo">Espírito Santo</option>
+                      <option value="Goiás">Goiás</option>
+                      <option value="Maranhão">Maranhão</option>
+                      <option value="Mato Grosso">Mato Grosso</option>
+                      <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                      <option value="Minas Gerais">Minas Gerais</option>
+                      <option value="Pará">Pará</option>
+                      <option value="Paraiba">Paraiba</option>
+                      <option value="Paraná">Paraná</option>
+                      <option value="Pernambuco">Pernambuco</option>
+                      <option value="Piauí">Piauí</option>
+                      <option value="Rio de Janeiro">Rio de Janeiro</option>
+                      <option value=">Rio Grande do Sul">Rio Grande do Sul</option>
+                      <option value="Rondônia">Rondônia</option>
+                      <option value="Roraima">Roraima</option>
+                      <option value="Santa Catarina">Santa Catarina</option>
+                      <option value="São Paulo">São Paulo</option>
+                      <option value="Sergipe">Sergipe</option>
+                      <option value="Tocantins">Tocantins</option>
+                    </select>
+        
+                  </div>
+                  
                 </div>
               </div>
               <div class="profile-button-container">
-                <button type="button" class="profile-button primary" id="saveProfileButton">
+                <button
+                  type="button"
+                  class="profile-button primary"
+                  id="saveProfileButton"
+                >
                   <i class="bi bi-floppy"></i>
                   Salvar alterações
                 </button>
@@ -155,7 +210,7 @@
               </p>
             </div>
             <div class="profile-skills-cards">
-             <!--Card de habilidades-->
+              <!--Card de Habilidade-->
             </div>
             <div class="profile-button-container">
               <button
@@ -210,7 +265,13 @@
                 id="skills-name"
                 required
               />
-              <p class="error-message" id="error-skills-name" style="display: none;">Campo obrigatório.</p>
+              <p
+                class="error-message"
+                id="error-skills-name"
+                style="display: none"
+              >
+                Campo obrigatório.
+              </p>
             </div>
             <div class="mb-3">
               <label for="skills-description" class="form-label"
@@ -222,18 +283,23 @@
                 rows="6"
                 required
               ></textarea>
-              <p class="error-message" id="error-skills-description" style="display: none;">Campo obrigatório.</p>
+              <p
+                class="error-message"
+                id="error-skills-description"
+                style="display: none"
+              >
+                Campo obrigatório.
+              </p>
             </div>
             <div class="profile-skills-modal-container-labels">
-
               <div class="mb-3">
                 <div class="profile-skills-modal-container-labels-title">
-                <label for="suggested-credit" class="form-label"
-                  >Valor sugerido</label
-                >
-                 <label for="service-models" class="form-label"
-                  >Atendimento</label
-                >
+                  <label for="suggested-credit" class="form-label"
+                    >Valor sugerido</label
+                  >
+                  <label for="service-models" class="form-label"
+                    >Atendimento</label
+                  >
                 </div>
                 <div class="profile-skills-modal-container-inputs credit">
                   <input
@@ -242,7 +308,13 @@
                     id="suggested-credit"
                     required
                   />
-                  <p class="error-message" id="error-suggested-credit" style="display: none;">Campo obrigatório.</p>
+                  <p
+                    class="error-message"
+                    id="error-suggested-credit"
+                    style="display: none"
+                  >
+                    Campo obrigatório.
+                  </p>
                   <select
                     class="form-select form-select-sm"
                     aria-label="Small select example"
@@ -255,11 +327,8 @@
                 </div>
               </div>
 
-
-              <div style="margin-bottom: 20px;">
-                <label for="weekly" class="form-label"
-                  >Disponibilidade</label
-                >
+              <div style="margin-bottom: 20px">
+                <label for="weekly" class="form-label">Disponibilidade</label>
                 <div class="profile-skills-modal-container-inputs">
                   <input
                     type="text"
@@ -267,7 +336,13 @@
                     id="weekly"
                     required
                   />
-                  <p class="error-message" id="error-weekly" style="display: none;">Campo obrigatório.</p>
+                  <p
+                    class="error-message"
+                    id="error-weekly"
+                    style="display: none"
+                  >
+                    Campo obrigatório.
+                  </p>
                   <select
                     class="form-select form-select-sm"
                     id="shift"
@@ -290,7 +365,12 @@
             >
               Cancelar
             </button>
-            <button type="button" class="profile-button primary" id="skills-modal-save" onclick="saveSkills()">
+            <button
+              type="button"
+              class="profile-button primary"
+              id="skills-modal-save"
+              onclick="saveSkills()"
+            >
               Salvar alterações
             </button>
           </div>

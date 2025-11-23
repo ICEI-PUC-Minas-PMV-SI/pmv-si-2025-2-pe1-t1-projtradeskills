@@ -166,6 +166,7 @@ p {
 .profile-section-description p,
 .profile-form-fields label,
 .profile-form-fields input,
+.profile-form-fields select,
 .profile-button,
 .skills-modal-content p,
 .skills-modal-content label,
@@ -174,6 +175,11 @@ p {
 .skills-modal-content select {
   font-size: 14px;
 }
+
+#profile input::placeholder,
+ #profile select::placeholder {
+  color: #bdbcbc;
+ }
 
 .profile-form-fields {
   display: flex;
@@ -345,7 +351,8 @@ p {
   padding-left: 30px;
 }
 
-.profile-form-fields input.pending {
+.profile-form-fields input.pending,
+.profile-form-fields select.pending  {
   border-color: #ffd230;
 } 
 
