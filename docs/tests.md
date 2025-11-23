@@ -25,20 +25,44 @@ Nesta seção o grupo deverá documentar os testes de software que verificam a c
 Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
 
 
-**Caso de Teste** | **CT01 - Criar conta parte 1**
+**Caso de Teste** | **CT01 - Criar conta**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse o endereço www.teste.com.br <br> 2) Clique em criar conta <br> 2) Preencha todos os campos do formulário <br> 3) Clique no botão "Continuar".
-**Requisitos associados** | RF-001
-**Resultado esperado** | Prosseguir para a parte 2 do cadastro
+**Procedimento**  | 1) Acesse o endereço [https://puc-tradeskills.netlify.app/](https://puc-tradeskills.netlify.app/) <br> 2) Clique em Cadastre-se <br> 2) Preencha todos os campos do formulário <br> 3) Clique no botão "Cadastrar".
+**Requisitos associados** | RF-003
+**Resultado esperado** | Usuário cadastrado
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT02 - Criar conta parte 2**
+**Caso de Teste** | **CT02 - Acessar conta**
  :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Procedimento**  | 1) Acesse o endereço [https://puc-tradeskills.netlify.app/](https://puc-tradeskills.netlify.app/) <br> 2) Clique em Login <br> 3) Preencha os dados de acesso <br> 4) Clique em **Entrar**
+**Requisitos associados** | RF-002
+**Resultado esperado** | Usuário logado
+**Dados de entrada** | Inserção de dados válidos no formulário de login
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT03 - Buscar por habilidades**
+ :--------------: | ------------
+**Procedimento**  | 1) Realizar o login na platafrma <br> 2) Clique **Buscar habilidades** <br> 3) Inserir o nome da habilidade que deseja encontrar <br> 4) Clicar no perfil do usuário que deseja visualizar
+**Requisitos associados** | RF-007
+**Resultado esperado** | Habilidade encontrada
+**Dados de entrada** | Inserção de dados válidos no formulário de busca
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT04 - Visualizar perfil completo**
+ :--------------: | ------------
+**Procedimento**  | 1) Realizar o login na platafrma <br> 2) Clique **Buscar habilidades** <br> 3) Clicar no perfil do usuário que deseja <br> 4) Clicar no botão "Ver perfil completo"
+**Requisitos associados** | RF-008
+**Resultado esperado** | Visualização completa do perfil do provedor
+**Dados de entrada** | Inserção de dados válidos no formulário de busca
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT05 - Enviar report**
+ :--------------: | ------------
+**Procedimento**  | 1) Realizar o login na platafrma <br> 2) Clique **Reportar** <br> 3) Selecionar o tipo de informação <br> 4) Preencher o campo descrevendo sobre a informação selecionada <br>5) Clicar em **Enviar Relatório**
+**Requisitos associados** | RF-016
+**Resultado esperado** | Report enviado com sucesso
+**Dados de entrada** | Inserção de dados válidos no formulário de report
 **Resultado obtido** | Sucesso
 
 **Caso de Teste** | **CT06 - Editar dados pessoais**
@@ -125,15 +149,30 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*CT01 - Criar conta parte 1*                                         |
+|*Caso de Teste*                                 |*CT01 - Criar conta*                                         |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+| Requisito Associado | RF-003 - A aplicação deve permitir que os usuários criem uma conta |
+| Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBH9m4QYF-lQZNbbkwgJBJ_AVFxYtgA4Qazrj0nbNb6lAc&e=GZhGF8](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBH9m4QYF-lQZNbbkwgJBJ_AVFxYtgA4Qazrj0nbNb6lAc&e=GZhGF8) | 
 
-|*Caso de Teste*                                 |*CT02 - Criar conta parte 2*                                        |
+|*Caso de Teste*                                 |*CT02 - Acessar conta*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Requisito Associado | RF-002 - A aplicação deve permitir que os usuários acessem a conta |
+|Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBK4ijzurgASahYEBGGLG1lAapjMgEOnFcGem2mdjHLqA0&e=K0HfkY](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBK4ijzurgASahYEBGGLG1lAapjMgEOnFcGem2mdjHLqA0&e=K0HfkY) |
+
+|*Caso de Teste*                                 |*CT03 - Encontrar Habilidade*                                        |
+|---|---|
+|Requisito Associado | RF-007 - A aplicação deve permitir que os usuários encontrem as habilidades desejadas |
+|Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQA89rM9j9JQRZFyPlAz_Ea1AQD5nff_GFEoTPtd_cU2LjI&e=x3hz1L](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQA89rM9j9JQRZFyPlAz_Ea1AQD5nff_GFEoTPtd_cU2LjI&e=x3hz1L) | 
+
+|*Caso de Teste*                                 |*CT04 - Visualizar perfil completo*                                        |
+|---|---|
+|Requisito Associado | RF-008 - A aplicação deve permitir que os usuários visualizem o perfil completo do provedor |
+|Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQCq9sC7zISTTrhuEMZGVqzTAYf05VOUxzN4XD84JG55yIc&e=QjleRa](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQCq9sC7zISTTrhuEMZGVqzTAYf05VOUxzN4XD84JG55yIc&e=QjleRa) |
+
+|*Caso de Teste*                                 |*CT05 - Enviar report*                                        |
+|---|---|
+|Requisito Associado | RF-008 - A aplicação deve permitir que os usuários visualizem o perfil completo do provedor |
+|Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQAWsU9wSEPDTJp5_XwL7KpHAe4N-HCpxHIw8qTjfuts2Xg&e=Dm2WrW](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQAWsU9wSEPDTJp5_XwL7KpHAe4N-HCpxHIw8qTjfuts2Xg&e=Dm2WrW) | 
 
 | *Caso de Teste* | *CT06 - Editar dados pessoais* |
 |---|---|
