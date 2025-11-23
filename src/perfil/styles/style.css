@@ -49,14 +49,13 @@
 .alert-imcomplete-profile-content,
 .alert-imcomplete-profile-pending-inputs,
 .alert-imcomplete-profile-pending-inputs > div {
-    display: flex;
-    gap: 10px;
-    
+  display: flex;
+  gap: 10px;
 }
 
 .alert-imcomplete-profile-icon i {
   color: #e17100;
-  font-size: 28px; 
+  font-size: 28px;
 }
 
 .alert-imcomplete-profile-description h3 {
