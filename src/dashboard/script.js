@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const findSkillsButton = document.querySelector(".find-skills-button");
     const historyButton = document.querySelector(".history-button");
 
-    cardLinkMyRequests.forEach(element => {
+    cardLinkMyRequests.forEach((element) => {
       element.style.cursor = "not-allowed";
       element.href = "#";
     });
@@ -39,12 +39,13 @@ document.addEventListener("DOMContentLoaded", function () {
     historyButton.removeAttribute("onclick");
     historyButton.style.cursor = "not-allowed";
   }
-  
-     // Exibe o primeiro nome do usuário na mensagem de saudação
-    const dashboardGreeting = document.querySelector(".find-skills-greeting span");
-    if(currentUser.name.length > 0) {
-            const firstName = currentUser.name.split(" ")[0];
-             dashboardGreeting.textContent = `Olá, ${firstName}! 👋`
-           
+
+  // Exibe o primeiro nome do usuário na mensagem de saudação
+  const dashboardGreeting = document.querySelector(
+    ".find-skills-greeting span"
+  );
+  if (currentUser.name.length > 0) {
+    const firstName = currentUser.name.split(" ")[0];
+    dashboardGreeting.textContent = `Olá, ${firstName}! 👋`;
   }
 });
