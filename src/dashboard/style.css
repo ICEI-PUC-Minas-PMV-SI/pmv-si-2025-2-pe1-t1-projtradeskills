@@ -6,6 +6,10 @@ section {
   text-align: center;
 }
 
+div #recent-activities-content {
+  text-align: left;
+}
+
 #find-skills .find-skills-title {
   font-size: 42px;
   margin-bottom: 24px;

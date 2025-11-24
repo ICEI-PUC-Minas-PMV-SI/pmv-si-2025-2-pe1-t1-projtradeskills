@@ -183,9 +183,18 @@ function deleteSkill(skillIndex) {
   }
   try {
     const currentUser = UserStorage.getCurrentUser();
+
+    if (currentUser.skills.length <= 1) {
+      alert("Você deve ter no mínimo 1 habilidade cadastrada.");
+      return  
+    }
+
+    if(currentUser.skills.length > 1) {     
     currentUser.skills.splice(skillIndex, 1);
     UserStorage.updateUserData(currentUser);
     alert("Habilidade excluída com sucesso!");
+    }
+
     window.location.reload();
   } catch (error) {
     console.error("Erro ao excluir habilidade:", error);
