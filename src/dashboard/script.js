@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const findSkillsButton = document.querySelector(".find-skills-button");
     const historyButton = document.querySelector(".history-button");
 
-    cardLinkMyRequests.forEach((element) => {
+    cardLinkMyRequests.forEach(element => {
       element.style.cursor = "not-allowed";
       element.href = "#";
     });
@@ -60,7 +60,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (activitieslist.length > 0) {
     let activitiesHTML = "";
-    activitieslist.forEach((element) => {
+    activitieslist.forEach(element => {
+      // const timeFormatted = new Date(element.date).toLocaleString("pt-BR", {
+      //   day: "2-digit",
+      //   month: "2-digit",
+      //   year: "numeric",
+      //   hour: "2-digit",
+      //   minute: "2-digit"
+      // });
+
+      const timeDifference = Date.now() - new Date(element.date).getTime();
+      let timeFormatted = "";
+      const minutes = Math.floor(timeDifference / (1000 * 60));
+      const hours = Math.floor(timeDifference / (1000 * 60 * 60));
+      const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      if (days > 0) {
+        timeFormatted = days === 1 ? "Há 1 dia" : `Há ${days} dias`;
+      } else if (hours > 0) {
+        timeFormatted = hours === 1 ? "Há 1 hora" : `Há ${hours} horas`;
+      } else {
+        timeFormatted = minutes === 1 ? "Há 1 minuto" : `Há ${minutes} minutos`;
+      }
+
       activitiesHTML += `<div class="card w-100 rounded-0 rounded-bottom-1 cards-dashboard">
               <div class="card-body">
                 <div class="d-flex flex-row gap-3">
@@ -74,12 +95,12 @@ document.addEventListener("DOMContentLoaded", function () {
                   </div>
                   <div style="text-align: left;">
                     <h6 class="mb-1 card-body-text-title">
-                      ${element.status}
+                      ${element.type}
                     </h6>
                     <p class="mb-1 fs-6" style="font-size: 16px !important;">
                       ${element.description}
                     </p>
-                    <span class="mb-1">${element.time}</span>
+                    <span class="mb-1">${timeFormatted}</span>
                   </div>
                 </div>
               </div>
@@ -91,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (activitieslist.length === 0) {
-    recentActivitiesContent.children[0].remove()
+    recentActivitiesContent.children[0].remove();
 
     const componentNoneActivity = `<div class="w-100 no-activities-content">
               <div class="calendar-icon">
@@ -103,7 +124,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3>Nenhuma atividade registrada</h3>
                 <p>
                   Suas atividades recentes aparecerão aqui. <br />
-                  ${currentUser.newUser ? "Complete seu perfil para começar a trocar habilidades!" : ""}
+                  ${
+                    currentUser.newUser
+                      ? "Complete seu perfil para começar a trocar habilidades!"
+                      : ""
+                  }
                 </p>
               </div>
             </div>`;
