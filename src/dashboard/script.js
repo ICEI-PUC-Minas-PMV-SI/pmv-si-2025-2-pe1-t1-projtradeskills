@@ -6,10 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const cardRequest = document.querySelector(".card-response .card-text");
   const cardResponse = document.querySelector(".card-request .card-text");
 
-  const trade = JSON.parse(localStorage.getItem('tradeSkillsData'));
-
-  cardRequest.textContent = trade.requests?.length
-    ? trade.requests?.length
+  cardRequest.textContent = currentUser.requests?.length
+    ? currentUser.requests?.length
     : 0;
   cardResponse.textContent = currentUser.responses?.length
     ? currentUser.responses?.length
