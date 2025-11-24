@@ -41,7 +41,23 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de login
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT03 - Buscar por habilidades**
+**Caso de Teste** | **CT03 - Acessar Dashboard**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse o endereço [https://puc-tradeskills.netlify.app/](https://puc-tradeskills.netlify.app/) <br> 2) Clique em Login <br> 3) Preencha os dados de acesso (e-mail e senha) <br> 4) Clique em **Entrar** <br> 3) Visualize o Dashboard <br> 4) Clique no botão **Buscar habilidades** para ser redirecionado para a tela de busca. <br> 5) Clique no botão **Ver Minhas Solicitações** para ser redirecionado para a tela de solicitações (Pedidos recebidos e Solicitações Enviadas) <br> 6)Clique no botão **Ver Histórico Completo** para ser redirecionado para a tela de Histórico de Entrada e Saída de Créditos.
+**Requisitos associados** | RF-004
+**Resultado esperado** | Visualização do Dashboard contendo Resumo das Solicitações, Histórico e botão que redireciona para a página de Buscar Habilidades.
+**Dados de entrada** | N/A
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT04 - Criar, Editar e Remover Habilidades**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse o endereço [https://puc-tradeskills.netlify.app/](https://puc-tradeskills.netlify.app/) <br> 2) Clique em Login <br> 3) Preencha os dados de acesso (e-mail e senha) <br> 4) Clique em **Entrar** <br> 3) Clique na opção **Perfil** do menu lateral <br> 4) Crie uma nova habilidade ou Edite uma existente ou Delete uma habilidade existente.
+**Requisitos associados** | RF-005
+**Resultado esperado** | Visualização do Perfil podendo Atualizar Dados Pessoais, Criar / Atualizar e Deletar Habilidades.
+**Dados de entrada** | Título da Habilidade, Descrição, Preço Sugerido em Créditos, Disponibilidade e Tipo de Atendimento (Online/Presencial). 
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT05 - Buscar por habilidades**
  :--------------: | ------------
 **Procedimento**  | 1) Realizar o login na platafrma <br> 2) Clique **Buscar habilidades** <br> 3) Inserir o nome da habilidade que deseja encontrar <br> 4) Clicar no perfil do usuário que deseja visualizar
 **Requisitos associados** | RF-007
@@ -49,7 +65,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de busca
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT04 - Visualizar perfil completo**
+**Caso de Teste** | **CT06 - Visualizar perfil completo**
  :--------------: | ------------
 **Procedimento**  | 1) Realizar o login na platafrma <br> 2) Clique **Buscar habilidades** <br> 3) Clicar no perfil do usuário que deseja <br> 4) Clicar no botão "Ver perfil completo"
 **Requisitos associados** | RF-008
@@ -57,7 +73,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de busca
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT05 - Enviar report**
+**Caso de Teste** | **CT07 - Enviar report**
  :--------------: | ------------
 **Procedimento**  | 1) Realizar o login na platafrma <br> 2) Clique **Reportar** <br> 3) Selecionar o tipo de informação <br> 4) Preencher o campo descrevendo sobre a informação selecionada <br>5) Clicar em **Enviar Relatório**
 **Requisitos associados** | RF-016
@@ -65,7 +81,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de report
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT06 - Editar dados pessoais**
+**Caso de Teste** | **CT08 - Editar dados pessoais**
 :--------------: | ------------
 **Procedimento**  | 1) Acesse a aplicação<br>2) Faça login no sistema<br>3) Acesse o menu de perfil<br>4) Identifique os campos já preenchidos<br>5) Modifique nome, senha, foto, cidade ou contato<br>6) Salve as alterações |
 **Requisitos associados** | RF-006 |
