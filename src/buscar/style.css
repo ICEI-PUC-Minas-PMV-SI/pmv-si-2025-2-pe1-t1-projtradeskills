@@ -103,6 +103,25 @@
 #search-results .user-card .card-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+#search-results .user-card .card-footer .rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+#search-results .user-card .card-footer .rating::before {
+  content: "";
+  background: url(/public/icons/star.svg);
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: -0.4rem;
 }
 
 #search-results .user-card .card-footer .user-rating {
@@ -327,6 +346,11 @@
   width: 100%;
   margin-top: 3rem;
   border-radius: 30rem;
+}
+@media (max-width: 1600px) {
+  #search-results .user-card {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
