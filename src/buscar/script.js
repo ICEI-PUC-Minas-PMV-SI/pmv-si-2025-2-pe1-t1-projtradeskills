@@ -1,4 +1,6 @@
-import { users } from "./users.js";
+let users = JSON.parse(localStorage.getItem("users")) || [];
+
+const currentUser = JSON.parse(localStorage.getItem("currentUser")) || {};
 
 const searchResultsContainer = document.getElementById("search-results");
 const searchInput = document.querySelector(".search-input");
@@ -13,6 +15,13 @@ const renderSearchResults = () => {
   }
 
   searchResultsContainer.innerHTML = listUsers
+    .filter(user => {
+      if (user.id === currentUser.id || user.email == "admin@admin.com") {
+        return false;
+      }
+      return true;
+    })
+    .filter(user => user.skills.length > 0)
     .map(user => createUserCard(user))
     .join("");
 
@@ -48,8 +57,14 @@ const handleSearch = () => {
 };
 
 const openModal = id => {
-  const user = users.find(user => user.id === parseInt(id));
+  const user = listUsers.find(user => user.id === parseInt(id));
   if (!user) return;
+
+  document.documentElement.style.overflow = "hidden";
+
+  const skill = user.skills[0];
+  const modality = skill.availability ? "Remoto" : "Presencial";
+  const availability = skill.availability || "Flexível";
 
   const modalContent = `
   <div class="modal-wrapper">
@@ -60,59 +75,42 @@ const openModal = id => {
     <div class="modal-header">
       <img src="${user.image}" alt="${user.name}" class="modal-avatar"/>
       <h2 class="modal-name">${user.name}</h2>
-      <p class="member-since">Membro desde Setembro, 2025 • ${user.location}</p>
-      <p class="rating">${user.rating.score} (${
-    user.rating.reviews
+      <p class="member-since">Membro desde Setembro, 2025 • ${user.city}, ${
+    user.state
+  }</p>
+      <p class="rating">${user.rating?.score ? user.rating.score : "N/A"} (${
+    user.rating?.reviews ? user.rating.reviews : 0
   } avaliações)</p>
     </div>
     <div class="modal-body">
-      <h3 class="skill-name">${user.skills[0].name}</h3>
+      <h3 class="skill-name">${skill.name}</h3>
       <div class="skill-card">
         <div class="skill-icon"></div>
           <div class="skill-details">
             <strong class="skill-text">O que está incluído</strong>
-            <p class="skill-description">${user.skills[0].description}</p>
+            <p class="skill-description">${skill.description}</p>
             <div class="skill-footer">
               <div class="skill-infos">
-                <p class="skill-price"><img src="./arrows.svg" alt="Variação"><img src="./credit.svg" alt="Preço">${
-                  user.skills[0].price
+                <p class="skill-price"><img src="/public/icons/arrows.svg" alt="Variação"><img src="/public/icons/credit.svg" alt="Preço">${
+                  skill.price
                 }</p>
-                <p class="skill-availability">${
-                  user.skills[0].availability ? "Remoto" : "Presencial"
-                }</p>
+                <p class="skill-availability">${modality}</p>
               </div>
-              <a href="/solicitacoes/" class="hire-button primary-button buttons">Solicitar serviço</a>
+              <button class="hire-button primary-button buttons"
+                data-provider-id="${user.id}"
+                data-skill-name="${skill.name}"
+                data-credits="${skill.price}"
+                data-availability="${availability}"
+                data-modality="${modality}"
+                >Solicitar serviço</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="review">
-        <h3>Avaliações</h3>
-        <div class="review-list">
-         <div class="review-card">
-            <div class="review-icon"></div>
-            <strong class="review-name">Eduardo Almada</strong>
-            <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero sapien, sagittis at dolor id, lacinia ullamcor justo. Nulla facilisi.</p>
-            <img src="./rating.svg" alt="Estrela" class="review-star"/>
-            <span class="review-tag">Qualidade de serviço</span>
-          </div>
-          <div class="review-card">
-            <div class="review-icon"></div>
-            <strong class="review-name">Fernando Miranda</strong>
-            <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero sapien, sagittis at dolor id, lacinia ullamcor justo. Nulla facilisi.</p>
-            <img src="./rating.svg" alt="Estrela" class="review-star"/>
-            <span class="review-tag">Comunicação</span>
-          </div>
-          <div class="review-card">
-            <div class="review-icon"></div>
-            <strong class="review-name">Carmem Vitória</strong>
-            <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero sapien, sagittis at dolor id, lacinia ullamcor justo. Nulla facilisi.</p>
-            <img src="./rating.svg" alt="Estrela" class="review-star"/>
-            <span class="review-tag">Atendimento</span>
-          </div>
-        </div>
-      </div>
-      <a class="view-profile buttons primary-button" href="/profile/">Ver perfil completo</a>
+
+      <a class="view-profile buttons primary-button" href="/profile/?id=${
+        user.id
+      }">Ver perfil completo</a>
     </div>`;
 
   const modal = document.createElement("div");
@@ -123,23 +121,25 @@ const openModal = id => {
 
   document.querySelector(".close-modal").addEventListener("click", () => {
     document.body.removeChild(modal);
+    document.documentElement.style.overflow = "auto";
   });
 
   modal.addEventListener("click", event => {
     if (event.target === modal) {
       document.body.removeChild(modal);
+      document.documentElement.style.overflow = "auto";
     }
   });
 };
 
-const createUserCard = ({ id, name, location, image, skills, rating }) => {
+const createUserCard = ({ id, name, state, city, image, skills, rating }) => {
   return `
     <div class="user-card" data-id="${id}">
       <div class="card-header">
         <img src="${image}" alt="${name}" class="avatar"/>
         <div class="user-info">
           <h2 class="user-name">${name}</h2>
-          <p class="user-location">${location}</p>
+          <p class="user-location">${city}, ${state}</p>
         </div>
       </div>
       <div class="card-body">
@@ -147,8 +147,12 @@ const createUserCard = ({ id, name, location, image, skills, rating }) => {
         <p class="skill-description">${skills[0].description}</p>
       </div>
       <div class="card-footer">
-        <p class="user-rating">${rating.score} (${rating.reviews} avaliações)</p>
-        <strong class="skill-price"><img src="./arrows.svg" alt="Variação"><img src="./credit.svg" alt="Preço">${skills[0].price}</strong>
+        <p class="rating">${rating?.score ? rating.score : "N/A"} (${
+    rating?.reviews ? rating.reviews : 0
+  } avaliações)</p>
+        <strong class="skill-price"><img src="/public/icons/arrows.svg" alt="Variação"><img src="/public/icons/credit.svg" alt="Preço">${
+          skills[0].price
+        }</strong>
       </div>
     </div>
   `;

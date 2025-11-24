@@ -4,25 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  min-height: 100vh;
-  background-color: #f5f5f5;
-}
-
-.saldo-container {
-  position: fixed;
-  top: 20px;
-  right: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 6px;
-  z-index: 1000;
-}
-
 .saldo-label {
   font-size: 14px;
   color: #1e3f66;
@@ -81,7 +62,6 @@ body {
 .conteudo-principal {
   grid-column: 2;
   padding: 3rem;
-  min-height: 100vh;
 }
 
 .secao-botoes {
@@ -111,6 +91,7 @@ body {
   justify-content: flex-end;
   gap: 10px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .btn-icone {
@@ -134,6 +115,63 @@ body {
   width: 20px;
   height: 20px;
   fill: #1e3f66;
+}
+
+.toolbar-search-input {
+  width: 220px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1e3f66;
+  background: #fff;
+}
+
+.toolbar-search-input:focus {
+  outline: 2px solid rgba(30, 63, 102, 0.3);
+  outline-offset: 2px;
+}
+
+.filter-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px;
+  min-width: 200px;
+  background: #fff;
+  border: 1px solid #1e3f66;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(30, 63, 102, 0.15);
+  z-index: 1000;
+}
+
+.filter-dropdown.open {
+  display: flex;
+}
+
+.filter-dropdown label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #1e3f66;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.filter-dropdown label:hover {
+  background-color: rgba(30, 63, 102, 0.08);
+}
+
+.filter-dropdown input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  accent-color: #1e3f66;
 }
 
 .tabela-solicitacoes {
@@ -171,14 +209,14 @@ body {
 }
 
 .tabela-solicitacoes tbody tr:last-child {
-  border-bottom: none; /* Remove borda da última linha */
+  border-bottom: none; 
 }
 
 .tabela-solicitacoes td {
   padding: 16px 20px;
   color: #333;
   font-size: 14px;
-  vertical-align: middle; /*Alinha verticalmente */
+  vertical-align: middle; 
 }
 
 .badge {
@@ -217,7 +255,7 @@ body {
   font-style: italic;
 }
 
-/* === FOOTER === */
+/*  FOOTER */
 .footer {
   position: fixed;
   bottom: 0;
@@ -297,5 +335,125 @@ body {
   .tabela-solicitacoes th,
   .tabela-solicitacoes td {
     padding: 12px 10px;
+  }
+}
+
+/* RESPONSIVIDADE  */
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .conteudo-principal {
+    padding: 2rem;
+  }
+
+  .footer {
+    padding-left: 260px;
+    padding: 20px 30px;
+  }
+}
+
+/* Mobile*/
+@media (max-width: 767px) {
+  .conteudo-principal {
+    padding: 1rem;
+    grid-column: 1 / -1;
+  }
+
+  .title-hist h1 {
+    font-size: 24px;
+  }
+
+  .toolbar {
+    gap: 8px;
+  }
+
+  .btn-icone {
+    width: 36px;
+    height: 36px;
+  }
+
+  .toolbar-search-input {
+    width: 180px;
+    font-size: 13px;
+  }
+
+  .filter-dropdown {
+    right: 0;
+    left: auto;
+    min-width: 180px;
+  }
+
+  /* Tabela responsiva - scroll horizontal */
+  .tabela-solicitacoes {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tabela-solicitacoes th,
+  .tabela-solicitacoes td {
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .nota-rodape {
+    padding: 10px 12px;
+  }
+
+  .nota-rodape p {
+    font-size: 12px;
+  }
+
+  .footer {
+    padding-left: 0;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links a:not(:last-child)::after {
+    display: none;
+  }
+
+  .footer-copyright {
+    font-size: 12px;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .conteudo-principal {
+    padding: 0.75rem;
+  }
+
+  .title-hist h1 {
+    font-size: 20px;
+  }
+
+  .toolbar-search-input {
+    width: 150px;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .btn-icone {
+    width: 32px;
+    height: 32px;
+  }
+
+  .tabela-solicitacoes th,
+  .tabela-solicitacoes td {
+    padding: 10px 8px;
+    font-size: 12px;
   }
 }

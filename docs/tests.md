@@ -25,44 +25,200 @@ Nesta seção o grupo deverá documentar os testes de software que verificam a c
 Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
 
 
-**Caso de Teste** | **CT01 - Criar conta parte 1**
+**Caso de Teste** | **CT01 - Criar conta**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse o endereço www.teste.com.br <br> 2) Clique em criar conta <br> 2) Preencha todos os campos do formulário <br> 3) Clique no botão "Continuar".
-**Requisitos associados** | RF-001
-**Resultado esperado** | Prosseguir para a parte 2 do cadastro
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
-**Resultado obtido** | Sucesso
-
-**Caso de Teste** | **CT02 - Criar conta parte 2**
- :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
+**Procedimento**  | 1) Acesse o endereço [https://puc-tradeskills.netlify.app/](https://puc-tradeskills.netlify.app/) <br> 2) Clique em Cadastre-se <br> 2) Preencha todos os campos do formulário <br> 3) Clique no botão "Cadastrar".
+**Requisitos associados** | RF-003
 **Resultado esperado** | Usuário cadastrado
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro
 **Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT02 - Acessar conta**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse o endereço [https://puc-tradeskills.netlify.app/](https://puc-tradeskills.netlify.app/) <br> 2) Clique em Login <br> 3) Preencha os dados de acesso <br> 4) Clique em **Entrar**
+**Requisitos associados** | RF-002
+**Resultado esperado** | Usuário logado
+**Dados de entrada** | Inserção de dados válidos no formulário de login
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT03 - Buscar por habilidades**
+ :--------------: | ------------
+**Procedimento**  | 1) Realizar o login na platafrma <br> 2) Clique **Buscar habilidades** <br> 3) Inserir o nome da habilidade que deseja encontrar <br> 4) Clicar no perfil do usuário que deseja visualizar
+**Requisitos associados** | RF-007
+**Resultado esperado** | Habilidade encontrada
+**Dados de entrada** | Inserção de dados válidos no formulário de busca
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT04 - Visualizar perfil completo**
+ :--------------: | ------------
+**Procedimento**  | 1) Realizar o login na platafrma <br> 2) Clique **Buscar habilidades** <br> 3) Clicar no perfil do usuário que deseja <br> 4) Clicar no botão "Ver perfil completo"
+**Requisitos associados** | RF-008
+**Resultado esperado** | Visualização completa do perfil do provedor
+**Dados de entrada** | Inserção de dados válidos no formulário de busca
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT05 - Enviar report**
+ :--------------: | ------------
+**Procedimento**  | 1) Realizar o login na platafrma <br> 2) Clique **Reportar** <br> 3) Selecionar o tipo de informação <br> 4) Preencher o campo descrevendo sobre a informação selecionada <br>5) Clicar em **Enviar Relatório**
+**Requisitos associados** | RF-016
+**Resultado esperado** | Report enviado com sucesso
+**Dados de entrada** | Inserção de dados válidos no formulário de report
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT06 - Editar dados pessoais**
+:--------------: | ------------
+**Procedimento**  | 1) Acesse a aplicação<br>2) Faça login no sistema<br>3) Acesse o menu de perfil<br>4) Identifique os campos já preenchidos<br>5) Modifique nome, senha, foto, cidade ou contato<br>6) Salve as alterações |
+**Requisitos associados** | RF-006 |
+**Resultado esperado** | O sistema deve atualizar os dados pessoais do usuário e exibir mensagem de confirmação de sucesso |
+**Dados de entrada** | Usuário autenticado com dados pessoais previamente cadastrados |
+**Resultado obtido** | Sucesso |
+
+**Caso de Teste** | **CT09 - Visualizar histórico de transações**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a aplicação<br>2) Faça login no sistema<br>3) Clique no botão "Meu histórico" no menu lateral<br>4) Visualize a lista de transações com valores de entrada e saída |
+**Requisitos associados** | RF-009 |
+**Resultado esperado** |Exibir histórico com data, tipo (entrada/saída), nome do serviço, nome da pessoa e valor em créditos |
+**Dados de entrada** | Login de usuário com histórico de transações existente |
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT10 - Visualizar minhas solicitações**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse a aplicação<br>2) Clique no botão "Minhas solicitações" no menu lateral<br>3) Verifique as abas "Solicitações Enviadas" e "Pedidos Recebidos"<br>4) Visualize as transações listadas em cada aba |
+**Requisitos associados** | RF-010 |
+**Resultado esperado** |Exibir duas abas funcionais com listas de transações mostrando habilidade, pessoa, data, status e link "Visualizar" |
+**Dados de entrada** | Login de usuário com solicitações enviadas e pedidos recebidos |
+**Resultado obtido** | Sucesso |
+
+**Caso de Teste** | **CT11 - Confirmar conclusão - Consumidor**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse "Minhas solicitações" > aba "Solicitações Enviadas"<br>2) Localize uma solicitação com status "Em andamento" ou "Aguardando Cliente"<br>3) Clique em "Visualizar"<br>4) Clique no botão "Confirmar Conclusão"<br>5) Verifique a transferência de créditos<br> 6)Avalie o provedor do serviço na modal de avaliação |
+**Requisitos associados** | RF-011 |
+**Resultado esperado** |Modal abre com opções, ao confirmar: status muda para "Concluído", créditos transferidos, modal de avaliação abre |
+**Dados de entrada** | Solicitação com status "Em andamento" |
+**Resultado obtido** | Sucesso |
+
+**Caso de Teste** | **CT11 - Desistir solicitação - Consumidor**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse "Minhas solicitações" > aba "Solicitações Enviadas"<br>2) Localize uma solicitação "Em andamento" ou "Pendente"<br>3) Clique em "Cancelar"<br>4) Preencha a justificativa (opcional)<br>5) Confirme o cancelamento |
+**Requisitos associados** | RF-011 |
+**Resultado esperado** |Solicitação cancelada, status muda para "Cancelado", justificativa registrada |
+**Dados de entrada** | Justificativa: "Não preciso mais do serviço" |
+**Resultado obtido** | Sucesso |
+
+**Caso de Teste** | **CT12 - Aceitar pedido - Provedor**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse "Minhas solicitações" > aba "Pedidos Recebidos"<br>2) Localize um pedido com status "Pendente"<br>3) Clique em "Visualizar"<br>4) Clique em "Aceitar" |
+**Requisitos associados** | RF-012 |
+**Resultado esperado** |Status muda para "Em andamento", modal fecha |
+**Dados de entrada** | Pedido com status "Pendente" |
+**Resultado obtido** | Sucesso |
+
+**Caso de Teste** | **CT12 - Cancelar pedido - Provedor**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse "Minhas solicitações" > aba "Pedidos Recebidos"<br> 2)Localize um pedido com status "Pendente"<br>3) Clique em "Cancelar"<br>4) Preencha a justificativa<br>5) Confirme |
+**Requisitos associados** | RF-012 |
+**Resultado esperado** |Pedido cancelado, status muda para "Cancelado", justificativa registrada |
+**Dados de entrada** | Justificativa: "Não tenho disponibilidade" |
+**Resultado obtido** | Sucesso |
+
+**Caso de Teste** | **CT13 - Sinalizar conclusão - Provedor**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse "Minhas solicitações" > aba "Pedidos Recebidos"<br>2) Localize um pedido com status "Em andamento"<br>3) Clique em "Visualizar"<br>4) Clique no botão "Sinalizar Conclusão"<br>5) Verifique a mudança de status |
+**Requisitos associados** | RF-013 |
+**Resultado esperado** |Status muda para "Aguardando Cliente", alert exibe "Conclusão sinalizada! Aguardando confirmação do cliente", modal de avaliação abre |
+**Dados de entrada** | Pedido com status "Em andamento" |
+**Resultado obtido** | Sucesso |
+
+**Caso de Teste** | **CT13 - Cancelar pedido em andamento - Provedor**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse "Minhas solicitações" > aba "Pedidos Recebidos"<br> 2)Localize um pedido "Em andamento"<br>3) Clique em "Cancelar"<br>4) Tente confirmar sem preencher a justificativa<br>5) Preencha a justificativa obrigatória<br>6) Confirme o cancelamento |
+**Requisitos associados** | RF-013 |
+**Resultado esperado** |Sistema exige justificativa obrigatória, após preenchida cancela o pedido com status "Cancelado" |
+**Dados de entrada** | Justificativa obrigatória: "Problemas pessoais impedem a continuação" |
+**Resultado obtido** | Sucesso |
+
+**Caso de Teste** | **CT14  - Avaliar após conclusão**
+ :--------------: | ------------
+**Procedimento**  | 1) Após confirmar conclusão de um serviço<br>2) Sistema abre modal de avaliação automaticamente<br>3) Selecione estrelas (1-5)<br>4) Selecione destaques (opcional)<br>5) Escreva comentário (opcional)<br>6) Clique em "Enviar Avaliação" |
+**Requisitos associados** | RF-014 |
+**Resultado esperado** |Avaliação registrada com sucesso, modal fecha |
+**Dados de entrada** | Avaliação: 5 estrelas, destaque "Profissionalismo", comentário "Excelente serviço!" |
+**Resultado obtido** | Sucesso |
 
 ## Registro dos Testes de Software
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*CT01 - Criar conta parte 1*                                         |
+|*Caso de Teste*                                 |*CT01 - Criar conta*                                         |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+| Requisito Associado | RF-003 - A aplicação deve permitir que os usuários criem uma conta |
+| Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBH9m4QYF-lQZNbbkwgJBJ_AVFxYtgA4Qazrj0nbNb6lAc&e=GZhGF8](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBH9m4QYF-lQZNbbkwgJBJ_AVFxYtgA4Qazrj0nbNb6lAc&e=GZhGF8) | 
 
-|*Caso de Teste*                                 |*CT02 - Criar conta parte 2*                                        |
+|*Caso de Teste*                                 |*CT02 - Acessar conta*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Requisito Associado | RF-002 - A aplicação deve permitir que os usuários acessem a conta |
+|Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBK4ijzurgASahYEBGGLG1lAapjMgEOnFcGem2mdjHLqA0&e=K0HfkY](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBK4ijzurgASahYEBGGLG1lAapjMgEOnFcGem2mdjHLqA0&e=K0HfkY) |
+
+|*Caso de Teste*                                 |*CT03 - Encontrar Habilidade*                                        |
+|---|---|
+|Requisito Associado | RF-007 - A aplicação deve permitir que os usuários encontrem as habilidades desejadas |
+|Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQA89rM9j9JQRZFyPlAz_Ea1AQD5nff_GFEoTPtd_cU2LjI&e=x3hz1L](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQA89rM9j9JQRZFyPlAz_Ea1AQD5nff_GFEoTPtd_cU2LjI&e=x3hz1L) | 
+
+|*Caso de Teste*                                 |*CT04 - Visualizar perfil completo*                                        |
+|---|---|
+|Requisito Associado | RF-008 - A aplicação deve permitir que os usuários visualizem o perfil completo do provedor |
+|Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQCq9sC7zISTTrhuEMZGVqzTAYf05VOUxzN4XD84JG55yIc&e=QjleRa](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQCq9sC7zISTTrhuEMZGVqzTAYf05VOUxzN4XD84JG55yIc&e=QjleRa) |
+
+|*Caso de Teste*                                 |*CT05 - Enviar report*                                        |
+|---|---|
+|Requisito Associado | RF-008 - A aplicação deve permitir que os usuários visualizem o perfil completo do provedor |
+|Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQAWsU9wSEPDTJp5_XwL7KpHAe4N-HCpxHIw8qTjfuts2Xg&e=Dm2WrW](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQAWsU9wSEPDTJp5_XwL7KpHAe4N-HCpxHIw8qTjfuts2Xg&e=Dm2WrW) | 
+
+| *Caso de Teste* | *CT06 - Editar dados pessoais* |
+|---|---|
+| **Requisito Associado** | RF-006 - A aplicação deve permitir a edição dos dados pessoais como nome, senha, foto, cidade e contato. |
+| **Link do vídeo do teste realizado:** | [https://drive.google.com/file/d/1LlySdbaOYHNficRbDna4BQ1X7UMKTe5i/view?usp=sharing](https://drive.google.com/file/d/1LlySdbaOYHNficRbDna4BQ1X7UMKTe5i/view?usp=sharing) |
+
+|*Caso de Teste*                |*CT09 - Visualizar histórico de transações*                                        |
+|---|---|
+|Requisito Associado | RF-009 - A aplicação deve ter um botão “Meu histórico” no menu principal, para permitir a visualização do histórico de transações, onde o usuário poderá visualizar os valores de entrada e saída de créditos, incluindo data, horário, nome do serviço prestado e nome do provedor ou consumidor.|
+|Link do vídeo do teste realizado: | [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/16hUuj86h8k7kDPLQkqqNi0o7wA6DWYIo/view?usp=sharing) | 
+
+|*Caso de Teste*                |*CT10 - Visualizar minhas solicitações*                                        |
+|---|---|
+|Requisito Associado | RF-010 - A aplicação deve ter um botão "Minhas Solicitações" no menu principal, que exibe uma tela com duas abas: "Solicitações Enviadas" (visão do consumidor) e "Pedidos Recebidos" (visão do provedor). Ambas as abas devem listar as transações com detalhes como habilidade, nome do provedor ou consumidor, data, status atual e uma opção para "Gerenciar/Visualizar" a transação.|
+|Link do vídeo do teste realizado: | [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1Nqxwg0ya2pZlRcJSzqmr849TkaGOmlck/view?usp=sharing) | 
+
+|*Caso de Teste*               |*CT11 - Confirmar conclusão e Desistir da Conclusão -Consumidor*                                        |
+|---|---|
+|Requisito Associado | RF-011 - Na tela do consumidor (Solicitações enviadas), com o status "Em andamento" ou "Aguardando Cliente", ao clicar em "Visualizar" abrirá o pop up com a opção "Confirmar conclusão" ou "Desistir (com justificativa opcional)". |
+|Link do vídeo do teste realizado: |confirmação: [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1jI0Wg3m1KrrZybt_Leuq8d-fWDyx-LoK/view?usp=drive_link)<br> desistência:[https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/14NykGkdKsj_PY_2Jgnp0oawpyI7SDjqj/view?usp=drive_link) | 
+
+ 
+
+|*Caso de Teste*              |*CT12 - Aceitar pedido e Desistir do pedido - Provedor*                                        |
+|---|---|
+|Requisito Associado | RF-012 - Na tela do provedor (Pedidos recebidos), com o status "Pendente", ao clicar em "Visualizar" abrirá o pop up com a opção "Aceitar ou Cancelar". |
+|Link do vídeo do teste realizado: | aceitar: [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/10ZHAcDUzZWpSLyvw7OE1IF34DUZK4-n9/view?usp=drive_link)<br> desistir: [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1du63lyW2m2-HRHTwbfh_LpEvnx4ijDV9/view?usp=drive_link)  | 
+
+
+
+|*Caso de Teste*              |*CT13 - Sinalizar conclusão e Cancelar Pedido - Provedor*                                        |
+|---|---|
+|Requisito Associado | RF-013 - NNa tela do provedor (Pedidos recebidos), com o status "Em Andamento", ao clicar em "Visualizar" abrirá o pop up com a opção "Sinalizar conclusão" ou "Cancelar (com justificativa obrigatória)".|
+|Link do vídeo do teste realizado: | conclusão: [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1ksdvddSLUFI9DMWLKwinP-SOxaDVn7A0/view?usp=drive_link)<br> cancelamento: [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1PjC-D6PaZcUrwNBzTEJdXaLi9Guup9VP/view?usp=drive_link)  | 
+
+
+|*Caso de Teste*                                 |*CT14 - Avaliar após conclusão*                                        |
+|---|---|
+|Requisito Associado | RF-014 - Após o consumidor deve confirmar a conclusão do serviço, o sistema irá transferir automaticamente os créditos para o provedor. Após o pagamento, o sistema permitirá a avaliação mútua (consumidor avalia provedor, provedor avalia consumidor).	|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1BZWsxgh7kcfOiLEv3oXKkH-xYAdG-e9F/view?usp=drive_link | 
 
 
 ## Avaliação dos Testes de Software
 
 Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
 
-## Testes de unidade automatizados (Opcional)
-
-Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de software, ele podera desenvolver testes automatizados de software que verificam o funcionamento das funções JavaScript desenvolvidas. Para conhecer sobre testes unitários em JavaScript, leia 0 documento  [Ferramentas de Teste para Java Script](https://geekflare.com/javascript-unit-testing/).
 
 # Testes de Usabilidade
 

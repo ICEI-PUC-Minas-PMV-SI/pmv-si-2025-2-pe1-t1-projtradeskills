@@ -1,16 +1,8 @@
-body {
-  padding-bottom: 150px;
-}
-
 .footer {
-  /* position: fixed; */
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #1E3F66;
+  background: var(--blue-500);
   color: white;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 2rem;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -27,12 +19,17 @@ body {
 }
 
 .footer a:hover {
-  color: #EEC276;
+  color: #eec276;
 }
 
 .footer nav {
   display: flex;
   gap: 4rem;
+}
+
+.footer .copy {
+  margin: 0;
+  font-size: 14px;
 }
 
 @media (max-width: 767px) {

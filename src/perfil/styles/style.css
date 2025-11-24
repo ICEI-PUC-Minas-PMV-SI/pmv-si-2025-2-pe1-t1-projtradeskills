@@ -1,0 +1,503 @@
+/*Customização da imagem de perfil*/
+#profile {
+  background-image: linear-gradient(to bottom right, #f0f7ff, #f8f9fa);
+}
+
+.profile-wrapper {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+#profile-image,
+#profile-form {
+  margin-bottom: 35px;
+}
+
+#profile .profile-wrapper-content p {
+  color: #6c757d;
+}
+
+#profile h6,
+.profile-image-container button i,
+.profile-form-fields label,
+.profile-form-fields input,
+.skills-modal-header h4,
+.skills-modal-content label {
+  color: #1f3f66;
+}
+
+#profile h6 {
+  font-weight: 600;
+}
+
+.profile-section-description h6,
+.profile-skills-cards .card-title,
+.skills-modal-content h4 {
+  font-size: 16px;
+}
+
+/*Customização do container do alerta para preenchimento dos dados obrigatórios para desbloqueio dos créditos iniciais*/
+.alert-imcomplete-profile {
+  padding: 24px;
+  background-image: linear-gradient(to bottom right, #fefce8, #fffbeb);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  margin-bottom: 50px;
+  border-radius: 8px;
+  border-left: 4px solid #fd9a00;
+}
+
+.alert-imcomplete-profile-content,
+.alert-imcomplete-profile-pending-inputs,
+.alert-imcomplete-profile-pending-inputs > div {
+  display: flex;
+  gap: 10px;
+}
+
+.alert-imcomplete-profile-icon i {
+  color: #e17100;
+  font-size: 28px;
+}
+
+.alert-imcomplete-profile-description h3 {
+  font-size: 20px;
+  color: #7b3306;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+.alert-imcomplete-profile-description p {
+  color: #973c00;
+}
+
+.alert-imcomplete-profile-pending-inputs {
+  font-size: 14px;
+  color: #bb4d00;
+}
+
+ .bullet-point-alert {
+  width: 8px;
+  height: 8px;
+  background-color: #ffba00;
+  border-radius: 4px;
+}
+
+.alert-imcomplete-profile-pending-inputs > div {
+  align-items: center;
+}
+
+/*Customização do container da imagem de perfil*/
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.profile-image-circle {
+  width: 160px;
+  height: 160px;
+  background-image: linear-gradient(to bottom right, #1f3f66, #3d698d);
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image-circle i {
+  color: #fff;
+  font-size: 80px;
+}
+
+/*Customização do botão de câmera */
+.profile-image-container button {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #1f3f66;
+  position: relative;
+  right: 55px;
+}
+
+.profile-image-container button i {
+  font-size: 20px;
+}
+
+/*Customização da seção de Dados Pessoais*/
+
+/*Customização do container da seção de Dados Pessoais e do container dos cards de habilidades*/
+.profile-skills-cards .card-body {
+  display: flex;
+  justify-content: center;
+}
+
+#profile-form,
+.profile-skills-cards > div {
+  border: none;
+  border-radius: 24px;
+  padding: 32px;
+  background-color: #fff;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.profile-skills-cards .card-content-container {
+  padding-inline: 10px;
+}
+
+.profile-section-description h6,
+p {
+  padding: 0 !important;
+}
+
+.profile-section-description p {
+  margin-bottom: 0 !important;
+}
+
+.profile-section-description {
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: #1f3f66;
+  padding-left: 15px;
+  margin-bottom: 24px;
+}
+
+.profile-section-description p,
+.profile-form-fields label,
+.profile-form-fields input,
+.profile-form-fields select,
+.profile-button,
+.skills-modal-content p,
+.skills-modal-content label,
+.skills-modal-content input,
+.skills-modal-content .modal-body textarea,
+.skills-modal-content select {
+  font-size: 14px;
+}
+
+#profile input::placeholder,
+ #profile select::placeholder {
+  color: #bdbcbc;
+ }
+
+.profile-form-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-form-fields > div {
+  width: 48%;
+}
+
+.profile-form-fields label,
+.skills-modal-content label {
+  font-weight: 500;
+}
+
+.profile-form-fields input:focus,
+.skills-modal-content .modal-body input:focus,
+.skills-modal-content .modal-body textarea:focus,
+.skills-modal-content select:focus {
+  border-color: #1f3f66;
+  box-shadow: none;
+}
+
+.profile-button-container {
+  margin-top: 24px;
+}
+
+.profile-button {
+  padding: 9px 12px !important;
+  font-size: 14px !important;
+  border-radius: 6px !important;
+}
+
+.profile-button.primary {
+  border: none;
+  background-image: linear-gradient(to bottom right, #1f3f66, #3d698d);
+  color: #fff !important;
+}
+
+.profile-button i {
+  margin-right: 5px;
+}
+
+.profile-button.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(30, 63, 102, 0.15);
+}
+
+.profile-button.secondary {
+  background: white;
+  color: #6b7280;
+  border: 1.5px solid #e5e7eb;
+}
+
+.profile-button.secondary:hover {
+  color: #1f3f66;
+  border-color: #1f3f66;
+}
+
+/*Customização da seção de Habilidades*/
+#profile-skills {
+  padding: 32px;
+}
+
+.card-body {
+  padding: 0px !important;
+}
+
+.profile-skills-cards .bi-pencil {
+  color: #1976d2;
+}
+
+.profile-skills-cards .bi-trash3 {
+  color: #d32f2f;
+}
+
+.profile-skills-cards .bi-pencil,
+.profile-skills-cards .bi-trash3 {
+  cursor: pointer;
+}
+
+.skill-tag {
+  padding: 6px 12px;
+  border: 1px solid #bedbff;
+  background-image: linear-gradient(
+    64deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(231, 242, 255, 1) 18%,
+    rgba(224, 238, 255, 1) 42%,
+    rgba(222, 237, 255, 1) 31%,
+    rgba(208, 229, 255, 1) 59%,
+    rgba(190, 219, 255, 1) 94%
+  );
+  border-radius: 3.40282e38px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #1976d2;
+}
+
+/*Customização do Modal de Edição das Habilidades*/
+
+.modal.fade.show {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+.skills-modal .modal-header {
+  align-items: start !important;
+}
+
+.skills-modal .modal-content {
+  border: none;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.modal-content {
+  max-width: 600px;
+  border-radius: 16px;
+}
+
+.skills-modal-header-text p {
+  margin-bottom: 0 !important;
+}
+
+.skills-modal-header-content .modal-body div label {
+  color: #1f3f66;
+  font-weight: 600;
+}
+
+.profile-skills-modal-container-labels {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-skills-modal-container-labels {
+  flex-direction: column;
+  align-items: normal;
+  gap: 0px;
+}
+
+.profile-skills-modal-container-labels-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-skills-modal-container-inputs {
+  display: flex;
+  gap: 15px;
+}
+
+.profile-skills-modal-container-inputs.credit {
+  position: relative;
+}
+
+.profile-skills-modal-container-inputs.credit::before {
+ content: url("/public/icons/credit.svg");
+ position: absolute;
+ top: 5px;
+ left: 5px;
+}
+
+#suggested-credit {
+  padding-left: 30px;
+}
+
+.profile-form-fields input.pending,
+.profile-form-fields select.pending  {
+  border-color: #ffd230;
+} 
+
+/* Estilos para validação nativa */
+.invalid-input {
+  border-color: #dc3545 !important; /* Vermelho para erro */
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Responsividade */
+
+@media (max-width: 575px) {
+  .profile-wrapper {
+    max-width: 100%;
+  }
+
+  .profile-image-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-image-circle i {
+    font-size: 60px;
+  }
+
+  .profile-image-container button {
+    width: 40px;
+    height: 40px;
+    right: 40px;
+    border-width: 1px;
+  }
+
+  .profile-image-container button i {
+    font-size: 16px;
+  }
+
+  .profile-section-description p,
+  .profile-form-fields label,
+  .profile-form-fields input,
+  .profile-button {
+    font-size: 12px;
+  }
+
+  .profile-form-fields {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-form-fields > div {
+    width: 100%;
+  }
+
+  /* Responsividade da seção Minhas habilidades */
+  #profile-skills {
+    padding: 0px;
+  }
+
+  #profile-form,
+  .profile-skills-cards > div {
+    padding: 22px;
+  }
+
+  .profile-skills-cards > div {
+    height: 300px;
+  }
+
+  .profile-skills-cards .card-title {
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .profile-skills-cards .card-text {
+    font-size: 14px;
+  }
+
+  .skill-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+
+  .skill-tag {
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+
+  /*Responsividade do Modal de Edição das Habilidades*/
+  .modal-dialog {
+    margin: 12px !important;
+  }
+
+  .skills-modal .modal-content {
+    border-radius: 8px;
+  }
+
+  .profile-skills-modal-container-inputs.credit::before {
+    top: 3px;
+  }
+
+  #profile .profile-wrapper-content p,
+  .skills-modal-header p,
+  .skills-modal-content label,
+  .skills-modal-content input,
+  .skills-modal-content select {
+    font-size: 12px;
+  }
+
+  #profile .profile-wrapper-content p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 11;
+    overflow: hidden;
+  }
+
+  /* Responsividade do alerta para preenchimento dos dados obrigatórios para desbloqueio dos créditos iniciais */
+  .alert-imcomplete-profile-description h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .alert-imcomplete-profile-description p {
+    font-size: 14px;
+  }
+
+  .alert-imcomplete-profile-pending-inputs {
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1399px) {
+  .profile-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1536px) {
+  .profile-wrapper {
+    max-width: 85%;
+  }
+}

@@ -52,14 +52,14 @@
 }
 
 #profile .rating {
-  color: #515151;
+  color: var(--blue-500);
   font-size: 1.2rem;
 }
 
 #profile .rating::before {
   content: "";
   display: inline-block;
-  background: url(./star.svg);
+  background: url(/public/icons/star.svg);
   width: 1.6rem;
   height: 1.6rem;
   background-size: cover;

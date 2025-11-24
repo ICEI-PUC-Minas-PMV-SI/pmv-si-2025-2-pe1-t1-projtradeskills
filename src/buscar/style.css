@@ -39,9 +39,8 @@
 #search-results {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 6rem;
-  gap: 2.7rem;
+  gap: 3rem;
 }
 
 #search-results .user-card {
@@ -117,7 +116,7 @@
 #search-results .user-card .card-footer .user-rating::before {
   content: "";
   display: block;
-  background: url(./star.svg);
+  background: url(/public/icons/star.svg);
   width: 2rem;
   height: 2rem;
   background-size: cover;
@@ -135,11 +134,11 @@
 /* Modal */
 
 #user-modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100dvw;
+  height: 100dvh;
   background: rgba(0, 0, 0, 0.57);
   display: flex;
   justify-content: flex-end;
@@ -150,7 +149,7 @@
 
 #user-modal .modal-wrapper {
   background: #fff;
-  width: 40%;
+  width: 50%;
   border-radius: 0.8rem;
   padding: 3rem;
   position: relative;
@@ -209,7 +208,7 @@
 #user-modal .rating::before {
   content: "";
   display: inline-block;
-  background: url(./star.svg);
+  background: url(/public/icons/star.svg);
   width: 1.6rem;
   height: 1.6rem;
   background-size: cover;
@@ -328,4 +327,11 @@
   width: 100%;
   margin-top: 3rem;
   border-radius: 30rem;
+}
+
+@media (max-width: 767px) {
+  #buscar .search .actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

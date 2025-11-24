@@ -3,17 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
 
-    <script src="../components/sidebar/script.js" defer></script>
-    <script src="../components/header/script.js" defer></script>
-    <script src="../components/footer/script.js" defer></script>
+    <script src="../components/sidebar/script.js" type="module" defer></script>
+    <script src="../components/header/script.js" type="module" defer></script>
+    <script src="../components/footer/script.js" type="module" defer></script>
 
     <script src="./script.js" type="module" defer></script>
 
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" type="module" defer></script>
+    <script
+      src="../assets/scripts/userStorageManager.js"
+      type="module"
+      defer
+    ></script>
+    <script
+      src="../assets/scripts/createSolicitation.js"
+      type="module"
+      defer
+    ></script>
 
-    <title>Perfil do usuário</title>
+    <title>Perfil - Usuário</title>
   </head>
   <body id="profile">
     <app-sidebar></app-sidebar>
@@ -24,22 +35,22 @@
         <div class="modal-wrapper">
           <div class="modal-header">
             <img
-              src="./profile.svg"
+              src="/public/icons/profile.svg"
               alt="Antonio Francisco"
               class="modal-avatar"
             />
-            <h2 class="modal-name">Antonio Francisco</h2>
+            <h2 class="modal-name">Usuário</h2>
             <p class="member-since">
               Membro desde Setembro, 2025 • Rio de Janeiro, RJ
             </p>
-            <p class="rating">4.7 (21 avaliações)</p>
+            <p class="rating">5.0 (10 avaliações)</p>
           </div>
           <div class="modal-body">
             <h3 class="skill-name">Habilidades oferecidas</h3>
-            <div class="skill-card">
+            <!-- <div class="skill-card">
               <div class="skill-icon"></div>
               <div class="skill-details">
-                <strong class="skill-text">Aula de inglês</strong>
+                <strong class="skill-text">Nome habilidade</strong>
                 <p class="skill-description">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Veniam ea, adipisci atque nulla reprehenderit cupiditate non
@@ -49,8 +60,8 @@
                 <div class="skill-footer">
                   <div class="skill-infos">
                     <p class="skill-price">
-                      <img src="./arrows.svg" alt="Variação" /><img
-                        src="./credit.svg"
+                      <img src="/public/icons/arrows.svg" alt="Variação" /><img
+                        src="/public/icons/credit.svg"
                         alt="Preço"
                       />12
                     </p>
@@ -63,9 +74,9 @@
                   >
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
-          <div class="review">
+          <!-- <div class="review">
             <h3>Avaliações</h3>
             <div class="review-list">
               <div class="review-card">
@@ -76,7 +87,11 @@
                   libero sapien, sagittis at dolor id, lacinia ullamcor justo.
                   Nulla facilisi.
                 </p>
-                <img src="./rating.svg" alt="Estrela" class="review-star" />
+                <img
+                  src="/public/icons/rating.svg"
+                  alt="Estrela"
+                  class="review-star"
+                />
                 <span class="review-tag">Qualidade de serviço</span>
               </div>
               <div class="review-card">
@@ -87,7 +102,11 @@
                   libero sapien, sagittis at dolor id, lacinia ullamcor justo.
                   Nulla facilisi.
                 </p>
-                <img src="./rating.svg" alt="Estrela" class="review-star" />
+                <img
+                  src="/public/icons/rating.svg"
+                  alt="Estrela"
+                  class="review-star"
+                />
                 <span class="review-tag">Comunicação</span>
               </div>
               <div class="review-card">
@@ -98,11 +117,15 @@
                   libero sapien, sagittis at dolor id, lacinia ullamcor justo.
                   Nulla facilisi.
                 </p>
-                <img src="./rating.svg" alt="Estrela" class="review-star" />
+                <img
+                  src="/public/icons/rating.svg"
+                  alt="Estrela"
+                  class="review-star"
+                />
                 <span class="review-tag">Atendimento</span>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </main>

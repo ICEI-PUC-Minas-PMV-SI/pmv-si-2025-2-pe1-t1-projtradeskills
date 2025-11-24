@@ -1,30 +1,120 @@
-#buscar .search .title {
-  font-size: 32px !important;
-  font-weight: bold !important;
+#dashboard {
+  background-image: linear-gradient(to bottom right, #f0f7ff, #f8f9fa);
 }
 
-#dashboard-search-bar p,
+section {
+  text-align: center;
+}
+
+#find-skills .find-skills-title {
+  font-size: 42px;
+  margin-bottom: 24px;
+} 
+
+#find-skills .find-skills-title, 
+.title-sections-dashboard h2,
+.no-activities-description h3,
+.cards-resume-requests h2 {
+  font-weight: 400;
+}
+
+#find-skills .find-skills-title span {
+  background: linear-gradient(#1f3f66, #4d85b3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+
+#find-skills .find-skills-description {
+  font-size: 18px;
+}
+
+#find-skills .find-skills-greeting {
+  display: inline-block;
+  padding: 8px 20px;
+  margin-bottom: 20px;
+  border-radius: 3.40282e38px;
+}
+
+#find-skills .find-skills-greeting,
+.calendar-icon-circle {
+  background: linear-gradient(to right, oklab(36.3897% -.0206858 -.0748979 / .1), oklab(50.4783% -.0322188 -.0684021 / .1));
+}
+
+#find-skills .find-skills-greeting p {
+   margin: 0px;
+}
+
+#find-skills .find-skills-button {
+  padding: 20px;
+  border-radius: 24px;
+  background-image: linear-gradient(to right, #1F3F66, #3D698D);
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+} 
+
+.section-divider {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-line-divider {
+  flex: 1;
+  height: 1px;
+}
+
+.section-line-divider:first-child{
+  background: linear-gradient(to right in oklab, transparent, #d5d9dd);
+}
+
+.section-line-divider:last-child{
+    background: linear-gradient(to left in oklab, transparent, #d5d9dd);
+}
+
+.section-line-circle {
+  width: 6px;
+  height: 6px;
+  background-color: #1f3f66;
+  border-radius: 3.40282e38px;
+}
+
 #requests-resume a,
 #recent-activities span,
 .cards-dashboard .card-link {
   color: #5f91bb;
 }
 
-#dashboard h2,
-#dashboard h3,
 #dashboard h6,
-#recent-activities p {
+.title-sections-dashboard h2,
+.no-activities-description h3,
+.find-skills-title,
+.find-skills-greeting span,
+.cards-resume-requests h2 {
   color: #1e3f66;
 }
 
 .title-sections-dashboard {
+  margin-bottom: 24px;
+}
+
+.title-sections-dashboard h2 {
   font-size: 28px;
-  text-align: center;
-  margin-bottom: 32px;
+}
+
+#find-skills .find-skills-description,
+.title-sections-dashboard p,
+.no-activities-description {
+  color: #6c757d;
 }
 
 .cards-dashboard {
   border: none !important;
+}
+
+#requests-resume {
+  margin-bottom: 55px;
 }
 
 #requests-resume .cards-dashboard {
@@ -51,8 +141,22 @@
 }
 
 #requests-resume .cards-dashboard .icon-envelope {
-  color: #1e3f66;
+  color: #4881b0;
   font-size: 45px;
+}
+
+#recent-activities .container-cards {
+  width: 100%;
+  border-color: #dee2e6; 
+}
+
+#recent-activities .container-cards.activities {
+  padding: 15px;
+}
+
+/* quando tiver sem atividades o padding é maior no container */
+#recent-activities .container-cards.no-activities {
+  padding: 40px;
 }
 
 #recent-activities .cards-dashboard {
@@ -64,9 +168,8 @@
   color: #fff;
 }
 
-#recent-activities .card-body-text-title,
-#recent-activities p{
-  font-size: 16px !important;
+#recent-activities .card-body-text-title {
+  font-size: 16px;
 }
 
 #recent-activities .card-body-text-title {
@@ -88,7 +191,7 @@
 
 #recent-activities span,
 .cards-dashboard .card-link {
-  font-size: 14px !important;
+  font-size: 14px;
 }
 
 .card-body-text-title {
@@ -103,14 +206,196 @@
   color: #1e3f66 !important;
 }
 
-.hystoric-button {
-    background: var(--blue-500);
-    font-size: 2rem;
-    color: #fff;
+.calendar-icon {
+  margin-bottom: 24px;
+}
+
+.calendar-icon,
+.calendar-icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 3.40282e38px;
+}
+
+.calendar-icon-circle img {
+  width: 40px;
+  height: 40px;
+}
+
+.history-button {
+    background: #FFF;
+    font-size: 16px;
+    color: #1f3f66;
     margin: 24px;
-    border-radius: 0.8rem;
-    font-weight: 600;
-    padding: 1.6rem 6rem;
+    border: 2px solid #1f3f66;
+    border-radius: 12px;
+    font-weight: 500;
+    padding: 10px 30px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;       
+}
+
+.history-button:hover {
+  background: #1f3f66;
+  color: #FFF;
+}
+
+/*Modal de Desbloqueio de Créditos*/
+.modal-content {
+  padding: 18px;
+  text-align: center;
+}
+
+.modal-header {
+  border-bottom: none !important;
+  padding: 0px 0px !important;
+  flex-direction: column;
+}
+
+.icon-coin-circle-container {
+  margin-bottom: 20px;
+}
+
+.icon-coin-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  background-image: linear-gradient(to right, #1F3F66, #3D698D);
+  border-radius: 3.40282e38px;
+}
+
+.icon-coin-circle i {
+  font-size: 25px;
+  color: #FFF;
+}
+
+.modal.show {
+  padding-right: 0px !important;
+}
+
+.modal-title {
+  font-size: 24px;
+  color: #1e3f66;
+  font-weight: 600;
+}
+
+.modal-body p {
+  font-size: 18px;
+  line-height: 1.55556;
+}
+
+.modal-body p,
+.modal-footer .container-more-info p {
+  color: #6c757d;
+}
+
+.modal-footer .container-more-info span {
+  color: #3d698d;
+  font-weight: 500;
+}
+
+.modal-footer .container-more-info {
+  text-align: left;
+}
+
+.modal-footer {
+  border-top: none !important;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-footer>*  {
+  margin: 0px !important;
+}
+
+.modal-footer .container-more-info {
+  padding: 8px;
+  background-color: #f0f7ff;
+  border-radius: 8px;
+}
+
+.modal-footer .container-more-info p {
+ font-size: 14px;
+}
+
+.modal-footer button {
+  width: 100%;
+  padding: 12px; 
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  background:linear-gradient(to right, #1F3F66, #3D698D);
+}
+
+/* Responsividade */
+@media (max-width: 575px) {
+  .find-skills-greeting p,
+  #find-skills .find-skills-description,
+  .history-button  {
+    font-size: 14px;
+  }
+
+  #find-skills .find-skills-title {
+    font-size: 28px;
+  }
+
+  #find-skills .find-skills-button,
+  .no-activities-description h3,
+  .cards-dashboard .card-title {
+    font-size: 16px;
+  }
+
+  .title-sections-dashboard h2 {
+    font-size: 20px;
+  }
+
+  .title-sections-dashboard p,
+  .cards-dashboard .card-link {
+    font-size: 12px;
+  }
+
+  .cards-resume-requests h2 {
+    font-size: 30px;
+  }
+
+  .no-activities-description h3 {
+    line-height: 1.55556;
+  }
+
+  .no-activities-description p {
+    font-size: 12px;
+    line-height: 1.55556;
+    max-width: 400px
+  }
+
+  .modal-dialog {
+    margin-inline: 20px !important;
+  }
+
+  .modal-body {
+    padding: 15px 0px !important;
+  }
+
+  .modal-body p {
+    font-size: 14px;
+  }
+
+  .modal-footer {
+    padding: 0px !important;
+  }
+  
+}
+
+@media (min-width: 1400px) {
+  #recent-activities .container-cards {
+  width: 75%;
+}
 }

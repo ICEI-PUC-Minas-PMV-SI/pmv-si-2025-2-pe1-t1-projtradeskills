@@ -11,10 +11,16 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/assets/style.css" />
-    <script src="../components/footer/script.js" defer></script>
-
+    <link rel="stylesheet" href="/assets/styles/style.css" />
     <link rel="stylesheet" href="/assets/acesso/style.css" />
+
+    <script src="/assets/scripts/redirection.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="../assets/scripts/userStorageManager.js" defer></script>
+    <script src="/components/footer/script.js" defer></script>
+    <script src="/assets/scripts/registerUsers.js" type="module" defer></script>
+    <script src="./script.js" type="module" defer></script>
   </head>
   <body id="login">
     <header class="site-header" role="banner">
@@ -61,7 +67,7 @@
             />
           </div>
 
-          <button type="submit" class="btn" onclick="event.preventDefault(); window.location.href='/dashboard/'">Entrar</button>
+          <button type="submit" class="btn" id="login-button">Entrar</button>
         </form>
       </section>
 

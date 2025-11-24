@@ -16,7 +16,6 @@ Com uma interface simples e intuitiva, a plataforma atenderá pessoas de diferen
 * Camila Malaman Mafra
 * João Pedro Teodoro dos Santos
 * Maria Eduarda Soares de Oliveira
-* Mariana de Cassia Rodrigues dos Santos Mendonça
 * Raissa Nepomuceno Epaminondas
 
 

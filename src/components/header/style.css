@@ -3,6 +3,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 7rem;
+  padding-bottom: 8rem;
 }
 
 #header .money {
@@ -13,6 +14,7 @@
 
 #header .money .current-balance {
   color: var(--blue-500);
+  text-align: center;
 }
 
 #header .money .value {
@@ -56,6 +58,7 @@
   align-items: center;
   gap: 1rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #header .profile .name {
@@ -68,4 +71,63 @@
   height: 7rem;
   border-radius: 50%;
   object-fit: cover;
+}
+
+#header .menu-mobile {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  #header .menu-mobile {
+    display: flex;
+    position: relative;
+    width: 32px;
+    height: 24px;
+    margin-right: auto;
+  }
+
+  #header .menu-mobile .bar {
+    height: 4px;
+    width: 100%;
+    background: var(--black-500);
+    border-radius: 2rem;
+    transition: all 0.5s ease-in-out;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+  }
+
+  #header .menu-mobile .bar1 {
+    top: 0;
+  }
+
+  #header .menu-mobile .bar2 {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #header .menu-mobile .bar3 {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  #header {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 575px) {
+  #header {
+    gap: 2rem;
+    flex-direction: column-reverse;
+  }
+
+  #header .menu-mobile {
+    margin: 0;
+  }
+
+  #header .profile {
+    flex-direction: column-reverse;
+  }
 }

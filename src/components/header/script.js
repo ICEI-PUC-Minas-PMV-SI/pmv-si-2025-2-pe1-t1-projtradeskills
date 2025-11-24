@@ -1,3 +1,5 @@
+import { initMobileMenu } from "/components/header/mobile-menu.js";
+
 class AppHeader extends HTMLElement {
   constructor() {
     super();
@@ -21,27 +23,40 @@ class AppHeader extends HTMLElement {
 
         const globalStyles = document.createElement("link");
         globalStyles.setAttribute("rel", "stylesheet");
-        globalStyles.setAttribute("href", "/assets/global.css");
+        globalStyles.setAttribute("href", "/assets/styles/css/global.css");
+
+        this.shadowRoot.appendChild(globalStyles);
 
         const componentStyles = document.createElement("link");
         componentStyles.setAttribute("rel", "stylesheet");
         componentStyles.setAttribute("href", "/components/header/style.css");
 
-        this.shadowRoot.appendChild(globalStyles);
         this.shadowRoot.appendChild(componentStyles);
         this.shadowRoot.appendChild(templateContent);
 
-        const currentPath = window.location.pathname;
-        const links = this.shadowRoot.querySelectorAll("a");
+        // Carrega dados do usuário após renderizar o template
+        this.loadUserData();
+        this.loadUserCredits();
 
-        links.forEach(link => {
-          const linkPath = new URL(link.href, window.location.origin).pathname;
+        initMobileMenu(this.shadowRoot);
 
-          if (linkPath === currentPath) {
-            link.classList.add("active");
-          } else {
-            link.classList.remove("active");
+        // Escuta mudanças no localStorage (para outras abas)
+        window.addEventListener("storage", e => {
+          if (e.key === "currentUser") {
+            this.loadUserData();
           }
+          if (e.key === "tradeSkillsData") {
+            this.loadUserCredits();
+          }
+        });
+
+        // Escuta evento customizado para mudanças na mesma aba
+        window.addEventListener("currentUserChanged", () => {
+          this.loadUserData();
+        });
+
+        window.addEventListener("creditsUpdated", () => {
+          this.loadUserCredits();
         });
       } else {
         console.error(
@@ -50,6 +65,42 @@ class AppHeader extends HTMLElement {
       }
     } catch (error) {
       console.error(error);
+    }
+  }
+
+  loadUserData() {
+    try {
+      const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+      const nameElement = this.shadowRoot.querySelector(".name");
+      const imageElement = this.shadowRoot.querySelector(".image");
+
+      if (currentUser) {
+        if (nameElement) {
+          nameElement.textContent = currentUser.name;
+        }
+        if (imageElement) {
+          imageElement.src = currentUser.image;
+        }
+      }
+    } catch (error) {
+      console.error("Erro ao carregar dados do usuário no header:", error);
+    }
+  }
+
+  loadUserCredits() {
+    try {
+      const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+      if (currentUser) {
+        const creditsElement = this.shadowRoot.querySelector(".amount");
+
+        if (creditsElement && currentUser) {
+          creditsElement.textContent = currentUser.credits;
+        }
+      }
+    } catch (error) {
+      console.error("Erro ao carregar créditos do usuário:", error);
     }
   }
 }
