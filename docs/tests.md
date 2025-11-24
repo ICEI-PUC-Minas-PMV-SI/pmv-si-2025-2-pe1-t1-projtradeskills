@@ -175,6 +175,11 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |Requisito Associado | RF-002 - A aplicação deve permitir que os usuários acessem a conta |
 |Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBK4ijzurgASahYEBGGLG1lAapjMgEOnFcGem2mdjHLqA0&e=K0HfkY](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBK4ijzurgASahYEBGGLG1lAapjMgEOnFcGem2mdjHLqA0&e=K0HfkY) |
 
+|*Caso de Teste*                                 |*CT03 - Acessar Dashboard*                                        |
+|---|---|
+|Requisito Associado | RF-004 - A aplicação deve permitir que os usuários acessem o Dashboard |
+|Link do vídeo do teste realizado: | [](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBK4ijzurgASahYEBGGLG1lAapjMgEOnFcGem2mdjHLqA0&e=K0HfkY) |
+
 |*Caso de Teste*                                 |*CT03 - Encontrar Habilidade*                                        |
 |---|---|
 |Requisito Associado | RF-007 - A aplicação deve permitir que os usuários encontrem as habilidades desejadas |
