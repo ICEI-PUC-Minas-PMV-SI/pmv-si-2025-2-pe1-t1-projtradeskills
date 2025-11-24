@@ -3,17 +3,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
   // Altera o valor dos cards de Pedidos recebidos e Solicitações Enviadas
-  const cardRequest = document.querySelector(".card-request .card-text");
-  const cardResponse = document.querySelector(".card-response .card-text");
+  const cardRequest = document.querySelector(".card-response .card-text");
+  const cardResponse = document.querySelector(".card-request .card-text");
 
-  cardRequest.textContent = currentUser.requests?.length
-    ? currentUser.requests?.length
+  const trade = JSON.parse(localStorage.getItem('tradeSkillsData'));
+
+  cardRequest.textContent = trade.requests?.length
+    ? trade.requests?.length
     : 0;
   cardResponse.textContent = currentUser.responses?.length
     ? currentUser.responses?.length
     : 0;
 
-   // Exibe o primeiro nome do usuário na mensagem de saudação
+  // Exibe o primeiro nome do usuário na mensagem de saudação
   const dashboardGreeting = document.querySelector(
     ".find-skills-greeting span"
   );
@@ -48,5 +50,65 @@ document.addEventListener("DOMContentLoaded", function () {
 
     historyButton.removeAttribute("onclick");
     historyButton.style.cursor = "not-allowed";
+  }
+
+  const recentActivitiesContent = document.getElementById(
+    "recent-activities-content"
+  );
+
+  const activitieslist = currentUser.activities;
+  const activitiesContainer = recentActivitiesContent;
+  activitiesContainer.innerHTML = "";
+
+  if (activitieslist.length > 0) {
+    let activitiesHTML = "";
+    activitieslist.forEach((element) => {
+      activitiesHTML += `<div class="card w-100 rounded-0 rounded-bottom-1 cards-dashboard">
+              <div class="card-body">
+                <div class="d-flex flex-row gap-3">
+                  <div class="d-block" style="text-align: left;">
+                    <div
+                      class="btn btn-light border rounded-circle lh-1 text-danger button-icon-circle"
+                      type="button"
+                    >
+                      <i class="${element.icon}"></i>
+                    </div>
+                  </div>
+                  <div style="text-align: left;">
+                    <h6 class="mb-1 card-body-text-title">
+                      ${element.status}
+                    </h6>
+                    <p class="mb-1 fs-6" style="font-size: 16px !important;">
+                      ${element.description}
+                    </p>
+                    <span class="mb-1">${element.time}</span>
+                  </div>
+                </div>
+              </div>
+            </div>`;
+    });
+
+    const component1 = `<div class="card w-100 shadow" style="border-color: #dee2e6; padding: 15px">${activitiesHTML}</div>`;
+    activitiesContainer.innerHTML = component1;
+  }
+
+  if (activitieslist.length === 0) {
+    recentActivitiesContent.children[0].remove()
+
+    const componentNoneActivity = `<div class="w-100 no-activities-content">
+              <div class="calendar-icon">
+                <div class="calendar-icon-circle">
+                  <img src="img/calendar.svg" alt="Ícone de calendário vazio" />
+                </div>
+              </div>
+              <div class="no-activities-description">
+                <h3>Nenhuma atividade registrada</h3>
+                <p>
+                  Suas atividades recentes aparecerão aqui. <br />
+                  ${currentUser.newUser ? "Complete seu perfil para começar a trocar habilidades!" : ""}
+                </p>
+              </div>
+            </div>`;
+    activitiesContainer.innerHTML = componentNoneActivity;
   }
 });
