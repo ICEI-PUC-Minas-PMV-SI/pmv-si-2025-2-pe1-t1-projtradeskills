@@ -41,7 +41,23 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de login
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT03 - Buscar por habilidades**
+**Caso de Teste** | **CT03 - Acessar Dashboard**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse o endereço [https://puc-tradeskills.netlify.app/](https://puc-tradeskills.netlify.app/) <br> 2) Clique em Login <br> 3) Preencha os dados de acesso (e-mail e senha) <br> 4) Clique em **Entrar** <br> 3) Visualize o Dashboard <br> 4) Clique no botão **Buscar habilidades** para ser redirecionado para a tela de busca. <br> 5) Clique no botão **Ver Minhas Solicitações** para ser redirecionado para a tela de solicitações (Pedidos recebidos e Solicitações Enviadas) <br> 6)Clique no botão **Ver Histórico Completo** para ser redirecionado para a tela de Histórico de Entrada e Saída de Créditos.
+**Requisitos associados** | RF-004
+**Resultado esperado** | Visualização do Dashboard contendo Resumo das Solicitações, Histórico e botão que redireciona para a página de Buscar Habilidades.
+**Dados de entrada** | N/A
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT04 - Criar, Editar e Remover Habilidades**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse o endereço [https://puc-tradeskills.netlify.app/](https://puc-tradeskills.netlify.app/) <br> 2) Clique em Login <br> 3) Preencha os dados de acesso (e-mail e senha) <br> 4) Clique em **Entrar** <br> 3) Clique na opção **Perfil** do menu lateral <br> 4) Crie uma nova habilidade ou Edite uma existente ou Delete uma habilidade existente.
+**Requisitos associados** | RF-005
+**Resultado esperado** | Visualização do Perfil podendo Atualizar Dados Pessoais, Criar / Atualizar e Deletar Habilidades.
+**Dados de entrada** | Título da Habilidade, Descrição, Preço Sugerido em Créditos, Disponibilidade e Tipo de Atendimento (Online/Presencial). 
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT05 - Buscar por habilidades**
  :--------------: | ------------
 **Procedimento**  | 1) Realizar o login na platafrma <br> 2) Clique **Buscar habilidades** <br> 3) Inserir o nome da habilidade que deseja encontrar <br> 4) Clicar no perfil do usuário que deseja visualizar
 **Requisitos associados** | RF-007
@@ -49,7 +65,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de busca
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT04 - Visualizar perfil completo**
+**Caso de Teste** | **CT06 - Visualizar perfil completo**
  :--------------: | ------------
 **Procedimento**  | 1) Realizar o login na platafrma <br> 2) Clique **Buscar habilidades** <br> 3) Clicar no perfil do usuário que deseja <br> 4) Clicar no botão "Ver perfil completo"
 **Requisitos associados** | RF-008
@@ -57,7 +73,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de busca
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT05 - Enviar report**
+**Caso de Teste** | **CT07 - Enviar report**
  :--------------: | ------------
 **Procedimento**  | 1) Realizar o login na platafrma <br> 2) Clique **Reportar** <br> 3) Selecionar o tipo de informação <br> 4) Preencher o campo descrevendo sobre a informação selecionada <br>5) Clicar em **Enviar Relatório**
 **Requisitos associados** | RF-016
@@ -65,7 +81,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de report
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT06 - Editar dados pessoais**
+**Caso de Teste** | **CT08 - Editar dados pessoais**
 :--------------: | ------------
 **Procedimento**  | 1) Acesse a aplicação<br>2) Faça login no sistema<br>3) Acesse o menu de perfil<br>4) Identifique os campos já preenchidos<br>5) Modifique nome, senha, foto, cidade ou contato<br>6) Salve as alterações |
 **Requisitos associados** | RF-006 |
@@ -159,57 +175,67 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |Requisito Associado | RF-002 - A aplicação deve permitir que os usuários acessem a conta |
 |Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBK4ijzurgASahYEBGGLG1lAapjMgEOnFcGem2mdjHLqA0&e=K0HfkY](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBK4ijzurgASahYEBGGLG1lAapjMgEOnFcGem2mdjHLqA0&e=K0HfkY) |
 
-|*Caso de Teste*                                 |*CT03 - Encontrar Habilidade*                                        |
+|*Caso de Teste*                                 |*CT03 - Acessar Dashboard*                                        |
+|---|---|
+|Requisito Associado | RF-004 - A aplicação deve permitir que os usuários acessem o Dashboard |
+|Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBBhuPNPlv0Qa6GqNbUK3ydAXsseEUdinTTiVk-le7nK1I&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=KVWM4H](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBBhuPNPlv0Qa6GqNbUK3ydAXsseEUdinTTiVk-le7nK1I&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=KVWM4H)|
+
+|*Caso de Teste*                                 |*CT04 - Acessar Perfil - Adicionar, Atualizar ou Remover Habilidades*                                        |
+|---|---|
+|Requisito Associado | RF-005 - A aplicação deve permitir que os usuários acessem o Perfil para atualizar ou remover habilidades existes ou criar novas habilidades |
+|Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQDdyEZETPUJSrlp4ZRCTKCZAaAtJQtuiH9E0DiTF7YiGg8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=OzsD5k](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQDdyEZETPUJSrlp4ZRCTKCZAaAtJQtuiH9E0DiTF7YiGg8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=OzsD5k)|
+
+|*Caso de Teste*                                 |*CT05 - Encontrar Habilidade*                                        |
 |---|---|
 |Requisito Associado | RF-007 - A aplicação deve permitir que os usuários encontrem as habilidades desejadas |
 |Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQA89rM9j9JQRZFyPlAz_Ea1AQD5nff_GFEoTPtd_cU2LjI&e=x3hz1L](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQA89rM9j9JQRZFyPlAz_Ea1AQD5nff_GFEoTPtd_cU2LjI&e=x3hz1L) | 
 
-|*Caso de Teste*                                 |*CT04 - Visualizar perfil completo*                                        |
+|*Caso de Teste*                                 |*CT06 - Visualizar perfil completo*                                        |
 |---|---|
 |Requisito Associado | RF-008 - A aplicação deve permitir que os usuários visualizem o perfil completo do provedor |
 |Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQCq9sC7zISTTrhuEMZGVqzTAYf05VOUxzN4XD84JG55yIc&e=QjleRa](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQCq9sC7zISTTrhuEMZGVqzTAYf05VOUxzN4XD84JG55yIc&e=QjleRa) |
 
-|*Caso de Teste*                                 |*CT05 - Enviar report*                                        |
+|*Caso de Teste*                                 |*CT06 - Enviar report*                                        |
 |---|---|
 |Requisito Associado | RF-008 - A aplicação deve permitir que os usuários visualizem o perfil completo do provedor |
 |Link do vídeo do teste realizado: | [https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQAWsU9wSEPDTJp5_XwL7KpHAe4N-HCpxHIw8qTjfuts2Xg&e=Dm2WrW](https://sgapucminasbr-my.sharepoint.com/personal/1217058_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQAWsU9wSEPDTJp5_XwL7KpHAe4N-HCpxHIw8qTjfuts2Xg&e=Dm2WrW) | 
 
-| *Caso de Teste* | *CT06 - Editar dados pessoais* |
+| *Caso de Teste* | *CT07 - Editar dados pessoais* |
 |---|---|
 | **Requisito Associado** | RF-006 - A aplicação deve permitir a edição dos dados pessoais como nome, senha, foto, cidade e contato. |
 | **Link do vídeo do teste realizado:** | [https://drive.google.com/file/d/1LlySdbaOYHNficRbDna4BQ1X7UMKTe5i/view?usp=sharing](https://drive.google.com/file/d/1LlySdbaOYHNficRbDna4BQ1X7UMKTe5i/view?usp=sharing) |
 
-|*Caso de Teste*                |*CT09 - Visualizar histórico de transações*                                        |
+|*Caso de Teste*                |*CT08 - Visualizar histórico de transações*                                        |
 |---|---|
 |Requisito Associado | RF-009 - A aplicação deve ter um botão “Meu histórico” no menu principal, para permitir a visualização do histórico de transações, onde o usuário poderá visualizar os valores de entrada e saída de créditos, incluindo data, horário, nome do serviço prestado e nome do provedor ou consumidor.|
 |Link do vídeo do teste realizado: | [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/16hUuj86h8k7kDPLQkqqNi0o7wA6DWYIo/view?usp=sharing) | 
 
-|*Caso de Teste*                |*CT10 - Visualizar minhas solicitações*                                        |
+|*Caso de Teste*                |*CT9 - Visualizar minhas solicitações*                                        |
 |---|---|
 |Requisito Associado | RF-010 - A aplicação deve ter um botão "Minhas Solicitações" no menu principal, que exibe uma tela com duas abas: "Solicitações Enviadas" (visão do consumidor) e "Pedidos Recebidos" (visão do provedor). Ambas as abas devem listar as transações com detalhes como habilidade, nome do provedor ou consumidor, data, status atual e uma opção para "Gerenciar/Visualizar" a transação.|
 |Link do vídeo do teste realizado: | [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1Nqxwg0ya2pZlRcJSzqmr849TkaGOmlck/view?usp=sharing) | 
 
-|*Caso de Teste*               |*CT11 - Confirmar conclusão e Desistir da Conclusão -Consumidor*                                        |
+|*Caso de Teste*               |*CT10 - Confirmar conclusão e Desistir da Conclusão -Consumidor*                                        |
 |---|---|
 |Requisito Associado | RF-011 - Na tela do consumidor (Solicitações enviadas), com o status "Em andamento" ou "Aguardando Cliente", ao clicar em "Visualizar" abrirá o pop up com a opção "Confirmar conclusão" ou "Desistir (com justificativa opcional)". |
 |Link do vídeo do teste realizado: |confirmação: [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1jI0Wg3m1KrrZybt_Leuq8d-fWDyx-LoK/view?usp=drive_link)<br> desistência:[https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/14NykGkdKsj_PY_2Jgnp0oawpyI7SDjqj/view?usp=drive_link) | 
 
  
 
-|*Caso de Teste*              |*CT12 - Aceitar pedido e Desistir do pedido - Provedor*                                        |
+|*Caso de Teste*              |*CT11 - Aceitar pedido e Desistir do pedido - Provedor*                                        |
 |---|---|
 |Requisito Associado | RF-012 - Na tela do provedor (Pedidos recebidos), com o status "Pendente", ao clicar em "Visualizar" abrirá o pop up com a opção "Aceitar ou Cancelar". |
 |Link do vídeo do teste realizado: | aceitar: [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/10ZHAcDUzZWpSLyvw7OE1IF34DUZK4-n9/view?usp=drive_link)<br> desistir: [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1du63lyW2m2-HRHTwbfh_LpEvnx4ijDV9/view?usp=drive_link)  | 
 
 
 
-|*Caso de Teste*              |*CT13 - Sinalizar conclusão e Cancelar Pedido - Provedor*                                        |
+|*Caso de Teste*              |*CT12 - Sinalizar conclusão e Cancelar Pedido - Provedor*                                        |
 |---|---|
 |Requisito Associado | RF-013 - NNa tela do provedor (Pedidos recebidos), com o status "Em Andamento", ao clicar em "Visualizar" abrirá o pop up com a opção "Sinalizar conclusão" ou "Cancelar (com justificativa obrigatória)".|
 |Link do vídeo do teste realizado: | conclusão: [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1ksdvddSLUFI9DMWLKwinP-SOxaDVn7A0/view?usp=drive_link)<br> cancelamento: [https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar](https://drive.google.com/file/d/1PjC-D6PaZcUrwNBzTEJdXaLi9Guup9VP/view?usp=drive_link)  | 
 
 
-|*Caso de Teste*                                 |*CT14 - Avaliar após conclusão*                                        |
+|*Caso de Teste*                                 |*CT13 - Avaliar após conclusão*                                        |
 |---|---|
 |Requisito Associado | RF-014 - Após o consumidor deve confirmar a conclusão do serviço, o sistema irá transferir automaticamente os créditos para o provedor. Após o pagamento, o sistema permitirá a avaliação mútua (consumidor avalia provedor, provedor avalia consumidor).	|
 |Link do vídeo do teste realizado: | https://drive.google.com/file/d/1BZWsxgh7kcfOiLEv3oXKkH-xYAdG-e9F/view?usp=drive_link | 
