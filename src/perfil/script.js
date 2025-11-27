@@ -295,6 +295,7 @@ document.addEventListener("DOMContentLoaded", () => {
             currentUser.credits = 50;
             UserStorage.updateUserData(currentUser); // Salva as alterações
             alert("Parabéns! Você completou seu perfil e ganhou 50 créditos!");
+            window.dispatchEvent(new CustomEvent("creditsUpdated"));
           }
           document.querySelector(".alert-imcomplete-profile").remove();
         }
