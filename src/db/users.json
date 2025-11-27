@@ -305,7 +305,7 @@
       "availability": { "days": "Sáb-Dom", "shift": "Manhã" }
     }
   ],
-  "credits": 50,
+  "credits": 100,
   "requests": [
     {
       "id": "req-1763946114645-370",
@@ -379,7 +379,7 @@
       "icon": "bi bi-plus-circle",
       "type": "Novo pedido recebido",
       "description": "Maria Silva solicitou suas \"Aulas de Violão\".",
-      "date": "2025-11-27T01:01:49.440Z"
+      "date": "2025-11-27T01:01:49.340Z"
     },
     {
       "icon": "text-success bi bi-hand-thumbs-up",
@@ -397,13 +397,13 @@
       "icon": "bi bi-plus-circle",
       "type": "Solicitação enviada",
       "description": "Você solicitou o serviço \"Montagem de Móveis\" por 10 créditos.",
-      "date": "2025-11-19T01:01:54.646Z"
+      "date": "2025-11-23T01:01:54.646Z"
     },
     {
       "icon": "bi bi-plus-circle",
       "type": "Novo pedido recebido",
       "description": "Usuário solicitou seu serviço de \"Manutenção de Computadores\".",
-      "date": "2025-11-22T01:02:44.403Z"
+      "date": "2025-11-21T01:02:44.403Z"
     }
   ],
   "rating": { "score": 5, "reviews": 0 },
