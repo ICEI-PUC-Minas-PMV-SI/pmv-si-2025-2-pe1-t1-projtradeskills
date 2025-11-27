@@ -121,9 +121,9 @@ function openEditModal(skillIndex) {
   skillsName.value = skill.name || '';
   skillsDescription.value = skill.description || '';
   skillsPrice.value = skill.price || '';
-  serviceModelsSelect.value = skill.serviceModel || 'presencial';
+  serviceModelsSelect.value = skill.serviceModel?.toLowerCase() || 'presencial';
   skillsSchedule.daysOfWeek.value = skill.availability?.days || '';
-  skillsSchedule.shift.value = skill.availability?.shift || 'manha';
+  skillsSchedule.shift.value = skill.availability?.shift?.toLowerCase() || 'manha';
 
   // Armazena o índice da habilidade que está sendo editada no botão de salvar
   const saveButton = document.getElementById("skills-modal-save");
@@ -295,6 +295,7 @@ document.addEventListener("DOMContentLoaded", () => {
             currentUser.credits = 50;
             UserStorage.updateUserData(currentUser); // Salva as alterações
             alert("Parabéns! Você completou seu perfil e ganhou 50 créditos!");
+            window.dispatchEvent(new CustomEvent("creditsUpdated"));
           }
           document.querySelector(".alert-imcomplete-profile").remove();
         }
