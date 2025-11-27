@@ -24,7 +24,7 @@ const DEFAULT_DATA = {
       habilidade: 'Aula de Violão',
       providerId: 'user-paula',
       consumerId: 'user-maria',
-      date: '2025-10-15',
+      date: '2025-11-27',
       credits: 40,
       availability: 'Sáb | Manhã',
       modality: 'Presencial',

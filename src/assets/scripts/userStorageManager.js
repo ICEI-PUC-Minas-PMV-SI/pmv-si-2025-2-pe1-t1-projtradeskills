@@ -12,7 +12,7 @@ class UserStorage {
     static setCurrentUser(user) {
         try {
             localStorage.setItem('currentUser', JSON.stringify(user));
-            // Dispara evento customizado para atualizar componentes em tela
+            
             window.dispatchEvent(new CustomEvent('currentUserChanged'));
             return true;
         } catch (error) {
@@ -49,20 +49,20 @@ class UserStorage {
                 return false;
             }
 
-            // Atualiza o campo no usuário atual
+           
             currentUser[field] = value;
             this.setCurrentUser(currentUser);
 
-            // Atualiza também na lista de usuários
+           
             const users = this.getAllUsers();
             const userIndex = users.findIndex(user => user.id === currentUser.id);
-            
+
             if (userIndex !== -1) {
                 users[userIndex][field] = value;
                 this.setAllUsers(users);
             }
 
-            // Dispara evento customizado para atualizar componentes em tela
+          
             window.dispatchEvent(new CustomEvent('currentUserChanged'));
 
             return true;
@@ -84,7 +84,7 @@ class UserStorage {
                 return false;
             }
 
-            // Atualiza os campos fornecidos
+            
             Object.keys(userData).forEach(key => {
                 if (userData[key] !== undefined && userData[key] !== null) {
                     currentUser[key] = userData[key];
@@ -93,10 +93,10 @@ class UserStorage {
 
             this.setCurrentUser(currentUser);
 
-            // Atualiza também na lista de usuários
+            
             const users = this.getAllUsers();
             const userIndex = users.findIndex(user => user.id === currentUser.id);
-            
+
             if (userIndex !== -1) {
                 users[userIndex] = { ...currentUser };
                 this.setAllUsers(users);
@@ -121,7 +121,7 @@ class UserStorage {
                 state: parts[1].trim()
             };
         } else {
-            // Se não estiver no formato correto, assume como cidade apenas
+            
             return {
                 city: cityStateString.trim(),
                 state: ''
@@ -135,9 +135,33 @@ class UserStorage {
         }
         return city || '';
     }
+
+    static updateOtherUserField(userId, field, value) {
+        try {
+            const users = this.getAllUsers();
+            const userIndex = users.findIndex(user => user.id === userId);
+
+            if (userIndex !== -1) {
+                users[userIndex][field] = value;
+                this.setAllUsers(users);
+
+               
+                const currentUser = this.getCurrentUser();
+                if (currentUser && currentUser.id === userId) {
+                    currentUser[field] = value;
+                    this.setCurrentUser(currentUser);
+                }
+                return true;
+            }
+            return false;
+        } catch (error) {
+            console.error('Erro ao atualizar outro usuário:', error);
+            return false;
+        }
+    }
 }
 
-// Exporta para uso em outros scripts
+
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = UserStorage;
 } else if (typeof window !== 'undefined') {

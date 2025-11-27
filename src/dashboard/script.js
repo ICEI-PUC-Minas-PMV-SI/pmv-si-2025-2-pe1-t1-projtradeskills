@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="d-flex flex-row gap-3">
                   <div class="d-block" style="text-align: left;">
                     <div
-                      class="btn btn-light border rounded-circle lh-1 text-danger button-icon-circle"
+                      class="btn btn-light border rounded-circle lh-1 button-icon-circle"
                       type="button"
                     >
                       <i class="${element.icon}"></i>
@@ -112,9 +112,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (activitieslist.length === 0) {
-    recentActivitiesContent.children[0].remove();
 
-    const componentNoneActivity = `<div class="w-100 no-activities-content">
+    const componentNoActivity = `<div class="w-100 no-activities-content">
               <div class="calendar-icon">
                 <div class="calendar-icon-circle">
                   <img src="img/calendar.svg" alt="Ícone de calendário vazio" />
@@ -132,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </p>
               </div>
             </div>`;
-    activitiesContainer.innerHTML = componentNoneActivity;
+
+    activitiesContainer.innerHTML = `<div class="card shadow container-cards no-activities">${componentNoActivity}</div>`;
   }
 });

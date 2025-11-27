@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minhas Solicitações</title>
 
-    <script src="../components/sidebar/script.js" type="module" defer></script>
-    <script src="../components/footer/script.js" type="module" defer></script>
-    <script src="../components/header/script.js" type="module" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minhas Solicitações</title>
 
-    <link rel="stylesheet" href="/assets/styles/style.css" />
-    <link rel="stylesheet" href="./css/historico.css" />
-  </head>
+  <script src="../components/sidebar/script.js" type="module" defer></script>
+  <script src="../components/footer/script.js" type="module" defer></script>
+  <script src="../components/header/script.js" type="module" defer></script>
 
-  <body>
-    <app-sidebar></app-sidebar>
+  <link rel="stylesheet" href="/assets/styles/style.css" />
+  <link rel="stylesheet" href="./css/historico.css" />
+</head>
 
-    <main class="conteudo-principal">
-      <app-header></app-header>
+<body>
+  <app-sidebar></app-sidebar>
 
-      <section>
-        <div class="title-hist">
-          <h1>Meu Histórico de Transações</h1>
-        </div>
-      </section>
+  <main class="conteudo-principal">
+    <app-header></app-header>
 
-      <section id="conteudo-enviadas" class="tab-conteudo active">
-        <div class="toolbar">
-          <button class="btn-icone" aria-label="Buscar">
-            <img src="./img/icon_search.svg" />
-          </button>
+    <section>
+      <div class="title-hist">
+        <h1>Meu Histórico de Transações</h1>
+      </div>
+    </section>
 
-          <button class="btn-icone" aria-label="Filtro">
-            <img src="./img/icon_filter.svg" />
-          </button>
-        </div>
-        <table class="tabela-solicitacoes">
-          <thead>
-            <tr>
-              <th>Habilidade</th>
-              <th>Solicitante</th>
-              <th>Data</th>
-              <th>Tipo</th>
-              <th>Créditos</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </section>
-    </main>
-    <app-footer></app-footer>
+    <section id="conteudo-enviadas" class="tab-conteudo active">
+      <div class="toolbar">
+        <button class="btn-icone" aria-label="Buscar">
+          <img src="./img/icon_search.svg" />
+        </button>
 
-    <script src="./js/historico.js"></script>
-  </body>
+        <button class="btn-icone" aria-label="Filtro">
+          <img src="./img/icon_filter.svg" />
+        </button>
+      </div>
+      <table class="tabela-solicitacoes">
+        <thead>
+          <tr>
+            <th>Habilidade</th>
+            <th>Solicitante</th>
+            <th>Data</th>
+            <th>Tipo</th>
+            <th>Créditos</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+  <app-footer></app-footer>
+
+  <script src="/assets/scripts/userStorageManager.js"></script>
+  <script src="/assets/scripts/dataManager.js"></script>
+  <script src="./js/historico.js"></script>
+</body>
+
 </html>
