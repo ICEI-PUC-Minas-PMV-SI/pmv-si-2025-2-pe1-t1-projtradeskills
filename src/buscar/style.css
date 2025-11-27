@@ -347,15 +347,58 @@
   margin-top: 3rem;
   border-radius: 30rem;
 }
+
 @media (max-width: 1600px) {
   #search-results .user-card {
     width: 100%;
   }
 }
 
-@media (max-width: 767px) {
-  #buscar .search .actions {
+@media (max-width: 1360px) {
+  #user-modal .modal-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #user-modal {
+    padding: 1rem;
+  }
+
+  #user-modal .modal-wrapper {
+    padding: 2rem;
+  }
+
+  #user-modal .modal-body .skill-card {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #user-modal .modal-body .skill-footer {
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
+  }
+
+  #user-modal .modal-body .skill-infos {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #user-modal .modal-body .skill-price,
+  #user-modal .modal-body .skill-availability {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #user-modal .modal-body .hire-button {
+    width: 100%;
+  }
+
+  #user-modal .modal-body .skill-card {
+    padding: 3rem 1rem;
   }
 }
