@@ -316,7 +316,7 @@
       "credits": 6,
       "availability": "Flexível",
       "modality": "Presencial",
-      "status": "pendente"
+      "status": "Em andamento"
     },
     {
       "id": "req-1763946160156-697",
@@ -378,43 +378,31 @@
     {
       "icon": "bi bi-plus-circle",
       "type": "Novo pedido recebido",
-      "description": "João Pedro solicitou suas aulas de inglês.",
+      "description": "Maria Silva solicitou suas \"Aulas de Violão\".",
       "date": "2025-11-27T01:01:49.440Z"
     },
     {
-      "icon": "bi bi-hand-thumbs-up",
+      "icon": "text-success bi bi-hand-thumbs-up",
       "type": "Solicitação aceita",
-      "description": "Maria aceitou seu pedido de aulas de violão.",
+      "description": "Larissa Lima aceitou seu pedido de \"Tradução\".",
       "date": "2025-11-26T01:01:49.440Z"
     },
     {
-      "icon": "bi bi-coin text-success",
+      "icon": "text-success bi bi-coin",
       "type": "Transferência concluída",
-      "description": "Luiz te transferiu 50 créditos pela conclusão do serviço de formatação de celular.",
+      "description": "Laura Nunes te transferiu 50 créditos pela conclusão do serviço de \"Design de Logo\".",
       "date": "2025-11-24T01:01:49.440Z"
     },
     {
-      "icon": "bi bi-hand-thumbs-down",
-      "type": "Solicitação recusada",
-      "description": "Pedro recusou seu pedido de mentoria de carreira.",
-      "date": "2025-11-22T01:01:49.440Z"
-    },
-    {
       "icon": "bi bi-plus-circle",
-      "type": "solicitação enviada",
-      "description": "Solicitou o serviço \"Tradução Inglês-Português\" por 6 créditos.",
+      "type": "Solicitação enviada",
+      "description": "Você solicitou o serviço \"Montagem de Móveis\" por 10 créditos.",
       "date": "2025-11-19T01:01:54.646Z"
     },
     {
       "icon": "bi bi-plus-circle",
-      "type": "solicitação enviada",
-      "description": "Solicitou o serviço \"Ilustração Digital\" por 9 créditos.",
-      "date": "2025-11-23T01:02:40.156Z"
-    },
-    {
-      "icon": "bi bi-plus-circle",
-      "type": "solicitação enviada",
-      "description": "Solicitou o serviço \"Arquitetura de Software\" por 25 créditos.",
+      "type": "Novo pedido recebido",
+      "description": "Usuário solicitou seu serviço de \"Manutenção de Computadores\".",
       "date": "2025-11-22T01:02:44.403Z"
     }
   ],

@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="d-flex flex-row gap-3">
                   <div class="d-block" style="text-align: left;">
                     <div
-                      class="btn btn-light border rounded-circle lh-1 text-danger button-icon-circle"
+                      class="btn btn-light border rounded-circle lh-1 button-icon-circle"
                       type="button"
                     >
                       <i class="${element.icon}"></i>
