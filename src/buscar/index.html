@@ -1,54 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/styles/style.css" />
 
-    <script src="../components/sidebar/script.js" type="module" defer></script>
-    <script src="../components/header/script.js" type="module" defer></script>
-    <script src="../components/footer/script.js" type="module" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/styles/style.css" />
 
-    <script src="./script.js" type="module" defer></script>
-    <script
-      src="../assets/scripts/userStorageManager.js"
-      type="module"
-      defer
-    ></script>
-    <script
-      src="../assets/scripts/createSolicitation.js"
-      type="module"
-      defer
-    ></script>
+  <script src="../components/sidebar/script.js" type="module" defer></script>
+  <script src="../components/header/script.js" type="module" defer></script>
+  <script src="../components/footer/script.js" type="module" defer></script>
 
-    <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js" type="module" defer></script>
+  <script src="../assets/scripts/userStorageManager.js" type="module" defer></script>
+  <script src="../assets/scripts/dataManager.js" type="module" defer></script>
+  <script src="../assets/scripts/createSolicitation.js" type="module" defer></script>
 
-    <title>Buscar habilidades</title>
-  </head>
-  <body id="buscar">
-    <app-sidebar></app-sidebar>
+  <link rel="stylesheet" href="./style.css" />
 
-    <main>
-      <app-header></app-header>
-      <div class="search">
-        <div class="text">
-          <h1 class="title">Encontre a habilidade que você precisa</h1>
-          <p class="description">
-            Busque por aulas de música, reparos domésticos, consultorias e muito
-            mais.
-          </p>
-        </div>
-        <div class="actions">
-          <input
-            type="text"
-            class="search-input"
-            placeholder="O que você procura hoje?"
-          />
-        </div>
+  <title>Buscar habilidades</title>
+</head>
+
+<body id="buscar">
+  <app-sidebar></app-sidebar>
+
+  <main>
+    <app-header></app-header>
+    <div class="search">
+      <div class="text">
+        <h1 class="title">Encontre a habilidade que você precisa</h1>
+        <p class="description">
+          Busque por aulas de música, reparos domésticos, consultorias e muito
+          mais.
+        </p>
       </div>
-      <div id="search-results"></div>
-    </main>
+      <div class="actions">
+        <input type="text" class="search-input" placeholder="O que você procura hoje?" />
+      </div>
+    </div>
+    <div id="search-results"></div>
+  </main>
 
-    <app-footer></app-footer>
-  </body>
+  <app-footer></app-footer>
+</body>
+
 </html>

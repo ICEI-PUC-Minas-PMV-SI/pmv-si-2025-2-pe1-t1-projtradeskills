@@ -35,14 +35,14 @@ const DEFAULT_DATA = {
     currentUserId: DEFAULT_USER_ID,
     users: [
         { id: 'user-paula', name: 'Paula Fernandes', credits: 50 },
-        { id: 'user-maria', name: 'Maria Silva', credits: 50},
+        { id: 'user-maria', name: 'Maria Silva', credits: 50 },
         { id: 'user-carlos', name: 'Carlos Lima', credits: 50 },
         { id: 'user-ana', name: 'Ana Souza', credits: 50 },
         { id: 'user-joao', name: 'João Pedro', credits: 50 },
         { id: 'user-laura', name: 'Laura Nunes', credits: 50 },
         { id: 'user-ricardo', name: 'Ricardo Alves', credits: 50 },
         { id: 'user-pedro', name: 'Pedro Henrique', credits: 50 },
-        { id: 'user-larissa', name: 'Larissa Lima', credits: 50},
+        { id: 'user-larissa', name: 'Larissa Lima', credits: 50 },
         { id: 'user-jose', name: 'José Silva', credits: 50 },
     ],
     requests: [
@@ -127,7 +127,7 @@ const DEFAULT_DATA = {
             status: 'pendente'
         },
 
-         {
+        {
             id: 'req-8',
             habilidade: 'Tradução',
             providerId: 'user-larissa',
@@ -151,7 +151,7 @@ const DEFAULT_DATA = {
             status: 'pendente'
         },
     ],
-    
+
     history: [
         {
             id: 'hist-1',
@@ -176,13 +176,47 @@ const DEFAULT_DATA = {
     ]
 };
 
-function cloneDefaultData() {
-    return JSON.parse(JSON.stringify(DEFAULT_DATA));
+function cloneDefaultData(targetUserId) {
+    const data = JSON.parse(JSON.stringify(DEFAULT_DATA));
+
+    if (!targetUserId || targetUserId === DEFAULT_USER_ID) {
+        return data;
+    }
+
+    
+    data.currentUserId = targetUserId;
+
+    data.requests.forEach(req => {
+        if (req.providerId === DEFAULT_USER_ID) req.providerId = targetUserId;
+        if (req.consumerId === DEFAULT_USER_ID) req.consumerId = targetUserId;
+    });
+
+    data.history.forEach(hist => {
+        if (hist.userId === DEFAULT_USER_ID) hist.userId = targetUserId;
+    });
+
+    
+    const userExists = data.users.some(u => u.id === targetUserId);
+    if (!userExists && typeof UserStorage !== 'undefined') {
+        const currentUser = UserStorage.getCurrentUser();
+        if (currentUser) {
+           
+            const userWithResetCredits = { ...currentUser, credits: 100 };
+            data.users.push(userWithResetCredits);
+        }
+    } else if (userExists) {
+        const user = data.users.find(u => u.id === targetUserId);
+        if (user) {
+            user.credits = 100;
+        }
+    }
+
+    return data;
 }
 
-function createBlankSeedData() {
+function createBlankSeedData(targetUserId) {
     return {
-        currentUserId: DEFAULT_USER_ID,
+        currentUserId: targetUserId || DEFAULT_USER_ID,
         users: [],
         requests: [],
         history: []
@@ -209,16 +243,32 @@ function setStoredSeedMode(mode) {
     }
 }
 
-function getSeedDataByMode(mode) {
-    return mode === SEED_MODES.BLANK ? createBlankSeedData() : cloneDefaultData();
+function getSeedDataByMode(mode, targetUserId) {
+    return mode === SEED_MODES.BLANK ? createBlankSeedData(targetUserId) : cloneDefaultData(targetUserId);
 }
 
 function applySeed(mode) {
     const normalizedMode = isValidSeedMode(mode) ? mode : SEED_MODES.SAMPLE;
-    const data = getSeedDataByMode(normalizedMode);
+
+    let currentUserId = DEFAULT_USER_ID;
+    if (typeof UserStorage !== 'undefined') {
+        const user = UserStorage.getCurrentUser();
+        if (user) currentUserId = user.id;
+    }
+
+    const data = getSeedDataByMode(normalizedMode, currentUserId);
 
     localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
     setStoredSeedMode(normalizedMode);
+
+   
+    if (typeof UserStorage !== 'undefined' && currentUserId) {
+        const seededUser = data.users.find(u => u.id === currentUserId);
+        if (seededUser) {
+
+            UserStorage.updateCurrentUserField('credits', seededUser.credits || 50);
+        }
+    }
 
     return data;
 }
@@ -315,8 +365,15 @@ function ensureData() {
     const seedMode = getStoredSeedMode();
     const stored = localStorage.getItem(STORAGE_KEY);
 
+    
+    let targetUserId = DEFAULT_USER_ID;
+    if (typeof UserStorage !== 'undefined') {
+        const user = UserStorage.getCurrentUser();
+        if (user) targetUserId = user.id;
+    }
+
     if (!stored) {
-        const initialData = getSeedDataByMode(seedMode);
+        const initialData = getSeedDataByMode(seedMode, targetUserId);
         localStorage.setItem(STORAGE_KEY, JSON.stringify(initialData));
         return initialData;
     }
@@ -334,7 +391,7 @@ function ensureData() {
             Array.isArray(data.users);
 
         if (!arraysValid) {
-            const reseededData = getSeedDataByMode(seedMode);
+            const reseededData = getSeedDataByMode(seedMode, targetUserId);
             localStorage.setItem(STORAGE_KEY, JSON.stringify(reseededData));
             return reseededData;
         }
@@ -344,12 +401,25 @@ function ensureData() {
             currentUserId: data.currentUserId || DEFAULT_USER_ID
         };
 
+    
+        if (typeof UserStorage !== 'undefined') {
+            const currentUser = UserStorage.getCurrentUser();
+            if (currentUser) {
+                const exists = normalizedData.users.find(u => u.id === currentUser.id);
+                if (!exists) {
+                    normalizedData.users.push(currentUser);
+                }
+                
+                normalizedData.currentUserId = currentUser.id;
+            }
+        }
+
         localStorage.setItem(STORAGE_KEY, JSON.stringify(normalizedData));
         return normalizedData;
     } catch (error) {
         console.warn('Não foi possível ler os dados salvos. Recriando padrão.', error);
         const fallbackMode = getStoredSeedMode();
-        const fallbackData = getSeedDataByMode(fallbackMode);
+        const fallbackData = getSeedDataByMode(fallbackMode, targetUserId);
         localStorage.setItem(STORAGE_KEY, JSON.stringify(fallbackData));
         return fallbackData;
     }
@@ -364,7 +434,15 @@ function getCurrentUserId() {
 }
 
 function getUserName(userId) {
-    const user = appData.users.find(item => item.id === userId);
+    
+    let user = appData.users.find(item => item.id == userId);
+
+   
+    if (!user && typeof UserStorage !== 'undefined') {
+        const allUsers = UserStorage.getAllUsers();
+        user = allUsers.find(item => item.id == userId);
+    }
+
     return user ? user.name : 'Usuário';
 }
 
@@ -386,23 +464,34 @@ function generateId(prefix) {
 
 function renderRequests() {
     const currentUserId = getCurrentUserId();
+    console.log("[DEBUG] renderRequests() - currentUserId:", currentUserId, "type:", typeof currentUserId);
+    console.log("[DEBUG] renderRequests() - appData.requests:", appData.requests);
 
     const sentTable = document.querySelector('#conteudo-enviadas tbody');
     const receivedTable = document.querySelector('#conteudo-recebidos tbody');
 
     if (!sentTable || !receivedTable) {
+        console.warn("[DEBUG] Tabelas não encontradas!");
         return;
     }
 
     const sentRequests = appData.requests
-        .filter(request => request.consumerId === currentUserId)
+        .filter(request => {
+            console.log("[DEBUG] Comparando:", request.consumerId, "===", currentUserId, "?", request.consumerId === currentUserId);
+            console.log("[DEBUG] Tipos:", typeof request.consumerId, typeof currentUserId);
+            
+            return request.consumerId.toString() === currentUserId.toString();
+        })
         .slice()
         .sort((a, b) => b.date.localeCompare(a.date));
 
     const receivedRequests = appData.requests
-        .filter(request => request.providerId === currentUserId)
+        .filter(request => request.providerId.toString() === currentUserId.toString())
         .slice()
         .sort((a, b) => b.date.localeCompare(a.date));
+
+    console.log("[DEBUG] Solicitações enviadas filtradas:", sentRequests);
+    console.log("[DEBUG] Solicitações recebidas filtradas:", receivedRequests);
 
     sentTable.innerHTML = sentRequests.length
         ? sentRequests.map(request => buildRowMarkup(request, 'sent')).join('')
@@ -1062,15 +1151,27 @@ function storeEvaluation(evaluation) {
     }
 }
 
-function updateUserCredits(userId, amount, operation) { 
-    const user = appData.users.find(u => u.id === userId);
+function updateUserCredits(userId, amount, operation) {
+    let user = appData.users.find(u => u.id === userId);
+
+    
+    if (!user && typeof UserStorage !== 'undefined') {
+        const currentUser = UserStorage.getCurrentUser();
+        if (currentUser && currentUser.id == userId) {
+            user = currentUser;
+            
+        }
+    }
+
     if (!user) {
         console.warn(`Usuário ${userId} não encontrado`);
         return;
     }
+
     if (typeof user.credits !== 'number') {
         user.credits = 50;
     }
+
     if (operation === 'add') {
         user.credits += amount;
     } else if (operation === 'subtract') {
@@ -1078,11 +1179,21 @@ function updateUserCredits(userId, amount, operation) {
     }
     console.log(`Créditos atualizados para ${user.name}: ${user.credits}`);
 
+    
+    if (typeof UserStorage !== 'undefined') {
+       
+        const currentUser = UserStorage.getCurrentUser();
+        if (currentUser && currentUser.id == userId) {
+            UserStorage.updateCurrentUserField('credits', user.credits);
+        } else {
+            UserStorage.updateOtherUserField(userId, 'credits', user.credits);
+        }
+    }
 }
 
 function transferCredits(fromUserId, toUserId, amount) {
-    updateUserCredits(fromUserId, amount, 'subtract'); 
-    updateUserCredits(toUserId, amount, 'add');      
+    updateUserCredits(fromUserId, amount, 'subtract');
+    updateUserCredits(toUserId, amount, 'add');
 }
 
 function addHistoryEntries(request) {
@@ -1124,9 +1235,9 @@ function addHistoryEntries(request) {
             habilidade: request.habilidade,
             pessoa: getUserName(request.providerId)
         });
-        
+
     }
-       transferCredits(request.consumerId, request.providerId, request.credits);
+    transferCredits(request.consumerId, request.providerId, request.credits);
 
     saveAppData();
 
@@ -1156,6 +1267,9 @@ document.querySelectorAll('.btn-tab').forEach(botao => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+
+    appData = ensureData();
+
     renderRequests();
 
     function waitForModal() {
@@ -1168,5 +1282,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
     waitForModal();
 });
-
-

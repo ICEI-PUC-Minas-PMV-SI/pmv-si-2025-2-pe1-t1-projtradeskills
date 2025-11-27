@@ -7,8 +7,10 @@ document.addEventListener("click", event => {
 
   if (hireButton) {
     event.preventDefault();
+    console.log("[DEBUG] Botão 'Solicitar Serviço' clicado!");
 
     const currentUser = UserStorage.getCurrentUser();
+    console.log("[DEBUG] Usuário atual:", currentUser);
 
     if (!currentUser || !currentUser.id) {
       alert(
@@ -25,6 +27,15 @@ document.addEventListener("click", event => {
     const modality = hireButton.dataset.modality;
 
     const consumerId = currentUser.id.toString();
+
+    console.log("[DEBUG] Dados do botão:", {
+      providerId,
+      skillName,
+      credits,
+      availability,
+      modality,
+      consumerId
+    });
 
     if (!providerId || !skillName || isNaN(credits)) {
       console.error(
@@ -43,14 +54,16 @@ document.addEventListener("click", event => {
     const newRequest = {
       id: generateRequestId(),
       habilidade: skillName,
-      providerId: providerId,
-      consumerId: consumerId,
+      providerId: providerId.toString(),
+      consumerId: consumerId.toString(),
       date: new Date().toISOString().slice(0, 10),
       credits: credits,
       availability: availability,
       modality: modality,
       status: "pendente"
     };
+
+    console.log("[DEBUG] Nova solicitação criada:", newRequest);
 
     const userRequests = Array.isArray(currentUser.requests)
       ? currentUser.requests
@@ -70,12 +83,26 @@ document.addEventListener("click", event => {
     UserStorage.updateUserData({ activities: userActivities });
     const success = UserStorage.updateUserData({ requests: userRequests });
 
+    console.log("[DEBUG] Tentando salvar via DataManager...");
+    console.log("[DEBUG] DataManager disponível?", typeof DataManager !== 'undefined');
+
+    if (typeof DataManager !== 'undefined') {
+      const globalRequests = DataManager.getRequests();
+      console.log("[DEBUG] Solicitações globais antes:", globalRequests);
+      globalRequests.push(newRequest);
+      DataManager.saveRequests(globalRequests);
+      console.log("[DEBUG] Solicitações globais depois:", DataManager.getRequests());
+      console.log("[DEBUG] localStorage tradeSkillsData:", localStorage.getItem('tradeSkillsData'));
+    } else {
+      console.warn("[DEBUG] DataManager não encontrado. A solicitação pode não aparecer na lista global.");
+    }
+
     if (success) {
       console.log(
-        "Nova solicitação salva em currentUser.requests:",
+        "[DEBUG] Nova solicitação salva em currentUser.requests:",
         newRequest
       );
-
+      console.log("[DEBUG] Redirecionando para /solicitacoes/...");
       window.location.href = "/solicitacoes/";
     } else {
       alert("Erro ao salvar a solicitação. Tente novamente.");
