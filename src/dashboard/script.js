@@ -82,8 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
         timeFormatted = minutes === 1 ? "Há 1 minuto" : `Há ${minutes} minutos`;
       }
 
-      console.log(element)
-
       activitiesHTML += `<div class="card w-100 rounded-0 rounded-bottom-1 cards-dashboard">
               <div class="card-body">
                 <div class="d-flex flex-row gap-3">
@@ -114,9 +112,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (activitieslist.length === 0) {
-    recentActivitiesContent.children[0].remove();
 
-    const componentNoneActivity = `<div class="w-100 no-activities-content">
+    const componentNoActivity = `<div class="w-100 no-activities-content">
               <div class="calendar-icon">
                 <div class="calendar-icon-circle">
                   <img src="img/calendar.svg" alt="Ícone de calendário vazio" />
@@ -134,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </p>
               </div>
             </div>`;
-    activitiesContainer.innerHTML = componentNoneActivity;
+
+    activitiesContainer.innerHTML = `<div class="card shadow container-cards no-activities">${componentNoActivity}</div>`;
   }
 });
