@@ -33,33 +33,32 @@
       <section class="panel">
         <form class="form" action="/reportar/">
           <h2 class="title-bug">
-            Encontrou um bug ou deseja reportar um comportamento?
+            Ajude a Tradeskills a Crescer! Envie seu Feedback.
           </h2>
 
           <select name="tipo_problema" id="tipo-problema">
             <option value="" disabled selected>
-              Selecione o tipo de informação que deseja enviar
+              Selecione o assunto que deseja enviar para nossa Equipe
             </option>
-            <option value="bug">Bug</option>
-            <option value="comportamento">Comportamento</option>
-            <option value="usuario">Usuário</option>
-            <option value="melhorias">Melhorias</option>
-            <option value="outro">Outro</option>
+            <option value="bug">Reportar um Problema Técnico (Bug)</option>
+            <option value="melhorias">Sugerir uma Melhoria</option>
+            <option value="Comportamento">Fazer uma Denúncia (Comportamento)</option>
+            <option value="outro">Outro Assunto / Dúvida Geral</option>
           </select>
 
           <div class="field">
-            <p class="descricao">Nos conte o que aconteceu</p>
+            <p class="descricao">Descreva detalhadamente sua observação ou problema.</p>
           </div>
           <textarea
             class="textarea-bug"
             name="descricao"
             id="descricao"
             maxlength="500"
-            placeholder="Descreva o problema encontrado"
+            placeholder="Seja específico(a): Nos informe qual a data, o nome do usuário e onde isso ocorreu na plataforma?"
             required
           ></textarea>
 
-          <button type="submit" class="btn">Enviar Relatório</button>
+          <button type="submit" class="btn">Enviar para a Equipe Tradeskills</button>
         </form>
       </section>
     </main>
