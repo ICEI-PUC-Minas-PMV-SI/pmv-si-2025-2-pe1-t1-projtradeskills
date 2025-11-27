@@ -82,6 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
         timeFormatted = minutes === 1 ? "Há 1 minuto" : `Há ${minutes} minutos`;
       }
 
+      console.log(element)
+
       activitiesHTML += `<div class="card w-100 rounded-0 rounded-bottom-1 cards-dashboard">
               <div class="card-body">
                 <div class="d-flex flex-row gap-3">

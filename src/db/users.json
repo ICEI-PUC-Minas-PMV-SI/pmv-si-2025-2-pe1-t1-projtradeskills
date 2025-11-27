@@ -377,45 +377,45 @@
   "activities": [
     {
       "icon": "bi bi-plus-circle",
-      "status": "Novo pedido recebido",
+      "type": "Novo pedido recebido",
       "description": "João Pedro solicitou suas aulas de inglês.",
-      "time": "Há 2 horas"
+      "date": "2025-11-27T01:01:49.440Z"
     },
     {
       "icon": "bi bi-hand-thumbs-up",
-      "status": "Solicitação aceita",
+      "type": "Solicitação aceita",
       "description": "Maria aceitou seu pedido de aulas de violão.",
-      "time": "Há 2 horas"
+      "date": "2025-11-26T01:01:49.440Z"
     },
     {
       "icon": "bi bi-coin text-success",
-      "status": "Transferência concluída",
+      "type": "Transferência concluída",
       "description": "Luiz te transferiu 50 créditos pela conclusão do serviço de formatação de celular.",
-      "time": "Há 2 horas"
+      "date": "2025-11-24T01:01:49.440Z"
     },
     {
       "icon": "bi bi-hand-thumbs-down",
-      "status": "Solicitação recusada",
+      "type": "Solicitação recusada",
       "description": "Pedro recusou seu pedido de mentoria de carreira.",
-      "time": "Há 2 horas"
+      "date": "2025-11-22T01:01:49.440Z"
     },
     {
       "icon": "bi bi-plus-circle",
       "type": "solicitação enviada",
       "description": "Solicitou o serviço \"Tradução Inglês-Português\" por 6 créditos.",
-      "date": "2025-11-24T01:01:54.646Z"
+      "date": "2025-11-19T01:01:54.646Z"
     },
     {
       "icon": "bi bi-plus-circle",
       "type": "solicitação enviada",
       "description": "Solicitou o serviço \"Ilustração Digital\" por 9 créditos.",
-      "date": "2025-11-24T01:02:40.156Z"
+      "date": "2025-11-23T01:02:40.156Z"
     },
     {
       "icon": "bi bi-plus-circle",
       "type": "solicitação enviada",
       "description": "Solicitou o serviço \"Arquitetura de Software\" por 25 créditos.",
-      "date": "2025-11-24T01:02:44.403Z"
+      "date": "2025-11-22T01:02:44.403Z"
     }
   ],
   "rating": { "score": 5, "reviews": 0 },
