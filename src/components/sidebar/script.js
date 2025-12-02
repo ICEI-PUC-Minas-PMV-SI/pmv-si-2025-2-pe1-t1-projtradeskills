@@ -74,8 +74,7 @@ class AppSidebar extends HTMLElement {
           const disabledLinks = [
             "buscar",
             "solicitacoes",
-            "historico",
-            "reportar"
+            "historico"
           ];
 
           disabledLinks.forEach(link => {
