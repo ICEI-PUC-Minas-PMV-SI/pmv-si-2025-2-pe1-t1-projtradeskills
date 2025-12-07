@@ -2,7 +2,7 @@
 
 Esta seção resume o processo de desenvolvimento e a solução final do sistema Trade Skills, uma plataforma de troca de serviços e habilidades baseada em créditos. 
 
-A lista abaixo detalha os arquivos produzidos e postados nesta pasta, com suas localizaçãoes e descrição do conteúdo:
+A lista abaixo detalha os arquivos produzidos e postados nesta pasta, com suas localizações e descrição do conteúdo:
 
 * [Pitch inicial](./tradeskills-pitch-inicial.pdf) -- arquivo com os slides da apresentação inicial.
 * [Apresentação final](./tradeskills-pitch-final.pdf) -- arquivo com os slides da apresentação final.
@@ -10,7 +10,9 @@ A lista abaixo detalha os arquivos produzidos e postados nesta pasta, com suas l
 
 ## Título do Projeto
 
-Nome e marca do projeto
+![image](https://github.com/user-attachments/assets/42c9a73f-bf68-4a63-9173-045764bf1b06)<br>
+Tradeskills. <br>
+A plataforma de trocas de habilidades. 
 
 ## Identidade Visual (Marca, Design)
 
