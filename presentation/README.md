@@ -1,6 +1,6 @@
 # Apresentação
 
-Esta seção resume o processo de desenvolvimento e a solução final do sistema Trade Skills, uma plataforma de troca de serviços e habilidades baseada em créditos. 
+Esta seção resume o processo de desenvolvimento e a solução final do sistema TradeSkills, uma plataforma de troca de serviços e habilidades baseada em créditos. 
 
 A lista abaixo detalha os arquivos produzidos e postados nesta pasta, com suas localizações e descrição do conteúdo:
 
@@ -11,7 +11,7 @@ A lista abaixo detalha os arquivos produzidos e postados nesta pasta, com suas l
 ## Título do Projeto
 
 ![image](https://github.com/user-attachments/assets/42c9a73f-bf68-4a63-9173-045764bf1b06)<br>
-Tradeskills. <br>
+TradeSkills. <br>
 A plataforma de trocas de habilidades. 
 
 ## Identidade Visual (Marca, Design)
