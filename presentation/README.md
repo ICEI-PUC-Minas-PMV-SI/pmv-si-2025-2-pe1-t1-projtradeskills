@@ -2,11 +2,11 @@
 
 Esta seção resume o processo de desenvolvimento e a solução final do sistema Trade Skills, uma plataforma de troca de serviços e habilidades baseada em créditos. 
 
-A lista abaixo detalha todos os arquivos produzidos e postados neste repositório:
+A lista abaixo detalha os arquivos produzidos e postados nesta pasta, com suas localizaçãoes e descrição do conteúdo:
 
-* [Pitch inicial](./sample-pitch.pdf) -- arquivo com os slides da apresentação inicial
-* [Apresentação final](./sample-presentation.pdf) -- arquivo com os slides da apresentação final
-* [Vídeo de demonstração](./UserFlow-Final.mp4) -- arquivo com a demonstração do funcionamento do sistema
+* [Pitch inicial](./tradeskills-pitch-inicial.pdf) -- arquivo com os slides da apresentação inicial.
+* [Apresentação final](./tradeskills-pitch-final.pdf) -- arquivo com os slides da apresentação final.
+* [Vídeo de demonstração](./UserFlow-Final.mp4) -- arquivo com a demonstração do funcionamento do sistema.
 
 ## Título do Projeto
 
